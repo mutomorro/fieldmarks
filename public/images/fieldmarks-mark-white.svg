@@ -1,11 +1,11 @@
-<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="12" y="0" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="24" y="0" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="0" y="12" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="14" y="14" width="6" height="6" fill="#9B51E0"/>
-  <rect x="24" y="12" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="0" y="24" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="12" y="24" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
-  <rect x="24" y="24" width="6" height="6" fill="#FFFFFF" opacity="0.7"/>
+<svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="7" y="0" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="14" y="0" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="0" y="7" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="7" y="7" width="5" height="5" fill="#9B51E0"/>
+  <rect x="14" y="7" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="0" y="14" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="7" y="14" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="14" y="14" width="5" height="5" fill="#FFFFFF" opacity="0.7"/>
 </svg>
