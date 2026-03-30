@@ -10,7 +10,7 @@ export default function HeroGrid() {
     const dpr = window.devicePixelRatio || 1;
 
     function resize() {
-      const rect = canvas.parentElement.getBoundingClientRect();
+      const rect = canvas.closest('[data-hero-grid]').getBoundingClientRect();
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
       canvas.style.width = rect.width + 'px';
