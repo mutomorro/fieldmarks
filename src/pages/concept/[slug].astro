@@ -26,8 +26,8 @@ const theme = themes.find(t => t.slug === entry.data.theme);
   <div class="max-w-content mx-auto px-6 md:px-12">
 
     <!-- Breadcrumb -->
-    <div class="pt-6 pb-8">
-      <div class="flex items-center gap-2 text-[14px] text-mt-mid/50 mb-6">
+    <div class="pt-6">
+      <div class="flex items-center gap-2 text-[14px] text-mt-mid/50 mb-8">
         <a href="/" class="hover:text-mt-accent transition-colors">Home</a>
         <span>/</span>
         {theme && (
@@ -40,50 +40,64 @@ const theme = themes.find(t => t.slug === entry.data.theme);
         )}
         <span class="text-mt-mid/80">{entry.data.title}</span>
       </div>
-
-      <!-- Kicker -->
-      {theme && (
-        <p class="kicker text-mt-accent mb-3" style={`color: ${theme.data.colour}`}>
-          {theme.data.title}
-        </p>
-      )}
-
-      <!-- Title -->
-      <h1 class="text-[52px] font-normal leading-[1.1] mb-4 text-mt-deep">
-        {entry.data.title}
-      </h1>
-
-      <!-- One-liner -->
-      <p class="text-[20px] font-light text-mt-mid leading-relaxed max-w-prose">
-        {entry.data.oneLiner}
-      </p>
-
-      <!-- Also known as -->
-      {entry.data.alsoKnownAs && entry.data.alsoKnownAs.length > 0 && (
-        <p class="text-[14px] text-mt-mid/50 mt-3">
-          Also known as: {entry.data.alsoKnownAs.join(', ')}
-        </p>
-      )}
-
-      <!-- Attribution -->
-      {entry.data.originatedBy && (
-        <p class="text-[14px] text-mt-mid/50 mt-1">
-          Originated by {entry.data.originatedBy}
-        </p>
-      )}
     </div>
 
-    <!-- Dot-grid illustration placeholder -->
-    <div class="mb-10">
-      <div
-        class="w-full h-48 md:h-64 bg-mt-deep flex items-center justify-center"
-        id="dot-grid"
-        data-seed={entry.data.dotGrid?.seed}
-        data-variant={entry.data.dotGrid?.variant}
-      >
-        <p class="text-[12px] text-white/30">Generative illustration - {entry.data.dotGrid?.variant || 'default'}</p>
+    <!-- Hero: text left, dot-grid right -->
+    <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-start mb-12">
+
+      <!-- Text side -->
+      <div class="flex-1 min-w-0">
+        <!-- Kicker -->
+        {theme && (
+          <p class="kicker mb-3" style={`color: ${theme.data.colour}`}>
+            {theme.data.title}
+          </p>
+        )}
+
+        <!-- Title -->
+        <h1 class="text-[52px] font-normal leading-[1.1] mb-5 text-mt-deep">
+          {entry.data.title}
+        </h1>
+
+        <!-- One-liner -->
+        <p class="text-[20px] font-light text-mt-mid leading-relaxed">
+          {entry.data.oneLiner}
+        </p>
+
+        <!-- Also known as -->
+        {entry.data.alsoKnownAs && entry.data.alsoKnownAs.length > 0 && (
+          <p class="text-[14px] text-mt-mid/50 mt-4">
+            Also known as: {entry.data.alsoKnownAs.join(', ')}
+          </p>
+        )}
+
+        <!-- Attribution -->
+        {entry.data.originatedBy && (
+          <p class="text-[14px] text-mt-mid/50 mt-1">
+            Originated by {entry.data.originatedBy}
+          </p>
+        )}
       </div>
+
+      <!-- Dot-grid illustration (white background, marks in near-black + accent) -->
+      <div class="w-full md:w-[320px] lg:w-[380px] flex-shrink-0">
+        <div
+          class="w-full aspect-[4/3]"
+          id="dot-grid"
+          data-seed={entry.data.dotGrid?.seed}
+          data-variant={entry.data.dotGrid?.variant}
+        >
+          {/* Generative dot-grid canvas will be mounted here by the React component */}
+          <svg class="w-full h-full" viewBox="0 0 380 285" id="dot-grid-svg">
+            {/* Placeholder - will be replaced by the generative art component */}
+          </svg>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Divider -->
+    <div class="border-t border-mt-deep/8 mb-12"></div>
 
     <!-- Main content -->
     <div class="max-w-prose">
