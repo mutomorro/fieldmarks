@@ -16,6 +16,13 @@ export default {
         'mt-pink': '#FF4279',
         'mt-warm': '#FFA200',
 
+        // Homepage v2 tokens
+        'fm-deep': '#221C2B',
+        'fm-mid': '#423B49',
+        'fm-soft': '#9A9399',
+        'fm-accent': '#9B51E0',
+        'fm-warm-bg': '#FAF9F7',
+
         // Theme colours (one per concept group)
         'theme-core': '#9B51E0',
         'theme-behaviours': '#d4735e',
@@ -32,11 +39,12 @@ export default {
         'theme-human': '#a06cc0',
       },
       fontFamily: {
-        sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
       },
       fontWeight: {
         light: '300',
         normal: '400',
+        medium: '500',
         semi: '600',
       },
       maxWidth: {

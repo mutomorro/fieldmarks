@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fieldmarks - Homepage v2 (White Editorial)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --deep: #221C2B;
+    --mid: #423B49;
+    --soft: #9A9399;
+    --accent: #9B51E0;
+    --warm-bg: #FAF9F7;
+    --white: #FFFFFF;
+    --border: rgba(34,28,43,0.08);
+    --border-hover: rgba(34,28,43,0.18);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--deep);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ====== NAV ====== */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    background: rgba(255,255,255,0);
+    transition: all 0.3s;
+  }
+  nav.scrolled {
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .nav-logo svg { width: 26px; height: 26px; }
+  .nav-logo span {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--deep);
+    letter-spacing: 0.02em;
+  }
+  .nav-logo .by {
+    font-weight: 300;
+    color: var(--soft);
+    font-size: 14px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--deep); }
+
+  /* ====== HERO ====== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 140px 48px 100px;
+    overflow: hidden;
+  }
+  .hero canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+  }
+  .hero h1 {
+    font-size: clamp(52px, 7vw, 84px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--deep);
+    margin-bottom: 28px;
+    letter-spacing: -0.025em;
+  }
+  .hero p {
+    font-size: clamp(18px, 2.2vw, 22px);
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--soft);
+    max-width: 500px;
+    margin-bottom: 52px;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--deep);
+    text-decoration: none;
+    border: 1px solid var(--border-hover);
+    padding: 14px 28px;
+    transition: all 0.3s;
+  }
+  .hero-cta:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .hero-cta svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+  }
+  .hero-cta:hover svg { transform: translateY(4px); }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--soft), transparent);
+    opacity: 0.25;
+    animation: pulse-down 2.5s ease-in-out infinite;
+  }
+  @keyframes pulse-down {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ====== SECTION SPACING ====== */
+  section { padding: 140px 48px; }
+
+  /* ====== DIVIDER ====== */
+  .section-divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ====== DISCOVER SECTION ====== */
+  .discover { background: var(--white); }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: clamp(38px, 4.5vw, 60px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .section-intro {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--soft);
+    max-width: 540px;
+    margin-bottom: 80px;
+  }
+
+  /* ====== CONCEPT CARDS ====== */
+  .concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 48px 36px;
+  }
+  .concept-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .concept-card:hover { transform: translateY(-3px); }
+
+  .card-illustration {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--warm-bg);
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-illustration canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-theme {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .card-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--deep);
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+    transition: color 0.2s;
+  }
+  .concept-card:hover .card-title { color: var(--accent); }
+
+  .card-oneliner {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--soft);
+  }
+
+  /* ====== THEMES SECTION ====== */
+  .themes-section { background: var(--white); }
+
+  .theme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  .theme-card {
+    padding: 36px;
+    background: var(--white);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s;
+  }
+  .theme-card:hover {
+    background: var(--warm-bg);
+  }
+  .theme-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .theme-name {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    line-height: 1.3;
+    transition: color 0.2s;
+  }
+  .theme-card:hover .theme-name { color: var(--accent); }
+  .theme-desc {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--soft);
+  }
+
+  /* ====== CONNECTIONS CTA ====== */
+  .connections-cta {
+    background: var(--warm-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .connections-cta .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--deep);
+    padding: 16px 36px;
+    transition: all 0.3s;
+  }
+  .cta-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  /* ====== FOOTER ====== */
+  footer {
+    background: var(--white);
+    padding: 48px;
+    border-top: 1px solid var(--border);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--soft);
+  }
+  .footer-text a {
+    color: var(--mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-text a:hover { color: var(--accent); }
+
+  /* ====== RESPONSIVE ====== */
+  @media (max-width: 768px) {
+    nav { padding: 16px 24px; }
+    .nav-links { gap: 20px; }
+    .hero { padding: 100px 24px 60px; }
+    section { padding: 80px 24px; }
+    footer { padding: 32px 24px; }
+    .concept-grid { grid-template-columns: 1fr; gap: 40px; }
+    .theme-list { grid-template-columns: 1fr; }
+  }
+
+  /* ====== PROTO BADGE ====== */
+  .proto-badge {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 200;
+    background: var(--accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="proto-badge">v2 - white editorial</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 26 26" fill="none">
+      <rect x="1" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="10" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="19" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="1" y="10" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="10" y="10" width="5" height="5" fill="#9B51E0"/>
+      <rect x="19" y="10" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="1" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="10" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+      <rect x="19" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+    </svg>
+    <span>Fieldmarks</span>
+    <span class="by">by Mutomorro</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Collections</a></li>
+    <li><a href="#">Connections</a></li>
+    <li><a href="#">Search</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas id="hero-grid"></canvas>
+  <div class="hero-content">
+    <h1>A field guide to<br>systems thinking</h1>
+    <p>How things connect. Why they behave the way they do. And where to find the leverage for change.</p>
+    <a href="#discover" class="hero-cta">
+      Start exploring
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M8 3v10M4 9l4 4 4-4"/>
+      </svg>
+    </a>
+  </div>
+  <div class="scroll-hint"></div>
+</section>
+
+<!-- DISCOVER -->
+<section class="discover" id="discover">
+  <div class="section-label">Explore</div>
+  <h2 class="section-title">Every system tells<br>a story</h2>
+  <p class="section-intro">Each concept comes with its own illustration - a dot-grid that shows what the idea does to a system. The healthy grid gets perturbed, and you can see the pattern.</p>
+
+  <div class="concept-grid">
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-fixes"></div>
+      <div class="card-theme">Systems archetype</div>
+      <div class="card-title">Fixes that fail</div>
+      <div class="card-oneliner">A quick fix that addresses the symptom but makes the underlying problem worse over time.</div>
+    </a>
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-emergence"></div>
+      <div class="card-theme">System behaviour</div>
+      <div class="card-title">Emergence</div>
+      <div class="card-oneliner">When the whole does something none of the parts could do alone - behaviour that arises from interactions, not instructions.</div>
+    </a>
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-delays"></div>
+      <div class="card-theme">Core building block</div>
+      <div class="card-title">Delays</div>
+      <div class="card-oneliner">The gap between doing something and seeing what happens - the source of most bad decisions in systems.</div>
+    </a>
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-subopt"></div>
+      <div class="card-theme">Boundaries &amp; perspectives</div>
+      <div class="card-title">Sub-optimisation</div>
+      <div class="card-oneliner">When every part hits its targets but the whole system fails. Perfect parts, broken whole.</div>
+    </a>
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-exponential"></div>
+      <div class="card-theme">System behaviour</div>
+      <div class="card-title">Exponential growth</div>
+      <div class="card-oneliner">When something grows by a percentage rather than an amount - it feels slow until it suddenly feels unstoppable.</div>
+    </a>
+
+    <a href="#" class="concept-card">
+      <div class="card-illustration" id="card-feedback"></div>
+      <div class="card-theme">Core building block</div>
+      <div class="card-title">Feedback loops</div>
+      <div class="card-oneliner">Reinforcing loops accelerate change, balancing loops resist it - together they drive all system behaviour.</div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- THEMES -->
+<section class="themes-section">
+  <div class="section-label">Browse by theme</div>
+  <h2 class="section-title">13 ways into<br>the territory</h2>
+  <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
+
+  <div class="theme-list">
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <rect x="4" y="4" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="17" y="4" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="30" y="4" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="4" y="17" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="17" y="17" width="6" height="6" fill="#9B51E0" opacity="0.8"/>
+        <rect x="30" y="17" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="4" y="30" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="17" y="30" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+        <rect x="30" y="30" width="6" height="6" fill="#221C2B" opacity="0.45"/>
+      </svg>
+      <div class="theme-name">Core building blocks</div>
+      <div class="theme-desc">The fundamental components that make up any system.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <path d="M4 34 C12 6, 28 6, 36 34" stroke="#221C2B" stroke-width="1.5" fill="none" opacity="0.35"/>
+        <circle cx="10" cy="28" r="2.5" fill="#9B51E0" opacity="0.8"/>
+        <circle cx="20" cy="10" r="2.5" fill="#221C2B" opacity="0.4"/>
+        <circle cx="30" cy="28" r="2.5" fill="#221C2B" opacity="0.4"/>
+      </svg>
+      <div class="theme-name">System behaviours and patterns</div>
+      <div class="theme-desc">What systems do over time - the shapes you see when you step back far enough.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="13" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <path d="M20 7 L20 20 L30 26" stroke="#9B51E0" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <circle cx="20" cy="20" r="2.5" fill="#221C2B" opacity="0.45"/>
+      </svg>
+      <div class="theme-name">Systems archetypes</div>
+      <div class="theme-desc">Recurring patterns that show up across wildly different systems.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <line x1="4" y1="36" x2="36" y2="4" stroke="#221C2B" stroke-width="1.2" opacity="0.2"/>
+        <circle cx="14" cy="26" r="3.5" fill="#9B51E0" opacity="0.7"/>
+        <circle cx="26" cy="14" r="3.5" fill="#221C2B" opacity="0.35"/>
+      </svg>
+      <div class="theme-name">Leverage and intervention</div>
+      <div class="theme-desc">Where and how to intervene in a system to create change.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <path d="M4 20 Q12 4, 20 20 Q28 36, 36 20" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.3"/>
+        <path d="M4 24 Q12 8, 20 24 Q28 40, 36 24" stroke="#9B51E0" stroke-width="1.2" fill="none" opacity="0.5"/>
+      </svg>
+      <div class="theme-name">Complexity and uncertainty</div>
+      <div class="theme-desc">The terrain where traditional planning breaks down.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <rect x="4" y="4" width="32" height="32" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.15"/>
+        <rect x="12" y="12" width="16" height="16" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <rect x="17" y="17" width="6" height="6" fill="#9B51E0" opacity="0.7"/>
+      </svg>
+      <div class="theme-name">Mental models</div>
+      <div class="theme-desc">How we think about systems - and the tools that help us see them clearly.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <path d="M8 32 Q8 8, 32 8" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.25"/>
+        <circle cx="8" cy="32" r="3" fill="#221C2B" opacity="0.35"/>
+        <circle cx="32" cy="8" r="3" fill="#9B51E0" opacity="0.7"/>
+        <path d="M20 24 L24 20" stroke="#221C2B" stroke-width="1" opacity="0.2"/>
+      </svg>
+      <div class="theme-name">Resilience, adaptation, and change</div>
+      <div class="theme-desc">How systems survive, adapt, and transform.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <rect x="4" y="4" width="14" height="14" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <rect x="22" y="4" width="14" height="14" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <rect x="4" y="22" width="14" height="14" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <rect x="22" y="22" width="14" height="14" stroke="#9B51E0" stroke-width="1.2" fill="none" opacity="0.5"/>
+      </svg>
+      <div class="theme-name">Boundaries, perspectives, and power</div>
+      <div class="theme-desc">Who defines the system, what's included, and whose interests are served.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <circle cx="14" cy="14" r="4" fill="#221C2B" opacity="0.3"/>
+        <circle cx="28" cy="14" r="4" fill="#221C2B" opacity="0.3"/>
+        <circle cx="21" cy="28" r="4" fill="#9B51E0" opacity="0.65"/>
+        <line x1="14" y1="18" x2="21" y2="24" stroke="#221C2B" stroke-width="1" opacity="0.15"/>
+        <line x1="28" y1="18" x2="21" y2="24" stroke="#221C2B" stroke-width="1" opacity="0.15"/>
+      </svg>
+      <div class="theme-name">Organisational and social systems</div>
+      <div class="theme-desc">Systems thinking applied to teams, institutions, and collective action.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <line x1="4" y1="32" x2="36" y2="32" stroke="#221C2B" stroke-width="1" opacity="0.2"/>
+        <rect x="8" y="22" width="4" height="10" fill="#221C2B" opacity="0.25"/>
+        <rect x="16" y="16" width="4" height="16" fill="#221C2B" opacity="0.25"/>
+        <rect x="24" y="10" width="4" height="22" fill="#9B51E0" opacity="0.6"/>
+        <rect x="32" y="18" width="4" height="14" fill="#221C2B" opacity="0.25"/>
+      </svg>
+      <div class="theme-name">Measurement, signals, and sense</div>
+      <div class="theme-desc">How we know what's happening - and how measurement changes what happens.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <circle cx="12" cy="20" r="3" fill="#221C2B" opacity="0.3"/>
+        <circle cx="28" cy="20" r="3" fill="#221C2B" opacity="0.3"/>
+        <path d="M15 20 L25 20" stroke="#9B51E0" stroke-width="1.5" opacity="0.6" stroke-dasharray="2 3"/>
+        <circle cx="20" cy="12" r="2" fill="#9B51E0" opacity="0.5"/>
+      </svg>
+      <div class="theme-name">Design and intervention</div>
+      <div class="theme-desc">Practical frameworks for working with systems, not against them.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <path d="M8 32 Q14 20, 20 22 Q26 24, 32 12" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.25"/>
+        <circle cx="14" cy="26" r="2" fill="#221C2B" opacity="0.3"/>
+        <circle cx="26" cy="18" r="2" fill="#9B51E0" opacity="0.6"/>
+        <circle cx="8" cy="32" r="1.5" fill="#221C2B" opacity="0.2"/>
+        <circle cx="32" cy="12" r="1.5" fill="#221C2B" opacity="0.2"/>
+      </svg>
+      <div class="theme-name">Natural and ecological metaphors</div>
+      <div class="theme-desc">Concepts from ecology and biology that illuminate how all systems work.</div>
+    </a>
+    <a href="#" class="theme-card">
+      <svg class="theme-icon" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="16" r="8" stroke="#221C2B" stroke-width="1.2" fill="none" opacity="0.2"/>
+        <circle cx="20" cy="16" r="3" fill="#9B51E0" opacity="0.6"/>
+        <line x1="14" y1="30" x2="26" y2="30" stroke="#221C2B" stroke-width="1.2" opacity="0.2"/>
+        <line x1="16" y1="34" x2="24" y2="34" stroke="#221C2B" stroke-width="1.2" opacity="0.15"/>
+      </svg>
+      <div class="theme-name">Human dimensions</div>
+      <div class="theme-desc">The psychological and cognitive aspects of working with - or against - systems.</div>
+    </a>
+  </div>
+</section>
+
+<!-- CONNECTIONS CTA -->
+<section class="connections-cta">
+  <div class="section-label">The map</div>
+  <h2 class="section-title">See how everything connects</h2>
+  <p class="section-intro">The interactive graph shows how every concept relates to every other - because the links between ideas are where the real insight lives.</p>
+  <a href="#" class="cta-button">
+    Explore the connections
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M3 8h10M9 4l4 4-4 4"/>
+    </svg>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-text">Fieldmarks is a <a href="#">Mutomorro</a> project. Free and open.</div>
+    <div class="footer-text">A sibling of <a href="#">Moresapien</a></div>
+  </div>
+</footer>
+
+<script>
+// ====== NAV SCROLL ======
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 80);
+});
+
+// ====== SEEDED RANDOM ======
+function mulberry32(a) {
+  return function() {
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    var t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  }
+}
+
+// ====== HERO DOT-GRID (light variant - dark marks on white) ======
+function initHeroGrid() {
+  const canvas = document.getElementById('hero-grid');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+
+  function resize() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    canvas.style.width = rect.width + 'px';
+    canvas.style.height = rect.height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); });
+
+  const cols = 36;
+  const rows = 18;
+  const markSize = 3.5;
+  let time = 0;
+
+  function draw() {
+    const w = canvas.width / dpr;
+    const h = canvas.height / dpr;
+    ctx.clearRect(0, 0, w, h);
+
+    const spacingX = w / (cols + 1);
+    const spacingY = h / (rows + 1);
+
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const baseX = spacingX * (c + 1);
+        const baseY = spacingY * (r + 1);
+
+        // Gentle breathing wave
+        const wave1 = Math.sin((c * 0.25) + (r * 0.18) + time * 0.006) * 3.5;
+        const wave2 = Math.cos((r * 0.35) + time * 0.005) * 2.5;
+        const wave3 = Math.sin((c * 0.12) + (r * 0.12) + time * 0.003) * 1.5;
+
+        const dx = wave1 + wave3;
+        const dy = wave2;
+
+        const x = baseX + dx;
+        const y = baseY + dy;
+
+        // Size breathes slightly
+        const sizeWave = Math.sin((c * 0.18) + (r * 0.25) + time * 0.004);
+        const size = markSize + sizeWave * 1;
+
+        // Opacity: fade towards left where text lives
+        const textFade = Math.min(c / 6, 1); // fade first 6 columns
+        const heroFade = c < 18 && r < 12 ? Math.max(0, 1 - (1 - c/18) * (1 - r/12) * 1.5) : 1;
+        const baseOpacity = 0.25 + sizeWave * 0.1;
+        const opacity = baseOpacity * Math.min(textFade, heroFade);
+
+        // A few accent marks
+        const isAccent = (c === 28 && r === 7) || (c === 22 && r === 13) || (c === 31 && r === 3);
+
+        if (isAccent) {
+          ctx.fillStyle = `rgba(155, 81, 224, ${Math.min(opacity + 0.25, 0.7)})`;
+        } else {
+          ctx.fillStyle = `rgba(34, 28, 43, ${opacity})`;
+        }
+
+        ctx.fillRect(x - size/2, y - size/2, size, size);
+      }
+    }
+
+    time++;
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+
+// ====== CARD DOT-GRIDS (light variant - dark marks on warm bg) ======
+function drawCardGrid(containerId, variant, seed) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const canvas = document.createElement('canvas');
+  container.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+
+  const rect = container.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
+  ctx.scale(dpr, dpr);
+
+  const w = rect.width;
+  const h = rect.height;
+  const cols = 26;
+  const rows = 12;
+  const spacingX = w / (cols + 1);
+  const spacingY = h / (rows + 1);
+  const markSize = 3;
+  const rng = mulberry32(seed);
+
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      let baseX = spacingX * (c + 1);
+      let baseY = spacingY * (r + 1);
+      let dx = 0, dy = 0;
+      let size = markSize;
+      let isAccent = false;
+      let opacity = 0.45;
+
+      if (variant === 'fixesThatFail') {
+        const fixCX = 9, fixCY = 5;
+        const dist = Math.sqrt((c - fixCX)**2 + (r - fixCY)**2);
+        if (dist < 3) {
+          dx = 0; dy = 0;
+          isAccent = true;
+          opacity = 0.85;
+          size = markSize * 1.1;
+        } else if (dist < 8) {
+          const angle = Math.atan2(r - fixCY, c - fixCX);
+          const push = (8 - dist) * 2;
+          dx = Math.cos(angle) * push;
+          dy = Math.sin(angle) * push;
+          opacity = 0.25 + (8 - dist) * 0.03;
+          size = markSize * (0.6 + rng() * 0.6);
+        }
+      }
+
+      else if (variant === 'emergence') {
+        const normC = c / cols;
+        const normR = r / rows;
+        const progress = (normC + (1-normR)) / 2;
+        if (progress > 0.45) {
+          const strength = (progress - 0.45) * 1.8;
+          dx = (rng() - 0.5) * 10 * strength;
+          dy = (rng() - 0.5) * 10 * strength;
+          size = markSize * (1 + rng() * strength * 1.2);
+          opacity = 0.2 + strength * 0.45;
+          if (progress > 0.75 && rng() > 0.7) isAccent = true;
+        }
+      }
+
+      else if (variant === 'delays') {
+        const phase = c * 0.4 - 2;
+        const amplitude = c * 0.35;
+        dy = Math.sin(phase) * amplitude;
+        dx = Math.cos(phase) * (amplitude * 0.25);
+        opacity = 0.2 + (c / cols) * 0.4;
+        size = markSize + (c / cols) * 1.8;
+      }
+
+      else if (variant === 'subopt') {
+        const zoneC = c < 13 ? 0 : 1;
+        const zoneR = r < 6 ? 0 : 1;
+        const zone = zoneR * 2 + zoneC;
+        const offsets = [{x:0,y:0},{x:7,y:-5},{x:-4,y:6},{x:5,y:4}];
+        dx = offsets[zone].x;
+        dy = offsets[zone].y;
+        if (c === 12 || c === 13 || r === 5 || r === 6) opacity = 0.05;
+      }
+
+      else if (variant === 'exponential') {
+        const normC = c / cols;
+        const growth = Math.pow(normC, 2.5);
+        size = markSize * (1 + growth * 3.5);
+        dx = (rng() - 0.5) * growth * 14;
+        dy = (rng() - 0.5) * growth * 14;
+        opacity = 0.2 + growth * 0.55;
+        if (normC > 0.7 && rng() > 0.55) isAccent = true;
+      }
+
+      else if (variant === 'feedback') {
+        const cx = cols / 2, cy = rows / 2;
+        const distFromCentre = Math.sqrt((c-cx)**2 + (r-cy)**2);
+        const angle = Math.atan2(r - cy, c - cx);
+        const spiral = angle + distFromCentre * 0.35;
+        dx = Math.cos(spiral) * distFromCentre * 0.45;
+        dy = Math.sin(spiral) * distFromCentre * 0.45;
+        opacity = 0.2 + (1 - Math.min(distFromCentre / 14, 1)) * 0.5;
+        if (distFromCentre < 2.5) { isAccent = true; opacity = 0.8; }
+      }
+
+      const fill = isAccent
+        ? `rgba(155, 81, 224, ${opacity})`
+        : `rgba(34, 28, 43, ${opacity})`;
+
+      ctx.fillStyle = fill;
+      ctx.fillRect(baseX + dx - size/2, baseY + dy - size/2, size, size);
+    }
+  }
+}
+
+// ====== INIT ======
+initHeroGrid();
+
+requestAnimationFrame(() => {
+  drawCardGrid('card-fixes', 'fixesThatFail', 3892);
+  drawCardGrid('card-emergence', 'emergence', 5173);
+  drawCardGrid('card-delays', 'delays', 2741);
+  drawCardGrid('card-subopt', 'subopt', 7755);
+  drawCardGrid('card-exponential', 'exponential', 6284);
+  drawCardGrid('card-feedback', 'feedback', 4401);
+});
+</script>
+
+</body>
+</html>

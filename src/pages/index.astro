@@ -1,255 +1,347 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import HeroGrid from '../components/HeroGrid.jsx';
+import DotGrid from '../components/DotGrid.jsx';
+import ThemeIcon from '../components/ThemeIcon.jsx';
 
 // Get all entries and themes
 const allEntries = await getCollection('entries', ({ data }) => !data.draft);
 const allThemes = await getCollection('themes');
-
-// Sort themes by order
 const themes = allThemes.sort((a, b) => a.data.order - b.data.order);
 
-// Group entries by theme
-const entriesByTheme: Record<string, typeof allEntries> = {};
-for (const entry of allEntries) {
-  const theme = entry.data.theme;
-  if (!entriesByTheme[theme]) entriesByTheme[theme] = [];
-  entriesByTheme[theme].push(entry);
+// Build a theme title lookup from slug
+const themeTitleBySlug: Record<string, string> = {};
+for (const t of themes) {
+  themeTitleBySlug[t.slug] = t.data.title;
 }
-
-// Count total connections from graph data
-const totalConnections = allEntries.reduce((sum, e) => sum + e.data.related.length, 0);
-const themesWithEntries = themes.filter(t => (entriesByTheme[t.slug] || []).length > 0);
-const themesEmpty = themes.filter(t => (entriesByTheme[t.slug] || []).length === 0);
 ---
 
 <Layout title="A field guide to systems thinking">
-  <div class="max-w-content mx-auto px-6 md:px-12">
 
-    <!-- Hero -->
-    <div class="pt-16 md:pt-24 pb-12 md:pb-16 relative">
-      <div class="max-w-2xl">
-        <h1 class="text-[42px] md:text-[52px] font-normal leading-[1.1] mb-5 text-mt-deep">
-          A field guide to<br />systems thinking
-        </h1>
-        <p class="text-[18px] md:text-[20px] font-light text-mt-mid leading-relaxed mb-8">
-          Practical concepts for people who work in organisations. How things connect, why they behave the way they do, and where to find the leverage for change.
-        </p>
-
-        <!-- Stats -->
-        <div class="flex items-center gap-6 text-[13px] font-normal text-mt-mid/50">
-          <span>{allEntries.length} concepts</span>
-          <span class="w-1 h-1 bg-mt-mid/20 inline-block"></span>
-          <span>{totalConnections} connections</span>
-          <span class="w-1 h-1 bg-mt-mid/20 inline-block"></span>
-          <span>{themes.length} themes</span>
-          <span class="w-1 h-1 bg-mt-mid/20 inline-block"></span>
-          <span>Growing weekly</span>
-        </div>
-      </div>
-
-      <!-- Decorative dot-grid mark, large, top right -->
-      <div class="hidden lg:block absolute top-16 right-0 opacity-[0.06]" aria-hidden="true">
-        <svg width="280" height="280" viewBox="0 0 30 30">
-          <rect x="0" y="0" width="6" height="6" fill="#221C2B"/>
-          <rect x="12" y="0" width="6" height="6" fill="#221C2B"/>
-          <rect x="24" y="0" width="6" height="6" fill="#221C2B"/>
-          <rect x="0" y="12" width="6" height="6" fill="#221C2B"/>
-          <rect x="14" y="14" width="6" height="6" fill="#9B51E0"/>
-          <rect x="24" y="12" width="6" height="6" fill="#221C2B"/>
-          <rect x="0" y="24" width="6" height="6" fill="#221C2B"/>
-          <rect x="12" y="24" width="6" height="6" fill="#221C2B"/>
-          <rect x="24" y="24" width="6" height="6" fill="#221C2B"/>
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <HeroGrid client:load />
+    <div class="hero-content">
+      <h1>A field guide to<br />systems thinking</h1>
+      <p>How things connect. Why they behave the way they do. And where to find the leverage for change.</p>
+      <a href="#discover" class="hero-cta">
+        Start exploring
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 transition-transform duration-300">
+          <path d="M8 3v10M4 9l4 4 4-4"/>
         </svg>
-      </div>
+      </a>
     </div>
+    <div class="scroll-hint"></div>
+  </section>
 
-    <!-- Divider -->
-    <div class="border-t border-mt-deep/8 mb-10"></div>
+  <!-- ====== DISCOVER ====== -->
+  <section class="discover" id="discover">
+    <div class="section-label">Explore</div>
+    <h2 class="section-title">Every system tells<br />a story</h2>
+    <p class="section-intro">Each concept comes with its own illustration - a dot-grid that shows what the idea does to a system. The healthy grid gets perturbed, and you can see the pattern.</p>
 
-    <!-- Toggle -->
-    <div class="flex items-center justify-between mb-10">
-      <div class="flex">
-        <button
-          id="btn-list"
-          class="px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all"
-          onclick="switchView('list')"
-        >
-          Browse by theme
-        </button>
-        <button
-          id="btn-graph"
-          class="px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-l-0 bg-transparent text-mt-mid cursor-pointer transition-all hover:bg-mt-cream/50"
-          onclick="switchView('graph')"
-        >
-          See connections
-        </button>
-      </div>
-      <p class="text-[13px] text-mt-mid/40 hidden md:block">
-        {themesWithEntries.length} of {themes.length} themes started
-      </p>
-    </div>
-
-    <!-- LIST VIEW -->
-    <div id="view-list">
-
-      <!-- Themes with entries -->
-      {themesWithEntries.map((theme) => {
-        const themeEntries = entriesByTheme[theme.slug] || [];
-        return (
-          <div class="mb-14">
-            <!-- Theme header with colour accent -->
-            <div class="flex items-start gap-4 mb-5">
-              <div class="w-1 self-stretch mt-1 flex-shrink-0" style={`background: ${theme.data.colour}`}></div>
-              <div class="flex-1">
-                <div class="flex items-baseline gap-3 mb-1">
-                  <h2 class="text-[24px] font-normal">
-                    <a href={`/theme/${theme.slug}`} class="hover:text-mt-accent transition-colors">
-                      {theme.data.title}
-                    </a>
-                  </h2>
-                  <span class="text-[13px] text-mt-mid/40">{themeEntries.length} concept{themeEntries.length !== 1 ? 's' : ''}</span>
-                </div>
-                <p class="text-[15px] font-light text-mt-mid/70 leading-relaxed max-w-xl">
-                  {theme.data.subtitle}
-                </p>
-              </div>
-            </div>
-
-            <!-- Entry cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-5">
-              {themeEntries.map((entry) => (
-                <a
-                  href={`/concept/${entry.slug}`}
-                  class="block p-4 border border-mt-deep/6 hover:border-mt-deep/15 transition-all group bg-white hover:bg-mt-cream/20"
-                >
-                  <div class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 mt-2 flex-shrink-0 inline-block" style={`background: ${theme.data.colour}`}></span>
-                    <div>
-                      <p class="text-[16px] font-normal mb-1 group-hover:text-mt-accent transition-colors">
-                        {entry.data.title}
-                      </p>
-                      <p class="text-[14px] font-light text-mt-mid/70 leading-snug">
-                        {entry.data.oneLiner}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-
-            {themeEntries.length > 4 && (
-              <a href={`/theme/${theme.slug}`} class="text-[13px] text-mt-accent mt-3 ml-5 inline-block hover:underline">
-                See all {themeEntries.length} &rarr;
-              </a>
+    <div class="concept-grid">
+      {allEntries.map((entry) => (
+        <a href={`/concept/${entry.slug}`} class="concept-card">
+          <div class="card-illustration">
+            {entry.data.dotGrid ? (
+              <DotGrid
+                seed={entry.data.dotGrid.seed}
+                variant={entry.data.dotGrid.variant}
+                width={380}
+                height={237}
+              />
+            ) : (
+              <DotGrid seed={42} variant="default" width={380} height={237} />
             )}
           </div>
-        );
-      })}
-
-      <!-- Coming soon themes -->
-      {themesEmpty.length > 0 && (
-        <div class="mt-8 pt-8 border-t border-mt-deep/6">
-          <p class="text-[13px] font-normal text-mt-mid/40 uppercase tracking-[0.15em] mb-6">Coming soon</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {themesEmpty.map((theme) => (
-              <div class="p-4 border border-mt-deep/4 bg-mt-cream/15">
-                <div class="flex items-center gap-2.5 mb-1.5">
-                  <span class="w-2 h-2 inline-block flex-shrink-0" style={`background: ${theme.data.colour}; opacity: 0.6`}></span>
-                  <p class="text-[15px] font-normal text-mt-deep/60">
-                    {theme.data.title}
-                  </p>
-                </div>
-                <p class="text-[13px] font-light text-mt-mid/40 leading-snug">
-                  {theme.data.subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-    </div>
-
-    <!-- GRAPH VIEW -->
-    <div id="view-graph" class="hidden">
-      <div class="border border-mt-deep/10 bg-mt-deep h-[500px] md:h-[600px] flex items-center justify-center relative">
-        <!-- Graph component will be mounted here -->
-        <div id="graph-container" class="w-full h-full flex items-center justify-center">
-          <div class="text-center">
-            <p class="text-[16px] text-white/40 mb-2">
-              Connection map
-            </p>
-            <p class="text-[13px] text-white/25">
-              {allEntries.length} concepts across {themes.length} themes
-            </p>
-          </div>
-        </div>
-        <div class="absolute bottom-4 left-5 text-[12px] text-white/25">
-          Drag to explore. Click a node to open the concept.
-        </div>
-        <div class="absolute bottom-4 right-5 text-[12px] text-white/25">
-          {allEntries.length} concepts, {totalConnections} connections
-        </div>
-      </div>
-
-      <!-- Theme legend -->
-      <div class="flex flex-wrap gap-4 mt-4">
-        {themes.map((theme) => {
-          const count = (entriesByTheme[theme.slug] || []).length;
-          return count > 0 ? (
-            <span class="flex items-center gap-1.5 text-[12px] text-mt-mid/60">
-              <span class="w-2 h-2 inline-block" style={`background: ${theme.data.colour}`}></span>
-              {theme.data.title}
-              <span class="text-mt-mid/30">{count}</span>
-            </span>
-          ) : null;
-        })}
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom CTA band -->
-  <div class="bg-mt-cream/40 border-t border-mt-deep/6 mt-20">
-    <div class="max-w-content mx-auto px-6 md:px-12 py-12 md:py-16">
-      <div class="max-w-xl">
-        <h2 class="text-[24px] font-normal mb-3">This is a living resource</h2>
-        <p class="text-[16px] font-light text-mt-mid/70 leading-relaxed mb-4">
-          Fieldmarks is growing every week. New concepts, new connections, new themes. It's built by Mutomorro as a free, open resource for anyone who wants to understand how things really work - and where to find the leverage for change.
-        </p>
-        <a href="/about" class="text-[14px] font-normal text-mt-accent hover:underline">
-          About this project &rarr;
+          <div class="card-theme">{themeTitleBySlug[entry.data.theme] || entry.data.theme}</div>
+          <div class="card-title">{entry.data.title}</div>
+          <div class="card-oneliner">{entry.data.oneLiner}</div>
         </a>
-      </div>
+      ))}
     </div>
-  </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ====== THEMES ====== -->
+  <section class="themes-section">
+    <div class="section-label">Browse by theme</div>
+    <h2 class="section-title">13 ways into<br />the territory</h2>
+    <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
+
+    <div class="theme-list">
+      {themes.map((theme) => (
+        <a href={`/theme/${theme.slug}`} class="theme-card">
+          <div class="theme-icon">
+            <ThemeIcon slug={theme.slug} />
+          </div>
+          <div class="theme-name">{theme.data.title}</div>
+          <div class="theme-desc">{theme.data.subtitle}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- ====== CONNECTIONS CTA ====== -->
+  <section class="connections-cta">
+    <div class="section-label">The map</div>
+    <h2 class="section-title">See how everything connects</h2>
+    <p class="section-intro">The interactive graph shows how every concept relates to every other - because the links between ideas are where the real insight lives.</p>
+    <a href="/connections" class="cta-button">
+      Explore the connections
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </section>
+
 </Layout>
 
-<script is:inline>
-  function switchView(view) {
-    const listEl = document.getElementById('view-list');
-    const graphEl = document.getElementById('view-graph');
-    const btnList = document.getElementById('btn-list');
-    const btnGraph = document.getElementById('btn-graph');
-
-    if (view === 'list') {
-      listEl.classList.remove('hidden');
-      graphEl.classList.add('hidden');
-      btnList.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all';
-      btnGraph.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-l-0 bg-transparent text-mt-mid cursor-pointer transition-all hover:bg-mt-cream/50';
-      history.replaceState(null, '', '/');
-    } else {
-      listEl.classList.add('hidden');
-      graphEl.classList.remove('hidden');
-      btnGraph.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all';
-      btnList.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-r-0 bg-transparent text-mt-mid cursor-pointer transition-all hover:bg-mt-cream/50';
-      history.replaceState(null, '', '/?view=graph');
-    }
+<style>
+  /* ====== HERO ====== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 140px 48px 100px;
+    overflow: hidden;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+  }
+  .hero h1 {
+    font-size: clamp(52px, 7vw, 84px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--deep);
+    margin-bottom: 28px;
+    letter-spacing: -0.025em;
+  }
+  .hero p {
+    font-size: clamp(18px, 2.2vw, 22px);
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--soft);
+    max-width: 500px;
+    margin-bottom: 52px;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--deep);
+    text-decoration: none;
+    border: 1px solid var(--border-hover);
+    padding: 14px 28px;
+    transition: all 0.3s;
+  }
+  .hero-cta:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .hero-cta:hover svg {
+    transform: translateY(4px);
   }
 
-  // Check URL on load
-  if (window.location.search.includes('view=graph')) {
-    switchView('graph');
+  .scroll-hint {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--soft), transparent);
+    opacity: 0.25;
+    animation: pulse-down 2.5s ease-in-out infinite;
   }
-</script>
+  @keyframes pulse-down {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ====== SECTIONS ====== */
+  section {
+    padding: 140px 48px;
+  }
+
+  .section-divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: clamp(38px, 4.5vw, 60px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .section-intro {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--soft);
+    max-width: 540px;
+    margin-bottom: 80px;
+  }
+
+  /* ====== DISCOVER ====== */
+  .discover {
+    background: var(--white);
+  }
+
+  /* ====== CONCEPT CARDS ====== */
+  .concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 48px 36px;
+  }
+  .concept-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .concept-card:hover {
+    transform: translateY(-3px);
+  }
+  .card-illustration {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--warm-bg);
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-theme {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .card-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--deep);
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+    transition: color 0.2s;
+  }
+  .concept-card:hover .card-title {
+    color: var(--accent);
+  }
+  .card-oneliner {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--soft);
+  }
+
+  /* ====== THEMES ====== */
+  .themes-section {
+    background: var(--white);
+  }
+  .theme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  .theme-card {
+    padding: 36px;
+    background: var(--white);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s;
+  }
+  .theme-card:hover {
+    background: var(--warm-bg);
+  }
+  .theme-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .theme-name {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    line-height: 1.3;
+    transition: color 0.2s;
+  }
+  .theme-card:hover .theme-name {
+    color: var(--accent);
+  }
+  .theme-desc {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--soft);
+  }
+
+  /* ====== CONNECTIONS CTA ====== */
+  .connections-cta {
+    background: var(--warm-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .connections-cta .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--deep);
+    padding: 16px 36px;
+    transition: all 0.3s;
+  }
+  .cta-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  /* ====== RESPONSIVE ====== */
+  @media (max-width: 768px) {
+    .hero { padding: 100px 24px 60px; }
+    section { padding: 80px 24px; }
+    .concept-grid { grid-template-columns: 1fr; gap: 40px; }
+    .theme-list { grid-template-columns: 1fr; }
+  }
+</style>
