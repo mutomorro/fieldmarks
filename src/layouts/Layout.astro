@@ -5,6 +5,7 @@ interface Props {
 }
 
 const { title, description = 'A practical guide to systems thinking for people who work in organisations.' } = Astro.props;
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -13,44 +14,128 @@ const { title, description = 'A practical guide to systems thinking for people w
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title} - Systems Thinking by Mutomorro</title>
+    <title>{title} - Fieldmarks</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-white text-mt-deep font-light antialiased">
+  <body class="bg-white text-mt-deep font-light antialiased min-h-screen flex flex-col">
+
     <!-- Navigation -->
     <nav class="border-b border-mt-deep/10">
       <div class="max-w-content mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="w-7 h-7 bg-mt-accent"></div>
-          <a href="/" class="text-[16px] font-normal tracking-tight">Systems thinking</a>
-          <span class="text-[14px] text-mt-mid/60">by Mutomorro</span>
-        </div>
+
+        <!-- Logo lockup -->
+        <a href="/" class="flex items-center gap-3 group">
+          <!-- 3x3 grid mark -->
+          <svg width="27" height="27" viewBox="0 0 30 30" class="flex-shrink-0" aria-hidden="true">
+            <rect x="0" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="12" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="24" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="0" y="12" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="14" y="14" width="6" height="6" fill="#9B51E0"/>
+            <rect x="24" y="12" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="0" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="12" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+            <rect x="24" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+          </svg>
+          <span class="text-[16px] font-normal tracking-tight group-hover:text-mt-accent transition-colors">Fieldmarks</span>
+          <span class="text-[13px] font-light text-mt-mid/50 hidden sm:inline">by Mutomorro</span>
+        </a>
+
+        <!-- Nav links -->
         <div class="flex items-center gap-6 text-[14px] text-mt-mid">
-          <a href="/about" class="hover:text-mt-deep transition-colors">About</a>
-          <a href="/collections" class="hover:text-mt-deep transition-colors">Collections</a>
+          <a href="/about" class="hover:text-mt-deep transition-colors hidden sm:inline">About</a>
+          <a href="/collections" class="hover:text-mt-deep transition-colors hidden sm:inline">Collections</a>
           <button id="search-trigger" class="flex items-center gap-1.5 hover:text-mt-deep transition-colors">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1">
-              <circle cx="6" cy="6" r="5" /><line x1="9.5" y1="9.5" x2="13" y2="13" />
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <circle cx="6" cy="6" r="4.5" /><line x1="9.2" y1="9.2" x2="13" y2="13" />
             </svg>
-            Search
+            <span class="hidden sm:inline">Search</span>
           </button>
         </div>
+
       </div>
     </nav>
 
     <!-- Main content -->
-    <main>
+    <main class="flex-1">
       <slot />
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-mt-deep/10 mt-24">
-      <div class="max-w-content mx-auto px-6 md:px-12 py-8 flex items-center justify-between text-[14px] text-mt-mid/60">
-        <span>&copy; {new Date().getFullYear()} Mutomorro</span>
-        <a href="https://mutomorro.com" class="hover:text-mt-deep transition-colors">mutomorro.com</a>
+    <footer class="border-t border-mt-deep/8 mt-24 bg-mt-cream/30">
+      <div class="max-w-content mx-auto px-6 md:px-12 py-12">
+
+        <!-- Top row: branding + links -->
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-10">
+
+          <!-- Left: Fieldmarks identity -->
+          <div class="max-w-sm">
+            <div class="flex items-center gap-2.5 mb-3">
+              <svg width="21" height="21" viewBox="0 0 30 30" aria-hidden="true">
+                <rect x="0" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="12" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="24" y="0" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="0" y="12" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="14" y="14" width="6" height="6" fill="#9B51E0"/>
+                <rect x="24" y="12" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="0" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="12" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+                <rect x="24" y="24" width="6" height="6" fill="#221C2B" opacity="0.7"/>
+              </svg>
+              <span class="text-[15px] font-normal">Fieldmarks</span>
+            </div>
+            <p class="text-[14px] font-light text-mt-mid/70 leading-relaxed">
+              A practical guide to systems thinking for people who work in organisations. Free, open, and always growing.
+            </p>
+          </div>
+
+          <!-- Right: link columns -->
+          <div class="flex gap-16">
+            <div>
+              <p class="text-[12px] font-normal text-mt-mid/40 uppercase tracking-[0.15em] mb-3">Explore</p>
+              <div class="flex flex-col gap-2">
+                <a href="/" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">All concepts</a>
+                <a href="/?view=graph" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">Connection map</a>
+                <a href="/collections" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">Collections</a>
+              </div>
+            </div>
+            <div>
+              <p class="text-[12px] font-normal text-mt-mid/40 uppercase tracking-[0.15em] mb-3">About</p>
+              <div class="flex flex-col gap-2">
+                <a href="/about" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">About Fieldmarks</a>
+                <a href="https://mutomorro.com" target="_blank" rel="noopener" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">Mutomorro</a>
+                <a href="https://moresapien.org" target="_blank" rel="noopener" class="text-[14px] font-light text-mt-mid/70 hover:text-mt-deep transition-colors">Moresapien</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-mt-deep/6 pt-6">
+          <!-- Bottom row: copyright + Mutomorro mark -->
+          <div class="flex items-center justify-between">
+            <p class="text-[13px] font-light text-mt-mid/40">
+              &copy; {year} Mutomorro. All rights reserved.
+            </p>
+            <a href="https://mutomorro.com" target="_blank" rel="noopener" class="text-[13px] font-normal text-mt-mid/40 hover:text-mt-mid/70 transition-colors">
+              mutomorro.com
+            </a>
+          </div>
+        </div>
+
       </div>
     </footer>
+
   </body>
 </html>
