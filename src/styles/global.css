@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-weight: 300;
+    color: #221C2B;
+    background: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, nav, button, label {
+    font-weight: 400;
+  }
+
+  /* Sharp corners everywhere - the editorial line */
+  *, *::before, *::after {
+    border-radius: 0 !important;
+  }
+
+  /* Kicker text */
+  .kicker {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  /* Pull quote - the thought to hold onto */
+  .pull-quote {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #423B49;
+    border-left: 3px solid #9B51E0;
+    padding-left: 20px;
+  }
+}
+
+/*
+  TYPE SCALE REFERENCE
+  ---
+  H1 display:      52px / 400 / #221C2B
+  H2 section:      30px / 400 / #221C2B
+  H3 sub:          24px / 400 / #221C2B
+  One-liner:       20px / 300 / #423B49
+  Body:            18px / 300 / #221C2B / line-height 1.75
+  Body emphasis:   18px / 400 / #221C2B
+  Pull quote:      24px / 300 / #423B49 / purple left border
+  Card title:      16px / 400 / #221C2B
+  Card desc:       14px / 300 / #423B49
+  Nav / UI:        14px / 400 / #423B49
+  Kicker:          13px / 400 / uppercase / #9B51E0
+  Meta / info:     14px / 400 / #423B49 at 60%
+  Tags:            12px / 400 / #423B49 at 50%
+*/

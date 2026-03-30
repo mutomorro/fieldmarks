@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('entries');
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Get all entries for resolving related concepts
+const allEntries = await getCollection('entries');
+const entryMap = Object.fromEntries(allEntries.map(e => [e.slug, e]));
+
+// Theme metadata
+const themes = await getCollection('themes');
+const theme = themes.find(t => t.slug === entry.data.theme);
+---
+
+<Layout title={entry.data.title} description={entry.data.oneLiner}>
+  <div class="max-w-content mx-auto px-6 md:px-12">
+
+    <!-- Breadcrumb -->
+    <div class="pt-6 pb-8">
+      <div class="flex items-center gap-2 text-[14px] text-mt-mid/50 mb-6">
+        <a href="/" class="hover:text-mt-accent transition-colors">Home</a>
+        <span>/</span>
+        {theme && (
+          <>
+            <a href={`/theme/${theme.slug}`} class="hover:text-mt-accent transition-colors">
+              {theme.data.title}
+            </a>
+            <span>/</span>
+          </>
+        )}
+        <span class="text-mt-mid/80">{entry.data.title}</span>
+      </div>
+
+      <!-- Kicker -->
+      {theme && (
+        <p class="kicker text-mt-accent mb-3" style={`color: ${theme.data.colour}`}>
+          {theme.data.title}
+        </p>
+      )}
+
+      <!-- Title -->
+      <h1 class="text-[52px] font-normal leading-[1.1] mb-4 text-mt-deep">
+        {entry.data.title}
+      </h1>
+
+      <!-- One-liner -->
+      <p class="text-[20px] font-light text-mt-mid leading-relaxed max-w-prose">
+        {entry.data.oneLiner}
+      </p>
+
+      <!-- Also known as -->
+      {entry.data.alsoKnownAs && entry.data.alsoKnownAs.length > 0 && (
+        <p class="text-[14px] text-mt-mid/50 mt-3">
+          Also known as: {entry.data.alsoKnownAs.join(', ')}
+        </p>
+      )}
+
+      <!-- Attribution -->
+      {entry.data.originatedBy && (
+        <p class="text-[14px] text-mt-mid/50 mt-1">
+          Originated by {entry.data.originatedBy}
+        </p>
+      )}
+    </div>
+
+    <!-- Dot-grid illustration placeholder -->
+    <div class="mb-10">
+      <div
+        class="w-full h-48 md:h-64 bg-mt-deep flex items-center justify-center"
+        id="dot-grid"
+        data-seed={entry.data.dotGrid?.seed}
+        data-variant={entry.data.dotGrid?.variant}
+      >
+        <p class="text-[12px] text-white/30">Generative illustration - {entry.data.dotGrid?.variant || 'default'}</p>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="max-w-prose">
+      <article class="prose prose-mt">
+        <Content />
+      </article>
+    </div>
+
+    <!-- Related concepts -->
+    {entry.data.related.length > 0 && (
+      <div class="max-w-prose mt-16 pt-8 border-t border-mt-deep/10">
+        <h2 class="text-[24px] font-normal mb-4">Connected concepts</h2>
+        <div class="space-y-3">
+          {entry.data.related.map((rel) => {
+            const relatedEntry = entryMap[rel.slug];
+            if (!relatedEntry) return null;
+            const relTheme = themes.find(t => t.slug === relatedEntry.data.theme);
+            return (
+              <a
+                href={`/concept/${rel.slug}`}
+                class="block p-3 border border-mt-deep/8 hover:border-mt-deep/20 transition-colors group"
+              >
+                <div class="flex items-baseline gap-2 mb-0.5">
+                  <span class="w-2 h-2 inline-block flex-shrink-0 mt-1" style={`background: ${relTheme?.data.colour || '#9B51E0'}`}></span>
+                  <span class="text-[16px] font-normal group-hover:text-mt-accent transition-colors">
+                    {relatedEntry.data.title}
+                  </span>
+                </div>
+                {rel.note && (
+                  <p class="text-[14px] font-light text-mt-mid/60 leading-snug ml-4">
+                    {rel.note}
+                  </p>
+                )}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    <!-- Tags -->
+    {entry.data.tags.length > 0 && (
+      <div class="max-w-prose mt-8 pb-12">
+        <div class="flex flex-wrap gap-2">
+          {entry.data.tags.map((tag) => (
+            <span class="text-[12px] text-mt-mid/40 border border-mt-deep/8 px-2 py-0.5 font-normal">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+
+  </div>
+</Layout>
+
+<style>
+  /* Prose styling for concept entries */
+  .prose-mt :global(h2) {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: #221C2B;
+  }
+
+  .prose-mt :global(h3) {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #221C2B;
+  }
+
+  .prose-mt :global(p) {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    color: #221C2B;
+  }
+
+  .prose-mt :global(strong) {
+    font-weight: 400;
+    color: #221C2B;
+  }
+
+  .prose-mt :global(ul), .prose-mt :global(ol) {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose-mt :global(li) {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 0.25rem;
+    color: #221C2B;
+  }
+
+  .prose-mt :global(blockquote) {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #423B49;
+    border-left: 3px solid #9B51E0;
+    padding-left: 20px;
+    margin: 2rem 0;
+  }
+</style>

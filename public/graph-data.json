@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "feedback-loops",
+      "title": "Feedback loops",
+      "oneLiner": "Reinforcing loops accelerate change, balancing loops resist it - together they drive all system behaviour.",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": [
+        "foundations",
+        "organisations",
+        "dynamics",
+        "growth"
+      ],
+      "connectionCount": 1
+    },
+    {
+      "id": "fixes-that-fail",
+      "title": "Fixes that fail",
+      "oneLiner": "A quick fix that addresses the symptom but makes the underlying problem worse over time.",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": [
+        "decision-making",
+        "organisations",
+        "change",
+        "problem-solving"
+      ],
+      "connectionCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "feedback-loops--fixes-that-fail",
+      "source": "feedback-loops",
+      "target": "fixes-that-fail",
+      "note": "Most fixes that fail involve a balancing loop (the fix) that triggers a delayed reinforcing loop (the side effect)."
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-03-30T09:48:14.097Z"
+  }
+}

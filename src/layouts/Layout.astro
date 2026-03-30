@@ -1,0 +1,56 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A practical guide to systems thinking for people who work in organisations.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} - Systems Thinking by Mutomorro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-mt-deep font-light antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-mt-deep/10">
+      <div class="max-w-content mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-7 h-7 bg-mt-accent"></div>
+          <a href="/" class="text-[16px] font-normal tracking-tight">Systems thinking</a>
+          <span class="text-[14px] text-mt-mid/60">by Mutomorro</span>
+        </div>
+        <div class="flex items-center gap-6 text-[14px] text-mt-mid">
+          <a href="/about" class="hover:text-mt-deep transition-colors">About</a>
+          <a href="/collections" class="hover:text-mt-deep transition-colors">Collections</a>
+          <button id="search-trigger" class="flex items-center gap-1.5 hover:text-mt-deep transition-colors">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="6" cy="6" r="5" /><line x1="9.5" y1="9.5" x2="13" y2="13" />
+            </svg>
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-mt-deep/10 mt-24">
+      <div class="max-w-content mx-auto px-6 md:px-12 py-8 flex items-center justify-between text-[14px] text-mt-mid/60">
+        <span>&copy; {new Date().getFullYear()} Mutomorro</span>
+        <a href="https://mutomorro.com" class="hover:text-mt-deep transition-colors">mutomorro.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

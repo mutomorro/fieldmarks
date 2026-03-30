@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Get all entries and themes
+const allEntries = await getCollection('entries', ({ data }) => !data.draft);
+const allThemes = await getCollection('themes');
+
+// Sort themes by order
+const themes = allThemes.sort((a, b) => a.data.order - b.data.order);
+
+// Group entries by theme
+const entriesByTheme: Record<string, typeof allEntries> = {};
+for (const entry of allEntries) {
+  const theme = entry.data.theme;
+  if (!entriesByTheme[theme]) entriesByTheme[theme] = [];
+  entriesByTheme[theme].push(entry);
+}
+---
+
+<Layout title="See how things connect">
+  <div class="max-w-content mx-auto px-6 md:px-12">
+
+    <!-- Hero -->
+    <div class="pt-12 pb-8">
+      <h1 class="text-[52px] font-normal leading-[1.1] mb-4 text-mt-deep">
+        See how things connect
+      </h1>
+      <p class="text-[20px] font-light text-mt-mid leading-relaxed max-w-lg">
+        A practical guide to systems thinking for people who work in organisations.
+        {allEntries.length} concepts, all connected.
+      </p>
+    </div>
+
+    <!-- Toggle -->
+    <div class="flex mb-8">
+      <button
+        id="btn-list"
+        class="px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all"
+        onclick="switchView('list')"
+      >
+        Browse by theme
+      </button>
+      <button
+        id="btn-graph"
+        class="px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-l-0 bg-transparent text-mt-mid cursor-pointer transition-all"
+        onclick="switchView('graph')"
+      >
+        See connections
+      </button>
+    </div>
+
+    <!-- LIST VIEW -->
+    <div id="view-list">
+      {themes.map((theme) => {
+        const themeEntries = entriesByTheme[theme.slug] || [];
+        return (
+          <div class="mb-12">
+            <div class="flex items-baseline gap-3 mb-1">
+              <h2 class="text-[24px] font-normal">
+                <a href={`/theme/${theme.slug}`} class="hover:text-mt-accent transition-colors">
+                  {theme.data.title}
+                </a>
+              </h2>
+              <span class="text-[14px] text-mt-mid/50">{themeEntries.length} concepts</span>
+            </div>
+            <p class="text-[16px] text-mt-mid leading-relaxed mb-4 max-w-lg">
+              {theme.data.subtitle}
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              {themeEntries.slice(0, 4).map((entry) => (
+                <a
+                  href={`/concept/${entry.slug}`}
+                  class="block p-3 border border-mt-deep/8 hover:border-mt-deep/20 transition-colors group"
+                >
+                  <p class="text-[16px] font-normal mb-0.5 group-hover:text-mt-accent transition-colors">
+                    {entry.data.title}
+                  </p>
+                  <p class="text-[14px] font-light text-mt-mid leading-snug">
+                    {entry.data.oneLiner}
+                  </p>
+                </a>
+              ))}
+            </div>
+
+            {themeEntries.length > 4 && (
+              <a href={`/theme/${theme.slug}`} class="text-[14px] text-mt-accent mt-2 inline-block hover:underline">
+                See all {themeEntries.length} &rarr;
+              </a>
+            )}
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- GRAPH VIEW -->
+    <div id="view-graph" class="hidden">
+      <div class="border border-mt-deep/10 bg-mt-cream/50 h-[500px] flex items-center justify-center relative">
+        <!-- Graph component will be mounted here -->
+        <div id="graph-container" class="w-full h-full">
+          <p class="text-[14px] text-mt-mid/50 text-center">
+            Graph loading...
+            <br />
+            <span class="text-[12px]">{allEntries.length} concepts across {themes.length} themes</span>
+          </p>
+        </div>
+        <div class="absolute bottom-3 left-4 text-[12px] text-mt-mid/40">
+          Drag to explore. Click a node to open the concept.
+        </div>
+        <div class="absolute bottom-3 right-4 text-[12px] text-mt-mid/40">
+          {allEntries.length} concepts, {themes.length} themes
+        </div>
+      </div>
+
+      <!-- Theme legend -->
+      <div class="flex flex-wrap gap-4 mt-3">
+        {themes.map((theme) => (
+          <span class="flex items-center gap-1.5 text-[12px] text-mt-mid/60">
+            <span class="w-2 h-2 inline-block" style={`background: ${theme.data.colour}`}></span>
+            {theme.data.title}
+          </span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<script is:inline>
+  function switchView(view) {
+    const listEl = document.getElementById('view-list');
+    const graphEl = document.getElementById('view-graph');
+    const btnList = document.getElementById('btn-list');
+    const btnGraph = document.getElementById('btn-graph');
+
+    if (view === 'list') {
+      listEl.classList.remove('hidden');
+      graphEl.classList.add('hidden');
+      btnList.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all';
+      btnGraph.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-l-0 bg-transparent text-mt-mid cursor-pointer transition-all';
+      history.replaceState(null, '', '/');
+    } else {
+      listEl.classList.add('hidden');
+      graphEl.classList.remove('hidden');
+      btnGraph.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/20 bg-mt-deep text-white cursor-pointer transition-all';
+      btnList.className = 'px-5 py-2 text-[13px] font-normal border border-mt-deep/10 border-r-0 bg-transparent text-mt-mid cursor-pointer transition-all';
+      history.replaceState(null, '', '/?view=graph');
+    }
+  }
+
+  // Check URL on load
+  if (window.location.search.includes('view=graph')) {
+    switchView('graph');
+  }
+</script>
