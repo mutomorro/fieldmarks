@@ -11,17 +11,19 @@ tags:
   - dynamics
   - growth
 dotGrid:
-  seed: 7
-  variant: wave-propagation
+  seed: 1537
+  variant: "feedbackLoop"
 related:
   - slug: fixes-that-fail
     note: Most fixes that fail involve a balancing loop (the fix) that triggers a delayed reinforcing loop (the side effect).
   - slug: delays
-    note: Feedback loops with delays are the source of most oscillation and overshoot in systems.
+    note: Delays in feedback loops cause overshooting and oscillation.
   - slug: exponential-growth
-    note: Exponential growth is what happens when a reinforcing loop runs unchecked by any balancing loop.
+    note: A reinforcing feedback loop left unchecked produces exponential growth.
   - slug: emergence
-    note: Emergent behaviour often arises from the interaction of multiple feedback loops operating simultaneously.
+    note: Feedback loops are the mechanism through which emergent behaviour arises.
+  - slug: unintended-consequences
+    note: Consequences travel through feedback loops you didn't know existed.
 draft: false
 ---
 

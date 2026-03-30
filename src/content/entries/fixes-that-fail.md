@@ -12,7 +12,7 @@ tags:
   - problem-solving
 dotGrid:
   seed: 42
-  variant: forced-correction
+  variant: fixesThatFail
 related:
   - slug: shifting-the-burden
     note: Fixes that fail often lead to shifting the burden - the quick fix becomes the default, and the real solution atrophies.

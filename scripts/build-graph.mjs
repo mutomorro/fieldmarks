@@ -89,7 +89,7 @@ function parseFrontmatter(content) {
     if (line.match(/^  - slug:\s*(.+)/)) {
       inRelated = true;
       if (Object.keys(currentRelated).length) relatedItems.push(currentRelated);
-      currentRelated = { slug: line.match(/^  - slug:\s*(.+)/)[1].trim() };
+      currentRelated = { slug: line.match(/^  - slug:\s*(.+)/)[1].trim().replace(/^['"]|['"]$/g, '') };
       continue;
     }
 

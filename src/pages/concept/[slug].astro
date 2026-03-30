@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import DotGrid from '../../components/DotGrid.jsx';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -79,18 +80,14 @@ const theme = themes.find(t => t.slug === entry.data.theme);
         )}
       </div>
 
-      <!-- Dot-grid illustration (white background, marks in near-black + accent) -->
+      <!-- Dot-grid illustration -->
       <div class="w-full md:w-[320px] lg:w-[380px] flex-shrink-0">
-        <div
-          class="w-full aspect-[4/3]"
-          id="dot-grid"
-          data-seed={entry.data.dotGrid?.seed}
-          data-variant={entry.data.dotGrid?.variant}
-        >
-          {/* Generative dot-grid canvas will be mounted here by the React component */}
-          <svg class="w-full h-full" viewBox="0 0 380 285" id="dot-grid-svg">
-            {/* Placeholder - will be replaced by the generative art component */}
-          </svg>
+        <div class="w-full aspect-[4/3]">
+          <DotGrid
+            client:load
+            seed={entry.data.dotGrid?.seed || 42}
+            variant={entry.data.dotGrid?.variant || 'default'}
+          />
         </div>
       </div>
 

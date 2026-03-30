@@ -1,6 +1,33 @@
 {
   "nodes": [
     {
+      "id": "delays",
+      "title": "Delays",
+      "oneLiner": "The gap between doing something and seeing what happens - the source of most bad decisions in systems.",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"timing\", \"decision-making\", \"policy\", \"organisations\", \"planning\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "emergence",
+      "title": "Emergence",
+      "oneLiner": "When the whole does something none of the parts could do alone - behaviour that arises from interactions, not instructions.",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"organisations\", \"design\"]",
+      "connectionCount": 4
+    },
+    {
+      "id": "exponential-growth",
+      "title": "Exponential Growth",
+      "oneLiner": "When something grows by a percentage rather than an amount - it feels slow until it suddenly feels unstoppable.",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"growth\", \"planning\", \"risk\", \"scaling\", \"forecasting\"]",
+      "connectionCount": 4
+    },
+    {
       "id": "feedback-loops",
       "title": "Feedback loops",
       "oneLiner": "Reinforcing loops accelerate change, balancing loops resist it - together they drive all system behaviour.",
@@ -12,7 +39,7 @@
         "dynamics",
         "growth"
       ],
-      "connectionCount": 1
+      "connectionCount": 6
     },
     {
       "id": "fixes-that-fail",
@@ -26,18 +53,132 @@
         "change",
         "problem-solving"
       ],
-      "connectionCount": 1
+      "connectionCount": 6
+    },
+    {
+      "id": "shifting-the-burden",
+      "title": "Shifting the Burden",
+      "oneLiner": "Relying on a quick fix so much that the ability to do the real thing slowly disappears.",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"dependency\", \"organisational health\", \"short-termism\", \"capacity\"]",
+      "connectionCount": 4
+    },
+    {
+      "id": "unintended-consequences",
+      "title": "Unintended Consequences",
+      "oneLiner": "Every intervention in a system produces effects you didn't plan for - sometimes bigger than the ones you did.",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"intervention\", \"policy\", \"risk\", \"complexity\", \"planning\"]",
+      "connectionCount": 5
     }
   ],
   "edges": [
+    {
+      "id": "delays--feedback-loops",
+      "source": "delays",
+      "target": "feedback-loops",
+      "note": "\"Delays in feedback loops are what make systems overshoot and oscillate\""
+    },
+    {
+      "id": "delays--fixes-that-fail",
+      "source": "delays",
+      "target": "fixes-that-fail",
+      "note": "\"Most fixes fail because the delay between action and consequence hides the damage\""
+    },
+    {
+      "id": "delays--unintended-consequences",
+      "source": "delays",
+      "target": "unintended-consequences",
+      "note": "\"Delays mean consequences arrive long after the decision that caused them\""
+    },
+    {
+      "id": "delays--exponential-growth",
+      "source": "delays",
+      "target": "exponential-growth",
+      "note": "\"Delays in recognising exponential growth are why it catches people off guard\""
+    },
+    {
+      "id": "emergence--feedback-loops",
+      "source": "emergence",
+      "target": "feedback-loops",
+      "note": "\"Feedback loops are the mechanism through which emergence often arises\""
+    },
+    {
+      "id": "emergence--unintended-consequences",
+      "source": "emergence",
+      "target": "unintended-consequences",
+      "note": "\"Emergent behaviour is often unintended - the system produces what nobody designed\""
+    },
+    {
+      "id": "emergence--fixes-that-fail",
+      "source": "emergence",
+      "target": "fixes-that-fail",
+      "note": "\"Trying to control emergent behaviour with top-down fixes often backfires\""
+    },
+    {
+      "id": "emergence--shifting-the-burden",
+      "source": "emergence",
+      "target": "shifting-the-burden",
+      "note": "\"Dependency patterns emerge from repeated interactions, not from any single decision\""
+    },
+    {
+      "id": "exponential-growth--feedback-loops",
+      "source": "exponential-growth",
+      "target": "feedback-loops",
+      "note": "\"Exponential growth is a reinforcing feedback loop left unchecked\""
+    },
+    {
+      "id": "exponential-growth--unintended-consequences",
+      "source": "exponential-growth",
+      "target": "unintended-consequences",
+      "note": "\"Exponential growth often produces unintended consequences as it outstrips the system's ability to cope\""
+    },
+    {
+      "id": "exponential-growth--fixes-that-fail",
+      "source": "exponential-growth",
+      "target": "fixes-that-fail",
+      "note": "\"Attempting to fix an exponential problem with a linear solution will always fall behind\""
+    },
     {
       "id": "feedback-loops--fixes-that-fail",
       "source": "feedback-loops",
       "target": "fixes-that-fail",
       "note": "Most fixes that fail involve a balancing loop (the fix) that triggers a delayed reinforcing loop (the side effect)."
+    },
+    {
+      "id": "feedback-loops--unintended-consequences",
+      "source": "feedback-loops",
+      "target": "unintended-consequences",
+      "note": "Consequences travel through feedback loops you didn't know existed."
+    },
+    {
+      "id": "fixes-that-fail--shifting-the-burden",
+      "source": "fixes-that-fail",
+      "target": "shifting-the-burden",
+      "note": "Fixes that fail often lead to shifting the burden - the quick fix becomes the default, and the real solution atrophies."
+    },
+    {
+      "id": "fixes-that-fail--unintended-consequences",
+      "source": "fixes-that-fail",
+      "target": "unintended-consequences",
+      "note": "Every fix that fails is a case study in unintended consequences."
+    },
+    {
+      "id": "feedback-loops--shifting-the-burden",
+      "source": "shifting-the-burden",
+      "target": "feedback-loops",
+      "note": "\"The reinforcing loop between quick-fix reliance and real-solution atrophy drives the pattern\""
+    },
+    {
+      "id": "delays--shifting-the-burden",
+      "source": "shifting-the-burden",
+      "target": "delays",
+      "note": "\"The real solution usually has a longer delay, which makes the quick fix more attractive\""
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-30T09:48:14.097Z"
+    "generatedAt": "2026-03-30T14:06:36.469Z"
   }
 }
