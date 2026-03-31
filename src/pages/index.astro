@@ -41,7 +41,7 @@ for (const t of themes) {
   <section class="discover" id="discover">
     <div class="section-label">Explore</div>
     <h2 class="section-title">Every system tells<br />a story</h2>
-    <p class="section-intro">Each concept comes with its own illustration - a dot-grid that shows what the idea does to a system. The healthy grid gets perturbed, and you can see the pattern.</p>
+    <p class="section-intro">Systems behave in patterns - and once you can name them, you start seeing them everywhere. Each concept here is a building block for understanding how things connect, why they resist change, and where to find the leverage.</p>
 
     <div class="concept-grid">
       {allEntries.map((entry) => (
@@ -66,15 +66,13 @@ for (const t of themes) {
     </div>
   </section>
 
-  <hr class="section-divider" />
-
   <!-- ====== THEMES ====== -->
   <section class="themes-section">
     <div class="section-label">Browse by theme</div>
     <h2 class="section-title">13 ways into<br />the territory</h2>
     <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
 
-    <div class="theme-list">
+    <div class="theme-grid">
       {themes.map((theme) => (
         <a href={`/theme/${theme.slug}`} class="theme-card">
           <div class="theme-icon">
@@ -89,9 +87,9 @@ for (const t of themes) {
 
   <!-- ====== CONNECTIONS CTA ====== -->
   <section class="connections-cta">
-    <div class="section-label">The map</div>
-    <h2 class="section-title">See how everything connects</h2>
-    <p class="section-intro">The interactive graph shows how every concept relates to every other - because the links between ideas are where the real insight lives.</p>
+    <div class="section-label connections-label">The map</div>
+    <h2 class="section-title connections-title">See how everything connects</h2>
+    <p class="section-intro connections-intro">The interactive graph shows how every concept relates to every other - because the links between ideas are where the real insight lives.</p>
     <a href="/connections" class="cta-button">
       Explore the connections
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -152,9 +150,11 @@ for (const t of themes) {
     font-weight: 400;
     color: var(--deep);
     text-decoration: none;
-    border: 1px solid var(--border-hover);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(34, 28, 43, 0.18);
     padding: 14px 28px;
-    transition: all 0.3s;
+    transition: all 0.2s ease;
   }
   .hero-cta:hover {
     border-color: var(--accent);
@@ -186,13 +186,6 @@ for (const t of themes) {
     padding: 140px 48px;
   }
 
-  .section-divider {
-    max-width: 1200px;
-    margin: 0 auto;
-    border: none;
-    border-top: 1px solid var(--border);
-  }
-
   .section-label {
     font-size: 12px;
     font-weight: 500;
@@ -220,7 +213,7 @@ for (const t of themes) {
 
   /* ====== DISCOVER ====== */
   .discover {
-    background: var(--white);
+    background: #F9F9F4;
   }
 
   /* ====== CONCEPT CARDS ====== */
@@ -234,26 +227,37 @@ for (const t of themes) {
     color: inherit;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(34, 28, 43, 0.1);
+    background-color: #FFFFFF;
+    padding: 0 0 20px 0;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
   .concept-card:hover {
     transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
   }
   .card-illustration {
     width: 100%;
     aspect-ratio: 16 / 10;
-    background: var(--warm-bg);
-    margin-bottom: 24px;
+    background-color: var(--warm-bg);
+    margin-bottom: 20px;
+    padding: 20px;
     position: relative;
     overflow: hidden;
   }
   .card-theme {
-    font-size: 12px;
+    align-self: flex-start;
+    font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 10px;
+    background-color: rgba(155, 81, 224, 0.08);
+    padding: 4px 9px;
+    margin: 0 20px 10px;
   }
   .card-title {
     font-size: 28px;
@@ -263,6 +267,7 @@ for (const t of themes) {
     margin-bottom: 10px;
     letter-spacing: -0.01em;
     transition: color 0.2s;
+    padding: 0 20px;
   }
   .concept-card:hover .card-title {
     color: var(--accent);
@@ -272,28 +277,30 @@ for (const t of themes) {
     font-weight: 300;
     line-height: 1.65;
     color: var(--soft);
+    padding: 0 20px;
   }
 
   /* ====== THEMES ====== */
   .themes-section {
     background: var(--white);
   }
-  .theme-list {
+  .theme-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
+    gap: 20px;
   }
   .theme-card {
     padding: 36px;
-    background: var(--white);
+    background: var(--warm-bg);
     text-decoration: none;
     color: inherit;
-    transition: all 0.25s;
+    border: 1px solid rgba(34, 28, 43, 0.1);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
   .theme-card:hover {
-    background: var(--warm-bg);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
   }
   .theme-icon {
     width: 40px;
@@ -320,13 +327,20 @@ for (const t of themes) {
 
   /* ====== CONNECTIONS CTA ====== */
   .connections-cta {
-    background: var(--warm-bg);
+    background-color: #F9F9F4;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .connections-cta .section-intro {
+  .connections-label {
+    color: var(--accent);
+  }
+  .connections-title {
+    color: var(--deep);
+  }
+  .connections-intro {
+    color: var(--soft);
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
@@ -337,14 +351,18 @@ for (const t of themes) {
     gap: 10px;
     font-size: 15px;
     font-weight: 400;
-    color: var(--white);
+    color: var(--deep);
     text-decoration: none;
-    background: var(--deep);
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(34, 28, 43, 0.18);
     padding: 16px 36px;
-    transition: all 0.3s;
+    transition: all 0.2s ease;
   }
   .cta-button:hover {
-    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent);
     transform: translateY(-2px);
   }
 
@@ -353,6 +371,6 @@ for (const t of themes) {
     .hero { padding: 100px 24px 60px; }
     section { padding: 80px 24px; }
     .concept-grid { grid-template-columns: 1fr; gap: 40px; }
-    .theme-list { grid-template-columns: 1fr; }
+    .theme-grid { grid-template-columns: 1fr; }
   }
 </style>

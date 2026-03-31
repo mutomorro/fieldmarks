@@ -60,10 +60,29 @@ const year = new Date().getFullYear();
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t px-12 py-12" style="border-color: var(--border);">
-      <div class="flex justify-between items-center">
-        <div class="text-[14px] font-light" style="color: var(--soft);">Fieldmarks is a <a href="https://mutomorro.com" target="_blank" rel="noopener" class="no-underline transition-colors duration-200 hover:!text-[var(--accent)]" style="color: var(--mid);">Mutomorro</a> project. Free and open.</div>
-        <div class="text-[14px] font-light" style="color: var(--soft);">A sibling of <a href="https://moresapien.org" target="_blank" rel="noopener" class="no-underline transition-colors duration-200 hover:!text-[var(--accent)]" style="color: var(--mid);">Moresapien</a></div>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <div class="footer-col-heading">Fieldmarks</div>
+          <a href="/about">About</a>
+          <a href="/collections">Collections</a>
+          <a href="/connections">Connections</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Themes</div>
+          <a href="/theme/core-building-blocks">Core building blocks</a>
+          <a href="/theme/systems-archetypes">Systems archetypes</a>
+          <a href="/theme/complexity-and-uncertainty">Complexity and uncertainty</a>
+          <a href="/theme/resilience-and-change">Resilience and change</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Mutomorro</div>
+          <p class="footer-mutomorro-desc">A <a href="https://mutomorro.com" target="_blank" rel="noopener">Mutomorro</a> project</p>
+          <p class="footer-mutomorro-tagline">Organisational consulting and thought leadership</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Fieldmarks. Free and open.</span>
       </div>
     </footer>
 
@@ -73,13 +92,79 @@ const year = new Date().getFullYear();
 <style>
   @media (max-width: 768px) {
     nav { padding: 16px 24px !important; }
-    footer { padding: 32px 24px !important; }
   }
   nav.scrolled {
     background: rgba(255,255,255,0.92) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
+  }
+
+  /* ====== FOOTER ====== */
+  .footer {
+    background: #F3F3F3;
+    padding: 64px 48px 40px;
+  }
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-col-heading {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(34, 28, 43, 0.35);
+    margin-bottom: 8px;
+  }
+  .footer-col a {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover {
+    color: var(--accent);
+  }
+  .footer-mutomorro-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--mid);
+    margin: 0;
+  }
+  .footer-mutomorro-desc a {
+    font-weight: 400;
+  }
+  .footer-mutomorro-tagline {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(34, 28, 43, 0.4);
+    margin: 0;
+  }
+  .footer-bottom {
+    border-top: 1px solid rgba(34, 28, 43, 0.1);
+    padding-top: 24px;
+  }
+  .footer-bottom span {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(34, 28, 43, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .footer { padding: 40px 24px 32px; }
+    .footer-columns {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
   }
 </style>
 
