@@ -16,6 +16,12 @@ related:
     note: "Delays mean consequences arrive long after the decision that caused them"
   - slug: "exponential-growth"
     note: "Delays in recognising exponential growth are why it catches people off guard"
+  - slug: "stocks-and-flows"
+    note: "Stocks change slowly because flows take time - the delay between opening a tap and filling a bath"
+  - slug: "nonlinearity"
+    note: "Delays mask nonlinearity - the disproportionate effect doesn't show up until later"
+  - slug: "buffers"
+    note: "Buffers buy time, giving you space to respond before a delay causes damage"
 draft: false
 ---
 

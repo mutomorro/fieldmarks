@@ -16,8 +16,12 @@ related:
     note: "Unintended consequences often travel through feedback loops you didn't know existed"
   - slug: "emergence"
     note: "Unintended consequences are a form of emergent behaviour - produced by interactions, not by design"
-  - slug: "exponential-growth"
-    note: "Small unintended effects can grow exponentially if they enter a reinforcing loop"
+  - slug: "boundaries"
+    note: "Unintended consequences often come from drawing the boundary too tightly and missing what's outside"
+  - slug: "interconnections"
+    note: "Interconnections carry effects through the system in ways that surprise us"
+  - slug: "nonlinearity"
+    note: "Nonlinearity means a small intervention can produce outsized, unexpected side effects"
 draft: false
 ---
 

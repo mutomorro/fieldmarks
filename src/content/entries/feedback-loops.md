@@ -20,10 +20,14 @@ related:
     note: Delays in feedback loops cause overshooting and oscillation.
   - slug: exponential-growth
     note: A reinforcing feedback loop left unchecked produces exponential growth.
-  - slug: emergence
-    note: Feedback loops are the mechanism through which emergent behaviour arises.
-  - slug: unintended-consequences
-    note: Consequences travel through feedback loops you didn't know existed.
+  - slug: stocks-and-flows
+    note: "Feedback loops work by adjusting flows, which change stocks over time"
+  - slug: interconnections
+    note: "Feedback loops are interconnections that circle back on themselves"
+  - slug: nonlinearity
+    note: "Reinforcing feedback loops are the engine of nonlinear behaviour - small inputs, outsized outputs"
+  - slug: buffers
+    note: "Without buffers, feedback loops react to every fluctuation, making the system jittery"
 draft: false
 ---
 

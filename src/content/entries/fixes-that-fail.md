@@ -22,6 +22,10 @@ related:
     note: The delay between the fix and its side effects is what makes this pattern so dangerous - the fix looks like it works, until it doesn't.
   - slug: unintended-consequences
     note: Every fix that fails is a case study in unintended consequences.
+  - slug: boundaries
+    note: "Fixes often fail because the boundary was drawn too tightly - the side effects sit outside the scope"
+  - slug: buffers
+    note: "Quick fixes often deplete buffers that the system needs for long-term stability"
 originatedBy: Peter Senge
 draft: false
 ---

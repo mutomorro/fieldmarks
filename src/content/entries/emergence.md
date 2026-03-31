@@ -16,6 +16,12 @@ related:
     note: "Trying to control emergent behaviour with top-down fixes often backfires"
   - slug: "shifting-the-burden"
     note: "Dependency patterns emerge from repeated interactions, not from any single decision"
+  - slug: "interconnections"
+    note: "Emergence arises from interconnections - behaviour the parts can't produce alone"
+  - slug: "boundaries"
+    note: "Emergent behaviour can only be seen when the boundary is wide enough to include the interacting parts"
+  - slug: "nonlinearity"
+    note: "Emergent behaviour is inherently nonlinear - the whole responds in ways the parts don't predict"
 draft: false
 ---
 

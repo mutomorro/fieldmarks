@@ -16,6 +16,10 @@ related:
     note: "The real solution usually has a longer delay, which makes the quick fix more attractive"
   - slug: "emergence"
     note: "The dependency emerges gradually from repeated small choices, not from a single decision"
+  - slug: "stocks-and-flows"
+    note: "The capacity for the real solution is a stock that atrophies when the burden keeps getting shifted"
+  - slug: "buffers"
+    note: "The symptomatic fix often drains buffers that the fundamental solution needs"
 originatedBy: "Peter Senge"
 draft: false
 ---
