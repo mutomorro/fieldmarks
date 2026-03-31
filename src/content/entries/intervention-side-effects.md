@@ -28,6 +28,8 @@ related:
     note: "Safe-to-fail experiments contain intervention side effects by keeping the scale small and the commitment reversible"
   - slug: "observer-effect"
     note: "Measurement is itself an intervention - the observer effect is its unavoidable side effect"
+  - slug: "systemic-design"
+    note: "Systemic design anticipates intervention side effects by mapping the wider system before acting"
 draft: false
 ---
 

@@ -44,6 +44,8 @@ related:
     note: "Narratives build and reinforce mental models - the stories we tell shape what we expect to happen next"
   - slug: "hindsight-bias"
     note: "Hindsight bias reinforces mental models by making us think our predictions are better than they are"
+  - slug: "participatory-systems-mapping"
+    note: "Participatory mapping surfaces hidden mental models - the process of drawing together makes assumptions visible"
 draft: false
 ---
 

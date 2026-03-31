@@ -16,7 +16,7 @@
       "theme": "human-dimensions",
       "colour": "#a06cc0",
       "tags": "[\"bias\", \"decision-making\", \"intervention\", \"patience\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "adaptive-capacity",
@@ -34,7 +34,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"cycles\", \"evolution\", \"renewal\"]",
-      "connectionCount": 10
+      "connectionCount": 11
     },
     {
       "id": "antifragility",
@@ -43,7 +43,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"resilience\", \"adaptation\", \"growth\", \"stress\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "attractors",
@@ -70,7 +70,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"boundaries\", \"power\", \"perspective\", \"critique\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "bounded-rationality",
@@ -151,7 +151,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"diagnosis\", \"decision-making\"]",
-      "connectionCount": 26
+      "connectionCount": 31
     },
     {
       "id": "constraints",
@@ -178,7 +178,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"decision-making\", \"sense-making\", \"complexity\", \"strategy\"]",
-      "connectionCount": 11
+      "connectionCount": 13
     },
     {
       "id": "decision-fatigue",
@@ -205,7 +205,7 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"leadership\", \"organisations\", \"emergence\", \"adaptation\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "diversity-and-stability",
@@ -250,7 +250,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"adaptation\", \"creativity\", \"balance\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "emergence",
@@ -259,7 +259,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"design\"]",
-      "connectionCount": 16
+      "connectionCount": 17
     },
     {
       "id": "equilibrium",
@@ -380,6 +380,15 @@
       "connectionCount": 5
     },
     {
+      "id": "holding-space",
+      "title": "Holding Space",
+      "oneLiner": "Creating conditions for emergence rather than controlling outcomes - leadership as environment design",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"leadership\", \"emergence\", \"facilitation\", \"complexity\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "iceberg-model",
       "title": "Iceberg Model",
       "oneLiner": "Events are the tip - below the waterline sit the patterns, structures, and mental models that create them",
@@ -413,7 +422,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"unintended-consequences\", \"complexity\", \"planning\"]",
-      "connectionCount": 12
+      "connectionCount": 14
     },
     {
       "id": "irreducibility",
@@ -422,7 +431,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"prediction\", \"simulation\", \"limits\"]",
-      "connectionCount": 8
+      "connectionCount": 9
     },
     {
       "id": "keystone-species",
@@ -458,7 +467,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"strategy\", \"change\", \"design\"]",
-      "connectionCount": 19
+      "connectionCount": 20
     },
     {
       "id": "limits-to-growth",
@@ -476,7 +485,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"bias\", \"complexity\", \"planning\"]",
-      "connectionCount": 12
+      "connectionCount": 13
     },
     {
       "id": "local-vs-global-optimisation",
@@ -512,7 +521,16 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"assumptions\", \"perception\", \"change\"]",
-      "connectionCount": 25
+      "connectionCount": 26
+    },
+    {
+      "id": "minimum-viable-intervention",
+      "title": "Minimum Viable Intervention",
+      "oneLiner": "The smallest change that could shift the system - start small, learn fast",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"intervention\", \"design\", \"simplicity\", \"learning\"]",
+      "connectionCount": 5
     },
     {
       "id": "modularity",
@@ -539,7 +557,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"perspective\", \"complexity\", \"collaboration\", \"diagnosis\"]",
-      "connectionCount": 9
+      "connectionCount": 11
     },
     {
       "id": "mutualism",
@@ -668,6 +686,15 @@
       "connectionCount": 5
     },
     {
+      "id": "participatory-systems-mapping",
+      "title": "Participatory Systems Mapping",
+      "oneLiner": "Building system maps with the people who live in the system, not just the people who study it",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"mapping\", \"participation\", \"collaboration\", \"practice\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "path-dependence",
       "title": "Path Dependence",
       "oneLiner": "Where you can go depends on where you've been - history constrains future options",
@@ -695,6 +722,15 @@
       "connectionCount": 13
     },
     {
+      "id": "portfolio-of-experiments",
+      "title": "Portfolio of Experiments",
+      "oneLiner": "Running multiple small interventions simultaneously to increase the chance of finding what works",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"experimentation\", \"strategy\", \"complexity\", \"learning\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "power-in-systems",
       "title": "Power in Systems",
       "oneLiner": "Who sets the rules, who controls the flows, who defines success - structure IS power",
@@ -702,6 +738,15 @@
       "colour": "#d45a7a",
       "tags": "[\"power\", \"structure\", \"politics\", \"design\"]",
       "connectionCount": 7
+    },
+    {
+      "id": "probe-sense-respond",
+      "title": "Probe-Sense-Respond",
+      "oneLiner": "The strategy for complex situations - try something small, see what happens, then decide what to do next",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"complexity\", \"strategy\", \"experimentation\", \"practice\"]",
+      "connectionCount": 8
     },
     {
       "id": "proxy-measures",
@@ -728,7 +773,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"analysis\", \"complexity\", \"science\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "redundancy",
@@ -746,7 +791,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"tipping-points\", \"stability\", \"transformation\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "requisite-variety",
@@ -755,7 +800,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"complexity\", \"control\", \"adaptation\", \"design\"]",
-      "connectionCount": 8
+      "connectionCount": 9
     },
     {
       "id": "resilience",
@@ -800,7 +845,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"intervention\", \"complexity\", \"experimentation\", \"learning\"]",
-      "connectionCount": 7
+      "connectionCount": 11
     },
     {
       "id": "satisficing",
@@ -836,7 +881,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"emergence\", \"complexity\", \"structure\", \"adaptation\"]",
-      "connectionCount": 10
+      "connectionCount": 11
+    },
+    {
+      "id": "sense-analyse-respond",
+      "title": "Sense-Analyse-Respond",
+      "oneLiner": "The strategy for complicated situations - gather data, analyse it, then act on what the experts find",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"analysis\", \"expertise\", \"planning\", \"practice\"]",
+      "connectionCount": 5
     },
     {
       "id": "sensemaking-under-pressure",
@@ -854,7 +908,7 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"complexity\", \"decision-making\", \"diagnosis\", \"leadership\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "sensitivity-to-initial-conditions",
@@ -908,7 +962,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"mapping\", \"power\", \"perspective\", \"planning\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "stocks-and-flows",
@@ -983,13 +1037,22 @@
       "connectionCount": 12
     },
     {
+      "id": "systemic-design",
+      "title": "Systemic Design",
+      "oneLiner": "Combining systems thinking with design practice - understanding the system before designing the intervention",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"design\", \"intervention\", \"systems\", \"practice\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "systems-mapping",
       "title": "Systems Mapping",
       "oneLiner": "The practice of making a system visible - its parts, flows, boundaries, and dynamics",
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"tools\", \"mapping\", \"visualisation\", \"diagnosis\"]",
-      "connectionCount": 9
+      "connectionCount": 11
     },
     {
       "id": "theory-of-change",
@@ -1025,6 +1088,15 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"transformation\", \"adaptation\", \"design\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "transition-management",
+      "title": "Transition Management",
+      "oneLiner": "A governance approach for guiding large-scale system transitions over long timeframes",
+      "theme": "design-and-intervention",
+      "colour": "#3aaa9e",
+      "tags": "[\"change\", \"governance\", \"long-term\", \"transitions\"]",
       "connectionCount": 5
     },
     {
@@ -1061,7 +1133,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"problem-solving\", \"design\"]",
-      "connectionCount": 12
+      "connectionCount": 14
     }
   ],
   "edges": [
@@ -1106,6 +1178,12 @@
       "source": "action-bias",
       "target": "intervention-side-effects",
       "note": "\"Action bias increases intervention side effects because the action is taken before the system is understood\""
+    },
+    {
+      "id": "action-bias--probe-sense-respond",
+      "source": "action-bias",
+      "target": "probe-sense-respond",
+      "note": "\"Probe-sense-respond channels action bias productively - it allows action but makes it small and learning-oriented\""
     },
     {
       "id": "action-bias--signal-vs-noise",
@@ -1222,6 +1300,12 @@
       "note": "\"Succession is the growth and reorganisation phases of the adaptive cycle playing out in sequence after disturbance\""
     },
     {
+      "id": "adaptive-cycle--transition-management",
+      "source": "adaptive-cycle",
+      "target": "transition-management",
+      "note": "\"Transition management works with the adaptive cycle - supporting natural phases rather than fighting them\""
+    },
+    {
       "id": "antifragility--resilience",
       "source": "antifragility",
       "target": "resilience",
@@ -1256,6 +1340,12 @@
       "source": "antifragility",
       "target": "safe-to-fail-experiments",
       "note": "\"Safe-to-fail experiments build antifragility - controlled stressors that make the system learn and grow stronger\""
+    },
+    {
+      "id": "antifragility--portfolio-of-experiments",
+      "source": "antifragility",
+      "target": "portfolio-of-experiments",
+      "note": "\"A portfolio approach is antifragile - each experiment that fails teaches the system something, making it stronger\""
     },
     {
       "id": "attractors--feedback-loops",
@@ -1400,6 +1490,12 @@
       "source": "boundary-critique",
       "target": "mental-models",
       "note": "\"Boundaries reflect mental models - how you frame the system reveals what you assume about it\""
+    },
+    {
+      "id": "boundary-critique--systemic-design",
+      "source": "boundary-critique",
+      "target": "systemic-design",
+      "note": "\"Systemic design begins with boundary critique - questioning what's included in the design brief and what's been left out\""
     },
     {
       "id": "bounded-rationality--satisficing",
@@ -1930,6 +2026,18 @@
       "note": "\"Under pressure, people default to familiar domain responses - the risk is applying the wrong domain's approach\""
     },
     {
+      "id": "cynefin-framework--probe-sense-respond",
+      "source": "cynefin-framework",
+      "target": "probe-sense-respond",
+      "note": "\"Probe-sense-respond is the prescribed strategy for Cynefin's complex domain\""
+    },
+    {
+      "id": "cynefin-framework--sense-analyse-respond",
+      "source": "cynefin-framework",
+      "target": "sense-analyse-respond",
+      "note": "\"Sense-analyse-respond is the prescribed strategy for Cynefin's complicated domain\""
+    },
+    {
       "id": "bounded-rationality--decision-fatigue",
       "source": "decision-fatigue",
       "target": "bounded-rationality",
@@ -2054,6 +2162,12 @@
       "source": "distributed-leadership",
       "target": "emergence",
       "note": "\"Distributed leadership is emergent - it arises from the situation and the capabilities present, not from the org chart\""
+    },
+    {
+      "id": "distributed-leadership--holding-space",
+      "source": "distributed-leadership",
+      "target": "holding-space",
+      "note": "\"Holding space is what formal leaders do in a distributed model - designing conditions rather than directing action\""
     },
     {
       "id": "diversity-and-stability--resilience",
@@ -2248,6 +2362,12 @@
       "note": "\"The edge of chaos is where tipping points live - the system is poised between states, ready to shift\""
     },
     {
+      "id": "edge-of-chaos--holding-space",
+      "source": "edge-of-chaos",
+      "target": "holding-space",
+      "note": "\"Holding space keeps the system at the edge of chaos - enough structure to contain, enough freedom to create\""
+    },
+    {
       "id": "emergence--feedback-loops",
       "source": "emergence",
       "target": "feedback-loops",
@@ -2294,6 +2414,12 @@
       "source": "emergence",
       "target": "reductionism",
       "note": "\"Emergence is what reductionism misses - behaviour that exists only in the interaction, not in the parts\""
+    },
+    {
+      "id": "emergence--holding-space",
+      "source": "emergence",
+      "target": "holding-space",
+      "note": "\"You can't design emergence, but you can hold the space where emergence is most likely to happen\""
     },
     {
       "id": "equilibrium--feedback-loops",
@@ -2842,6 +2968,18 @@
       "note": "\"Hindsight bias reinforces mental models - it makes us think our predictions are better than they are, so we never update the model\""
     },
     {
+      "id": "holding-space--self-organisation",
+      "source": "holding-space",
+      "target": "self-organisation",
+      "note": "\"Holding space creates conditions for self-organisation - order emerges when the container is right\""
+    },
+    {
+      "id": "complexity-vs-complication--holding-space",
+      "source": "holding-space",
+      "target": "complexity-vs-complication",
+      "note": "\"Holding space is the leadership approach for complex situations - where controlling outcomes isn't possible\""
+    },
+    {
       "id": "iceberg-model--mental-models",
       "source": "iceberg-model",
       "target": "mental-models",
@@ -3010,6 +3148,12 @@
       "note": "\"Measurement is itself an intervention - the observer effect is its unavoidable side effect\""
     },
     {
+      "id": "intervention-side-effects--systemic-design",
+      "source": "intervention-side-effects",
+      "target": "systemic-design",
+      "note": "\"Systemic design anticipates intervention side effects by mapping the wider system before acting\""
+    },
+    {
       "id": "irreducibility--sensitivity-to-initial-conditions",
       "source": "irreducibility",
       "target": "sensitivity-to-initial-conditions",
@@ -3038,6 +3182,12 @@
       "source": "irreducibility",
       "target": "safe-to-fail-experiments",
       "note": "\"Safe-to-fail experiments respect irreducibility - if the only way to know is to try, make the trying safe and small\""
+    },
+    {
+      "id": "irreducibility--probe-sense-respond",
+      "source": "irreducibility",
+      "target": "probe-sense-respond",
+      "note": "\"Probing respects irreducibility - if the system can't be shortcut, interacting with it is the only way to learn\""
     },
     {
       "id": "keystone-species--resilience",
@@ -3140,6 +3290,12 @@
       "source": "leverage-points",
       "target": "power-in-systems",
       "note": "\"The highest leverage points - rules, goals, paradigms - are also the points where power is most concentrated\""
+    },
+    {
+      "id": "leverage-points--minimum-viable-intervention",
+      "source": "leverage-points",
+      "target": "minimum-viable-intervention",
+      "note": "\"A minimum viable intervention targets the leverage point - the smallest change that could shift the system\""
     },
     {
       "id": "limits-to-growth--s-curves",
@@ -3358,6 +3514,36 @@
       "note": "\"Narratives build and reinforce mental models - the stories we tell shape what we expect to happen next\""
     },
     {
+      "id": "mental-models--participatory-systems-mapping",
+      "source": "mental-models",
+      "target": "participatory-systems-mapping",
+      "note": "\"Participatory mapping surfaces hidden mental models - the process of drawing together makes assumptions visible\""
+    },
+    {
+      "id": "minimum-viable-intervention--safe-to-fail-experiments",
+      "source": "minimum-viable-intervention",
+      "target": "safe-to-fail-experiments",
+      "note": "\"MVIs are safe-to-fail by design - small enough that failure is cheap and success can be scaled\""
+    },
+    {
+      "id": "minimum-viable-intervention--probe-sense-respond",
+      "source": "minimum-viable-intervention",
+      "target": "probe-sense-respond",
+      "note": "\"MVIs are the probes in probe-sense-respond - the smallest useful action that generates learning\""
+    },
+    {
+      "id": "intervention-side-effects--minimum-viable-intervention",
+      "source": "minimum-viable-intervention",
+      "target": "intervention-side-effects",
+      "note": "\"Smaller interventions produce smaller side effects - the minimum viable approach limits unintended damage\""
+    },
+    {
+      "id": "complexity-vs-complication--minimum-viable-intervention",
+      "source": "minimum-viable-intervention",
+      "target": "complexity-vs-complication",
+      "note": "\"MVIs suit complex environments where you can't predict the effect - keep the bet small until you understand the response\""
+    },
+    {
       "id": "modularity--resilience",
       "source": "modularity",
       "target": "resilience",
@@ -3416,6 +3602,18 @@
       "source": "multiple-perspectives",
       "target": "sensemaking",
       "note": "\"Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation\""
+    },
+    {
+      "id": "multiple-perspectives--systemic-design",
+      "source": "multiple-perspectives",
+      "target": "systemic-design",
+      "note": "\"Systemic design insists on multiple perspectives - the designer's view alone is never complete\""
+    },
+    {
+      "id": "multiple-perspectives--participatory-systems-mapping",
+      "source": "multiple-perspectives",
+      "target": "participatory-systems-mapping",
+      "note": "\"Participatory mapping assembles multiple perspectives into a shared picture through the act of drawing together\""
     },
     {
       "id": "mutualism--symbiosis",
@@ -3670,6 +3868,24 @@
       "note": "\"Parasitic relationships are sustained by power imbalances - the exploited party can't exit or renegotiate\""
     },
     {
+      "id": "participatory-systems-mapping--systems-mapping",
+      "source": "participatory-systems-mapping",
+      "target": "systems-mapping",
+      "note": "\"Participatory mapping is systems mapping done with the people inside the system - producing richer, more accurate maps\""
+    },
+    {
+      "id": "participatory-systems-mapping--stakeholder-mapping",
+      "source": "participatory-systems-mapping",
+      "target": "stakeholder-mapping",
+      "note": "\"Who participates in the mapping determines what the map shows - stakeholder inclusion is a design choice\""
+    },
+    {
+      "id": "participatory-systems-mapping--sensemaking",
+      "source": "participatory-systems-mapping",
+      "target": "sensemaking",
+      "note": "\"Participatory mapping is collective sensemaking - the group constructs shared understanding through the process of drawing together\""
+    },
+    {
       "id": "feedback-loops--path-dependence",
       "source": "path-dependence",
       "target": "feedback-loops",
@@ -3742,6 +3958,30 @@
       "note": "\"Policy resistance often means the intervention lacks enough variety to handle the system's complexity\""
     },
     {
+      "id": "portfolio-of-experiments--safe-to-fail-experiments",
+      "source": "portfolio-of-experiments",
+      "target": "safe-to-fail-experiments",
+      "note": "\"A portfolio of experiments is a collection of safe-to-fail probes - each one small, together they cover more ground\""
+    },
+    {
+      "id": "portfolio-of-experiments--probe-sense-respond",
+      "source": "portfolio-of-experiments",
+      "target": "probe-sense-respond",
+      "note": "\"The portfolio approach runs multiple probes simultaneously rather than sequentially - faster learning\""
+    },
+    {
+      "id": "portfolio-of-experiments--requisite-variety",
+      "source": "portfolio-of-experiments",
+      "target": "requisite-variety",
+      "note": "\"A portfolio of experiments increases requisite variety - more approaches mean more chances of matching what the system needs\""
+    },
+    {
+      "id": "complexity-vs-complication--portfolio-of-experiments",
+      "source": "portfolio-of-experiments",
+      "target": "complexity-vs-complication",
+      "note": "\"Portfolios suit complex situations where you can't predict which intervention will work - diversify the bets\""
+    },
+    {
       "id": "power-in-systems--stakeholder-mapping",
       "source": "power-in-systems",
       "target": "stakeholder-mapping",
@@ -3752,6 +3992,24 @@
       "source": "power-in-systems",
       "target": "success-to-the-successful",
       "note": "\"Success to the successful is power made structural - winners get more resources, which makes them win more\""
+    },
+    {
+      "id": "probe-sense-respond--safe-to-fail-experiments",
+      "source": "probe-sense-respond",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments are how probes work in practice - small, bounded, designed for learning\""
+    },
+    {
+      "id": "complexity-vs-complication--probe-sense-respond",
+      "source": "probe-sense-respond",
+      "target": "complexity-vs-complication",
+      "note": "\"Probe-sense-respond suits complex situations where analysis can't predict the outcome - the system must be tested\""
+    },
+    {
+      "id": "probe-sense-respond--sense-analyse-respond",
+      "source": "probe-sense-respond",
+      "target": "sense-analyse-respond",
+      "note": "\"Probe-sense-respond is for complex domains. Sense-analyse-respond is for complicated ones. Using the wrong one is expensive\""
     },
     {
       "id": "leading-vs-lagging-indicators--proxy-measures",
@@ -3796,6 +4054,12 @@
       "note": "\"Sub-optimisation is reductionism in action - optimising each part separately and assuming the whole will improve\""
     },
     {
+      "id": "reductionism--sense-analyse-respond",
+      "source": "reductionism",
+      "target": "sense-analyse-respond",
+      "note": "\"Sense-analyse-respond relies on reductionism - breaking the problem into parts that experts can diagnose\""
+    },
+    {
       "id": "redundancy--resilience",
       "source": "redundancy",
       "target": "resilience",
@@ -3824,6 +4088,12 @@
       "source": "regime-shifts",
       "target": "weak-signals",
       "note": "\"Regime shifts are preceded by weak signals - declining resilience, slower recovery, and increasing variability\""
+    },
+    {
+      "id": "regime-shifts--transition-management",
+      "source": "regime-shifts",
+      "target": "transition-management",
+      "note": "\"Transition management aims to guide regime shifts intentionally rather than leaving them to crisis\""
     },
     {
       "id": "constraints--requisite-variety",
@@ -3944,6 +4214,18 @@
       "source": "self-organisation",
       "target": "succession",
       "note": "\"Succession is self-organisation after disruption - the system rebuilds itself through predictable stages\""
+    },
+    {
+      "id": "complexity-vs-complication--sense-analyse-respond",
+      "source": "sense-analyse-respond",
+      "target": "complexity-vs-complication",
+      "note": "\"This approach works for complicated problems where experts can find the answer through analysis\""
+    },
+    {
+      "id": "linear-thinking--sense-analyse-respond",
+      "source": "sense-analyse-respond",
+      "target": "linear-thinking",
+      "note": "\"This approach works when the system is sufficiently linear - when expert analysis can trace cause to effect\""
     },
     {
       "id": "sensemaking--sensemaking-under-pressure",
@@ -4162,6 +4444,18 @@
       "note": "\"Adding an enabling constraint is often the escape route from a system trap\""
     },
     {
+      "id": "systemic-design--systems-mapping",
+      "source": "systemic-design",
+      "target": "systems-mapping",
+      "note": "\"Systems mapping is a core tool of systemic design - making the system visible before designing the intervention\""
+    },
+    {
+      "id": "systemic-design--wicked-problems",
+      "source": "systemic-design",
+      "target": "wicked-problems",
+      "note": "\"Systemic design was developed for wicked problems - situations where traditional design can't grasp the full picture\""
+    },
+    {
       "id": "systems-mapping--theory-of-change",
       "source": "systems-mapping",
       "target": "theory-of-change",
@@ -4246,6 +4540,24 @@
       "note": "\"Transformability is the deliberate version of a regime shift - choosing to build a new system rather than being forced into one\""
     },
     {
+      "id": "transformability--transition-management",
+      "source": "transformability",
+      "target": "transition-management",
+      "note": "\"Transition management is the governance framework for exercising transformability at societal scale\""
+    },
+    {
+      "id": "transition-management--wicked-problems",
+      "source": "transition-management",
+      "target": "wicked-problems",
+      "note": "\"Transition management was designed for wicked problems that require multi-decade, multi-stakeholder approaches\""
+    },
+    {
+      "id": "safe-to-fail-experiments--transition-management",
+      "source": "transition-management",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Transition management uses experiments at the 'niche' level to test innovations before scaling them into the regime\""
+    },
+    {
       "id": "nonlinearity--uncertainty-vs-risk",
       "source": "uncertainty-vs-risk",
       "target": "nonlinearity",
@@ -4295,6 +4607,6 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T20:32:51.615Z"
+    "generatedAt": "2026-03-31T21:01:13.207Z"
   }
 }

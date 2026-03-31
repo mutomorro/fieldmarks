@@ -26,6 +26,10 @@ related:
     note: "Stakeholder mapping is one form of systems mapping - focused on the human actors and their relationships"
   - slug: "theory-of-change"
     note: "A good theory of change is a systems map - showing feedback, delays, and multiple pathways, not just a logic chain"
+  - slug: "systemic-design"
+    note: "Systems mapping is a core tool of systemic design - making the system visible before designing the intervention"
+  - slug: "participatory-systems-mapping"
+    note: "Participatory mapping puts the pen in the hands of the people inside the system - producing richer, more grounded maps"
 draft: false
 ---
 

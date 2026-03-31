@@ -18,6 +18,12 @@ related:
     note: "Safe-to-fail experiments build antifragility - each one teaches the system something, whether it succeeds or fails"
   - slug: "intervention-side-effects"
     note: "Safe-to-fail experiments limit the scope of intervention side effects by keeping the scale small"
+  - slug: "probe-sense-respond"
+    note: "Safe-to-fail experiments are the practical tool for probing - small, bounded interventions designed for learning"
+  - slug: "minimum-viable-intervention"
+    note: "MVIs are safe-to-fail by design - small enough that failure is cheap, fast enough to generate learning"
+  - slug: "portfolio-of-experiments"
+    note: "A portfolio is a collection of safe-to-fail experiments - parallel probes that cover more ground than any single one"
 draft: false
 ---
 

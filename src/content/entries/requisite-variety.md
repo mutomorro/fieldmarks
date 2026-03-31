@@ -24,6 +24,8 @@ related:
     note: "Distributed leadership increases requisite variety - more people leading means a wider range of responses to challenges"
   - slug: "diversity-and-stability"
     note: "Diversity provides requisite variety - a diverse system has more response options than a uniform one"
+  - slug: "portfolio-of-experiments"
+    note: "A portfolio of experiments increases requisite variety - more approaches mean more chances of matching what the system needs"
 originatedBy: "W. Ross Ashby"
 draft: false
 ---

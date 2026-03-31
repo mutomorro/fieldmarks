@@ -18,6 +18,8 @@ related:
     note: "Transformability is most relevant in the release and reorganisation phases - when the old system has broken and new possibilities exist"
   - slug: "mental-models"
     note: "Transformation requires changing mental models - the deepest, hardest, and highest-leverage kind of change"
+  - slug: "transition-management"
+    note: "Transition management is the governance framework for exercising transformability at societal scale"
 draft: false
 ---
 

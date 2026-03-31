@@ -18,6 +18,8 @@ related:
     note: "Wicked problems resist boundary-drawing - every boundary excludes something that turns out to matter"
   - slug: "mental-models"
     note: "Boundaries reflect mental models - how you frame the system reveals what you assume about it"
+  - slug: "systemic-design"
+    note: "Systemic design begins with boundary critique - questioning what's included in the design brief and what's been left out"
 draft: false
 ---
 

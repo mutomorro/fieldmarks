@@ -20,6 +20,8 @@ related:
     note: "Panarchy explains how regime shifts at one scale can trigger or be triggered by shifts at other scales"
   - slug: "weak-signals"
     note: "Regime shifts are preceded by weak signals - declining resilience, slower recovery, and increasing variability"
+  - slug: "transition-management"
+    note: "Transition management aims to guide regime shifts intentionally rather than leaving them to crisis"
 draft: false
 ---
 

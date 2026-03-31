@@ -30,6 +30,10 @@ related:
     note: "Cynefin is fundamentally a sensemaking framework - its first job is helping you understand what kind of situation you're in"
   - slug: "sensemaking-under-pressure"
     note: "Under pressure, people default to familiar domain responses - the risk is applying the wrong domain's approach"
+  - slug: "probe-sense-respond"
+    note: "Probe-sense-respond is the prescribed strategy for Cynefin's complex domain"
+  - slug: "sense-analyse-respond"
+    note: "Sense-analyse-respond is the prescribed strategy for Cynefin's complicated domain"
 originatedBy: "Dave Snowden"
 draft: false
 ---

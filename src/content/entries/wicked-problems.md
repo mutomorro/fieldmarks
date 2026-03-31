@@ -32,6 +32,8 @@ related:
     note: "Wicked problems look different to every stakeholder - multiple perspectives aren't optional, they're essential"
   - slug: "sensemaking"
     note: "Wicked problems demand sensemaking because they resist the define-analyse-solve sequence"
+  - slug: "systemic-design"
+    note: "Systemic design was developed for wicked problems - situations too entangled for traditional design approaches"
 originatedBy: "Horst Rittel and Melvin Webber"
 draft: false
 ---

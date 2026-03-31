@@ -26,6 +26,8 @@ related:
     note: "Culture self-organises from daily interactions and norms - nobody designs it, but everyone shapes it"
   - slug: "succession"
     note: "Succession is self-organisation after disruption - the system rebuilds itself through predictable stages"
+  - slug: "holding-space"
+    note: "Holding space creates conditions for self-organisation - the order emerges when the container is right"
 draft: false
 ---
 

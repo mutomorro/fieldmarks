@@ -22,6 +22,8 @@ related:
     note: "Irreducible systems can't be fully mapped by definition - the only complete model is the system itself running in real time"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail experiments respect irreducibility - if the only way to know is to try, make the trying safe and small"
+  - slug: "probe-sense-respond"
+    note: "Probing respects irreducibility - if the system can't be shortcut, interacting with it is the only way to learn"
 originatedBy: "Stephen Wolfram"
 draft: false
 ---

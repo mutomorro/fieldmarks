@@ -20,6 +20,8 @@ related:
     note: "Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation"
   - slug: "sensemaking-under-pressure"
     note: "Under pressure, sensemaking shifts from deliberate analysis to rapid pattern recognition"
+  - slug: "participatory-systems-mapping"
+    note: "Participatory mapping is collective sensemaking - groups construct shared understanding through drawing together"
 draft: false
 ---
 

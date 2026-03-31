@@ -20,6 +20,8 @@ related:
     note: "Antifragility requires feedback loops that translate stress into improvement - without feedback, stress is just damage"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail experiments build antifragility - controlled stressors that make the system learn and grow stronger"
+  - slug: "portfolio-of-experiments"
+    note: "A portfolio approach is antifragile - each experiment that fails teaches the system something, making it stronger"
 originatedBy: "Nassim Nicholas Taleb"
 draft: false
 ---

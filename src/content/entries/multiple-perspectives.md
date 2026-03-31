@@ -22,6 +22,10 @@ related:
     note: "Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation"
   - slug: "groupthink"
     note: "Groupthink is the collapse of multiple perspectives into one - premature convergence that suppresses dissent"
+  - slug: "systemic-design"
+    note: "Systemic design insists on multiple perspectives - the designer's view alone is never complete"
+  - slug: "participatory-systems-mapping"
+    note: "Participatory mapping assembles multiple perspectives into a shared picture through the act of drawing together"
 draft: false
 ---
 

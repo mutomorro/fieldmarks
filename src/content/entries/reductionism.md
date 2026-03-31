@@ -24,6 +24,8 @@ related:
     note: "Sub-optimisation is reductionism applied to improvement - optimising each part separately and assuming the whole benefits"
   - slug: "proxy-measures"
     note: "Proxy measures are reductionism applied to measurement - simplifying complex reality into a single trackable number"
+  - slug: "sense-analyse-respond"
+    note: "Sense-analyse-respond relies on reductionism - breaking the problem into parts that experts can diagnose"
 draft: false
 ---
 

@@ -42,6 +42,8 @@ related:
     note: "System blindness keeps people pushing on low-leverage points - blaming individuals instead of redesigning structures"
   - slug: "power-in-systems"
     note: "The highest leverage points - rules, goals, paradigms - are also the points where power is most concentrated"
+  - slug: "minimum-viable-intervention"
+    note: "A minimum viable intervention targets the leverage point - the smallest change that could shift the system"
 originatedBy: "Donella Meadows"
 draft: false
 ---

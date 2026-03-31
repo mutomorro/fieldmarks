@@ -30,6 +30,8 @@ related:
     note: "Inertia builds during the conservation phase - the system becomes rigid and resistant as it matures"
   - slug: "succession"
     note: "Succession is the growth and reorganisation phases of the adaptive cycle playing out in sequence after disturbance"
+  - slug: "transition-management"
+    note: "Transition management works with the adaptive cycle - supporting natural phases rather than fighting them"
 originatedBy: "C.S. Holling"
 draft: false
 ---

@@ -22,6 +22,8 @@ related:
     note: "Antifragile systems thrive at the edge of chaos - enough disorder to trigger adaptation, not so much that it destroys"
   - slug: "adaptive-cycle"
     note: "The reorganisation phase of the adaptive cycle is the system at the edge of chaos - maximum potential, minimum structure"
+  - slug: "holding-space"
+    note: "Holding space keeps the system at the edge of chaos - enough structure to contain, enough freedom to create"
 draft: false
 ---
 

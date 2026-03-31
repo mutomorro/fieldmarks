@@ -18,6 +18,8 @@ related:
     note: "Distributed leadership builds resilience - the system doesn't depend on any single leader to function"
   - slug: "emergence"
     note: "Distributed leadership is emergent - it arises from the situation and the capabilities present, not from the org chart"
+  - slug: "holding-space"
+    note: "Holding space is what formal leaders do in a distributed model - designing conditions rather than directing action"
 draft: false
 ---
 

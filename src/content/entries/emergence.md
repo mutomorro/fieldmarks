@@ -34,6 +34,8 @@ related:
     note: "Emergence is what reductionism misses - behaviour that exists only in the interaction, not in the parts"
   - slug: "culture-as-system"
     note: "Culture is an emergent property of interactions, incentives, and structures - it arises from the system, not from a statement"
+  - slug: "holding-space"
+    note: "You can't design emergence, but you can hold the space where emergence is most likely to happen"
 draft: false
 ---
 
