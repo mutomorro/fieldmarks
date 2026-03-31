@@ -18,6 +18,8 @@ related:
     note: "Every past decision leaves deposits in stocks - skills, infrastructure, culture - that shape what's possible next"
   - slug: "success-to-the-successful"
     note: "Early advantages become path-dependent as the reinforcing loop entrenches the winner's position"
+  - slug: "lock-in"
+    note: "Lock-in is path dependence at its most extreme - not just constrained by history but trapped by it"
 draft: false
 ---
 

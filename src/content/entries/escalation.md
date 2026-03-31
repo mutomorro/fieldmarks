@@ -16,6 +16,8 @@ related:
     note: "Escalation burns through buffers - money, goodwill, energy - until both sides are depleted"
   - slug: "nonlinearity"
     note: "Escalation is nonlinear - small provocations can trigger disproportionate responses that spiral"
+  - slug: "accidental-adversaries"
+    note: "Accidental Adversaries can tip into Escalation when each party starts retaliating against the other's harm"
 draft: false
 ---
 

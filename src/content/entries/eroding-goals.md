@@ -18,6 +18,10 @@ related:
     note: "Lowering the goal is the symptomatic fix - easier than the hard work of closing the performance gap"
   - slug: "fixes-that-fail"
     note: "Lowering standards looks like a fix but it erodes the system's long-term capability"
+  - slug: "growth-and-underinvestment"
+    note: "Falling performance gets normalised, lowering the standard that would have justified investment"
+  - slug: "rule-beating"
+    note: "Rule beating can mask eroding goals - the metrics look fine while the reality deteriorates"
 draft: false
 ---
 

@@ -18,6 +18,10 @@ related:
     note: "Pushing harder on growth without addressing the constraint is a fix that fails"
   - slug: "buffers"
     note: "Limits often show up as buffer depletion - a resource runs low before it runs out"
+  - slug: "growth-and-underinvestment"
+    note: "Growth and Underinvestment is what happens when the constraint could have been addressed but wasn't"
+  - slug: "overshoot-and-collapse"
+    note: "If limits aren't addressed and growth continues unchecked, Limits to Growth becomes Overshoot and Collapse"
 originatedBy: "Peter Senge"
 draft: false
 ---

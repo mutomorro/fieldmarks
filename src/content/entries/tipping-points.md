@@ -18,6 +18,12 @@ related:
     note: "Crossing a tipping point can unleash exponential growth as reinforcing loops take over"
   - slug: "delays"
     note: "Delays can hide how close a system is to its tipping point until it's too late to pull back"
+  - slug: "overshoot-and-collapse"
+    note: "Overshoot can push a system past tipping points that make the collapse irreversible"
+  - slug: "attractors"
+    note: "Tipping points mark the boundary between attractors - cross one and the system falls toward a different stable state"
+  - slug: "equilibrium"
+    note: "A tipping point is the moment equilibrium breaks and the system shifts to a new balance"
 draft: false
 ---
 

@@ -22,6 +22,8 @@ related:
     note: "Unchecked exponential growth eventually hits a limit - the archetype explains what happens when it does"
   - slug: "success-to-the-successful"
     note: "Exponential growth and Success to the Successful share the same engine - a reinforcing loop that compounds advantage"
+  - slug: "overshoot-and-collapse"
+    note: "Unchecked exponential growth drives overshoot - the system blows past its limits before feedback arrives"
 draft: false
 ---
 

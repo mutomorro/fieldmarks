@@ -32,6 +32,8 @@ related:
     note: "Eroding Goals is the slow-motion cousin of Fixes That Fail - lowering the standard instead of raising performance"
   - slug: "escalation"
     note: "Each escalation step is a fix that addresses the immediate threat while making the overall situation worse"
+  - slug: "rule-beating"
+    note: "Rules designed to fix problems are beaten when people comply technically while violating the intent"
 originatedBy: Peter Senge
 draft: false
 ---
