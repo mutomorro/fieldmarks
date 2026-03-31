@@ -6,7 +6,7 @@
       "oneLiner": "The gap between doing something and seeing what happens - the source of most bad decisions in systems.",
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
-      "tags": "[\"timing\", \"decision-making\", \"policy\", \"organisations\", \"planning\"]",
+      "tags": "[\"timing\", \"decision-making\", \"planning\", \"patience\"]",
       "connectionCount": 5
     },
     {
@@ -15,7 +15,7 @@
       "oneLiner": "When the whole does something none of the parts could do alone - behaviour that arises from interactions, not instructions.",
       "theme": "system-behaviours",
       "colour": "#d4735e",
-      "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"organisations\", \"design\"]",
+      "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"design\"]",
       "connectionCount": 4
     },
     {
@@ -35,9 +35,9 @@
       "colour": "#9B51E0",
       "tags": [
         "foundations",
-        "organisations",
         "dynamics",
-        "growth"
+        "growth",
+        "stability"
       ],
       "connectionCount": 6
     },
@@ -49,9 +49,9 @@
       "colour": "#3aaa9e",
       "tags": [
         "decision-making",
-        "organisations",
         "change",
-        "problem-solving"
+        "problem-solving",
+        "short-termism"
       ],
       "connectionCount": 6
     },
@@ -61,7 +61,7 @@
       "oneLiner": "Relying on a quick fix so much that the ability to do the real thing slowly disappears.",
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
-      "tags": "[\"dependency\", \"organisational health\", \"short-termism\", \"capacity\"]",
+      "tags": "[\"dependency\", \"short-termism\", \"capacity\", \"habits\"]",
       "connectionCount": 4
     },
     {
@@ -70,7 +70,7 @@
       "oneLiner": "Every intervention in a system produces effects you didn't plan for - sometimes bigger than the ones you did.",
       "theme": "system-behaviours",
       "colour": "#d4735e",
-      "tags": "[\"intervention\", \"policy\", \"risk\", \"complexity\", \"planning\"]",
+      "tags": "[\"intervention\", \"risk\", \"complexity\", \"planning\", \"policy\"]",
       "connectionCount": 5
     }
   ],
@@ -179,6 +179,6 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T08:23:32.083Z"
+    "generatedAt": "2026-03-31T10:02:47.173Z"
   }
 }

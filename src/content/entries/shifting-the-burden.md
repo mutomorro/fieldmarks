@@ -3,7 +3,7 @@ title: "Shifting the Burden"
 oneLiner: "Relying on a quick fix so much that the ability to do the real thing slowly disappears."
 alsoKnownAs: ["Addiction", "Dependency trap"]
 theme: "systems-archetypes"
-tags: ["dependency", "organisational health", "short-termism", "capacity"]
+tags: ["dependency", "short-termism", "capacity", "habits"]
 dotGrid:
   seed: 3892
   variant: "shiftingBurden"
@@ -20,34 +20,44 @@ originatedBy: "Peter Senge"
 draft: false
 ---
 
-## What it is
+<span class="kicker">THE IDEA</span>
+
+## The slow disappearance of the real solution
 
 A problem appears. There's a proper solution, but it's slow, difficult, or expensive. There's also a quick fix that addresses the symptoms. You use the quick fix. The symptoms ease. The pressure to do the proper thing disappears.
 
 Meanwhile, something quiet happens: the capacity to implement the real solution starts to weaken. Skills atrophy. Resources get redirected. People forget there was ever another option. So when the problem returns - and it always returns - you're even more dependent on the quick fix than before.
 
-This is the addiction pattern. It works exactly the same way whether you're talking about a person, a team, or an entire organisation. The short-term relief reinforces the behaviour. The long-term capability erodes. And the gap between "where you are" and "where you'd need to be to do it properly" keeps growing.
+This is the addiction pattern. It works the same way whether you're talking about a person, a team, or an entire industry. The short-term relief reinforces the behaviour. The long-term capability erodes. And the gap between "where you are" and "where you'd need to be to do it properly" keeps growing.
 
-## What this looks like in organisations
+<span class="kicker">IN PRACTICE</span>
 
-A team relies on a few senior people to handle all the complex decisions. It's faster than developing everyone's skills. But over time, junior staff never learn to make those calls. The seniors become bottlenecks. The team becomes more dependent on them, not less. Training gets perpetually deferred because "we're too busy."
+## Too busy to fix it properly
 
-A company outsources a core capability because building it in-house would take too long. The outsourced version works well enough. Internal knowledge of the domain gradually disappears. Five years later, they can't evaluate whether the outsourced work is any good, let alone bring it back in-house. They're locked in.
+A few senior people handle all the complex decisions because it's faster than developing everyone else. Over time, the junior people never learn to make those calls. The seniors become bottlenecks. Everyone becomes more dependent on them, not less. Training gets perpetually deferred because "we're too busy" - and the busyness is caused by the dependency.
 
-A manager steps in to resolve team conflicts directly instead of helping the team build its own ability to have difficult conversations. The team learns that when things get hard, the manager will sort it out. Their conflict-resolution skills never develop. The manager gets busier and busier.
+A city relies on a motorway to handle commuter traffic instead of investing in public transport. The motorway fills up. They widen it. It fills up again. Meanwhile, bus routes get cut because nobody's using them. Twenty years later, there's no alternative to driving and the congestion is worse than ever.
 
-## How to use this
+A student uses AI to write their essays because the deadline is tomorrow. The essay gets submitted. But the thinking muscles - how to structure an argument, how to wrestle with evidence - never develop. Next time the deadline pressure is the same, but the ability to do the work without help has weakened.
 
-When you notice the same problem being "solved" the same way repeatedly, ask two questions. First: **is this the real solution, or is this the thing that makes the real solution feel less urgent?** Second: **is our ability to do the real thing getting stronger or weaker over time?**
+<span class="kicker">WORKING WITH THIS</span>
+
+## Make the atrophy visible
+
+When you notice the same problem being "solved" the same way repeatedly, ask two questions. First: **is this the real solution, or is this the thing that makes the real solution feel less urgent?** Second: **is the ability to do the real thing getting stronger or weaker over time?**
 
 If the answer to the second question is "weaker," you're in this pattern. The way out isn't to stop using the quick fix overnight - that can cause a crisis. Instead, start investing in the real solution alongside the quick fix. Build the capacity gradually while the short-term measure buys you time.
 
-The key intervention is making the atrophy visible. People often don't notice that a capability is eroding until it's gone. Track it. Measure it. Talk about it.
+The key intervention is making the erosion visible. People often don't notice that a capability is disappearing until it's gone. Track it. Measure it. Talk about it. Name the gap.
 
-## The thought to hold onto
+<span class="kicker">THE INSIGHT</span>
+
+## Harder next time
 
 The quick fix doesn't just fail to solve the problem. It makes the problem harder to solve next time.
 
-## When you're seeing this
+<span class="kicker">RECOGNITION</span>
 
-When an organisation says it's "too busy to train people." When the workaround has become the standard process. When nobody can remember the last time the proper approach was even attempted. When dependency on a vendor, a person, or a process keeps growing and nobody's worried about it.
+## When the workaround became the process
+
+When someone says they're "too busy to train people." When the workaround has become the standard way of doing things. When nobody can remember the last time the proper approach was even attempted. When dependency on a tool, a person, or a shortcut keeps growing and nobody's asking why.

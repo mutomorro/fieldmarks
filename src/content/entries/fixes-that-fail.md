@@ -7,9 +7,9 @@ alsoKnownAs:
 theme: systems-archetypes
 tags:
   - decision-making
-  - organisations
   - change
   - problem-solving
+  - short-termism
 dotGrid:
   seed: 42
   variant: fixesThatFail
@@ -26,34 +26,46 @@ originatedBy: Peter Senge
 draft: false
 ---
 
-## What it is
+<span class="kicker">THE IDEA</span>
+
+## The fix that makes things worse
 
 A quick fix solves the immediate problem. The pressure drops. Everyone moves on. But underneath, something is shifting. The fix has side effects that won't show up for weeks, months, sometimes years - and when they do, the original problem comes back worse than before.
 
-This is one of the most common patterns in organisational life. It shows up whenever the pressure to act quickly overwhelms the patience to understand what's really going on.
+This is one of the most common patterns in complex systems. It shows up whenever the pressure to act quickly overwhelms the patience to understand what's really going on.
 
-## What this looks like in organisations
+The structure is always the same: a balancing loop (the fix) suppresses the symptom, while a delayed reinforcing loop (the side effect) quietly makes the root cause worse. By the time the side effect becomes visible, the fix has been declared a success and everyone's attention has moved on.
 
-A team is missing deadlines, so you add more people. The coordination overhead increases, communication gets harder, and within six months the team is missing deadlines again - but now with a bigger headcount and a bigger budget.
+<span class="kicker">IN PRACTICE</span>
 
-A customer service team is overwhelmed, so you introduce scripts and standardised responses. Complaints drop initially. Then customers start escalating because they feel unheard. The scripts that fixed the volume problem created a quality problem.
+## Relief now, regret later
 
-A leadership team notices low engagement scores, so they launch an engagement initiative - town halls, surveys, a values refresh. Scores tick up briefly. But the structural issues (unclear roles, too many priorities, no decision-making authority) haven't changed. Scores drift back down, and now people are cynical about engagement initiatives too.
+A team is missing deadlines, so more people are added. The coordination overhead increases, communication gets harder, and within six months the team is missing deadlines again - but now with a bigger headcount and a bigger budget.
 
-## How to use this
+A city widens a road to reduce congestion. It works for a year. Then the extra capacity attracts more drivers, new businesses open along the route, and the road is more congested than before - but now it's also wider, which makes it harder and more expensive to try anything else.
 
-When you find yourself reaching for a quick solution, pause and ask two questions:
+A headache keeps coming back, so you take painkillers more often. The headaches become more frequent. You take more painkillers. Eventually the headaches are partly caused by the painkillers themselves - rebound headaches, a textbook case of the fix creating the problem it was meant to solve.
 
-**What side effects might this create?** Not "could this go wrong?" - that's too vague. Specifically: what will this fix change, beyond the thing I'm trying to fix? Who else will be affected? What will they do differently as a result?
+<span class="kicker">WORKING WITH THIS</span>
 
-**What happens when the fix wears off?** If the fix is addressing a symptom rather than a cause, the symptom will return. Will we be in a better or worse position to deal with it then?
+## Two questions before you act
 
-The point isn't that quick fixes are always wrong. Sometimes you need to stop the bleeding before you can treat the wound. The danger is when the quick fix becomes the only fix - when the organisation never gets around to addressing the root cause because the symptom keeps getting managed.
+When you find yourself reaching for a quick solution, pause and ask:
 
-## The thought to hold onto
+**What side effects might this create?** Not "could this go wrong?" - that's too vague. Specifically: what will this fix change beyond the thing I'm trying to fix? Who else will be affected? What will they do differently as a result?
+
+**What happens when the fix wears off?** If the fix is addressing a symptom rather than a cause, the symptom will return. Will you be in a better or worse position to deal with it then?
+
+The point isn't that quick fixes are always wrong. Sometimes you need to stop the bleeding before you can treat the wound. The danger is when the quick fix becomes the only fix - when nobody gets around to addressing the root cause because the symptom keeps getting managed.
+
+<span class="kicker">THE INSIGHT</span>
+
+## The quiet success
 
 The most dangerous fixes are the ones that work - just long enough for everyone to stop looking for the real solution.
 
-## When you're seeing this
+<span class="kicker">RECOGNITION</span>
 
-You're seeing this when the same problem keeps coming back despite repeated interventions. When each round of fixing seems to make the next round harder. When people say "we tried that, it didn't work" about something that did work briefly. When the organisation has developed a pattern of lurching from crisis to intervention to temporary relief to crisis.
+## The recurring crisis
+
+You're seeing this when the same problem keeps coming back despite repeated interventions. When each round of fixing seems to make the next round harder. When people say "we tried that, it didn't work" about something that did work briefly. When there's a pattern of lurching from crisis to intervention to temporary relief to crisis.

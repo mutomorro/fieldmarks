@@ -37,6 +37,8 @@ for (const t of themes) {
     <div class="scroll-hint"></div>
   </section>
 
+  <hr class="section-divider" />
+
   <!-- ====== DISCOVER ====== -->
   <section class="discover" id="discover">
     <div class="section-label">Explore</div>
@@ -66,6 +68,8 @@ for (const t of themes) {
     </div>
   </section>
 
+  <hr class="section-divider" />
+
   <!-- ====== THEMES ====== -->
   <section class="themes-section">
     <div class="section-label">Browse by theme</div>
@@ -84,6 +88,8 @@ for (const t of themes) {
       ))}
     </div>
   </section>
+
+  <hr class="section-divider" />
 
   <!-- ====== CONNECTIONS CTA ====== -->
   <section class="connections-cta">
@@ -132,11 +138,11 @@ for (const t of themes) {
     line-height: 1.05;
     color: var(--deep);
     margin-bottom: 28px;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   .hero p {
     font-size: clamp(18px, 2.2vw, 22px);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.65;
     color: var(--soft);
     max-width: 500px;
@@ -186,6 +192,13 @@ for (const t of themes) {
     padding: 140px 48px;
   }
 
+  .section-divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
   .section-label {
     font-size: 12px;
     font-weight: 500;
@@ -200,11 +213,11 @@ for (const t of themes) {
     line-height: 1.12;
     color: var(--deep);
     margin-bottom: 20px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
   .section-intro {
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
     color: var(--soft);
     max-width: 540px;
@@ -213,7 +226,7 @@ for (const t of themes) {
 
   /* ====== DISCOVER ====== */
   .discover {
-    background: #F9F9F4;
+    background-color: var(--white);
   }
 
   /* ====== CONCEPT CARDS ====== */
@@ -260,12 +273,12 @@ for (const t of themes) {
     margin: 0 20px 10px;
   }
   .card-title {
-    font-size: 28px;
+    font-size: 31px;
     font-weight: 400;
     line-height: 1.2;
     color: var(--deep);
     margin-bottom: 10px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.005em;
     transition: color 0.2s;
     padding: 0 20px;
   }
@@ -274,7 +287,7 @@ for (const t of themes) {
   }
   .card-oneliner {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.65;
     color: var(--soft);
     padding: 0 20px;
@@ -320,14 +333,14 @@ for (const t of themes) {
   }
   .theme-desc {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
     color: var(--soft);
   }
 
   /* ====== CONNECTIONS CTA ====== */
   .connections-cta {
-    background-color: #F9F9F4;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;

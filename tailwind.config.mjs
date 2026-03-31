@@ -39,7 +39,7 @@ export default {
         'theme-human': '#a06cc0',
       },
       fontFamily: {
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
       },
       fontWeight: {
         light: '300',
