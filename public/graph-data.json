@@ -1,13 +1,40 @@
 {
   "nodes": [
     {
+      "id": "boundaries",
+      "title": "Boundaries",
+      "oneLiner": "Where you draw the line around a system changes everything you see inside it",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"framing\", \"perspective\", \"scope\", \"design\"]",
+      "connectionCount": 8
+    },
+    {
+      "id": "buffers",
+      "title": "Buffers",
+      "oneLiner": "The slack in a system that absorbs shocks and keeps things stable when conditions change",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"resilience\", \"stability\", \"efficiency\", \"risk\"]",
+      "connectionCount": 10
+    },
+    {
       "id": "delays",
       "title": "Delays",
       "oneLiner": "The gap between doing something and seeing what happens - the source of most bad decisions in systems.",
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"timing\", \"decision-making\", \"planning\", \"patience\"]",
-      "connectionCount": 5
+      "connectionCount": 12
+    },
+    {
+      "id": "drift",
+      "title": "Drift",
+      "oneLiner": "Slow, invisible movement in a system's behaviour that goes unnoticed until it's dramatic",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"gradual-change\", \"standards\", \"complacency\", \"awareness\"]",
+      "connectionCount": 6
     },
     {
       "id": "emergence",
@@ -16,7 +43,25 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"design\"]",
-      "connectionCount": 4
+      "connectionCount": 7
+    },
+    {
+      "id": "eroding-goals",
+      "title": "Eroding Goals",
+      "oneLiner": "When you lower your standards instead of closing the gap between where you are and where you want to be",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"standards\", \"performance\", \"complacency\", \"gradual-change\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "escalation",
+      "title": "Escalation",
+      "oneLiner": "Two parties each responding to the other's moves, ratcheting up intensity until both lose",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"competition\", \"conflict\", \"cycles\", \"strategy\"]",
+      "connectionCount": 5
     },
     {
       "id": "exponential-growth",
@@ -25,7 +70,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"growth\", \"planning\", \"risk\", \"scaling\", \"forecasting\"]",
-      "connectionCount": 4
+      "connectionCount": 8
     },
     {
       "id": "feedback-loops",
@@ -39,7 +84,7 @@
         "growth",
         "stability"
       ],
-      "connectionCount": 6
+      "connectionCount": 21
     },
     {
       "id": "fixes-that-fail",
@@ -53,6 +98,60 @@
         "problem-solving",
         "short-termism"
       ],
+      "connectionCount": 9
+    },
+    {
+      "id": "interconnections",
+      "title": "Interconnections",
+      "oneLiner": "The relationships between parts matter more than the parts themselves",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"relationships\", \"structure\", \"networks\", \"dependencies\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "limits-to-growth",
+      "title": "Limits to Growth",
+      "oneLiner": "Every growing system eventually hits a constraint - the question is whether you see it coming",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"growth\", \"constraints\", \"strategy\", \"planning\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "nonlinearity",
+      "title": "Nonlinearity",
+      "oneLiner": "Small changes can have huge effects, and big changes can have none - systems rarely respond in proportion",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"prediction\", \"cause-and-effect\", \"planning\", \"surprise\"]",
+      "connectionCount": 10
+    },
+    {
+      "id": "oscillation",
+      "title": "Oscillation",
+      "oneLiner": "Systems that overshoot and undershoot because feedback arrives too late",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"cycles\", \"instability\", \"timing\", \"overcorrection\"]",
+      "connectionCount": 4
+    },
+    {
+      "id": "path-dependence",
+      "title": "Path Dependence",
+      "oneLiner": "Where you can go depends on where you've been - history constrains future options",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"history\", \"constraints\", \"decisions\", \"strategy\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "s-curves",
+      "title": "S-Curves",
+      "oneLiner": "Growth that starts slowly, accelerates, and then levels off as it hits limits - the shape of most real change",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"growth\", \"limits\", \"timing\", \"strategy\"]",
       "connectionCount": 6
     },
     {
@@ -62,7 +161,43 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"dependency\", \"short-termism\", \"capacity\", \"habits\"]",
+      "connectionCount": 8
+    },
+    {
+      "id": "stocks-and-flows",
+      "title": "Stocks and Flows",
+      "oneLiner": "Everything accumulates or depletes - and the difference between the two drives how systems behave",
+      "theme": "core-building-blocks",
+      "colour": "#9B51E0",
+      "tags": "[\"accumulation\", \"measurement\", \"resources\", \"planning\"]",
+      "connectionCount": 9
+    },
+    {
+      "id": "success-to-the-successful",
+      "title": "Success to the Successful",
+      "oneLiner": "Winners get more resources, which makes them win more - a structural advantage that compounds over time",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"inequality\", \"resources\", \"competition\", \"structure\"]",
       "connectionCount": 4
+    },
+    {
+      "id": "tipping-points",
+      "title": "Tipping Points",
+      "oneLiner": "The moment when a gradual change suddenly becomes a dramatic, often irreversible shift",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"thresholds\", \"change\", \"irreversibility\", \"surprise\"]",
+      "connectionCount": 8
+    },
+    {
+      "id": "tragedy-of-the-commons",
+      "title": "Tragedy of the Commons",
+      "oneLiner": "When everyone acting in their own interest destroys the shared resource they all depend on",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"shared-resources\", \"cooperation\", \"incentives\", \"sustainability\"]",
+      "connectionCount": 6
     },
     {
       "id": "unintended-consequences",
@@ -71,10 +206,58 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"intervention\", \"risk\", \"complexity\", \"planning\", \"policy\"]",
-      "connectionCount": 5
+      "connectionCount": 7
     }
   ],
   "edges": [
+    {
+      "id": "boundaries--interconnections",
+      "source": "boundaries",
+      "target": "interconnections",
+      "note": "\"Boundaries cut across interconnections - every boundary hides some relationships and reveals others\""
+    },
+    {
+      "id": "boundaries--unintended-consequences",
+      "source": "boundaries",
+      "target": "unintended-consequences",
+      "note": "\"Unintended consequences often come from drawing the boundary too tightly and missing what's outside it\""
+    },
+    {
+      "id": "boundaries--emergence",
+      "source": "boundaries",
+      "target": "emergence",
+      "note": "\"Emergent behaviour can only be seen when the boundary is drawn wide enough to include the interacting parts\""
+    },
+    {
+      "id": "boundaries--feedback-loops",
+      "source": "boundaries",
+      "target": "feedback-loops",
+      "note": "\"Drawing a boundary too narrowly can cut a feedback loop in half, making the behaviour inside the boundary look random\""
+    },
+    {
+      "id": "buffers--stocks-and-flows",
+      "source": "buffers",
+      "target": "stocks-and-flows",
+      "note": "\"Buffers are stocks - they accumulate reserves that smooth out uneven flows\""
+    },
+    {
+      "id": "buffers--delays",
+      "source": "buffers",
+      "target": "delays",
+      "note": "\"Buffers buy time, giving you space to respond before a delay in the system causes damage\""
+    },
+    {
+      "id": "buffers--feedback-loops",
+      "source": "buffers",
+      "target": "feedback-loops",
+      "note": "\"Without buffers, feedback loops react to every fluctuation, making the system jittery and unstable\""
+    },
+    {
+      "id": "buffers--nonlinearity",
+      "source": "buffers",
+      "target": "nonlinearity",
+      "note": "\"Removing a buffer can push a system past a threshold it would otherwise have absorbed\""
+    },
     {
       "id": "delays--feedback-loops",
       "source": "delays",
@@ -82,22 +265,58 @@
       "note": "\"Delays in feedback loops are what make systems overshoot and oscillate\""
     },
     {
-      "id": "delays--fixes-that-fail",
-      "source": "delays",
-      "target": "fixes-that-fail",
-      "note": "\"Most fixes fail because the delay between action and consequence hides the damage\""
-    },
-    {
-      "id": "delays--unintended-consequences",
-      "source": "delays",
-      "target": "unintended-consequences",
-      "note": "\"Delays mean consequences arrive long after the decision that caused them\""
-    },
-    {
       "id": "delays--exponential-growth",
       "source": "delays",
       "target": "exponential-growth",
       "note": "\"Delays in recognising exponential growth are why it catches people off guard\""
+    },
+    {
+      "id": "delays--stocks-and-flows",
+      "source": "delays",
+      "target": "stocks-and-flows",
+      "note": "\"Stocks change slowly because flows take time - the delay between opening a tap and filling a bath\""
+    },
+    {
+      "id": "delays--oscillation",
+      "source": "delays",
+      "target": "oscillation",
+      "note": "\"Oscillation is the signature behaviour of delays in balancing loops - overcorrection, then overcorrection again\""
+    },
+    {
+      "id": "delays--drift",
+      "source": "delays",
+      "target": "drift",
+      "note": "\"Delays make drift invisible - by the time you notice the standard has slipped, the new normal is already set\""
+    },
+    {
+      "id": "drift--feedback-loops",
+      "source": "drift",
+      "target": "feedback-loops",
+      "note": "\"Drift happens when balancing feedback loops weaken - the signal that something is off gets quieter and quieter\""
+    },
+    {
+      "id": "drift--tipping-points",
+      "source": "drift",
+      "target": "tipping-points",
+      "note": "\"Drift can carry a system toward a tipping point so gradually that nobody notices until it's crossed\""
+    },
+    {
+      "id": "boundaries--drift",
+      "source": "drift",
+      "target": "boundaries",
+      "note": "\"Drift often goes unnoticed because people's sense of what's normal shifts along with the change\""
+    },
+    {
+      "id": "buffers--drift",
+      "source": "drift",
+      "target": "buffers",
+      "note": "\"Drift often silently depletes buffers - reserves, goodwill, capacity - until there's nothing left when you need them\""
+    },
+    {
+      "id": "drift--eroding-goals",
+      "source": "drift",
+      "target": "eroding-goals",
+      "note": "\"Eroding Goals is the archetype version of drift applied to standards and targets\""
     },
     {
       "id": "emergence--feedback-loops",
@@ -112,16 +331,70 @@
       "note": "\"Emergent behaviour is often unintended - the system produces what nobody designed\""
     },
     {
-      "id": "emergence--fixes-that-fail",
+      "id": "emergence--interconnections",
       "source": "emergence",
-      "target": "fixes-that-fail",
-      "note": "\"Trying to control emergent behaviour with top-down fixes often backfires\""
+      "target": "interconnections",
+      "note": "\"Emergence arises from interconnections - behaviour the parts can't produce alone\""
     },
     {
-      "id": "emergence--shifting-the-burden",
+      "id": "emergence--nonlinearity",
       "source": "emergence",
+      "target": "nonlinearity",
+      "note": "\"Emergent behaviour is inherently nonlinear - the whole responds in ways the parts don't predict\""
+    },
+    {
+      "id": "emergence--tipping-points",
+      "source": "emergence",
+      "target": "tipping-points",
+      "note": "\"Emergent behaviour often appears suddenly at a tipping point - the system reorganises all at once\""
+    },
+    {
+      "id": "eroding-goals--feedback-loops",
+      "source": "eroding-goals",
+      "target": "feedback-loops",
+      "note": "\"A balancing loop should close the gap between performance and the goal - but this archetype weakens the goal instead\""
+    },
+    {
+      "id": "delays--eroding-goals",
+      "source": "eroding-goals",
+      "target": "delays",
+      "note": "\"Delays between performance dropping and the consequences being felt make it easier to lower the goal instead of fixing the performance\""
+    },
+    {
+      "id": "eroding-goals--shifting-the-burden",
+      "source": "eroding-goals",
       "target": "shifting-the-burden",
-      "note": "\"Dependency patterns emerge from repeated interactions, not from any single decision\""
+      "note": "\"Lowering the goal is the symptomatic fix - easier than the hard work of closing the performance gap\""
+    },
+    {
+      "id": "eroding-goals--fixes-that-fail",
+      "source": "eroding-goals",
+      "target": "fixes-that-fail",
+      "note": "\"Lowering standards looks like a fix but it erodes the system's long-term capability\""
+    },
+    {
+      "id": "escalation--feedback-loops",
+      "source": "escalation",
+      "target": "feedback-loops",
+      "note": "\"Escalation is two reinforcing loops locked together - each party's action feeds the other's response\""
+    },
+    {
+      "id": "escalation--fixes-that-fail",
+      "source": "escalation",
+      "target": "fixes-that-fail",
+      "note": "\"Each escalation step is a fix that fails - it addresses the immediate threat while making the overall situation worse\""
+    },
+    {
+      "id": "buffers--escalation",
+      "source": "escalation",
+      "target": "buffers",
+      "note": "\"Escalation burns through buffers - money, goodwill, energy - until both sides are depleted\""
+    },
+    {
+      "id": "escalation--nonlinearity",
+      "source": "escalation",
+      "target": "nonlinearity",
+      "note": "\"Escalation is nonlinear - small provocations can trigger disproportionate responses that spiral\""
     },
     {
       "id": "exponential-growth--feedback-loops",
@@ -130,28 +403,52 @@
       "note": "\"Exponential growth is a reinforcing feedback loop left unchecked\""
     },
     {
-      "id": "exponential-growth--unintended-consequences",
+      "id": "exponential-growth--stocks-and-flows",
       "source": "exponential-growth",
-      "target": "unintended-consequences",
-      "note": "\"Exponential growth often produces unintended consequences as it outstrips the system's ability to cope\""
+      "target": "stocks-and-flows",
+      "note": "\"Exponential growth happens when a stock feeds back into its own inflow\""
     },
     {
-      "id": "exponential-growth--fixes-that-fail",
+      "id": "exponential-growth--s-curves",
       "source": "exponential-growth",
-      "target": "fixes-that-fail",
-      "note": "\"Attempting to fix an exponential problem with a linear solution will always fall behind\""
+      "target": "s-curves",
+      "note": "\"Exponential growth is always the first half of an S-curve - limits always arrive\""
     },
     {
-      "id": "feedback-loops--fixes-that-fail",
-      "source": "feedback-loops",
-      "target": "fixes-that-fail",
-      "note": "Most fixes that fail involve a balancing loop (the fix) that triggers a delayed reinforcing loop (the side effect)."
+      "id": "exponential-growth--tipping-points",
+      "source": "exponential-growth",
+      "target": "tipping-points",
+      "note": "\"Exponential growth can push a system past a tipping point before anyone notices\""
     },
     {
-      "id": "feedback-loops--unintended-consequences",
+      "id": "exponential-growth--limits-to-growth",
+      "source": "exponential-growth",
+      "target": "limits-to-growth",
+      "note": "\"Unchecked exponential growth eventually hits a limit - the archetype explains what happens when it does\""
+    },
+    {
+      "id": "exponential-growth--success-to-the-successful",
+      "source": "exponential-growth",
+      "target": "success-to-the-successful",
+      "note": "\"Exponential growth and Success to the Successful share the same engine - a reinforcing loop that compounds advantage\""
+    },
+    {
+      "id": "feedback-loops--stocks-and-flows",
       "source": "feedback-loops",
-      "target": "unintended-consequences",
-      "note": "Consequences travel through feedback loops you didn't know existed."
+      "target": "stocks-and-flows",
+      "note": "\"Feedback loops work by adjusting flows, which change stocks over time\""
+    },
+    {
+      "id": "feedback-loops--oscillation",
+      "source": "feedback-loops",
+      "target": "oscillation",
+      "note": "\"Oscillation is what happens when a balancing feedback loop overcorrects due to delays\""
+    },
+    {
+      "id": "feedback-loops--success-to-the-successful",
+      "source": "feedback-loops",
+      "target": "success-to-the-successful",
+      "note": "\"This archetype is a reinforcing loop that compounds advantage - success generates resources that generate more success\""
     },
     {
       "id": "fixes-that-fail--shifting-the-burden",
@@ -160,10 +457,154 @@
       "note": "Fixes that fail often lead to shifting the burden - the quick fix becomes the default, and the real solution atrophies."
     },
     {
+      "id": "feedback-loops--fixes-that-fail",
+      "source": "fixes-that-fail",
+      "target": "feedback-loops",
+      "note": "The fix creates a balancing loop that addresses the symptom, but a delayed reinforcing loop makes the root cause worse."
+    },
+    {
+      "id": "delays--fixes-that-fail",
+      "source": "fixes-that-fail",
+      "target": "delays",
+      "note": "The delay between the fix and its side effects is what makes this pattern so dangerous - the fix looks like it works, until it doesn't."
+    },
+    {
       "id": "fixes-that-fail--unintended-consequences",
       "source": "fixes-that-fail",
       "target": "unintended-consequences",
       "note": "Every fix that fails is a case study in unintended consequences."
+    },
+    {
+      "id": "boundaries--fixes-that-fail",
+      "source": "fixes-that-fail",
+      "target": "boundaries",
+      "note": "\"Fixes often fail because the boundary was drawn too tightly - the side effects sit outside the scope\""
+    },
+    {
+      "id": "buffers--fixes-that-fail",
+      "source": "fixes-that-fail",
+      "target": "buffers",
+      "note": "\"Quick fixes often deplete buffers that the system needs for long-term stability\""
+    },
+    {
+      "id": "fixes-that-fail--limits-to-growth",
+      "source": "fixes-that-fail",
+      "target": "limits-to-growth",
+      "note": "\"Pushing harder on growth when the constraint is the problem is a fix that fails\""
+    },
+    {
+      "id": "feedback-loops--interconnections",
+      "source": "interconnections",
+      "target": "feedback-loops",
+      "note": "\"Feedback loops are interconnections that circle back on themselves, creating self-reinforcing or self-correcting behaviour\""
+    },
+    {
+      "id": "interconnections--nonlinearity",
+      "source": "interconnections",
+      "target": "nonlinearity",
+      "note": "\"Interconnections are what make systems nonlinear - a change in one place ripples unpredictably through the web\""
+    },
+    {
+      "id": "delays--interconnections",
+      "source": "interconnections",
+      "target": "delays",
+      "note": "\"Many interconnections include delays, so the effect of a change travels slowly through the system\""
+    },
+    {
+      "id": "limits-to-growth--s-curves",
+      "source": "limits-to-growth",
+      "target": "s-curves",
+      "note": "\"Limits to Growth is the structural explanation for why S-curves flatten\""
+    },
+    {
+      "id": "feedback-loops--limits-to-growth",
+      "source": "limits-to-growth",
+      "target": "feedback-loops",
+      "note": "\"The archetype is a reinforcing loop driving growth that eventually activates a balancing loop\""
+    },
+    {
+      "id": "buffers--limits-to-growth",
+      "source": "limits-to-growth",
+      "target": "buffers",
+      "note": "\"Limits often show up as buffer depletion - a resource runs low before it runs out\""
+    },
+    {
+      "id": "feedback-loops--nonlinearity",
+      "source": "nonlinearity",
+      "target": "feedback-loops",
+      "note": "\"Reinforcing feedback loops are the engine of nonlinearity, turning small changes into large ones\""
+    },
+    {
+      "id": "exponential-growth--nonlinearity",
+      "source": "nonlinearity",
+      "target": "exponential-growth",
+      "note": "\"Exponential growth is one of the most dramatic forms of nonlinear behaviour\""
+    },
+    {
+      "id": "nonlinearity--tipping-points",
+      "source": "nonlinearity",
+      "target": "tipping-points",
+      "note": "\"Tipping points are where nonlinearity is most dramatic - a tiny push triggers a massive shift\""
+    },
+    {
+      "id": "nonlinearity--s-curves",
+      "source": "nonlinearity",
+      "target": "s-curves",
+      "note": "\"S-curves show nonlinearity in action - slow start, explosive middle, plateau at the end\""
+    },
+    {
+      "id": "buffers--oscillation",
+      "source": "oscillation",
+      "target": "buffers",
+      "note": "\"Buffers dampen oscillation by absorbing the overshoot before it triggers a panicked correction\""
+    },
+    {
+      "id": "oscillation--stocks-and-flows",
+      "source": "oscillation",
+      "target": "stocks-and-flows",
+      "note": "\"Oscillation is visible in stocks - the level swings above and below where it needs to be\""
+    },
+    {
+      "id": "feedback-loops--path-dependence",
+      "source": "path-dependence",
+      "target": "feedback-loops",
+      "note": "\"Reinforcing feedback loops create path dependence by amplifying early choices until they become entrenched\""
+    },
+    {
+      "id": "path-dependence--tipping-points",
+      "source": "path-dependence",
+      "target": "tipping-points",
+      "note": "\"Early decisions can push a system past tipping points that lock it onto one path\""
+    },
+    {
+      "id": "boundaries--path-dependence",
+      "source": "path-dependence",
+      "target": "boundaries",
+      "note": "\"Past boundary choices constrain where future boundaries can be drawn\""
+    },
+    {
+      "id": "path-dependence--stocks-and-flows",
+      "source": "path-dependence",
+      "target": "stocks-and-flows",
+      "note": "\"Every past decision leaves deposits in stocks - skills, infrastructure, culture - that shape what's possible next\""
+    },
+    {
+      "id": "path-dependence--success-to-the-successful",
+      "source": "path-dependence",
+      "target": "success-to-the-successful",
+      "note": "\"Early advantages become path-dependent as the reinforcing loop entrenches the winner's position\""
+    },
+    {
+      "id": "feedback-loops--s-curves",
+      "source": "s-curves",
+      "target": "feedback-loops",
+      "note": "\"S-curves are shaped by reinforcing loops that drive growth and balancing loops that slow it\""
+    },
+    {
+      "id": "s-curves--stocks-and-flows",
+      "source": "s-curves",
+      "target": "stocks-and-flows",
+      "note": "\"The curve traces a stock that grows quickly when inflows dominate, then plateaus as outflows catch up\""
     },
     {
       "id": "feedback-loops--shifting-the-burden",
@@ -176,9 +617,111 @@
       "source": "shifting-the-burden",
       "target": "delays",
       "note": "\"The real solution usually has a longer delay, which makes the quick fix more attractive\""
+    },
+    {
+      "id": "emergence--shifting-the-burden",
+      "source": "shifting-the-burden",
+      "target": "emergence",
+      "note": "\"The dependency emerges gradually from repeated small choices, not from a single decision\""
+    },
+    {
+      "id": "shifting-the-burden--stocks-and-flows",
+      "source": "shifting-the-burden",
+      "target": "stocks-and-flows",
+      "note": "\"The capacity for the real solution is a stock that atrophies when the burden keeps getting shifted\""
+    },
+    {
+      "id": "buffers--shifting-the-burden",
+      "source": "shifting-the-burden",
+      "target": "buffers",
+      "note": "\"The symptomatic fix often drains buffers that the fundamental solution needs\""
+    },
+    {
+      "id": "shifting-the-burden--tragedy-of-the-commons",
+      "source": "shifting-the-burden",
+      "target": "tragedy-of-the-commons",
+      "note": "\"Both archetypes involve structural incentives that make the individually rational choice collectively harmful\""
+    },
+    {
+      "id": "nonlinearity--success-to-the-successful",
+      "source": "success-to-the-successful",
+      "target": "nonlinearity",
+      "note": "\"A small initial advantage can produce a massively disproportionate outcome over time\""
+    },
+    {
+      "id": "feedback-loops--tipping-points",
+      "source": "tipping-points",
+      "target": "feedback-loops",
+      "note": "\"Tipping points often trigger reinforcing feedback loops that accelerate the change and make it irreversible\""
+    },
+    {
+      "id": "s-curves--tipping-points",
+      "source": "tipping-points",
+      "target": "s-curves",
+      "note": "\"The steep middle of an S-curve is what it looks like after a tipping point has been crossed\""
+    },
+    {
+      "id": "delays--tipping-points",
+      "source": "tipping-points",
+      "target": "delays",
+      "note": "\"Delays can hide how close a system is to its tipping point until it's too late to pull back\""
+    },
+    {
+      "id": "feedback-loops--tragedy-of-the-commons",
+      "source": "tragedy-of-the-commons",
+      "target": "feedback-loops",
+      "note": "\"Each user's reinforcing loop (more use = more benefit) overwhelms the balancing loop of the shared resource\""
+    },
+    {
+      "id": "stocks-and-flows--tragedy-of-the-commons",
+      "source": "tragedy-of-the-commons",
+      "target": "stocks-and-flows",
+      "note": "\"The commons is a stock being drained by multiple outflows faster than it can replenish\""
+    },
+    {
+      "id": "boundaries--tragedy-of-the-commons",
+      "source": "tragedy-of-the-commons",
+      "target": "boundaries",
+      "note": "\"The tragedy happens because individual boundaries don't include the shared resource - each person sees only their own costs and benefits\""
+    },
+    {
+      "id": "escalation--tragedy-of-the-commons",
+      "source": "tragedy-of-the-commons",
+      "target": "escalation",
+      "note": "\"The commons can become an escalation where each party's use of the resource provokes others to use more before it's gone\""
+    },
+    {
+      "id": "limits-to-growth--tragedy-of-the-commons",
+      "source": "tragedy-of-the-commons",
+      "target": "limits-to-growth",
+      "note": "\"The commons has a carrying capacity - growth in use eventually hits the limit of what the resource can sustain\""
+    },
+    {
+      "id": "delays--unintended-consequences",
+      "source": "unintended-consequences",
+      "target": "delays",
+      "note": "\"Many unintended consequences are delayed - they arrive long after the action that caused them\""
+    },
+    {
+      "id": "feedback-loops--unintended-consequences",
+      "source": "unintended-consequences",
+      "target": "feedback-loops",
+      "note": "\"Unintended consequences often travel through feedback loops you didn't know existed\""
+    },
+    {
+      "id": "interconnections--unintended-consequences",
+      "source": "unintended-consequences",
+      "target": "interconnections",
+      "note": "\"Interconnections carry effects through the system in ways that surprise us\""
+    },
+    {
+      "id": "nonlinearity--unintended-consequences",
+      "source": "unintended-consequences",
+      "target": "nonlinearity",
+      "note": "\"Nonlinearity means a small intervention can produce outsized, unexpected side effects\""
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T10:11:04.125Z"
+    "generatedAt": "2026-03-31T14:17:52.278Z"
   }
 }
