@@ -20,6 +20,10 @@ related:
     note: "The capacity for the real solution is a stock that atrophies when the burden keeps getting shifted"
   - slug: "buffers"
     note: "The symptomatic fix often drains buffers that the fundamental solution needs"
+  - slug: "eroding-goals"
+    note: "Eroding Goals is a close relative - both archetypes choose the easier path that weakens the system over time"
+  - slug: "tragedy-of-the-commons"
+    note: "Both archetypes involve structural incentives that make the individually rational choice collectively harmful"
 originatedBy: "Peter Senge"
 draft: false
 ---

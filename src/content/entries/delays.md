@@ -10,18 +10,14 @@ dotGrid:
 related:
   - slug: "feedback-loops"
     note: "Delays in feedback loops are what make systems overshoot and oscillate"
-  - slug: "fixes-that-fail"
-    note: "Most fixes fail because the delay between action and consequence hides the damage"
-  - slug: "unintended-consequences"
-    note: "Delays mean consequences arrive long after the decision that caused them"
   - slug: "exponential-growth"
     note: "Delays in recognising exponential growth are why it catches people off guard"
   - slug: "stocks-and-flows"
     note: "Stocks change slowly because flows take time - the delay between opening a tap and filling a bath"
-  - slug: "nonlinearity"
-    note: "Delays mask nonlinearity - the disproportionate effect doesn't show up until later"
-  - slug: "buffers"
-    note: "Buffers buy time, giving you space to respond before a delay causes damage"
+  - slug: "oscillation"
+    note: "Oscillation is the signature behaviour of delays in balancing loops - overcorrection, then overcorrection again"
+  - slug: "drift"
+    note: "Delays make drift invisible - by the time you notice the standard has slipped, the new normal is already set"
 draft: false
 ---
 

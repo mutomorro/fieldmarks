@@ -8,16 +8,16 @@ dotGrid:
   seed: 8471
   variant: "default"
 related:
-  - slug: "interconnections"
-    note: "Interconnections are what make systems nonlinear - effects ripple and amplify through the web"
   - slug: "feedback-loops"
     note: "Reinforcing feedback loops are the engine of nonlinearity, turning small changes into large ones"
   - slug: "exponential-growth"
     note: "Exponential growth is one of the most dramatic forms of nonlinear behaviour"
-  - slug: "delays"
-    note: "Delays mask nonlinearity - the disproportionate effect doesn't show up until later, making it harder to connect cause and effect"
   - slug: "emergence"
     note: "Emergent behaviour is inherently nonlinear - the whole responds in ways the parts don't predict"
+  - slug: "tipping-points"
+    note: "Tipping points are where nonlinearity is most dramatic - a tiny push triggers a massive shift"
+  - slug: "s-curves"
+    note: "S-curves show nonlinearity in action - slow start, explosive middle, plateau at the end"
 draft: false
 ---
 

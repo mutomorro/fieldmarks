@@ -26,6 +26,12 @@ related:
     note: "Fixes often fail because the boundary was drawn too tightly - the side effects sit outside the scope"
   - slug: buffers
     note: "Quick fixes often deplete buffers that the system needs for long-term stability"
+  - slug: "limits-to-growth"
+    note: "Pushing harder on growth when the constraint is the problem is a fix that fails"
+  - slug: "eroding-goals"
+    note: "Eroding Goals is the slow-motion cousin of Fixes That Fail - lowering the standard instead of raising performance"
+  - slug: "escalation"
+    note: "Each escalation step is a fix that addresses the immediate threat while making the overall situation worse"
 originatedBy: Peter Senge
 draft: false
 ---

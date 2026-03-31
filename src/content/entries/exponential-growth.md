@@ -12,14 +12,16 @@ related:
     note: "Exponential growth is a reinforcing feedback loop left unchecked"
   - slug: "delays"
     note: "The delay in recognising exponential growth is what makes it dangerous"
-  - slug: "unintended-consequences"
-    note: "Exponential growth often produces unintended consequences as it outstrips the system's ability to cope"
-  - slug: "fixes-that-fail"
-    note: "Attempting to fix an exponential problem with a linear solution will always fall behind"
   - slug: "stocks-and-flows"
     note: "Exponential growth happens when a stock feeds back into its own inflow"
-  - slug: "nonlinearity"
-    note: "Exponential growth is one of the most dramatic forms of nonlinear behaviour"
+  - slug: "s-curves"
+    note: "Exponential growth is always the first half of an S-curve - limits always arrive"
+  - slug: "tipping-points"
+    note: "Exponential growth can push a system past a tipping point before anyone notices"
+  - slug: "limits-to-growth"
+    note: "Unchecked exponential growth eventually hits a limit - the archetype explains what happens when it does"
+  - slug: "success-to-the-successful"
+    note: "Exponential growth and Success to the Successful share the same engine - a reinforcing loop that compounds advantage"
 draft: false
 ---
 

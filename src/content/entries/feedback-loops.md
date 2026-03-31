@@ -14,20 +14,20 @@ dotGrid:
   seed: 1537
   variant: "feedbackLoop"
 related:
-  - slug: fixes-that-fail
-    note: Most fixes that fail involve a balancing loop (the fix) that triggers a delayed reinforcing loop (the side effect).
   - slug: delays
     note: Delays in feedback loops cause overshooting and oscillation.
   - slug: exponential-growth
     note: A reinforcing feedback loop left unchecked produces exponential growth.
   - slug: stocks-and-flows
     note: "Feedback loops work by adjusting flows, which change stocks over time"
-  - slug: interconnections
-    note: "Feedback loops are interconnections that circle back on themselves"
-  - slug: nonlinearity
-    note: "Reinforcing feedback loops are the engine of nonlinear behaviour - small inputs, outsized outputs"
-  - slug: buffers
-    note: "Without buffers, feedback loops react to every fluctuation, making the system jittery"
+  - slug: oscillation
+    note: "Oscillation is what happens when a balancing feedback loop overcorrects due to delays"
+  - slug: drift
+    note: "Drift occurs when a balancing loop slowly redefines its own goal - the target shifts without anyone noticing"
+  - slug: "escalation"
+    note: "Escalation is two reinforcing loops locked together, each feeding the other"
+  - slug: "success-to-the-successful"
+    note: "This archetype is a reinforcing loop that compounds advantage - success generates resources that generate more success"
 draft: false
 ---
 
