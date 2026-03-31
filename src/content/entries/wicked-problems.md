@@ -26,6 +26,10 @@ related:
     note: "Wicked problems are partly wicked because they're irreducible - you can't model your way to a solution"
   - slug: "solutionism"
     note: "Solutionism is the refusal to accept that wicked problems exist - treating every messy situation as a puzzle waiting for the right answer"
+  - slug: "boundary-critique"
+    note: "Wicked problems resist boundary-drawing - every boundary excludes something that turns out to be central"
+  - slug: "multiple-perspectives"
+    note: "Wicked problems look different to every stakeholder - multiple perspectives aren't optional, they're essential"
 originatedBy: "Horst Rittel and Melvin Webber"
 draft: false
 ---

@@ -40,6 +40,8 @@ related:
     note: "The iceberg model shows why higher leverage points are harder to see - they're below the waterline"
   - slug: "system-blindness"
     note: "System blindness keeps people pushing on low-leverage points - blaming individuals instead of redesigning structures"
+  - slug: "power-in-systems"
+    note: "The highest leverage points - rules, goals, paradigms - are also the points where power is most concentrated"
 originatedBy: "Donella Meadows"
 draft: false
 ---

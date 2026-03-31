@@ -34,6 +34,8 @@ related:
     note: "Most unintended consequences are second- or third-order effects that weren't traced far enough"
   - slug: "wicked-problems"
     note: "Every attempt to address a wicked problem produces unintended consequences that reshape the problem itself"
+  - slug: "stakeholder-mapping"
+    note: "Unintended consequences often land on stakeholders who weren't mapped - the people nobody thought to include"
 draft: false
 ---
 

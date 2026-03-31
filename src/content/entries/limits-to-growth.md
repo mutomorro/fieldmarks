@@ -24,6 +24,8 @@ related:
     note: "If limits aren't addressed and growth continues unchecked, Limits to Growth becomes Overshoot and Collapse"
   - slug: "constraints"
     note: "The limit in limits to growth is a constraint - the question is whether you see it coming and design for it"
+  - slug: "scale-effects"
+    note: "Limits to growth are often scale effects - the system hits constraints that didn't exist at a smaller scale"
 originatedBy: "Peter Senge"
 draft: false
 ---

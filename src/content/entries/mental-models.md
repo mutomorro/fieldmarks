@@ -26,6 +26,10 @@ related:
     note: "Every mental model is a map - a simplification that helps you navigate but never captures the full territory"
   - slug: "transformability"
     note: "Transformation requires changing mental models - the deepest, hardest, and highest-leverage kind of change"
+  - slug: "boundary-critique"
+    note: "Boundaries reflect mental models - how you frame the system reveals what you assume about what matters"
+  - slug: "multiple-perspectives"
+    note: "Each perspective carries its own mental models - its own assumptions about what's important and why"
 draft: false
 ---
 

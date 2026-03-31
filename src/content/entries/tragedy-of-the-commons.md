@@ -20,6 +20,8 @@ related:
     note: "The commons has a carrying capacity - growth in use eventually hits the limit of what the resource can sustain"
   - slug: "system-traps"
     note: "Tragedy of the commons is one of the best-known system traps - and one with well-understood escape routes"
+  - slug: "local-vs-global-optimisation"
+    note: "Tragedy of the commons is local-vs-global in its purest form - individually rational choices destroying the shared resource"
 originatedBy: "Garrett Hardin"
 draft: false
 ---

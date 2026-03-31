@@ -20,6 +20,10 @@ related:
     note: "Systems mapping surfaces mental models by forcing people to draw what they think is happening"
   - slug: "map-is-not-the-territory"
     note: "Every systems map is a simplification - useful for revealing patterns, dangerous when mistaken for reality"
+  - slug: "multiple-perspectives"
+    note: "Systems maps built with multiple perspectives are richer and more accurate than those built from a single viewpoint"
+  - slug: "stakeholder-mapping"
+    note: "Stakeholder mapping is one form of systems mapping - focused on the human actors and their relationships"
 draft: false
 ---
 

@@ -52,7 +52,16 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"framing\", \"perspective\", \"scope\", \"design\"]",
-      "connectionCount": 15
+      "connectionCount": 21
+    },
+    {
+      "id": "boundary-critique",
+      "title": "Boundary Critique",
+      "oneLiner": "Asking who decided what's inside and outside this system - because that choice shapes everything that follows",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"boundaries\", \"power\", \"perspective\", \"critique\"]",
+      "connectionCount": 6
     },
     {
       "id": "buffers",
@@ -106,7 +115,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"diagnosis\", \"decision-making\"]",
-      "connectionCount": 18
+      "connectionCount": 19
     },
     {
       "id": "constraints",
@@ -228,7 +237,7 @@
         "growth",
         "stability"
       ],
-      "connectionCount": 45
+      "connectionCount": 47
     },
     {
       "id": "fixes-that-fail",
@@ -269,7 +278,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"relationships\", \"structure\", \"networks\", \"dependencies\"]",
-      "connectionCount": 15
+      "connectionCount": 16
     },
     {
       "id": "intervention-side-effects",
@@ -296,7 +305,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"strategy\", \"change\", \"design\"]",
-      "connectionCount": 17
+      "connectionCount": 18
     },
     {
       "id": "limits-to-growth",
@@ -305,7 +314,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"growth\", \"constraints\", \"strategy\", \"planning\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "linear-thinking",
@@ -315,6 +324,15 @@
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"bias\", \"complexity\", \"planning\"]",
       "connectionCount": 9
+    },
+    {
+      "id": "local-vs-global-optimisation",
+      "title": "Local vs Global Optimisation",
+      "oneLiner": "What's best for the part isn't always best for the whole - the tension at the heart of most system design",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"optimisation\", \"design\", \"trade-offs\", \"structure\"]",
+      "connectionCount": 6
     },
     {
       "id": "lock-in",
@@ -332,7 +350,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"models\", \"epistemology\", \"humility\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "mental-models",
@@ -341,7 +359,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"assumptions\", \"perception\", \"change\"]",
-      "connectionCount": 11
+      "connectionCount": 13
     },
     {
       "id": "modularity",
@@ -350,7 +368,25 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"design\", \"resilience\", \"structure\", \"architecture\"]",
-      "connectionCount": 4
+      "connectionCount": 5
+    },
+    {
+      "id": "multiple-perspectives",
+      "title": "Multiple Perspectives",
+      "oneLiner": "Any complex system looks different depending on where you stand - no single viewpoint is complete",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"perspective\", \"complexity\", \"collaboration\", \"diagnosis\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "nested-systems",
+      "title": "Nested Systems",
+      "oneLiner": "Every system is simultaneously a whole and a part of something larger - teams within organisations within sectors within societies",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"scale\", \"structure\", \"hierarchy\", \"boundaries\"]",
+      "connectionCount": 5
     },
     {
       "id": "nonlinearity",
@@ -359,7 +395,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"prediction\", \"cause-and-effect\", \"planning\", \"surprise\"]",
-      "connectionCount": 16
+      "connectionCount": 17
     },
     {
       "id": "nudges",
@@ -395,7 +431,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"cycles\", \"scale\", \"complexity\"]",
-      "connectionCount": 4
+      "connectionCount": 5
     },
     {
       "id": "path-dependence",
@@ -416,6 +452,15 @@
       "connectionCount": 12
     },
     {
+      "id": "power-in-systems",
+      "title": "Power in Systems",
+      "oneLiner": "Who sets the rules, who controls the flows, who defines success - structure IS power",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"power\", \"structure\", \"politics\", \"design\"]",
+      "connectionCount": 6
+    },
+    {
       "id": "punctuated-equilibrium",
       "title": "Punctuated Equilibrium",
       "oneLiner": "Long periods of stability interrupted by sudden, dramatic change - how most systems evolve in practice",
@@ -431,7 +476,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"analysis\", \"complexity\", \"science\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "redundancy",
@@ -506,6 +551,15 @@
       "connectionCount": 6
     },
     {
+      "id": "scale-effects",
+      "title": "Scale Effects",
+      "oneLiner": "Things that work at one scale often don't work at another - what succeeds in a startup fails in a corporation, and vice versa",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"scale\", \"growth\", \"design\", \"complexity\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "second-order-effects",
       "title": "Second-Order Effects",
       "oneLiner": "The consequences of the consequences - what happens after the first thing happens",
@@ -551,6 +605,15 @@
       "connectionCount": 5
     },
     {
+      "id": "stakeholder-mapping",
+      "title": "Stakeholder Mapping",
+      "oneLiner": "Identifying everyone who affects or is affected by a system - including those with no voice at the table",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"mapping\", \"power\", \"perspective\", \"planning\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "stocks-and-flows",
       "title": "Stocks and Flows",
       "oneLiner": "Everything accumulates or depletes - and the difference between the two drives how systems behave",
@@ -560,13 +623,22 @@
       "connectionCount": 16
     },
     {
+      "id": "sub-optimisation",
+      "title": "Sub-optimisation",
+      "oneLiner": "Optimising one part of a system at the expense of the whole - every department hitting its targets while the organisation fails",
+      "theme": "boundaries-and-power",
+      "colour": "#d45a7a",
+      "tags": "[\"optimisation\", \"silos\", \"structure\", \"design\"]",
+      "connectionCount": 6
+    },
+    {
       "id": "success-to-the-successful",
       "title": "Success to the Successful",
       "oneLiner": "Winners get more resources, which makes them win more - a structural advantage that compounds over time",
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"inequality\", \"resources\", \"competition\", \"structure\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "system-blindness",
@@ -593,7 +665,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"tools\", \"mapping\", \"visualisation\", \"diagnosis\"]",
-      "connectionCount": 6
+      "connectionCount": 8
     },
     {
       "id": "tipping-points",
@@ -611,7 +683,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"shared-resources\", \"cooperation\", \"incentives\", \"sustainability\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "transformability",
@@ -638,7 +710,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"intervention\", \"risk\", \"complexity\", \"planning\", \"policy\"]",
-      "connectionCount": 13
+      "connectionCount": 14
     },
     {
       "id": "wicked-problems",
@@ -647,7 +719,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"problem-solving\", \"design\"]",
-      "connectionCount": 8
+      "connectionCount": 10
     }
   ],
   "edges": [
@@ -878,6 +950,60 @@
       "source": "boundaries",
       "target": "systems-mapping",
       "note": "\"Every systems map begins with a boundary decision - what's inside the map and what's left out\""
+    },
+    {
+      "id": "boundaries--boundary-critique",
+      "source": "boundaries",
+      "target": "boundary-critique",
+      "note": "\"Boundary critique makes boundary choices visible and negotiable - every boundary is a decision that shapes what you see\""
+    },
+    {
+      "id": "boundaries--multiple-perspectives",
+      "source": "boundaries",
+      "target": "multiple-perspectives",
+      "note": "\"Different perspectives draw different boundaries - where you stand determines what you include in the system\""
+    },
+    {
+      "id": "boundaries--power-in-systems",
+      "source": "boundaries",
+      "target": "power-in-systems",
+      "note": "\"Boundary-drawing is an exercise of power - whoever defines the system decides whose interests count\""
+    },
+    {
+      "id": "boundaries--sub-optimisation",
+      "source": "boundaries",
+      "target": "sub-optimisation",
+      "note": "\"Sub-optimisation happens when boundaries are drawn too tightly around parts, losing sight of the whole\""
+    },
+    {
+      "id": "boundaries--nested-systems",
+      "source": "boundaries",
+      "target": "nested-systems",
+      "note": "\"Nested systems show that every boundary is also a connection - the edge of one system is the interface with the next\""
+    },
+    {
+      "id": "boundary-critique--multiple-perspectives",
+      "source": "boundary-critique",
+      "target": "multiple-perspectives",
+      "note": "\"Different perspectives draw different boundaries - boundary critique makes those differences visible and negotiable\""
+    },
+    {
+      "id": "boundary-critique--power-in-systems",
+      "source": "boundary-critique",
+      "target": "power-in-systems",
+      "note": "\"Whoever draws the boundary holds power - they decide what counts as relevant and what gets excluded\""
+    },
+    {
+      "id": "boundary-critique--wicked-problems",
+      "source": "boundary-critique",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems resist boundary-drawing - every boundary excludes something that turns out to matter\""
+    },
+    {
+      "id": "boundary-critique--mental-models",
+      "source": "boundary-critique",
+      "target": "mental-models",
+      "note": "\"Boundaries reflect mental models - how you frame the system reveals what you assume about it\""
     },
     {
       "id": "buffers--stocks-and-flows",
@@ -1666,6 +1792,12 @@
       "note": "\"Resilient systems have feedback loops that detect disturbance early and trigger adaptation before damage compounds\""
     },
     {
+      "id": "feedback-loops--power-in-systems",
+      "source": "feedback-loops",
+      "target": "power-in-systems",
+      "note": "\"Power often works through feedback loops - those with resources gain more, reinforcing their position\""
+    },
+    {
       "id": "feedback-loops--leverage-points",
       "source": "feedback-loops",
       "target": "leverage-points",
@@ -1852,6 +1984,12 @@
       "note": "\"Modularity manages interconnections by keeping modules loosely connected - preventing cascading failure\""
     },
     {
+      "id": "interconnections--sub-optimisation",
+      "source": "interconnections",
+      "target": "sub-optimisation",
+      "note": "\"Sub-optimisation ignores interconnections - improving parts without considering what flows between them\""
+    },
+    {
       "id": "intervention-side-effects--unintended-consequences",
       "source": "intervention-side-effects",
       "target": "unintended-consequences",
@@ -1978,6 +2116,12 @@
       "note": "\"System blindness keeps people pushing on low-leverage points - blaming individuals instead of redesigning structures\""
     },
     {
+      "id": "leverage-points--power-in-systems",
+      "source": "leverage-points",
+      "target": "power-in-systems",
+      "note": "\"The highest leverage points - rules, goals, paradigms - are also the points where power is most concentrated\""
+    },
+    {
       "id": "limits-to-growth--s-curves",
       "source": "limits-to-growth",
       "target": "s-curves",
@@ -2000,6 +2144,12 @@
       "source": "limits-to-growth",
       "target": "overshoot-and-collapse",
       "note": "\"If limits aren't addressed and growth continues unchecked, Limits to Growth becomes Overshoot and Collapse\""
+    },
+    {
+      "id": "limits-to-growth--scale-effects",
+      "source": "limits-to-growth",
+      "target": "scale-effects",
+      "note": "\"Limits to growth are often scale effects - the system hits constraints that didn't exist at a smaller scale\""
     },
     {
       "id": "linear-thinking--nonlinearity",
@@ -2030,6 +2180,36 @@
       "source": "linear-thinking",
       "target": "solutionism",
       "note": "\"Solutionism is linear thinking applied to problem-solving - one problem, one cause, one fix\""
+    },
+    {
+      "id": "local-vs-global-optimisation--sub-optimisation",
+      "source": "local-vs-global-optimisation",
+      "target": "sub-optimisation",
+      "note": "\"Sub-optimisation is the pathology that results when local wins take priority over global performance\""
+    },
+    {
+      "id": "local-vs-global-optimisation--tragedy-of-the-commons",
+      "source": "local-vs-global-optimisation",
+      "target": "tragedy-of-the-commons",
+      "note": "\"Tragedy of the commons is local-vs-global in its purest form - rational individual choices destroying the shared resource\""
+    },
+    {
+      "id": "boundaries--local-vs-global-optimisation",
+      "source": "local-vs-global-optimisation",
+      "target": "boundaries",
+      "note": "\"The local-global tension depends on where you draw the boundary - what counts as 'local' and what counts as 'global'\""
+    },
+    {
+      "id": "local-vs-global-optimisation--nested-systems",
+      "source": "local-vs-global-optimisation",
+      "target": "nested-systems",
+      "note": "\"In nested systems, every level faces the local-vs-global tension with the levels above and below\""
+    },
+    {
+      "id": "feedback-loops--local-vs-global-optimisation",
+      "source": "local-vs-global-optimisation",
+      "target": "feedback-loops",
+      "note": "\"Feedback loops that connect local actions to global consequences help align local and global optimisation\""
     },
     {
       "id": "lock-in--path-dependence",
@@ -2086,6 +2266,12 @@
       "note": "\"Reductionism creates maps by breaking things into parts - and the map always loses the interactions between parts\""
     },
     {
+      "id": "map-is-not-the-territory--multiple-perspectives",
+      "source": "map-is-not-the-territory",
+      "target": "multiple-perspectives",
+      "note": "\"Each perspective is a map. Multiple maps together get closer to the territory than any single one\""
+    },
+    {
       "id": "mental-models--system-blindness",
       "source": "mental-models",
       "target": "system-blindness",
@@ -2104,6 +2290,12 @@
       "note": "\"Transformation requires changing mental models - the deepest, hardest, and highest-leverage kind of change\""
     },
     {
+      "id": "mental-models--multiple-perspectives",
+      "source": "mental-models",
+      "target": "multiple-perspectives",
+      "note": "\"Each perspective carries its own mental models - its own assumptions about what's important and why\""
+    },
+    {
       "id": "modularity--resilience",
       "source": "modularity",
       "target": "resilience",
@@ -2116,10 +2308,46 @@
       "note": "\"Modularity and redundancy work together - modular systems can have redundant components that back each other up\""
     },
     {
+      "id": "modularity--sub-optimisation",
+      "source": "modularity",
+      "target": "sub-optimisation",
+      "note": "\"The tension: modularity protects the whole by limiting integration, but too much separation is sub-optimisation\""
+    },
+    {
       "id": "complexity-vs-complication--modularity",
       "source": "modularity",
       "target": "complexity-vs-complication",
       "note": "\"Modularity helps manage complexity by containing it within units - each module can be complex internally while being simple externally\""
+    },
+    {
+      "id": "multiple-perspectives--wicked-problems",
+      "source": "multiple-perspectives",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems look different to every stakeholder - multiple perspectives are essential, not optional\""
+    },
+    {
+      "id": "multiple-perspectives--systems-mapping",
+      "source": "multiple-perspectives",
+      "target": "systems-mapping",
+      "note": "\"Systems mapping with multiple perspectives produces richer, more accurate maps than any single viewpoint\""
+    },
+    {
+      "id": "nested-systems--panarchy",
+      "source": "nested-systems",
+      "target": "panarchy",
+      "note": "\"Panarchy is nested systems in motion - each level going through its own adaptive cycle, affecting the others\""
+    },
+    {
+      "id": "nested-systems--scale-effects",
+      "source": "nested-systems",
+      "target": "scale-effects",
+      "note": "\"What works at one level of a nested system often doesn't work at another - scale changes the rules\""
+    },
+    {
+      "id": "nested-systems--sub-optimisation",
+      "source": "nested-systems",
+      "target": "sub-optimisation",
+      "note": "\"Sub-optimisation in nested systems means one level optimising at the expense of the levels above or below\""
     },
     {
       "id": "feedback-loops--nonlinearity",
@@ -2156,6 +2384,12 @@
       "source": "nonlinearity",
       "target": "sensitivity-to-initial-conditions",
       "note": "\"Sensitivity to initial conditions is nonlinearity in the time dimension - small early differences amplified into large later ones\""
+    },
+    {
+      "id": "nonlinearity--scale-effects",
+      "source": "nonlinearity",
+      "target": "scale-effects",
+      "note": "\"Scale effects are a form of nonlinearity - doubling the size doesn't produce double the outcome, it changes the system's nature\""
     },
     {
       "id": "nudges--second-order-effects",
@@ -2278,6 +2512,18 @@
       "note": "\"Policy resistance often means the intervention lacks enough variety to handle the system's complexity\""
     },
     {
+      "id": "power-in-systems--stakeholder-mapping",
+      "source": "power-in-systems",
+      "target": "stakeholder-mapping",
+      "note": "\"Stakeholder mapping reveals power dynamics - who has influence, who has interest, and who's invisible\""
+    },
+    {
+      "id": "power-in-systems--success-to-the-successful",
+      "source": "power-in-systems",
+      "target": "success-to-the-successful",
+      "note": "\"Success to the successful is power made structural - winners get more resources, which makes them win more\""
+    },
+    {
       "id": "punctuated-equilibrium--regime-shifts",
       "source": "punctuated-equilibrium",
       "target": "regime-shifts",
@@ -2288,6 +2534,12 @@
       "source": "punctuated-equilibrium",
       "target": "tipping-points",
       "note": "\"Tipping points are the trigger mechanism for the punctuation - the moment when gradual pressure produces sudden change\""
+    },
+    {
+      "id": "reductionism--sub-optimisation",
+      "source": "reductionism",
+      "target": "sub-optimisation",
+      "note": "\"Sub-optimisation is reductionism in action - optimising each part separately and assuming the whole will improve\""
     },
     {
       "id": "redundancy--resilience",
@@ -2374,6 +2626,18 @@
       "note": "\"The curve traces a stock that grows quickly when inflows dominate, then plateaus as outflows catch up\""
     },
     {
+      "id": "complexity-vs-complication--scale-effects",
+      "source": "scale-effects",
+      "target": "complexity-vs-complication",
+      "note": "\"Scaling often pushes systems from complicated into complex territory - more agents, more interactions, more emergence\""
+    },
+    {
+      "id": "local-vs-global-optimisation--scale-effects",
+      "source": "scale-effects",
+      "target": "local-vs-global-optimisation",
+      "note": "\"Scale changes the local-vs-global calculus - what counts as 'local' and 'global' shifts as the system grows\""
+    },
+    {
       "id": "intervention-side-effects--second-order-effects",
       "source": "second-order-effects",
       "target": "intervention-side-effects",
@@ -2444,6 +2708,30 @@
       "source": "solutionism",
       "target": "wicked-problems",
       "note": "\"Solutionism is the refusal to accept that wicked problems exist - treating every messy situation as a puzzle to be solved\""
+    },
+    {
+      "id": "boundary-critique--stakeholder-mapping",
+      "source": "stakeholder-mapping",
+      "target": "boundary-critique",
+      "note": "\"Stakeholder mapping is boundary critique in practice - deciding who's inside the system and whose interests count\""
+    },
+    {
+      "id": "multiple-perspectives--stakeholder-mapping",
+      "source": "stakeholder-mapping",
+      "target": "multiple-perspectives",
+      "note": "\"Each stakeholder brings a different perspective - the map shows whose views you need to include\""
+    },
+    {
+      "id": "stakeholder-mapping--systems-mapping",
+      "source": "stakeholder-mapping",
+      "target": "systems-mapping",
+      "note": "\"Stakeholder mapping is one form of systems mapping - focused on the human actors and their relationships to the system\""
+    },
+    {
+      "id": "stakeholder-mapping--unintended-consequences",
+      "source": "stakeholder-mapping",
+      "target": "unintended-consequences",
+      "note": "\"Unintended consequences often land on stakeholders who weren't mapped - the people nobody thought to include\""
     },
     {
       "id": "stocks-and-flows--systems-mapping",
@@ -2585,6 +2873,6 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T19:35:34.410Z"
+    "generatedAt": "2026-03-31T19:43:48.384Z"
   }
 }

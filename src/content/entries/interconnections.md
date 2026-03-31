@@ -32,6 +32,8 @@ related:
     note: "Reductionism discards interconnections when it separates parts - and the interconnections are often where the behaviour lives"
   - slug: "modularity"
     note: "Modularity manages interconnections by keeping modules loosely connected - preventing cascading failure"
+  - slug: "sub-optimisation"
+    note: "Sub-optimisation ignores interconnections - improving parts without considering what flows between them"
 draft: false
 ---
 

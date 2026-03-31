@@ -18,6 +18,8 @@ related:
     note: "Panarchy explains how small-scale tipping points can cascade upward and trigger system-wide transitions"
   - slug: "regime-shifts"
     note: "Regime shifts in panarchy happen when a release phase at one scale triggers collapse at a higher scale"
+  - slug: "nested-systems"
+    note: "Panarchy is nested systems in motion - adaptive cycles at each level, interacting through revolt and remember"
 originatedBy: "C.S. Holling and Lance Gunderson"
 draft: false
 ---

@@ -24,6 +24,16 @@ related:
     note: "Mental models determine where we draw boundaries - shaping what counts as 'the problem' and what stays invisible"
   - slug: "systems-mapping"
     note: "Every systems map begins with a boundary decision - what's inside the map and what's left out"
+  - slug: "boundary-critique"
+    note: "Boundary critique makes boundary choices visible and negotiable - every boundary is a decision that shapes what you see"
+  - slug: "multiple-perspectives"
+    note: "Different perspectives draw different boundaries - where you stand determines what you include in the system"
+  - slug: "power-in-systems"
+    note: "Boundary-drawing is an exercise of power - whoever defines the system decides whose interests count"
+  - slug: "sub-optimisation"
+    note: "Sub-optimisation happens when boundaries are drawn too tightly around parts, losing sight of the whole"
+  - slug: "nested-systems"
+    note: "Nested systems show that every boundary is also a connection - the edge of one system is the interface with the next"
 draft: false
 ---
 

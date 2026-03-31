@@ -20,6 +20,8 @@ related:
     note: "Reductionism and linear thinking are natural partners - break the problem into parts, solve each one, assume they add up"
   - slug: "map-is-not-the-territory"
     note: "Reductionism builds maps by breaking things apart - and every such map loses the interactions between parts"
+  - slug: "sub-optimisation"
+    note: "Sub-optimisation is reductionism applied to improvement - optimising each part separately and assuming the whole benefits"
 draft: false
 ---
 

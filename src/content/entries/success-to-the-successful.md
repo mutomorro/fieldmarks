@@ -16,6 +16,8 @@ related:
     note: "Early advantages create path dependence - the winner's lead becomes structurally entrenched"
   - slug: "nonlinearity"
     note: "A small initial advantage can produce a massively disproportionate outcome over time"
+  - slug: "power-in-systems"
+    note: "Success to the successful is power made structural - the system reinforces advantage regardless of individual merit"
 originatedBy: "Peter Senge"
 draft: false
 ---

@@ -28,6 +28,8 @@ related:
     note: "Sensitivity to initial conditions is nonlinearity in the time dimension - small early differences amplified into large later ones"
   - slug: "linear-thinking"
     note: "Linear thinking is the failure to see nonlinearity - the default assumption that more input produces proportionally more output"
+  - slug: "scale-effects"
+    note: "Scale effects are a form of nonlinearity - doubling the size doesn't produce double the outcome, it changes the system's nature"
 draft: false
 ---
 

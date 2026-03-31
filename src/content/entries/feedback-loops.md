@@ -56,6 +56,8 @@ related:
     note: "Resilient systems have feedback loops that detect disturbance early and trigger adaptation before damage compounds"
   - slug: "antifragility"
     note: "Antifragility requires feedback loops that translate stress into improvement - without feedback, stress is just damage"
+  - slug: "power-in-systems"
+    note: "Power often works through feedback loops - those with resources gain more, reinforcing their position"
   - slug: "leverage-points"
     note: "Changing a feedback loop's structure is one of the highest-leverage interventions in a system"
   - slug: "policy-resistance"

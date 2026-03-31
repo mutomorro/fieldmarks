@@ -18,6 +18,8 @@ related:
     note: "Reductionism creates maps by breaking things into parts - and the map always loses the interactions between parts"
   - slug: "irreducibility"
     note: "Irreducible systems can't be fully mapped by definition - the only complete model is the system itself"
+  - slug: "multiple-perspectives"
+    note: "Each perspective is a map. Multiple maps together get closer to the territory than any single one"
 originatedBy: "Alfred Korzybski"
 draft: false
 ---

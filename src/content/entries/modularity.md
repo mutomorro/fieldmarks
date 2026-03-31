@@ -18,6 +18,8 @@ related:
     note: "The tension: modularity protects the whole by limiting integration, but too much separation is sub-optimisation"
   - slug: "complexity-vs-complication"
     note: "Modularity helps manage complexity by containing it within units - each module can be complex internally while being simple externally"
+  - slug: "sub-optimisation"
+    note: "Too much modularity can produce sub-optimisation - parts that work perfectly in isolation but don't coordinate"
 draft: false
 ---
 
