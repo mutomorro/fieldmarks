@@ -18,6 +18,8 @@ related:
     note: "Limits to Growth is the gentler version - overshoot is what happens when the limits aren't seen in time"
   - slug: "stocks-and-flows"
     note: "Overshoot drains a stock faster than it can replenish, until the stock collapses"
+  - slug: "carrying-capacity"
+    note: "Overshoot happens when a system exceeds its carrying capacity before feedback slows the growth"
 draft: false
 ---
 

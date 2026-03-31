@@ -26,6 +26,10 @@ related:
     note: "Safe-to-fail experiments build resilience by helping systems learn without being damaged by the learning process"
   - slug: "distributed-leadership"
     note: "Distributed leadership builds resilience - the system doesn't depend on any single leader to function"
+  - slug: "keystone-species"
+    note: "A system's resilience often depends on its keystone elements - their removal triggers cascading failure"
+  - slug: "diversity-and-stability"
+    note: "Diversity is one of the primary sources of resilience - more variety means more ways to respond to the unexpected"
 draft: false
 ---
 

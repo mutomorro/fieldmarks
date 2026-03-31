@@ -18,6 +18,10 @@ related:
     note: "Co-evolution produces emergent outcomes that neither system would have produced alone"
   - slug: "self-organisation"
     note: "Co-evolving systems self-organise in response to each other, creating patterns neither designed"
+  - slug: "symbiosis"
+    note: "Symbiotic partners co-evolve - each adapts to the other, deepening the interdependence"
+  - slug: "niche-construction"
+    note: "Niche construction is one-directional co-evolution - reshaping the environment changes the selection pressures"
 draft: false
 ---
 

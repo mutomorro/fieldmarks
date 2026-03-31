@@ -46,6 +46,10 @@ related:
     note: "Sensemaking is most critical in complex situations where the relationship between cause and effect is unclear"
   - slug: "outcome-mapping"
     note: "Outcome mapping was designed for complex change - where you can influence behaviour but can't control final outcomes"
+  - slug: "bounded-rationality"
+    note: "Bounded rationality explains why complex systems overwhelm us - our cognitive capacity is bounded, the system's complexity isn't"
+  - slug: "cognitive-load"
+    note: "Complex systems impose high cognitive load because their interactions can't be simplified without losing essential information"
 draft: false
 ---
 

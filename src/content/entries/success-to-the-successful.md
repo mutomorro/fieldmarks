@@ -20,6 +20,8 @@ related:
     note: "Success to the successful is power made structural - the system reinforces advantage regardless of individual merit"
   - slug: "network-effects"
     note: "Network effects are success-to-the-successful at the platform level - the biggest network attracts more users, which makes it bigger"
+  - slug: "parasitism"
+    note: "Parasitic relationships reinforce themselves through success-to-the-successful - the extracting party grows while the host weakens"
 originatedBy: "Peter Senge"
 draft: false
 ---

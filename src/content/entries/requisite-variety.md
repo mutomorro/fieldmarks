@@ -22,6 +22,8 @@ related:
     note: "Adaptive capacity is requisite variety in practice - the range of responses available when conditions change"
   - slug: "distributed-leadership"
     note: "Distributed leadership increases requisite variety - more people leading means a wider range of responses to challenges"
+  - slug: "diversity-and-stability"
+    note: "Diversity provides requisite variety - a diverse system has more response options than a uniform one"
 originatedBy: "W. Ross Ashby"
 draft: false
 ---

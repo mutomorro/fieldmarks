@@ -18,6 +18,8 @@ related:
     note: "Modularity and redundancy work together - modular systems can have redundant components that back each other up"
   - slug: "robustness-vs-resilience"
     note: "Redundancy serves both strategies - robust systems use it to prevent failure, resilient systems use it to recover from it"
+  - slug: "diversity-and-stability"
+    note: "Diversity is a form of functional redundancy - different parts that can serve similar purposes under different conditions"
 draft: false
 ---
 

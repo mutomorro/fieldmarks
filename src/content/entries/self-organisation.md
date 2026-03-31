@@ -24,6 +24,8 @@ related:
     note: "Distributed leadership is self-organisation applied to decision-making - authority emerges where it's needed"
   - slug: "culture-as-system"
     note: "Culture self-organises from daily interactions and norms - nobody designs it, but everyone shapes it"
+  - slug: "succession"
+    note: "Succession is self-organisation after disruption - the system rebuilds itself through predictable stages"
 draft: false
 ---
 

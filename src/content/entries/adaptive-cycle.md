@@ -28,6 +28,8 @@ related:
     note: "The adaptive cycle is the internal mechanism behind punctuated equilibrium - what happens during both stability and disruption"
   - slug: "institutional-inertia"
     note: "Inertia builds during the conservation phase - the system becomes rigid and resistant as it matures"
+  - slug: "succession"
+    note: "Succession is the growth and reorganisation phases of the adaptive cycle playing out in sequence after disturbance"
 originatedBy: "C.S. Holling"
 draft: false
 ---

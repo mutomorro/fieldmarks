@@ -74,6 +74,8 @@ related:
     note: "Learning organisations are built on feedback loops that translate experience into structural adaptation"
   - slug: "double-loop-learning"
     note: "Single-loop learning adjusts behaviour; double-loop learning adjusts the rules - a feedback loop that changes the feedback loop"
+  - slug: "niche-construction"
+    note: "Niche construction creates feedback between organism and environment - reshaping the world, which reshapes the organism"
   - slug: "leverage-points"
     note: "Changing a feedback loop's structure is one of the highest-leverage interventions in a system"
   - slug: "policy-resistance"

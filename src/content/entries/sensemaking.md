@@ -18,6 +18,8 @@ related:
     note: "Wicked problems demand sensemaking because they resist the standard problem-solving sequence of define, analyse, solve"
   - slug: "multiple-perspectives"
     note: "Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation"
+  - slug: "sensemaking-under-pressure"
+    note: "Under pressure, sensemaking shifts from deliberate analysis to rapid pattern recognition"
 draft: false
 ---
 

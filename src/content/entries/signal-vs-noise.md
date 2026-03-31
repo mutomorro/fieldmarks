@@ -18,6 +18,8 @@ related:
     note: "Dynamic thinking helps separate signal from noise by looking at trends rather than individual data points"
   - slug: "nonlinearity"
     note: "In nonlinear systems, distinguishing signal from noise is harder because small causes can produce large effects"
+  - slug: "action-bias"
+    note: "Action bias makes people react to noise - the urge to act doesn't distinguish between signal and random variation"
 draft: false
 ---
 

@@ -18,6 +18,8 @@ related:
     note: "Culture reinforces itself through feedback loops - the culture shapes behaviour, and behaviour reinforces the culture"
   - slug: "institutional-inertia"
     note: "Culture is one of the strongest sources of institutional inertia - it outlasts every programme designed to change it"
+  - slug: "niche-construction"
+    note: "Culture is niche construction at the social level - people reshape their social environment, which then shapes them back"
 draft: false
 ---
 

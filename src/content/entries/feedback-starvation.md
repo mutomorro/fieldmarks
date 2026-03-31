@@ -18,6 +18,8 @@ related:
     note: "Feedback starvation enables drift - without signals that something is changing, the slow decline goes unnoticed"
   - slug: "groupthink"
     note: "Groupthink creates feedback starvation by suppressing the dissent that would provide corrective information"
+  - slug: "parasitism"
+    note: "Parasitic relationships often involve feedback starvation - the host's deterioration is invisible to the parasite"
 draft: false
 ---
 

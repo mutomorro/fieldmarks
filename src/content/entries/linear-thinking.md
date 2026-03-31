@@ -26,6 +26,10 @@ related:
     note: "Dynamic thinking is the antidote to linear thinking - replacing straight-line projections with a sense of how systems change over time"
   - slug: "theory-of-change"
     note: "Most theories of change are dangerously linear - real change doesn't follow a straight chain from activity to impact"
+  - slug: "cognitive-load"
+    note: "High cognitive load makes linear thinking more likely - the mind defaults to simple causal chains when overloaded"
+  - slug: "narrative-fallacy"
+    note: "The narrative fallacy imposes linear causation on nonlinear events - turning a web of causes into a chain"
 draft: false
 ---
 

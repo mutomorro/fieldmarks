@@ -10,13 +10,22 @@
       "connectionCount": 4
     },
     {
+      "id": "action-bias",
+      "title": "Action Bias",
+      "oneLiner": "The tendency to do something - anything - rather than wait, watch, and understand",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"bias\", \"decision-making\", \"intervention\", \"patience\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "adaptive-capacity",
       "title": "Adaptive Capacity",
       "oneLiner": "The ability to adjust to changing conditions - the resource that matters most when you can't predict what's coming",
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"adaptation\", \"resilience\", \"change\", \"capacity\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "adaptive-cycle",
@@ -25,7 +34,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"cycles\", \"evolution\", \"renewal\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "antifragility",
@@ -64,13 +73,31 @@
       "connectionCount": 6
     },
     {
+      "id": "bounded-rationality",
+      "title": "Bounded Rationality",
+      "oneLiner": "People make reasonable decisions given the information and cognitive capacity available to them - which is always limited",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"decision-making\", \"cognition\", \"rationality\", \"limits\"]",
+      "connectionCount": 8
+    },
+    {
       "id": "buffers",
       "title": "Buffers",
       "oneLiner": "The slack in a system that absorbs shocks and keeps things stable when conditions change",
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"resilience\", \"stability\", \"efficiency\", \"risk\"]",
-      "connectionCount": 15
+      "connectionCount": 16
+    },
+    {
+      "id": "carrying-capacity",
+      "title": "Carrying Capacity",
+      "oneLiner": "The maximum a system can sustain - every system has limits, even if they're not visible yet",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"limits\", \"growth\", \"sustainability\", \"ecology\"]",
+      "connectionCount": 5
     },
     {
       "id": "catalytic-mechanisms",
@@ -97,7 +124,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"adaptation\", \"change\", \"competition\", \"evolution\"]",
-      "connectionCount": 5
+      "connectionCount": 8
+    },
+    {
+      "id": "cognitive-load",
+      "title": "Cognitive Load",
+      "oneLiner": "The amount of working memory being used - complex systems impose high load, which degrades thinking",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"cognition\", \"complexity\", \"design\", \"thinking\"]",
+      "connectionCount": 6
     },
     {
       "id": "complex-adaptive-systems",
@@ -106,7 +142,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"adaptation\", \"emergence\", \"agents\"]",
-      "connectionCount": 12
+      "connectionCount": 13
     },
     {
       "id": "complexity-vs-complication",
@@ -115,7 +151,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"diagnosis\", \"decision-making\"]",
-      "connectionCount": 22
+      "connectionCount": 26
     },
     {
       "id": "constraints",
@@ -124,7 +160,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"design\", \"structure\", \"creativity\", \"intervention\"]",
-      "connectionCount": 10
+      "connectionCount": 11
     },
     {
       "id": "culture-as-system",
@@ -133,7 +169,7 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"culture\", \"emergence\", \"organisations\", \"structure\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "cynefin-framework",
@@ -142,7 +178,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"decision-making\", \"sense-making\", \"complexity\", \"strategy\"]",
-      "connectionCount": 10
+      "connectionCount": 11
+    },
+    {
+      "id": "decision-fatigue",
+      "title": "Decision Fatigue",
+      "oneLiner": "The deteriorating quality of decisions after a long session of decision-making",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"decision-making\", \"cognition\", \"fatigue\", \"limits\"]",
+      "connectionCount": 5
     },
     {
       "id": "delays",
@@ -163,13 +208,22 @@
       "connectionCount": 5
     },
     {
+      "id": "diversity-and-stability",
+      "title": "Diversity and Stability",
+      "oneLiner": "More diverse systems tend to be more resilient - monocultures are efficient until they're catastrophically fragile",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"resilience\", \"diversity\", \"ecology\", \"design\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "double-loop-learning",
       "title": "Double-Loop Learning",
       "oneLiner": "Questioning not just 'are we doing things right?' but 'are we doing the right things?'",
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"learning\", \"assumptions\", \"adaptation\", \"thinking\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "drift",
@@ -178,7 +232,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"gradual-change\", \"standards\", \"complacency\", \"awareness\"]",
-      "connectionCount": 13
+      "connectionCount": 14
     },
     {
       "id": "dynamic-thinking",
@@ -223,7 +277,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"standards\", \"performance\", \"complacency\", \"gradual-change\"]",
-      "connectionCount": 10
+      "connectionCount": 11
     },
     {
       "id": "escalation",
@@ -250,7 +304,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"growth\", \"planning\", \"risk\", \"scaling\", \"forecasting\"]",
-      "connectionCount": 13
+      "connectionCount": 14
     },
     {
       "id": "feedback-loops",
@@ -264,7 +318,7 @@
         "growth",
         "stability"
       ],
-      "connectionCount": 60
+      "connectionCount": 63
     },
     {
       "id": "feedback-starvation",
@@ -273,7 +327,7 @@
       "theme": "measurement-and-signals",
       "colour": "#d4735e",
       "tags": "[\"feedback\", \"information\", \"hierarchy\", \"failure\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "fixes-that-fail",
@@ -287,7 +341,7 @@
         "problem-solving",
         "short-termism"
       ],
-      "connectionCount": 18
+      "connectionCount": 19
     },
     {
       "id": "goodharts-law",
@@ -305,7 +359,7 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"decision-making\", \"groups\", \"bias\", \"failure\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "growth-and-underinvestment",
@@ -314,6 +368,15 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"growth\", \"investment\", \"capacity\", \"self-fulfilling\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "hindsight-bias",
+      "title": "Hindsight Bias",
+      "oneLiner": "After something happens, it seems obvious it was going to happen - making us overconfident about our ability to predict",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"bias\", \"prediction\", \"judgement\", \"cognition\"]",
       "connectionCount": 5
     },
     {
@@ -341,7 +404,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"relationships\", \"structure\", \"networks\", \"dependencies\"]",
-      "connectionCount": 17
+      "connectionCount": 19
     },
     {
       "id": "intervention-side-effects",
@@ -350,7 +413,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"unintended-consequences\", \"complexity\", \"planning\"]",
-      "connectionCount": 11
+      "connectionCount": 12
     },
     {
       "id": "irreducibility",
@@ -359,7 +422,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"prediction\", \"simulation\", \"limits\"]",
-      "connectionCount": 7
+      "connectionCount": 8
+    },
+    {
+      "id": "keystone-species",
+      "title": "Keystone Species",
+      "oneLiner": "The role whose removal would fundamentally alter the system - the node that holds everything together",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"ecology\", \"structure\", \"fragility\", \"design\"]",
+      "connectionCount": 5
     },
     {
       "id": "leading-vs-lagging-indicators",
@@ -386,7 +458,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"strategy\", \"change\", \"design\"]",
-      "connectionCount": 18
+      "connectionCount": 19
     },
     {
       "id": "limits-to-growth",
@@ -395,7 +467,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"growth\", \"constraints\", \"strategy\", \"planning\"]",
-      "connectionCount": 10
+      "connectionCount": 11
     },
     {
       "id": "linear-thinking",
@@ -404,7 +476,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"bias\", \"complexity\", \"planning\"]",
-      "connectionCount": 10
+      "connectionCount": 12
     },
     {
       "id": "local-vs-global-optimisation",
@@ -413,7 +485,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"optimisation\", \"design\", \"trade-offs\", \"structure\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "lock-in",
@@ -440,7 +512,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"assumptions\", \"perception\", \"change\"]",
-      "connectionCount": 21
+      "connectionCount": 25
     },
     {
       "id": "modularity",
@@ -449,7 +521,16 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"design\", \"resilience\", \"structure\", \"architecture\"]",
-      "connectionCount": 6
+      "connectionCount": 8
+    },
+    {
+      "id": "motivated-reasoning",
+      "title": "Motivated Reasoning",
+      "oneLiner": "Finding the evidence for what you already believe - the human default, not the exception",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"bias\", \"reasoning\", \"beliefs\", \"cognition\"]",
+      "connectionCount": 5
     },
     {
       "id": "multiple-perspectives",
@@ -459,6 +540,24 @@
       "colour": "#d45a7a",
       "tags": "[\"perspective\", \"complexity\", \"collaboration\", \"diagnosis\"]",
       "connectionCount": 9
+    },
+    {
+      "id": "mutualism",
+      "title": "Mutualism",
+      "oneLiner": "Relationships where both parties benefit - rare in rhetoric, common in reality",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"relationships\", \"cooperation\", \"ecology\", \"design\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "narrative-fallacy",
+      "title": "Narrative Fallacy",
+      "oneLiner": "The need to construct a simple story from complex events - makes us feel like we understand, even when we don't",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"bias\", \"stories\", \"complexity\", \"explanation\"]",
+      "connectionCount": 5
     },
     {
       "id": "nested-systems",
@@ -476,6 +575,15 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"networks\", \"growth\", \"platforms\", \"lock-in\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "niche-construction",
+      "title": "Niche Construction",
+      "oneLiner": "Organisms and organisations don't just adapt to their environment - they reshape it",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"adaptation\", \"environment\", \"agency\", \"ecology\"]",
       "connectionCount": 5
     },
     {
@@ -539,7 +647,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"limits\", \"growth\", \"catastrophe\", \"sustainability\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "panarchy",
@@ -551,13 +659,22 @@
       "connectionCount": 5
     },
     {
+      "id": "parasitism",
+      "title": "Parasitism",
+      "oneLiner": "Relationships where one party extracts value at the other's expense - sometimes structural, not intentional",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"relationships\", \"extraction\", \"ecology\", \"power\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "path-dependence",
       "title": "Path Dependence",
       "oneLiner": "Where you can go depends on where you've been - history constrains future options",
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"history\", \"constraints\", \"decisions\", \"strategy\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "perverse-incentives",
@@ -584,7 +701,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"power\", \"structure\", \"politics\", \"design\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "proxy-measures",
@@ -593,7 +710,7 @@
       "theme": "measurement-and-signals",
       "colour": "#d4735e",
       "tags": "[\"measurement\", \"simplification\", \"gaming\", \"accuracy\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "punctuated-equilibrium",
@@ -602,7 +719,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"evolution\", \"stability\", \"patterns\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "reductionism",
@@ -620,7 +737,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"resilience\", \"design\", \"efficiency\", \"risk\"]",
-      "connectionCount": 5
+      "connectionCount": 7
     },
     {
       "id": "regime-shifts",
@@ -629,7 +746,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"tipping-points\", \"stability\", \"transformation\"]",
-      "connectionCount": 8
+      "connectionCount": 9
     },
     {
       "id": "requisite-variety",
@@ -638,7 +755,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"complexity\", \"control\", \"adaptation\", \"design\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "resilience",
@@ -647,7 +764,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"resilience\", \"adaptation\", \"stability\", \"design\"]",
-      "connectionCount": 13
+      "connectionCount": 16
     },
     {
       "id": "robustness-vs-resilience",
@@ -686,6 +803,15 @@
       "connectionCount": 7
     },
     {
+      "id": "satisficing",
+      "title": "Satisficing",
+      "oneLiner": "Choosing good enough rather than optimal - often the rational response to complexity",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"decision-making\", \"rationality\", \"pragmatism\", \"limits\"]",
+      "connectionCount": 7
+    },
+    {
       "id": "scale-effects",
       "title": "Scale Effects",
       "oneLiner": "Things that work at one scale often don't work at another - what succeeds in a startup fails in a corporation, and vice versa",
@@ -710,7 +836,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"emergence\", \"complexity\", \"structure\", \"adaptation\"]",
-      "connectionCount": 9
+      "connectionCount": 10
+    },
+    {
+      "id": "sensemaking-under-pressure",
+      "title": "Sensemaking Under Pressure",
+      "oneLiner": "How people actually make sense of complex situations in real time - usually not through analysis",
+      "theme": "human-dimensions",
+      "colour": "#a06cc0",
+      "tags": "[\"decision-making\", \"pressure\", \"expertise\", \"cognition\"]",
+      "connectionCount": 5
     },
     {
       "id": "sensemaking",
@@ -719,7 +854,7 @@
       "theme": "organisational-systems",
       "colour": "#7ab84e",
       "tags": "[\"complexity\", \"decision-making\", \"diagnosis\", \"leadership\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "sensitivity-to-initial-conditions",
@@ -728,7 +863,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"prediction\", \"chaos\", \"uncertainty\"]",
-      "connectionCount": 6
+      "connectionCount": 8
     },
     {
       "id": "shifting-the-burden",
@@ -746,7 +881,7 @@
       "theme": "measurement-and-signals",
       "colour": "#d4735e",
       "tags": "[\"measurement\", \"information\", \"decision-making\", \"statistics\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "silos",
@@ -764,7 +899,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"complexity\", \"problem-solving\", \"design\"]",
-      "connectionCount": 5
+      "connectionCount": 7
     },
     {
       "id": "stakeholder-mapping",
@@ -782,7 +917,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"accumulation\", \"measurement\", \"resources\", \"planning\"]",
-      "connectionCount": 18
+      "connectionCount": 19
     },
     {
       "id": "sub-optimisation",
@@ -800,7 +935,16 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"inequality\", \"resources\", \"competition\", \"structure\"]",
-      "connectionCount": 7
+      "connectionCount": 8
+    },
+    {
+      "id": "succession",
+      "title": "Succession",
+      "oneLiner": "The predictable sequence of change after a disturbance - cleared ground doesn't stay cleared",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"change\", \"ecology\", \"recovery\", \"patterns\"]",
+      "connectionCount": 5
     },
     {
       "id": "surrogate-measures",
@@ -812,13 +956,22 @@
       "connectionCount": 5
     },
     {
+      "id": "symbiosis",
+      "title": "Symbiosis",
+      "oneLiner": "Different organisms - or organisations - living in close association, for better or worse",
+      "theme": "natural-metaphors",
+      "colour": "#7ab84e",
+      "tags": "[\"relationships\", \"ecology\", \"interdependence\", \"design\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "system-blindness",
       "title": "System Blindness",
       "oneLiner": "The inability to see systemic causes - defaulting to blaming individuals when the structure is the problem",
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"blame\", \"structure\", \"diagnosis\"]",
-      "connectionCount": 9
+      "connectionCount": 12
     },
     {
       "id": "system-traps",
@@ -881,7 +1034,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"decision-making\", \"planning\", \"risk\", \"uncertainty\"]",
-      "connectionCount": 8
+      "connectionCount": 9
     },
     {
       "id": "unintended-consequences",
@@ -937,6 +1090,30 @@
       "note": "\"Accidental Adversaries can tip into Escalation when each party starts retaliating against the other's unintended harm\""
     },
     {
+      "id": "action-bias--solutionism",
+      "source": "action-bias",
+      "target": "solutionism",
+      "note": "\"Action bias feeds solutionism - the urge to act prevents accepting that some situations need navigation, not fixing\""
+    },
+    {
+      "id": "action-bias--fixes-that-fail",
+      "source": "action-bias",
+      "target": "fixes-that-fail",
+      "note": "\"Many fixes that fail are driven by action bias - the need to do something overrides the need to understand the situation first\""
+    },
+    {
+      "id": "action-bias--intervention-side-effects",
+      "source": "action-bias",
+      "target": "intervention-side-effects",
+      "note": "\"Action bias increases intervention side effects because the action is taken before the system is understood\""
+    },
+    {
+      "id": "action-bias--signal-vs-noise",
+      "source": "action-bias",
+      "target": "signal-vs-noise",
+      "note": "\"Action bias makes people react to noise - the urge to act doesn't distinguish between meaningful change and random variation\""
+    },
+    {
       "id": "adaptive-capacity--resilience",
       "source": "adaptive-capacity",
       "target": "resilience",
@@ -977,6 +1154,12 @@
       "source": "adaptive-capacity",
       "target": "learning-organisation",
       "note": "\"A learning organisation builds adaptive capacity continuously - organisational learning is how adaptability grows\""
+    },
+    {
+      "id": "adaptive-capacity--diversity-and-stability",
+      "source": "adaptive-capacity",
+      "target": "diversity-and-stability",
+      "note": "\"Diversity builds adaptive capacity - if one approach fails, alternatives already exist within the system\""
     },
     {
       "id": "adaptive-cycle--resilience",
@@ -1031,6 +1214,12 @@
       "source": "adaptive-cycle",
       "target": "institutional-inertia",
       "note": "\"Inertia builds during the conservation phase - the system becomes rigid and resistant as it matures\""
+    },
+    {
+      "id": "adaptive-cycle--succession",
+      "source": "adaptive-cycle",
+      "target": "succession",
+      "note": "\"Succession is the growth and reorganisation phases of the adaptive cycle playing out in sequence after disturbance\""
     },
     {
       "id": "antifragility--resilience",
@@ -1213,6 +1402,36 @@
       "note": "\"Boundaries reflect mental models - how you frame the system reveals what you assume about it\""
     },
     {
+      "id": "bounded-rationality--satisficing",
+      "source": "bounded-rationality",
+      "target": "satisficing",
+      "note": "\"Satisficing is the rational response to bounded rationality - choosing good enough when optimal is unknowable\""
+    },
+    {
+      "id": "bounded-rationality--mental-models",
+      "source": "bounded-rationality",
+      "target": "mental-models",
+      "note": "\"Mental models are how bounded rationality works in practice - we simplify the world to make decisions possible\""
+    },
+    {
+      "id": "bounded-rationality--complexity-vs-complication",
+      "source": "bounded-rationality",
+      "target": "complexity-vs-complication",
+      "note": "\"Bounded rationality explains why complex systems are so hard - our cognitive capacity is bounded, the system's complexity isn't\""
+    },
+    {
+      "id": "bounded-rationality--system-blindness",
+      "source": "bounded-rationality",
+      "target": "system-blindness",
+      "note": "\"System blindness is partly a consequence of bounded rationality - we default to simple explanations because the systemic ones exceed our processing capacity\""
+    },
+    {
+      "id": "bounded-rationality--proxy-measures",
+      "source": "bounded-rationality",
+      "target": "proxy-measures",
+      "note": "\"Proxy measures exist because of bounded rationality - we measure what we can process, not what we ideally would\""
+    },
+    {
       "id": "buffers--stocks-and-flows",
       "source": "buffers",
       "target": "stocks-and-flows",
@@ -1259,6 +1478,36 @@
       "source": "buffers",
       "target": "redundancy",
       "note": "\"Buffers are a form of redundancy in stocks - excess capacity that smooths out volatility and absorbs shocks\""
+    },
+    {
+      "id": "carrying-capacity--limits-to-growth",
+      "source": "carrying-capacity",
+      "target": "limits-to-growth",
+      "note": "\"Carrying capacity is the limit that limits-to-growth hits - the ceiling the system can't sustainably exceed\""
+    },
+    {
+      "id": "carrying-capacity--overshoot-and-collapse",
+      "source": "carrying-capacity",
+      "target": "overshoot-and-collapse",
+      "note": "\"Overshoot happens when a system exceeds its carrying capacity before feedback kicks in\""
+    },
+    {
+      "id": "carrying-capacity--stocks-and-flows",
+      "source": "carrying-capacity",
+      "target": "stocks-and-flows",
+      "note": "\"Carrying capacity is determined by the balance of stocks and flows - what the system can replenish as fast as it's consumed\""
+    },
+    {
+      "id": "buffers--carrying-capacity",
+      "source": "carrying-capacity",
+      "target": "buffers",
+      "note": "\"Buffers can temporarily mask the approach to carrying capacity - the system feels fine until the buffer is exhausted\""
+    },
+    {
+      "id": "carrying-capacity--exponential-growth",
+      "source": "carrying-capacity",
+      "target": "exponential-growth",
+      "note": "\"Exponential growth makes carrying capacity dangerous - the system can go from 'plenty of room' to 'exceeded' in very few cycles\""
     },
     {
       "id": "catalytic-mechanisms--leverage-points",
@@ -1367,6 +1616,48 @@
       "source": "co-evolution",
       "target": "self-organisation",
       "note": "\"Co-evolving systems self-organise in response to each other, creating patterns neither designed\""
+    },
+    {
+      "id": "co-evolution--symbiosis",
+      "source": "co-evolution",
+      "target": "symbiosis",
+      "note": "\"Symbiotic partners co-evolve - each adapts to the other, deepening the interdependence\""
+    },
+    {
+      "id": "co-evolution--niche-construction",
+      "source": "co-evolution",
+      "target": "niche-construction",
+      "note": "\"Niche construction is one-directional co-evolution - reshaping the environment changes the selection pressures\""
+    },
+    {
+      "id": "bounded-rationality--cognitive-load",
+      "source": "cognitive-load",
+      "target": "bounded-rationality",
+      "note": "\"Cognitive load is the mechanism behind bounded rationality - the bounds are set by how much the mind can process at once\""
+    },
+    {
+      "id": "cognitive-load--decision-fatigue",
+      "source": "cognitive-load",
+      "target": "decision-fatigue",
+      "note": "\"Sustained cognitive load produces decision fatigue - the system degrades under prolonged demand\""
+    },
+    {
+      "id": "cognitive-load--complexity-vs-complication",
+      "source": "cognitive-load",
+      "target": "complexity-vs-complication",
+      "note": "\"Complex systems impose high cognitive load because the interactions can't be simplified without losing essential information\""
+    },
+    {
+      "id": "cognitive-load--satisficing",
+      "source": "cognitive-load",
+      "target": "satisficing",
+      "note": "\"High cognitive load drives satisficing - when processing capacity is full, good enough replaces optimal\""
+    },
+    {
+      "id": "cognitive-load--linear-thinking",
+      "source": "cognitive-load",
+      "target": "linear-thinking",
+      "note": "\"High cognitive load makes linear thinking more likely - the mind defaults to simple causal chains when overloaded\""
     },
     {
       "id": "complex-adaptive-systems--emergence",
@@ -1573,6 +1864,12 @@
       "note": "\"Culture is one of the strongest sources of institutional inertia - it outlasts every programme designed to change it\""
     },
     {
+      "id": "culture-as-system--niche-construction",
+      "source": "culture-as-system",
+      "target": "niche-construction",
+      "note": "\"Culture is niche construction at the social level - people reshape their social environment, which then shapes them back\""
+    },
+    {
       "id": "cynefin-framework--emergence",
       "source": "cynefin-framework",
       "target": "emergence",
@@ -1625,6 +1922,36 @@
       "source": "cynefin-framework",
       "target": "sensemaking",
       "note": "\"Cynefin is fundamentally a sensemaking framework - its first job is helping you understand what kind of situation you're in\""
+    },
+    {
+      "id": "cynefin-framework--sensemaking-under-pressure",
+      "source": "cynefin-framework",
+      "target": "sensemaking-under-pressure",
+      "note": "\"Under pressure, people default to familiar domain responses - the risk is applying the wrong domain's approach\""
+    },
+    {
+      "id": "bounded-rationality--decision-fatigue",
+      "source": "decision-fatigue",
+      "target": "bounded-rationality",
+      "note": "\"Decision fatigue is bounded rationality in the time dimension - the bounds narrow as the day progresses\""
+    },
+    {
+      "id": "decision-fatigue--satisficing",
+      "source": "decision-fatigue",
+      "target": "satisficing",
+      "note": "\"Satisficing increases under decision fatigue - as energy depletes, the threshold for 'good enough' drops\""
+    },
+    {
+      "id": "decision-fatigue--drift",
+      "source": "decision-fatigue",
+      "target": "drift",
+      "note": "\"Decision fatigue can cause drift - small, tired compromises that accumulate into significant departures from intent\""
+    },
+    {
+      "id": "decision-fatigue--eroding-goals",
+      "source": "decision-fatigue",
+      "target": "eroding-goals",
+      "note": "\"Tired decision-makers erode their own goals - lowering standards because maintaining them requires energy they've spent\""
     },
     {
       "id": "delays--feedback-loops",
@@ -1729,6 +2056,30 @@
       "note": "\"Distributed leadership is emergent - it arises from the situation and the capabilities present, not from the org chart\""
     },
     {
+      "id": "diversity-and-stability--resilience",
+      "source": "diversity-and-stability",
+      "target": "resilience",
+      "note": "\"Diversity is one of the primary sources of resilience - more different parts means more ways to respond to disturbance\""
+    },
+    {
+      "id": "diversity-and-stability--requisite-variety",
+      "source": "diversity-and-stability",
+      "target": "requisite-variety",
+      "note": "\"Diversity provides requisite variety - a diverse system has more response options than a uniform one\""
+    },
+    {
+      "id": "diversity-and-stability--redundancy",
+      "source": "diversity-and-stability",
+      "target": "redundancy",
+      "note": "\"Diversity is a form of functional redundancy - different parts that can serve similar purposes in different conditions\""
+    },
+    {
+      "id": "diversity-and-stability--modularity",
+      "source": "diversity-and-stability",
+      "target": "modularity",
+      "note": "\"Diverse, modular systems are the most resilient - failure in one type doesn't cascade because alternatives exist\""
+    },
+    {
       "id": "double-loop-learning--learning-organisation",
       "source": "double-loop-learning",
       "target": "learning-organisation",
@@ -1763,6 +2114,12 @@
       "source": "double-loop-learning",
       "target": "groupthink",
       "note": "\"Groupthink prevents double-loop learning - if nobody questions the assumptions, they never get tested\""
+    },
+    {
+      "id": "double-loop-learning--motivated-reasoning",
+      "source": "double-loop-learning",
+      "target": "motivated-reasoning",
+      "note": "\"Double-loop learning is the antidote to motivated reasoning - deliberately questioning the assumptions reasoning protects\""
     },
     {
       "id": "drift--feedback-loops",
@@ -2251,6 +2608,12 @@
       "note": "\"Learning organisations are built on feedback loops that translate experience into structural adaptation\""
     },
     {
+      "id": "feedback-loops--niche-construction",
+      "source": "feedback-loops",
+      "target": "niche-construction",
+      "note": "\"Niche construction creates feedback between organism and environment - reshaping the world, which reshapes the organism\""
+    },
+    {
       "id": "feedback-loops--leverage-points",
       "source": "feedback-loops",
       "target": "leverage-points",
@@ -2273,6 +2636,12 @@
       "source": "feedback-starvation",
       "target": "groupthink",
       "note": "\"Groupthink creates feedback starvation by suppressing the dissent that would provide corrective information\""
+    },
+    {
+      "id": "feedback-starvation--parasitism",
+      "source": "feedback-starvation",
+      "target": "parasitism",
+      "note": "\"Parasitic relationships often involve feedback starvation - the host's deterioration is invisible to the parasite\""
     },
     {
       "id": "fixes-that-fail--shifting-the-burden",
@@ -2413,6 +2782,12 @@
       "note": "\"Groupthink locks in a shared mental model and prevents it from being updated, even when evidence contradicts it\""
     },
     {
+      "id": "groupthink--motivated-reasoning",
+      "source": "groupthink",
+      "target": "motivated-reasoning",
+      "note": "\"Groupthink amplifies motivated reasoning - shared beliefs become even more resistant to disconfirming evidence\""
+    },
+    {
       "id": "growth-and-underinvestment--limits-to-growth",
       "source": "growth-and-underinvestment",
       "target": "limits-to-growth",
@@ -2435,6 +2810,36 @@
       "source": "growth-and-underinvestment",
       "target": "stocks-and-flows",
       "note": "\"Capacity is a stock that depletes when investment (inflow) doesn't keep pace with demand (outflow)\""
+    },
+    {
+      "id": "hindsight-bias--narrative-fallacy",
+      "source": "hindsight-bias",
+      "target": "narrative-fallacy",
+      "note": "\"Hindsight bias feeds the narrative fallacy - once the ending is known, the story writes itself backward to make it seem inevitable\""
+    },
+    {
+      "id": "hindsight-bias--sensitivity-to-initial-conditions",
+      "source": "hindsight-bias",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Hindsight bias ignores sensitivity to initial conditions - the outcome that feels inevitable was actually contingent on details nobody noticed\""
+    },
+    {
+      "id": "hindsight-bias--uncertainty-vs-risk",
+      "source": "hindsight-bias",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Hindsight bias converts genuine uncertainty into apparent risk - after the fact, the odds seem knowable when they weren't\""
+    },
+    {
+      "id": "hindsight-bias--system-blindness",
+      "source": "hindsight-bias",
+      "target": "system-blindness",
+      "note": "\"Hindsight bias enables system blindness by making it seem like someone should have known - replacing structural analysis with blame\""
+    },
+    {
+      "id": "hindsight-bias--mental-models",
+      "source": "hindsight-bias",
+      "target": "mental-models",
+      "note": "\"Hindsight bias reinforces mental models - it makes us think our predictions are better than they are, so we never update the model\""
     },
     {
       "id": "iceberg-model--mental-models",
@@ -2551,6 +2956,12 @@
       "note": "\"Silos form when interconnections between parts weaken - information and understanding stop flowing across boundaries\""
     },
     {
+      "id": "interconnections--keystone-species",
+      "source": "interconnections",
+      "target": "keystone-species",
+      "note": "\"Keystone species matter because of their interconnections - they affect far more of the system than their size suggests\""
+    },
+    {
       "id": "intervention-side-effects--unintended-consequences",
       "source": "intervention-side-effects",
       "target": "unintended-consequences",
@@ -2627,6 +3038,30 @@
       "source": "irreducibility",
       "target": "safe-to-fail-experiments",
       "note": "\"Safe-to-fail experiments respect irreducibility - if the only way to know is to try, make the trying safe and small\""
+    },
+    {
+      "id": "keystone-species--resilience",
+      "source": "keystone-species",
+      "target": "resilience",
+      "note": "\"A system's resilience often depends on its keystone species - their removal can trigger cascading collapse\""
+    },
+    {
+      "id": "keystone-species--leverage-points",
+      "source": "keystone-species",
+      "target": "leverage-points",
+      "note": "\"Keystone species occupy leverage points - their influence on the system is disproportionate to their visibility\""
+    },
+    {
+      "id": "keystone-species--modularity",
+      "source": "keystone-species",
+      "target": "modularity",
+      "note": "\"Systems with keystone dependencies lack modularity - the whole depends on one critical node\""
+    },
+    {
+      "id": "keystone-species--redundancy",
+      "source": "keystone-species",
+      "target": "redundancy",
+      "note": "\"Systems without redundancy for their keystone roles are catastrophically fragile\""
     },
     {
       "id": "leading-vs-lagging-indicators--stocks-and-flows",
@@ -2773,6 +3208,12 @@
       "note": "\"Most theories of change are dangerously linear - real change doesn't follow a straight chain from activity to impact\""
     },
     {
+      "id": "linear-thinking--narrative-fallacy",
+      "source": "linear-thinking",
+      "target": "narrative-fallacy",
+      "note": "\"The narrative fallacy imposes linear causation on nonlinear events - turning a web of causes into a chain\""
+    },
+    {
       "id": "local-vs-global-optimisation--sub-optimisation",
       "source": "local-vs-global-optimisation",
       "target": "sub-optimisation",
@@ -2905,6 +3346,18 @@
       "note": "\"Sensemaking builds and updates mental models - the process by which our map of reality gets revised\""
     },
     {
+      "id": "mental-models--motivated-reasoning",
+      "source": "mental-models",
+      "target": "motivated-reasoning",
+      "note": "\"Motivated reasoning protects mental models from being updated - we filter evidence to confirm rather than challenge\""
+    },
+    {
+      "id": "mental-models--narrative-fallacy",
+      "source": "mental-models",
+      "target": "narrative-fallacy",
+      "note": "\"Narratives build and reinforce mental models - the stories we tell shape what we expect to happen next\""
+    },
+    {
       "id": "modularity--resilience",
       "source": "modularity",
       "target": "resilience",
@@ -2935,6 +3388,18 @@
       "note": "\"Silos are modularity without integration - independent parts that have lost the coordination the whole requires\""
     },
     {
+      "id": "feedback-loops--motivated-reasoning",
+      "source": "motivated-reasoning",
+      "target": "feedback-loops",
+      "note": "\"Motivated reasoning creates a reinforcing loop - beliefs filter evidence, filtered evidence reinforces beliefs\""
+    },
+    {
+      "id": "motivated-reasoning--system-blindness",
+      "source": "motivated-reasoning",
+      "target": "system-blindness",
+      "note": "\"Motivated reasoning sustains system blindness - if you're motivated to see individual causes, systemic ones stay invisible\""
+    },
+    {
       "id": "multiple-perspectives--wicked-problems",
       "source": "multiple-perspectives",
       "target": "wicked-problems",
@@ -2951,6 +3416,48 @@
       "source": "multiple-perspectives",
       "target": "sensemaking",
       "note": "\"Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation\""
+    },
+    {
+      "id": "mutualism--symbiosis",
+      "source": "mutualism",
+      "target": "symbiosis",
+      "note": "\"Mutualism is the positive form of symbiosis - both parties are better off because of the relationship\""
+    },
+    {
+      "id": "co-evolution--mutualism",
+      "source": "mutualism",
+      "target": "co-evolution",
+      "note": "\"Mutualistic partners co-evolve toward deeper interdependence - each becoming more valuable to the other\""
+    },
+    {
+      "id": "feedback-loops--mutualism",
+      "source": "mutualism",
+      "target": "feedback-loops",
+      "note": "\"Mutualism is sustained by reinforcing feedback loops - each party's benefit reinforces the relationship\""
+    },
+    {
+      "id": "mutualism--network-effects",
+      "source": "mutualism",
+      "target": "network-effects",
+      "note": "\"Network effects can create mutualism at scale - platforms and users benefiting from each other's participation\""
+    },
+    {
+      "id": "local-vs-global-optimisation--mutualism",
+      "source": "mutualism",
+      "target": "local-vs-global-optimisation",
+      "note": "\"True mutualism aligns local and global optimisation - what's good for each party is good for the whole\""
+    },
+    {
+      "id": "narrative-fallacy--sensitivity-to-initial-conditions",
+      "source": "narrative-fallacy",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"The narrative fallacy ignores sensitivity to initial conditions - the story makes the outcome seem inevitable when it was contingent\""
+    },
+    {
+      "id": "complexity-vs-complication--narrative-fallacy",
+      "source": "narrative-fallacy",
+      "target": "complexity-vs-complication",
+      "note": "\"The narrative fallacy reduces complex events to complicated ones - a neat story with clear causes and effects\""
     },
     {
       "id": "nested-systems--panarchy",
@@ -2987,6 +3494,18 @@
       "source": "network-effects",
       "target": "tipping-points",
       "note": "\"Network effects have a tipping point - once the network is large enough, growth becomes self-sustaining\""
+    },
+    {
+      "id": "complex-adaptive-systems--niche-construction",
+      "source": "niche-construction",
+      "target": "complex-adaptive-systems",
+      "note": "\"In complex adaptive systems, agents don't just respond to the environment - they construct it\""
+    },
+    {
+      "id": "niche-construction--path-dependence",
+      "source": "niche-construction",
+      "target": "path-dependence",
+      "note": "\"Niche construction creates path dependence - the environment you've built constrains the options you have\""
     },
     {
       "id": "feedback-loops--nonlinearity",
@@ -3125,6 +3644,30 @@
       "source": "panarchy",
       "target": "regime-shifts",
       "note": "\"Regime shifts in panarchy happen when a release phase at one scale triggers collapse at a higher scale\""
+    },
+    {
+      "id": "parasitism--symbiosis",
+      "source": "parasitism",
+      "target": "symbiosis",
+      "note": "\"Parasitism is the extractive form of symbiosis - one party benefits, the other is weakened\""
+    },
+    {
+      "id": "mutualism--parasitism",
+      "source": "parasitism",
+      "target": "mutualism",
+      "note": "\"Parasitism is the opposite of mutualism - one party's gain comes at the other's direct expense\""
+    },
+    {
+      "id": "parasitism--success-to-the-successful",
+      "source": "parasitism",
+      "target": "success-to-the-successful",
+      "note": "\"Parasitic relationships often reinforce themselves through success-to-the-successful dynamics - the extracting party grows stronger\""
+    },
+    {
+      "id": "parasitism--power-in-systems",
+      "source": "parasitism",
+      "target": "power-in-systems",
+      "note": "\"Parasitic relationships are sustained by power imbalances - the exploited party can't exit or renegotiate\""
     },
     {
       "id": "feedback-loops--path-dependence",
@@ -3343,6 +3886,30 @@
       "note": "\"The curve traces a stock that grows quickly when inflows dominate, then plateaus as outflows catch up\""
     },
     {
+      "id": "complexity-vs-complication--satisficing",
+      "source": "satisficing",
+      "target": "complexity-vs-complication",
+      "note": "\"In complex systems, satisficing is often the only viable strategy - the optimal choice can't be identified in advance\""
+    },
+    {
+      "id": "irreducibility--satisficing",
+      "source": "satisficing",
+      "target": "irreducibility",
+      "note": "\"In irreducible systems, the optimal choice can't be calculated - satisficing is the honest response\""
+    },
+    {
+      "id": "constraints--satisficing",
+      "source": "satisficing",
+      "target": "constraints",
+      "note": "\"Constraints that force satisficing can improve decisions by eliminating the paralysis of seeking the optimal\""
+    },
+    {
+      "id": "satisficing--solutionism",
+      "source": "satisficing",
+      "target": "solutionism",
+      "note": "\"Satisficing is the antidote to solutionism - accepting that good enough IS good enough in complex situations\""
+    },
+    {
       "id": "complexity-vs-complication--scale-effects",
       "source": "scale-effects",
       "target": "complexity-vs-complication",
@@ -3371,6 +3938,36 @@
       "source": "second-order-effects",
       "target": "uncertainty-vs-risk",
       "note": "\"Second-order effects are a major source of genuine uncertainty - the consequences of consequences resist prediction\""
+    },
+    {
+      "id": "self-organisation--succession",
+      "source": "self-organisation",
+      "target": "succession",
+      "note": "\"Succession is self-organisation after disruption - the system rebuilds itself through predictable stages\""
+    },
+    {
+      "id": "sensemaking--sensemaking-under-pressure",
+      "source": "sensemaking-under-pressure",
+      "target": "sensemaking",
+      "note": "\"Sensemaking under pressure is the compressed, high-stakes version - pattern recognition replaces deliberate analysis\""
+    },
+    {
+      "id": "bounded-rationality--sensemaking-under-pressure",
+      "source": "sensemaking-under-pressure",
+      "target": "bounded-rationality",
+      "note": "\"Pressure tightens the bounds of rationality further - less time, less information, more stress\""
+    },
+    {
+      "id": "cognitive-load--sensemaking-under-pressure",
+      "source": "sensemaking-under-pressure",
+      "target": "cognitive-load",
+      "note": "\"Pressure increases cognitive load, forcing reliance on pattern recognition and trained responses\""
+    },
+    {
+      "id": "action-bias--sensemaking-under-pressure",
+      "source": "sensemaking-under-pressure",
+      "target": "action-bias",
+      "note": "\"Pressure amplifies action bias - the urge to do something immediately, even when waiting would be smarter\""
     },
     {
       "id": "sensemaking--wicked-problems",
@@ -3499,10 +4096,40 @@
       "note": "\"A small initial advantage can produce a massively disproportionate outcome over time\""
     },
     {
+      "id": "regime-shifts--succession",
+      "source": "succession",
+      "target": "regime-shifts",
+      "note": "\"Succession shows that a system doesn't return to its previous state immediately - it passes through distinct phases\""
+    },
+    {
+      "id": "punctuated-equilibrium--succession",
+      "source": "succession",
+      "target": "punctuated-equilibrium",
+      "note": "\"Succession is what happens during the stability phase after a punctuation - the system rebuilds through stages\""
+    },
+    {
+      "id": "resilience--succession",
+      "source": "succession",
+      "target": "resilience",
+      "note": "\"A system's capacity for succession IS its resilience - the ability to regenerate after disturbance\""
+    },
+    {
       "id": "mental-models--surrogate-measures",
       "source": "surrogate-measures",
       "target": "mental-models",
       "note": "\"Surrogate measures reshape mental models - people start believing the surrogate IS the goal, not a stand-in for it\""
+    },
+    {
+      "id": "interconnections--symbiosis",
+      "source": "symbiosis",
+      "target": "interconnections",
+      "note": "\"Symbiosis is interconnection at its deepest - two systems whose functioning depends on each other\""
+    },
+    {
+      "id": "network-effects--symbiosis",
+      "source": "symbiosis",
+      "target": "network-effects",
+      "note": "\"Network effects can create symbiotic relationships between platforms and users - each needs the other\""
     },
     {
       "id": "system-blindness--system-traps",
@@ -3668,6 +4295,6 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T20:11:39.016Z"
+    "generatedAt": "2026-03-31T20:32:51.615Z"
   }
 }

@@ -28,6 +28,8 @@ related:
     note: "Safe-to-fail experiments are the primary intervention strategy for Cynefin's complex domain - probe, sense, respond"
   - slug: "sensemaking"
     note: "Cynefin is fundamentally a sensemaking framework - its first job is helping you understand what kind of situation you're in"
+  - slug: "sensemaking-under-pressure"
+    note: "Under pressure, people default to familiar domain responses - the risk is applying the wrong domain's approach"
 originatedBy: "Dave Snowden"
 draft: false
 ---

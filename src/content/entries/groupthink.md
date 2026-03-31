@@ -18,6 +18,8 @@ related:
     note: "Groupthink prevents double-loop learning - if nobody questions the assumptions, the assumptions never get tested"
   - slug: "mental-models"
     note: "Groupthink locks in a shared mental model and prevents it from being updated, even when evidence contradicts it"
+  - slug: "motivated-reasoning"
+    note: "Groupthink amplifies motivated reasoning - shared beliefs become even more resistant to disconfirming evidence"
 originatedBy: "Irving Janis"
 draft: false
 ---

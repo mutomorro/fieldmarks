@@ -22,6 +22,8 @@ related:
     note: "Transformability goes beyond adaptive capacity - not adjusting within the current system, but creating a fundamentally new one"
   - slug: "learning-organisation"
     note: "A learning organisation builds adaptive capacity continuously - organisational learning is how adaptability grows"
+  - slug: "diversity-and-stability"
+    note: "Diversity builds adaptive capacity - if one approach fails, alternatives already exist within the system"
 draft: false
 ---
 

@@ -32,6 +32,8 @@ related:
     note: "Organisational debt accumulates through drift - each shortcut is imperceptible, the total is dramatic"
   - slug: "equilibrium"
     note: "Drift can slowly shift what the system treats as its equilibrium, disguising the change"
+  - slug: "decision-fatigue"
+    note: "Decision fatigue can cause drift - small, tired compromises that accumulate into significant departures from intent"
 draft: false
 ---
 

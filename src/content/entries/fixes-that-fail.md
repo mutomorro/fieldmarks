@@ -48,6 +48,8 @@ related:
     note: "Solutionism drives fixes that fail by demanding a solution before the problem is properly understood"
   - slug: "organisational-debt"
     note: "Every quick fix that avoids a structural solution adds to the stock of organisational debt"
+  - slug: "action-bias"
+    note: "Many fixes that fail are driven by action bias - the need to do something overrides the need to understand first"
 originatedBy: Peter Senge
 draft: false
 ---

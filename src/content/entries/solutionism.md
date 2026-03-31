@@ -18,6 +18,8 @@ related:
     note: "Solutionism is linear thinking applied to problem-solving - one problem, one cause, one fix"
   - slug: "intervention-side-effects"
     note: "Solutionism ignores intervention side effects because admitting them would mean the solution isn't clean"
+  - slug: "action-bias"
+    note: "Action bias feeds solutionism - the urge to act prevents accepting that some situations need navigation, not fixing"
 draft: false
 ---
 

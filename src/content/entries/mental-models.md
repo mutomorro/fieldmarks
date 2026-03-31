@@ -36,6 +36,14 @@ related:
     note: "Double-loop learning is the process of questioning and revising mental models, not just actions"
   - slug: "sensemaking"
     note: "Sensemaking builds and updates mental models - the process by which our map of reality gets revised"
+  - slug: "bounded-rationality"
+    note: "Mental models are how bounded rationality works - we simplify the world into workable maps because processing everything is impossible"
+  - slug: "motivated-reasoning"
+    note: "Motivated reasoning protects mental models from being updated - we filter evidence to confirm rather than challenge"
+  - slug: "narrative-fallacy"
+    note: "Narratives build and reinforce mental models - the stories we tell shape what we expect to happen next"
+  - slug: "hindsight-bias"
+    note: "Hindsight bias reinforces mental models by making us think our predictions are better than they are"
 draft: false
 ---
 

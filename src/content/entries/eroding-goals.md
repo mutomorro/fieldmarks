@@ -28,6 +28,8 @@ related:
     note: "The shift from the real goal to the surrogate is a form of goal erosion - so gradual nobody notices the substitution"
   - slug: "organisational-debt"
     note: "Organisational debt often involves eroding goals - accepting worse standards because fixing the structure feels too hard"
+  - slug: "decision-fatigue"
+    note: "Tired decision-makers erode their own goals - lowering standards because maintaining them requires energy they've spent"
 draft: false
 ---
 

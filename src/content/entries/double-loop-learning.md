@@ -20,6 +20,8 @@ related:
     note: "Single-loop works at the event level. Double-loop reaches the structure and asks whether the structure itself needs changing"
   - slug: "groupthink"
     note: "Groupthink prevents double-loop learning - if nobody questions the assumptions, they never get tested"
+  - slug: "motivated-reasoning"
+    note: "Double-loop learning is the antidote to motivated reasoning - deliberately questioning the assumptions reasoning protects"
 originatedBy: "Chris Argyris"
 draft: false
 ---

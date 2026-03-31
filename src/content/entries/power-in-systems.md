@@ -18,6 +18,8 @@ related:
     note: "Power often works through feedback loops - those with resources gain more resources, reinforcing their position"
   - slug: "success-to-the-successful"
     note: "Success to the successful is power made structural - winners get more resources, which makes them win more"
+  - slug: "parasitism"
+    note: "Parasitic relationships are sustained by power imbalances - the exploited party can't exit or renegotiate"
 draft: false
 ---
 

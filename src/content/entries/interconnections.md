@@ -36,6 +36,8 @@ related:
     note: "Sub-optimisation ignores interconnections - improving parts without considering what flows between them"
   - slug: "silos"
     note: "Silos form when interconnections between parts weaken - information and understanding stop flowing across boundaries"
+  - slug: "keystone-species"
+    note: "Keystone species matter because of their interconnections - they affect far more of the system than their size suggests"
 draft: false
 ---
 

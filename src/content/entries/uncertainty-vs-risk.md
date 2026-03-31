@@ -20,6 +20,8 @@ related:
     note: "Delays compound uncertainty - the longer the gap between action and outcome, the more unknowns accumulate"
   - slug: "adaptive-capacity"
     note: "Under genuine uncertainty, adaptive capacity matters more than prediction - you need flexibility, not forecasts"
+  - slug: "hindsight-bias"
+    note: "Hindsight bias converts genuine uncertainty into apparent risk - after the fact, unknowable odds seem calculable"
 originatedBy: "Frank Knight"
 draft: false
 ---

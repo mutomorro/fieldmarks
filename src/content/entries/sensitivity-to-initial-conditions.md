@@ -18,6 +18,10 @@ related:
     note: "Delays hide the moment when initial conditions mattered - by the time you see the divergence, the cause is invisible"
   - slug: "complexity-vs-complication"
     note: "Complicated systems can be insensitive to initial conditions. Complex ones often can't - that's part of what makes them complex"
+  - slug: "narrative-fallacy"
+    note: "The narrative fallacy ignores sensitivity to initial conditions - making contingent outcomes seem inevitable"
+  - slug: "hindsight-bias"
+    note: "Hindsight bias erases sensitivity to initial conditions - the outcome feels inevitable when it was actually contingent on invisible details"
 draft: false
 ---
 
