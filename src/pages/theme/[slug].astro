@@ -1,0 +1,220 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import DotGrid from '../../components/DotGrid.jsx';
+
+export async function getStaticPaths() {
+  const themes = await getCollection('themes');
+  return themes.map((theme) => ({
+    params: { slug: theme.slug },
+    props: { theme },
+  }));
+}
+
+const { theme } = Astro.props;
+const { Content } = await theme.render();
+
+// Get entries belonging to this theme
+const allEntries = await getCollection('entries', ({ data }) => !data.draft);
+const themeEntries = allEntries.filter((e) => e.data.theme === theme.slug);
+---
+
+<Layout title={theme.data.title} description={theme.data.subtitle}>
+  <div class="max-w-content mx-auto px-6 md:px-12">
+
+    <!-- Breadcrumb -->
+    <div class="pt-24">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span class="current">{theme.data.title}</span>
+      </div>
+    </div>
+
+    <!-- Theme header -->
+    <div class="theme-header">
+      <div class="theme-accent" style={`background: ${theme.data.colour};`}></div>
+      <h1>{theme.data.title}</h1>
+      <p class="theme-subtitle">{theme.data.subtitle}</p>
+    </div>
+
+    <!-- Theme body (rendered markdown) -->
+    <div class="theme-body">
+      <Content />
+    </div>
+
+    <!-- Divider -->
+    <div class="theme-divider"></div>
+
+    <!-- Entry count -->
+    <p class="entry-count">
+      {themeEntries.length} concept{themeEntries.length !== 1 ? 's' : ''}
+    </p>
+
+    <!-- Entry list -->
+    <div class="entry-grid">
+      {themeEntries.map((entry) => (
+        <a href={`/concept/${entry.slug}`} class="entry-card">
+          <div class="entry-illustration">
+            {entry.data.dotGrid ? (
+              <DotGrid
+                seed={entry.data.dotGrid.seed}
+                variant={entry.data.dotGrid.variant}
+                width={380}
+                height={237}
+              />
+            ) : (
+              <DotGrid seed={42} variant="default" width={380} height={237} />
+            )}
+          </div>
+          <div class="entry-title">{entry.data.title}</div>
+          <div class="entry-oneliner">{entry.data.oneLiner}</div>
+        </a>
+      ))}
+    </div>
+
+    {themeEntries.length === 0 && (
+      <p class="no-entries">No concepts in this theme yet. Check back soon.</p>
+    )}
+
+  </div>
+</Layout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--soft);
+    margin-bottom: 48px;
+  }
+  .breadcrumb a {
+    color: var(--soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+  .breadcrumb .current {
+    color: var(--mid);
+  }
+
+  .theme-header {
+    margin-bottom: 40px;
+    max-width: 680px;
+  }
+  .theme-accent {
+    width: 40px;
+    height: 4px;
+    margin-bottom: 24px;
+  }
+  .theme-header h1 {
+    font-size: clamp(38px, 4.5vw, 52px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+  }
+  .theme-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--soft);
+  }
+
+  .theme-body {
+    max-width: 640px;
+    margin-bottom: 48px;
+  }
+  .theme-body :global(p) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #3D3D3D;
+    margin-bottom: 1.25rem;
+  }
+
+  .theme-divider {
+    border-top: 1px solid var(--border);
+    max-width: 1200px;
+    margin-bottom: 48px;
+  }
+
+  .entry-count {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin-bottom: 32px;
+  }
+
+  .entry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 36px;
+    margin-bottom: 80px;
+  }
+
+  .entry-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(34, 28, 43, 0.1);
+    background-color: #FFFFFF;
+    padding: 0 0 20px 0;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .entry-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
+  }
+
+  .entry-illustration {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: var(--warm-bg);
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .entry-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--deep);
+    margin-bottom: 8px;
+    padding: 0 20px;
+    transition: color 0.2s;
+  }
+  .entry-card:hover .entry-title {
+    color: var(--accent);
+  }
+
+  .entry-oneliner {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--soft);
+    padding: 0 20px;
+  }
+
+  .no-entries {
+    font-size: 16px;
+    color: var(--soft);
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    .entry-grid { grid-template-columns: 1fr; }
+  }
+</style>
