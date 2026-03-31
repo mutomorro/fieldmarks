@@ -1,0 +1,269 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import DotGrid from '../components/DotGrid.jsx';
+
+const allEntries = await getCollection('entries', ({ data }) => !data.draft);
+const allThemes = await getCollection('themes');
+const themes = allThemes.sort((a, b) => a.data.order - b.data.order);
+
+// Build theme lookup
+const themeBySlug: Record<string, { title: string; colour: string }> = {};
+for (const t of themes) {
+  themeBySlug[t.slug] = { title: t.data.title, colour: t.data.colour };
+}
+
+// Sort entries alphabetically
+const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<Layout title="Concepts" description="Browse all systems thinking concepts, filterable by theme.">
+  <div class="max-w-content mx-auto px-6 md:px-12">
+
+    <!-- Breadcrumb -->
+    <div class="pt-24">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span class="current">Concepts</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="page-header">
+      <h1>Concepts</h1>
+      <p class="page-subtitle">Explore all concepts in the field guide. Filter by theme or browse everything.</p>
+    </div>
+
+    <!-- Theme filter -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-theme="all">All</button>
+      {themes.map((theme) => (
+        <button
+          class="filter-btn"
+          data-theme={theme.slug}
+          style={`--theme-colour: ${theme.data.colour};`}
+        >
+          {theme.data.title}
+        </button>
+      ))}
+    </div>
+
+    <!-- Entry count -->
+    <p class="entry-count" id="entry-count">
+      {entries.length} concept{entries.length !== 1 ? 's' : ''}
+    </p>
+
+    <!-- Entry grid -->
+    <div class="entry-grid" id="entry-grid">
+      {entries.map((entry) => (
+        <a href={`/concept/${entry.slug}`} class="concept-card" data-theme={entry.data.theme}>
+          <div class="card-illustration">
+            {entry.data.dotGrid ? (
+              <DotGrid
+                seed={entry.data.dotGrid.seed}
+                variant={entry.data.dotGrid.variant}
+                width={380}
+                height={237}
+              />
+            ) : (
+              <DotGrid seed={42} variant="default" width={380} height={237} />
+            )}
+          </div>
+          <div class="card-theme">{themeBySlug[entry.data.theme]?.title || entry.data.theme}</div>
+          <div class="card-title">{entry.data.title}</div>
+          <div class="card-oneliner">{entry.data.oneLiner}</div>
+        </a>
+      ))}
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--soft);
+    margin-bottom: 48px;
+  }
+  .breadcrumb a {
+    color: var(--soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+  .breadcrumb .current {
+    color: var(--mid);
+  }
+
+  .page-header {
+    margin-bottom: 48px;
+    max-width: 680px;
+  }
+  .page-header h1 {
+    font-size: clamp(38px, 4.5vw, 52px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+  }
+  .page-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--soft);
+  }
+
+  /* ====== FILTER BAR ====== */
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .filter-btn {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--soft);
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .filter-btn:hover {
+    border-color: var(--border-hover);
+    color: var(--mid);
+  }
+  .filter-btn.active {
+    background: var(--deep);
+    border-color: var(--deep);
+    color: var(--white);
+  }
+
+  /* ====== ENTRY COUNT ====== */
+  .entry-count {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin-bottom: 32px;
+  }
+
+  /* ====== ENTRY GRID ====== */
+  .entry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 48px 36px;
+    margin-bottom: 120px;
+  }
+
+  .concept-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(34, 28, 43, 0.1);
+    background-color: #FFFFFF;
+    padding: 0 0 20px 0;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .concept-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
+  }
+  .concept-card[hidden] {
+    display: none;
+  }
+
+  .card-illustration {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: var(--warm-bg);
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-theme {
+    align-self: flex-start;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background-color: rgba(155, 81, 224, 0.08);
+    padding: 4px 9px;
+    margin: 0 20px 10px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--deep);
+    margin-bottom: 8px;
+    padding: 0 20px;
+    transition: color 0.2s;
+  }
+  .concept-card:hover .card-title {
+    color: var(--accent);
+  }
+
+  .card-oneliner {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--soft);
+    padding: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    .entry-grid { grid-template-columns: 1fr; }
+    .filter-bar { gap: 6px; }
+    .filter-btn { font-size: 12px; padding: 6px 12px; }
+  }
+</style>
+
+<script is:inline>
+  const filterBar = document.getElementById('filter-bar');
+  const cards = document.querySelectorAll('.concept-card[data-theme]');
+  const countEl = document.getElementById('entry-count');
+
+  filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+
+    // Update active state
+    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const theme = btn.dataset.theme;
+    let visible = 0;
+
+    cards.forEach(card => {
+      const show = theme === 'all' || card.dataset.theme === theme;
+      card.hidden = !show;
+      if (show) visible++;
+    });
+
+    countEl.textContent = `${visible} concept${visible !== 1 ? 's' : ''}`;
+  });
+</script>
