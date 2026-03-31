@@ -24,6 +24,8 @@ related:
     note: "Solutionism is linear thinking applied to problem-solving - one problem, one cause, one fix"
   - slug: "dynamic-thinking"
     note: "Dynamic thinking is the antidote to linear thinking - replacing straight-line projections with a sense of how systems change over time"
+  - slug: "theory-of-change"
+    note: "Most theories of change are dangerously linear - real change doesn't follow a straight chain from activity to impact"
 draft: false
 ---
 

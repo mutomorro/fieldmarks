@@ -28,6 +28,10 @@ related:
     note: "System traps only become visible when you overcome system blindness - the pattern looks like bad luck until you see the structure"
   - slug: "event-pattern-structure"
     note: "System traps only become visible at the structure level - at the event level they look like isolated bad luck"
+  - slug: "goodharts-law"
+    note: "Goodhart's Law creates a system trap - the better you get at hitting the measure, the further you drift from the real goal"
+  - slug: "perverse-incentives"
+    note: "Perverse incentives are a system trap - the structure reliably produces wrong behaviour regardless of who's in it"
 draft: false
 ---
 

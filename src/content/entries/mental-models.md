@@ -30,6 +30,12 @@ related:
     note: "Boundaries reflect mental models - how you frame the system reveals what you assume about what matters"
   - slug: "multiple-perspectives"
     note: "Each perspective carries its own mental models - its own assumptions about what's important and why"
+  - slug: "learning-organisation"
+    note: "Surfacing and testing mental models is one of Senge's five disciplines of a learning organisation"
+  - slug: "double-loop-learning"
+    note: "Double-loop learning is the process of questioning and revising mental models, not just actions"
+  - slug: "sensemaking"
+    note: "Sensemaking builds and updates mental models - the process by which our map of reality gets revised"
 draft: false
 ---
 

@@ -24,6 +24,8 @@ related:
     note: "Sometimes resilience means maintaining the current system. Transformability is knowing when to let it go and build something new"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail experiments build resilience by helping systems learn without being damaged by the learning process"
+  - slug: "distributed-leadership"
+    note: "Distributed leadership builds resilience - the system doesn't depend on any single leader to function"
 draft: false
 ---
 

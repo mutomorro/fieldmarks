@@ -34,6 +34,8 @@ related:
     note: "Modularity manages interconnections by keeping modules loosely connected - preventing cascading failure"
   - slug: "sub-optimisation"
     note: "Sub-optimisation ignores interconnections - improving parts without considering what flows between them"
+  - slug: "silos"
+    note: "Silos form when interconnections between parts weaken - information and understanding stop flowing across boundaries"
 draft: false
 ---
 

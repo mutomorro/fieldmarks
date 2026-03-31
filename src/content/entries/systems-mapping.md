@@ -24,6 +24,8 @@ related:
     note: "Systems maps built with multiple perspectives are richer and more accurate than those built from a single viewpoint"
   - slug: "stakeholder-mapping"
     note: "Stakeholder mapping is one form of systems mapping - focused on the human actors and their relationships"
+  - slug: "theory-of-change"
+    note: "A good theory of change is a systems map - showing feedback, delays, and multiple pathways, not just a logic chain"
 draft: false
 ---
 

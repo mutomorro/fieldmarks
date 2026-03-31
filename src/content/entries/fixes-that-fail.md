@@ -46,6 +46,8 @@ related:
     note: "Most fixes that fail address events without reaching the structure that keeps producing them"
   - slug: "solutionism"
     note: "Solutionism drives fixes that fail by demanding a solution before the problem is properly understood"
+  - slug: "organisational-debt"
+    note: "Every quick fix that avoids a structural solution adds to the stock of organisational debt"
 originatedBy: Peter Senge
 draft: false
 ---

@@ -20,6 +20,8 @@ related:
     note: "Irreducible systems can't be fully mapped by definition - the only complete model is the system itself"
   - slug: "multiple-perspectives"
     note: "Each perspective is a map. Multiple maps together get closer to the territory than any single one"
+  - slug: "proxy-measures"
+    note: "A proxy measure is a map of the thing you care about - useful but never the thing itself"
 originatedBy: "Alfred Korzybski"
 draft: false
 ---

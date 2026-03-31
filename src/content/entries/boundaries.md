@@ -34,6 +34,8 @@ related:
     note: "Sub-optimisation happens when boundaries are drawn too tightly around parts, losing sight of the whole"
   - slug: "nested-systems"
     note: "Nested systems show that every boundary is also a connection - the edge of one system is the interface with the next"
+  - slug: "silos"
+    note: "Silos are boundaries that have hardened into barriers - necessary separation that became isolation"
 draft: false
 ---
 

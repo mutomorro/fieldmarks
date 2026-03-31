@@ -18,6 +18,10 @@ related:
     note: "Systems mapping with multiple perspectives produces richer, more accurate maps than any single viewpoint"
   - slug: "map-is-not-the-territory"
     note: "Each perspective is a map - partial by design. Multiple maps together get closer to the territory"
+  - slug: "sensemaking"
+    note: "Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation"
+  - slug: "groupthink"
+    note: "Groupthink is the collapse of multiple perspectives into one - premature convergence that suppresses dissent"
 draft: false
 ---
 

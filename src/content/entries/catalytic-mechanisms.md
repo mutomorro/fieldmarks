@@ -22,6 +22,8 @@ related:
     note: "Nudges preserve freedom of choice; catalytic mechanisms often work by making the right choice the only practical one"
   - slug: "constraints"
     note: "Many catalytic mechanisms work as enabling constraints - limiting options in ways that improve outcomes"
+  - slug: "perverse-incentives"
+    note: "Well-designed catalytic mechanisms avoid perverse incentives by aligning the mechanism tightly with the actual goal"
 originatedBy: "Jim Collins"
 draft: false
 ---

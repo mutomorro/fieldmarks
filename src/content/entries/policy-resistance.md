@@ -28,6 +28,8 @@ related:
     note: "Policy resistance often means the intervention lacks enough variety to handle the system's complexity"
   - slug: "cynefin-framework"
     note: "Policy resistance often signals a domain mismatch - a complicated-domain approach applied to a complex-domain problem"
+  - slug: "institutional-inertia"
+    note: "Institutional inertia is a major source of policy resistance - the structure absorbs change efforts and reasserts itself"
 draft: false
 ---
 

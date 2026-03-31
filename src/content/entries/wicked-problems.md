@@ -30,6 +30,8 @@ related:
     note: "Wicked problems resist boundary-drawing - every boundary excludes something that turns out to be central"
   - slug: "multiple-perspectives"
     note: "Wicked problems look different to every stakeholder - multiple perspectives aren't optional, they're essential"
+  - slug: "sensemaking"
+    note: "Wicked problems demand sensemaking because they resist the define-analyse-solve sequence"
 originatedBy: "Horst Rittel and Melvin Webber"
 draft: false
 ---

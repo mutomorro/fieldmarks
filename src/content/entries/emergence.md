@@ -32,6 +32,8 @@ related:
     note: "Emergent behaviour is often irreducible - you can't predict it from the parts, you have to watch it happen"
   - slug: "reductionism"
     note: "Emergence is what reductionism misses - behaviour that exists only in the interaction, not in the parts"
+  - slug: "culture-as-system"
+    note: "Culture is an emergent property of interactions, incentives, and structures - it arises from the system, not from a statement"
 draft: false
 ---
 

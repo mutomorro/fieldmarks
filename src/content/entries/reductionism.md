@@ -22,6 +22,8 @@ related:
     note: "Reductionism builds maps by breaking things apart - and every such map loses the interactions between parts"
   - slug: "sub-optimisation"
     note: "Sub-optimisation is reductionism applied to improvement - optimising each part separately and assuming the whole benefits"
+  - slug: "proxy-measures"
+    note: "Proxy measures are reductionism applied to measurement - simplifying complex reality into a single trackable number"
 draft: false
 ---
 

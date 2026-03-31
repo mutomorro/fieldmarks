@@ -20,6 +20,8 @@ related:
     note: "Modularity helps manage complexity by containing it within units - each module can be complex internally while being simple externally"
   - slug: "sub-optimisation"
     note: "Too much modularity can produce sub-optimisation - parts that work perfectly in isolation but don't coordinate"
+  - slug: "silos"
+    note: "Silos are modularity without integration - independent parts that have lost the coordination the whole requires"
 draft: false
 ---
 

@@ -32,6 +32,10 @@ related:
     note: "Tipping points are the trigger mechanism for regime shifts - the moment when gradual pressure tips the system into a new state"
   - slug: "punctuated-equilibrium"
     note: "Tipping points are the punctuation in punctuated equilibrium - the sudden breaks between long stable periods"
+  - slug: "weak-signals"
+    note: "Weak signals often precede tipping points - early tremors that announce a shift before it becomes irreversible"
+  - slug: "network-effects"
+    note: "Network effects have a tipping point - once large enough, growth becomes self-sustaining and nearly unstoppable"
 draft: false
 ---
 

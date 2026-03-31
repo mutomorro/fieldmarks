@@ -24,6 +24,8 @@ related:
     note: "Complex adaptive systems can be antifragile - the stress of environmental change drives learning and evolution"
   - slug: "adaptive-capacity"
     note: "Adaptive capacity is the defining resource of complex adaptive systems - what allows them to evolve rather than collapse"
+  - slug: "distributed-leadership"
+    note: "Centralised leadership can't keep pace with a complex adaptive system - distributed leadership matches the system's speed"
 draft: false
 ---
 

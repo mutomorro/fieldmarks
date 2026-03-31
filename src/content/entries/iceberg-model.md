@@ -22,6 +22,8 @@ related:
     note: "CLDs help you see below the event layer - revealing the feedback structures beneath the visible symptoms"
   - slug: "event-pattern-structure"
     note: "Event-pattern-structure is the iceberg model as a practice - the discipline of moving from surface to depth"
+  - slug: "double-loop-learning"
+    note: "Single-loop learning stays at the event level. Double-loop learning reaches the structures and mental models beneath"
 draft: false
 ---
 

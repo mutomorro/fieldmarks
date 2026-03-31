@@ -20,6 +20,10 @@ related:
     note: "Self-organising systems often settle into attractor states - stable patterns that the system gravitates toward"
   - slug: "edge-of-chaos"
     note: "Self-organisation happens most richly at the edge of chaos - too much order freezes it, too much chaos destroys it"
+  - slug: "distributed-leadership"
+    note: "Distributed leadership is self-organisation applied to decision-making - authority emerges where it's needed"
+  - slug: "culture-as-system"
+    note: "Culture self-organises from daily interactions and norms - nobody designs it, but everyone shapes it"
 draft: false
 ---
 

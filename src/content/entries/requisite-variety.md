@@ -20,6 +20,8 @@ related:
     note: "Buffers provide variety in the time dimension - they give a system more options for when and how to respond"
   - slug: "adaptive-capacity"
     note: "Adaptive capacity is requisite variety in practice - the range of responses available when conditions change"
+  - slug: "distributed-leadership"
+    note: "Distributed leadership increases requisite variety - more people leading means a wider range of responses to challenges"
 originatedBy: "W. Ross Ashby"
 draft: false
 ---

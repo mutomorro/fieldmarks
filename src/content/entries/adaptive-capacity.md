@@ -20,6 +20,8 @@ related:
     note: "Redundancy is a key source of adaptive capacity - spare resources that can be redeployed when conditions change"
   - slug: "transformability"
     note: "Transformability goes beyond adaptive capacity - not adjusting within the current system, but creating a fundamentally new one"
+  - slug: "learning-organisation"
+    note: "A learning organisation builds adaptive capacity continuously - organisational learning is how adaptability grows"
 draft: false
 ---
 

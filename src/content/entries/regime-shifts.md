@@ -18,6 +18,8 @@ related:
     note: "Regime shifts often correspond to the release phase of the adaptive cycle - when accumulated rigidity finally breaks"
   - slug: "panarchy"
     note: "Panarchy explains how regime shifts at one scale can trigger or be triggered by shifts at other scales"
+  - slug: "weak-signals"
+    note: "Regime shifts are preceded by weak signals - declining resilience, slower recovery, and increasing variability"
 draft: false
 ---
 

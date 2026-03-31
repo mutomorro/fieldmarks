@@ -18,6 +18,8 @@ related:
     note: "A small initial advantage can produce a massively disproportionate outcome over time"
   - slug: "power-in-systems"
     note: "Success to the successful is power made structural - the system reinforces advantage regardless of individual merit"
+  - slug: "network-effects"
+    note: "Network effects are success-to-the-successful at the platform level - the biggest network attracts more users, which makes it bigger"
 originatedBy: "Peter Senge"
 draft: false
 ---

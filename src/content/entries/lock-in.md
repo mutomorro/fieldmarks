@@ -18,6 +18,10 @@ related:
     note: "The dominant option attracts more users, more investment, more compatibility - widening the gap with alternatives"
   - slug: "punctuated-equilibrium"
     note: "Lock-in during stable periods explains why change accumulates as pressure rather than gradual adjustment"
+  - slug: "institutional-inertia"
+    note: "Lock-in is inertia's endgame - the cost of changing direction becomes so high the institution is stuck"
+  - slug: "network-effects"
+    note: "Network effects create lock-in at the market level - switching away means losing access to the network's value"
 draft: false
 ---
 

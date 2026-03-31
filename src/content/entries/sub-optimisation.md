@@ -18,6 +18,8 @@ related:
     note: "Modularity protects the whole from cascading failure but too much separation can produce sub-optimisation"
   - slug: "interconnections"
     note: "Sub-optimisation ignores interconnections - improving one part without considering what flows between parts"
+  - slug: "silos"
+    note: "Silos are the organisational structure that produces sub-optimisation - each silo optimises locally at the whole's expense"
 draft: false
 ---
 

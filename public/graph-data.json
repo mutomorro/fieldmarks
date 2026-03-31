@@ -16,7 +16,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"adaptation\", \"resilience\", \"change\", \"capacity\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "adaptive-cycle",
@@ -25,7 +25,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"cycles\", \"evolution\", \"renewal\"]",
-      "connectionCount": 8
+      "connectionCount": 9
     },
     {
       "id": "antifragility",
@@ -52,7 +52,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"framing\", \"perspective\", \"scope\", \"design\"]",
-      "connectionCount": 21
+      "connectionCount": 22
     },
     {
       "id": "boundary-critique",
@@ -79,7 +79,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"design\", \"incentives\", \"structure\", \"change\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "causal-loop-diagrams",
@@ -106,7 +106,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"adaptation\", \"emergence\", \"agents\"]",
-      "connectionCount": 11
+      "connectionCount": 12
     },
     {
       "id": "complexity-vs-complication",
@@ -115,7 +115,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"diagnosis\", \"decision-making\"]",
-      "connectionCount": 19
+      "connectionCount": 22
     },
     {
       "id": "constraints",
@@ -127,13 +127,22 @@
       "connectionCount": 10
     },
     {
+      "id": "culture-as-system",
+      "title": "Culture as System",
+      "oneLiner": "Culture isn't something you install - it's an emergent property of interactions, incentives, and structures",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"culture\", \"emergence\", \"organisations\", \"structure\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "cynefin-framework",
       "title": "Cynefin Framework",
       "oneLiner": "A sense-making model that matches your response to the kind of situation you're in",
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"decision-making\", \"sense-making\", \"complexity\", \"strategy\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "delays",
@@ -142,7 +151,25 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"timing\", \"decision-making\", \"planning\", \"patience\"]",
-      "connectionCount": 20
+      "connectionCount": 23
+    },
+    {
+      "id": "distributed-leadership",
+      "title": "Distributed Leadership",
+      "oneLiner": "Leadership as a property of the system, not a role - whoever sees the problem leads the response",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"leadership\", \"organisations\", \"emergence\", \"adaptation\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "double-loop-learning",
+      "title": "Double-Loop Learning",
+      "oneLiner": "Questioning not just 'are we doing things right?' but 'are we doing the right things?'",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"learning\", \"assumptions\", \"adaptation\", \"thinking\"]",
+      "connectionCount": 6
     },
     {
       "id": "drift",
@@ -151,7 +178,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"gradual-change\", \"standards\", \"complacency\", \"awareness\"]",
-      "connectionCount": 9
+      "connectionCount": 13
     },
     {
       "id": "dynamic-thinking",
@@ -160,7 +187,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"time\", \"change\", \"planning\"]",
-      "connectionCount": 5
+      "connectionCount": 8
     },
     {
       "id": "edge-of-chaos",
@@ -178,7 +205,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"design\"]",
-      "connectionCount": 14
+      "connectionCount": 16
     },
     {
       "id": "equilibrium",
@@ -196,7 +223,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"standards\", \"performance\", \"complacency\", \"gradual-change\"]",
-      "connectionCount": 8
+      "connectionCount": 10
     },
     {
       "id": "escalation",
@@ -214,7 +241,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"diagnosis\", \"thinking\", \"patterns\", \"structure\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "exponential-growth",
@@ -223,7 +250,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"growth\", \"planning\", \"risk\", \"scaling\", \"forecasting\"]",
-      "connectionCount": 12
+      "connectionCount": 13
     },
     {
       "id": "feedback-loops",
@@ -237,7 +264,16 @@
         "growth",
         "stability"
       ],
-      "connectionCount": 47
+      "connectionCount": 60
+    },
+    {
+      "id": "feedback-starvation",
+      "title": "Feedback Starvation",
+      "oneLiner": "When a system lacks the information it needs to self-correct - common in hierarchies where bad news doesn't travel upward",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"feedback\", \"information\", \"hierarchy\", \"failure\"]",
+      "connectionCount": 5
     },
     {
       "id": "fixes-that-fail",
@@ -251,7 +287,25 @@
         "problem-solving",
         "short-termism"
       ],
-      "connectionCount": 17
+      "connectionCount": 18
+    },
+    {
+      "id": "goodharts-law",
+      "title": "Goodhart's Law",
+      "oneLiner": "When a measure becomes a target, it ceases to be a good measure",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"incentives\", \"targets\", \"failure\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "groupthink",
+      "title": "Groupthink",
+      "oneLiner": "When the desire for agreement overrides honest thinking - a system failure disguised as alignment",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"decision-making\", \"groups\", \"bias\", \"failure\"]",
+      "connectionCount": 6
     },
     {
       "id": "growth-and-underinvestment",
@@ -269,7 +323,16 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"diagnosis\", \"thinking\", \"structure\", \"patterns\"]",
-      "connectionCount": 7
+      "connectionCount": 8
+    },
+    {
+      "id": "institutional-inertia",
+      "title": "Institutional Inertia",
+      "oneLiner": "The tendency of large systems to resist change, even when everyone agrees change is needed",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"change\", \"organisations\", \"resistance\", \"structure\"]",
+      "connectionCount": 6
     },
     {
       "id": "interconnections",
@@ -278,7 +341,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"relationships\", \"structure\", \"networks\", \"dependencies\"]",
-      "connectionCount": 16
+      "connectionCount": 17
     },
     {
       "id": "intervention-side-effects",
@@ -287,7 +350,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"unintended-consequences\", \"complexity\", \"planning\"]",
-      "connectionCount": 10
+      "connectionCount": 11
     },
     {
       "id": "irreducibility",
@@ -297,6 +360,24 @@
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"prediction\", \"simulation\", \"limits\"]",
       "connectionCount": 7
+    },
+    {
+      "id": "leading-vs-lagging-indicators",
+      "title": "Leading vs Lagging Indicators",
+      "oneLiner": "Lagging indicators tell you what happened. Leading indicators tell you what's coming. Most people only track the first kind",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"planning\", \"foresight\", \"diagnosis\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "learning-organisation",
+      "title": "Learning Organisation",
+      "oneLiner": "An organisation that continuously transforms itself by learning from its own experience",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"learning\", \"organisations\", \"adaptation\", \"culture\"]",
+      "connectionCount": 5
     },
     {
       "id": "leverage-points",
@@ -323,7 +404,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"bias\", \"complexity\", \"planning\"]",
-      "connectionCount": 9
+      "connectionCount": 10
     },
     {
       "id": "local-vs-global-optimisation",
@@ -341,7 +422,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"switching-costs\", \"technology\", \"inertia\", \"decisions\"]",
-      "connectionCount": 5
+      "connectionCount": 7
     },
     {
       "id": "map-is-not-the-territory",
@@ -350,7 +431,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"models\", \"epistemology\", \"humility\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "mental-models",
@@ -359,7 +440,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"assumptions\", \"perception\", \"change\"]",
-      "connectionCount": 13
+      "connectionCount": 21
     },
     {
       "id": "modularity",
@@ -368,7 +449,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"design\", \"resilience\", \"structure\", \"architecture\"]",
-      "connectionCount": 5
+      "connectionCount": 6
     },
     {
       "id": "multiple-perspectives",
@@ -377,7 +458,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"perspective\", \"complexity\", \"collaboration\", \"diagnosis\"]",
-      "connectionCount": 7
+      "connectionCount": 9
     },
     {
       "id": "nested-systems",
@@ -389,13 +470,22 @@
       "connectionCount": 5
     },
     {
+      "id": "network-effects",
+      "title": "Network Effects",
+      "oneLiner": "When a product or system becomes more valuable as more people use it - the force behind platforms and standards",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"networks\", \"growth\", \"platforms\", \"lock-in\"]",
+      "connectionCount": 5
+    },
+    {
       "id": "nonlinearity",
       "title": "Nonlinearity",
       "oneLiner": "Small changes can have huge effects, and big changes can have none - systems rarely respond in proportion",
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"prediction\", \"cause-and-effect\", \"planning\", \"surprise\"]",
-      "connectionCount": 17
+      "connectionCount": 18
     },
     {
       "id": "nudges",
@@ -407,12 +497,39 @@
       "connectionCount": 6
     },
     {
+      "id": "observer-effect",
+      "title": "Observer Effect",
+      "oneLiner": "The act of measuring or watching a system changes how the system behaves",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"behaviour\", \"observation\", \"bias\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "organisational-debt",
+      "title": "Organisational Debt",
+      "oneLiner": "The accumulated cost of shortcuts, workarounds, and deferred structural decisions",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"organisations\", \"structure\", \"accumulation\", \"debt\"]",
+      "connectionCount": 6
+    },
+    {
       "id": "oscillation",
       "title": "Oscillation",
       "oneLiner": "Systems that overshoot and undershoot because feedback arrives too late",
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"cycles\", \"instability\", \"timing\", \"overcorrection\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "outcome-mapping",
+      "title": "Outcome Mapping",
+      "oneLiner": "Tracking changes in behaviour and relationships rather than counting outputs - designed for complex change",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"evaluation\", \"impact\", \"complexity\", \"change\"]",
       "connectionCount": 5
     },
     {
@@ -440,7 +557,16 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"history\", \"constraints\", \"decisions\", \"strategy\"]",
-      "connectionCount": 8
+      "connectionCount": 9
+    },
+    {
+      "id": "perverse-incentives",
+      "title": "Perverse Incentives",
+      "oneLiner": "Incentive structures that reward the opposite of what you intended - the cobra effect",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"incentives\", \"unintended-consequences\", \"design\", \"behaviour\"]",
+      "connectionCount": 5
     },
     {
       "id": "policy-resistance",
@@ -449,7 +575,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"intervention\", \"change\", \"feedback\", \"unintended-consequences\"]",
-      "connectionCount": 12
+      "connectionCount": 13
     },
     {
       "id": "power-in-systems",
@@ -459,6 +585,15 @@
       "colour": "#d45a7a",
       "tags": "[\"power\", \"structure\", \"politics\", \"design\"]",
       "connectionCount": 6
+    },
+    {
+      "id": "proxy-measures",
+      "title": "Proxy Measures",
+      "oneLiner": "Using something measurable as a stand-in for something that isn't - useful until people start gaming the proxy",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"simplification\", \"gaming\", \"accuracy\"]",
+      "connectionCount": 7
     },
     {
       "id": "punctuated-equilibrium",
@@ -476,7 +611,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"analysis\", \"complexity\", \"science\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "redundancy",
@@ -494,7 +629,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"change\", \"tipping-points\", \"stability\", \"transformation\"]",
-      "connectionCount": 7
+      "connectionCount": 8
     },
     {
       "id": "requisite-variety",
@@ -503,7 +638,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"complexity\", \"control\", \"adaptation\", \"design\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "resilience",
@@ -512,7 +647,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"resilience\", \"adaptation\", \"stability\", \"design\"]",
-      "connectionCount": 12
+      "connectionCount": 13
     },
     {
       "id": "robustness-vs-resilience",
@@ -548,7 +683,7 @@
       "theme": "resilience-and-change",
       "colour": "#5a6cc0",
       "tags": "[\"intervention\", \"complexity\", \"experimentation\", \"learning\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "scale-effects",
@@ -566,7 +701,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"thinking\", \"planning\", \"consequences\", \"foresight\"]",
-      "connectionCount": 9
+      "connectionCount": 11
     },
     {
       "id": "self-organisation",
@@ -575,7 +710,16 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"emergence\", \"complexity\", \"structure\", \"adaptation\"]",
-      "connectionCount": 7
+      "connectionCount": 9
+    },
+    {
+      "id": "sensemaking",
+      "title": "Sensemaking",
+      "oneLiner": "The process of creating meaning from ambiguous, complex situations - not decision-making, but what comes before it",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"complexity\", \"decision-making\", \"diagnosis\", \"leadership\"]",
+      "connectionCount": 6
     },
     {
       "id": "sensitivity-to-initial-conditions",
@@ -594,6 +738,24 @@
       "colour": "#3aaa9e",
       "tags": "[\"dependency\", \"short-termism\", \"capacity\", \"habits\"]",
       "connectionCount": 10
+    },
+    {
+      "id": "signal-vs-noise",
+      "title": "Signal vs Noise",
+      "oneLiner": "The challenge of distinguishing meaningful information from random variation - most of what looks like signal is noise",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"information\", \"decision-making\", \"statistics\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "silos",
+      "title": "Silos",
+      "oneLiner": "When parts of a system optimise independently, losing sight of the whole - a structural problem, not a people problem",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"organisations\", \"structure\", \"collaboration\", \"sub-optimisation\"]",
+      "connectionCount": 5
     },
     {
       "id": "solutionism",
@@ -620,7 +782,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"accumulation\", \"measurement\", \"resources\", \"planning\"]",
-      "connectionCount": 16
+      "connectionCount": 18
     },
     {
       "id": "sub-optimisation",
@@ -629,7 +791,7 @@
       "theme": "boundaries-and-power",
       "colour": "#d45a7a",
       "tags": "[\"optimisation\", \"silos\", \"structure\", \"design\"]",
-      "connectionCount": 6
+      "connectionCount": 7
     },
     {
       "id": "success-to-the-successful",
@@ -638,7 +800,16 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"inequality\", \"resources\", \"competition\", \"structure\"]",
-      "connectionCount": 6
+      "connectionCount": 7
+    },
+    {
+      "id": "surrogate-measures",
+      "title": "Surrogate Measures",
+      "oneLiner": "When you can't measure what matters, you measure what you can - and then forget the difference",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"measurement\", \"goals\", \"simplification\", \"displacement\"]",
+      "connectionCount": 5
     },
     {
       "id": "system-blindness",
@@ -647,7 +818,7 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"thinking\", \"blame\", \"structure\", \"diagnosis\"]",
-      "connectionCount": 6
+      "connectionCount": 9
     },
     {
       "id": "system-traps",
@@ -656,7 +827,7 @@
       "theme": "leverage-and-intervention",
       "colour": "#d4a830",
       "tags": "[\"patterns\", \"failure-modes\", \"diagnosis\", \"structure\"]",
-      "connectionCount": 10
+      "connectionCount": 12
     },
     {
       "id": "systems-mapping",
@@ -665,7 +836,16 @@
       "theme": "mental-models",
       "colour": "#a06cc0",
       "tags": "[\"tools\", \"mapping\", \"visualisation\", \"diagnosis\"]",
-      "connectionCount": 8
+      "connectionCount": 9
+    },
+    {
+      "id": "theory-of-change",
+      "title": "Theory of Change",
+      "oneLiner": "A map of how you believe change happens - from activities to outcomes - only useful if it acknowledges complexity",
+      "theme": "organisational-systems",
+      "colour": "#7ab84e",
+      "tags": "[\"planning\", \"change\", \"impact\", \"strategy\"]",
+      "connectionCount": 6
     },
     {
       "id": "tipping-points",
@@ -674,7 +854,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"thresholds\", \"change\", \"irreversibility\", \"surprise\"]",
-      "connectionCount": 15
+      "connectionCount": 17
     },
     {
       "id": "tragedy-of-the-commons",
@@ -710,7 +890,16 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"intervention\", \"risk\", \"complexity\", \"planning\", \"policy\"]",
-      "connectionCount": 14
+      "connectionCount": 16
+    },
+    {
+      "id": "weak-signals",
+      "title": "Weak Signals",
+      "oneLiner": "Early, ambiguous indicators of emerging change - easy to dismiss, potentially critical",
+      "theme": "measurement-and-signals",
+      "colour": "#d4735e",
+      "tags": "[\"foresight\", \"change\", \"detection\", \"emergence\"]",
+      "connectionCount": 5
     },
     {
       "id": "wicked-problems",
@@ -719,7 +908,7 @@
       "theme": "complexity-and-uncertainty",
       "colour": "#4a9ad4",
       "tags": "[\"complexity\", \"planning\", \"problem-solving\", \"design\"]",
-      "connectionCount": 10
+      "connectionCount": 12
     }
   ],
   "edges": [
@@ -784,6 +973,12 @@
       "note": "\"Transformability goes beyond adaptive capacity - not adjusting within the current system, but creating a fundamentally new one\""
     },
     {
+      "id": "adaptive-capacity--learning-organisation",
+      "source": "adaptive-capacity",
+      "target": "learning-organisation",
+      "note": "\"A learning organisation builds adaptive capacity continuously - organisational learning is how adaptability grows\""
+    },
+    {
       "id": "adaptive-cycle--resilience",
       "source": "adaptive-cycle",
       "target": "resilience",
@@ -830,6 +1025,12 @@
       "source": "adaptive-cycle",
       "target": "punctuated-equilibrium",
       "note": "\"The adaptive cycle is the internal mechanism behind punctuated equilibrium - what happens during both stability and disruption\""
+    },
+    {
+      "id": "adaptive-cycle--institutional-inertia",
+      "source": "adaptive-cycle",
+      "target": "institutional-inertia",
+      "note": "\"Inertia builds during the conservation phase - the system becomes rigid and resistant as it matures\""
     },
     {
       "id": "antifragility--resilience",
@@ -982,6 +1183,12 @@
       "note": "\"Nested systems show that every boundary is also a connection - the edge of one system is the interface with the next\""
     },
     {
+      "id": "boundaries--silos",
+      "source": "boundaries",
+      "target": "silos",
+      "note": "\"Silos are boundaries that have hardened into barriers - necessary separation that became isolation\""
+    },
+    {
       "id": "boundary-critique--multiple-perspectives",
       "source": "boundary-critique",
       "target": "multiple-perspectives",
@@ -1096,6 +1303,12 @@
       "note": "\"Many catalytic mechanisms work as enabling constraints - limiting options in ways that improve outcomes\""
     },
     {
+      "id": "catalytic-mechanisms--perverse-incentives",
+      "source": "catalytic-mechanisms",
+      "target": "perverse-incentives",
+      "note": "\"Well-designed catalytic mechanisms avoid perverse incentives by aligning the mechanism tightly with the actual goal\""
+    },
+    {
       "id": "causal-loop-diagrams--feedback-loops",
       "source": "causal-loop-diagrams",
       "target": "feedback-loops",
@@ -1192,6 +1405,12 @@
       "note": "\"Complex adaptive systems operate most effectively at the edge of chaos - the zone between rigidity and dissolution\""
     },
     {
+      "id": "complex-adaptive-systems--distributed-leadership",
+      "source": "complex-adaptive-systems",
+      "target": "distributed-leadership",
+      "note": "\"Centralised leadership can't keep pace with a complex adaptive system - distributed leadership matches the system's speed\""
+    },
+    {
       "id": "complexity-vs-complication--emergence",
       "source": "complexity-vs-complication",
       "target": "emergence",
@@ -1282,6 +1501,24 @@
       "note": "\"Safe-to-fail is the right approach for complex problems - where you can't predict the outcome, you make the trying safe\""
     },
     {
+      "id": "complexity-vs-complication--observer-effect",
+      "source": "complexity-vs-complication",
+      "target": "observer-effect",
+      "note": "\"The observer effect is a hallmark of complex systems - the system responds to being studied, unlike a machine\""
+    },
+    {
+      "id": "complexity-vs-complication--sensemaking",
+      "source": "complexity-vs-complication",
+      "target": "sensemaking",
+      "note": "\"Sensemaking is most critical in complex situations where the relationship between cause and effect is unclear\""
+    },
+    {
+      "id": "complexity-vs-complication--outcome-mapping",
+      "source": "complexity-vs-complication",
+      "target": "outcome-mapping",
+      "note": "\"Outcome mapping was designed for complex change - where you can influence behaviour but can't control final outcomes\""
+    },
+    {
       "id": "constraints--limits-to-growth",
       "source": "constraints",
       "target": "limits-to-growth",
@@ -1304,6 +1541,36 @@
       "source": "constraints",
       "target": "robustness-vs-resilience",
       "note": "\"Robustness works by adding constraints that prevent change. Resilience works by maintaining flexibility to respond to it\""
+    },
+    {
+      "id": "culture-as-system--emergence",
+      "source": "culture-as-system",
+      "target": "emergence",
+      "note": "\"Culture is an emergent property - it arises from the interactions of many people, not from a mission statement\""
+    },
+    {
+      "id": "culture-as-system--self-organisation",
+      "source": "culture-as-system",
+      "target": "self-organisation",
+      "note": "\"Culture self-organises from the daily interactions, incentives, and norms that people experience\""
+    },
+    {
+      "id": "culture-as-system--mental-models",
+      "source": "culture-as-system",
+      "target": "mental-models",
+      "note": "\"Culture is the collective expression of shared mental models - the assumptions that 'everyone knows' but nobody states\""
+    },
+    {
+      "id": "culture-as-system--feedback-loops",
+      "source": "culture-as-system",
+      "target": "feedback-loops",
+      "note": "\"Culture reinforces itself through feedback loops - the culture shapes behaviour, and behaviour reinforces the culture\""
+    },
+    {
+      "id": "culture-as-system--institutional-inertia",
+      "source": "culture-as-system",
+      "target": "institutional-inertia",
+      "note": "\"Culture is one of the strongest sources of institutional inertia - it outlasts every programme designed to change it\""
     },
     {
       "id": "cynefin-framework--emergence",
@@ -1352,6 +1619,12 @@
       "source": "cynefin-framework",
       "target": "safe-to-fail-experiments",
       "note": "\"Safe-to-fail experiments are the primary intervention strategy for Cynefin's complex domain - probe, sense, respond\""
+    },
+    {
+      "id": "cynefin-framework--sensemaking",
+      "source": "cynefin-framework",
+      "target": "sensemaking",
+      "note": "\"Cynefin is fundamentally a sensemaking framework - its first job is helping you understand what kind of situation you're in\""
     },
     {
       "id": "delays--feedback-loops",
@@ -1414,6 +1687,84 @@
       "note": "\"Dynamic thinking makes delays visible by asking 'when does this show up?' not just 'what happens?'\""
     },
     {
+      "id": "delays--leading-vs-lagging-indicators",
+      "source": "delays",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Lagging indicators are delayed signals - by the time they move, the cause is already in the past\""
+    },
+    {
+      "id": "delays--feedback-starvation",
+      "source": "delays",
+      "target": "feedback-starvation",
+      "note": "\"Feedback starvation is an extreme form of delay - the feedback isn't just slow, it never arrives\""
+    },
+    {
+      "id": "delays--organisational-debt",
+      "source": "delays",
+      "target": "organisational-debt",
+      "note": "\"The delay between accumulating organisational debt and feeling its consequences is what makes it so dangerous\""
+    },
+    {
+      "id": "distributed-leadership--self-organisation",
+      "source": "distributed-leadership",
+      "target": "self-organisation",
+      "note": "\"Distributed leadership is self-organisation applied to how decisions get made and action gets taken\""
+    },
+    {
+      "id": "distributed-leadership--requisite-variety",
+      "source": "distributed-leadership",
+      "target": "requisite-variety",
+      "note": "\"Distributed leadership increases requisite variety - more people leading means more diverse responses to challenges\""
+    },
+    {
+      "id": "distributed-leadership--resilience",
+      "source": "distributed-leadership",
+      "target": "resilience",
+      "note": "\"Distributed leadership builds resilience - the system doesn't depend on any single leader to function\""
+    },
+    {
+      "id": "distributed-leadership--emergence",
+      "source": "distributed-leadership",
+      "target": "emergence",
+      "note": "\"Distributed leadership is emergent - it arises from the situation and the capabilities present, not from the org chart\""
+    },
+    {
+      "id": "double-loop-learning--learning-organisation",
+      "source": "double-loop-learning",
+      "target": "learning-organisation",
+      "note": "\"Double-loop learning is the mechanism that makes a learning organisation genuinely adaptive\""
+    },
+    {
+      "id": "double-loop-learning--mental-models",
+      "source": "double-loop-learning",
+      "target": "mental-models",
+      "note": "\"Double-loop learning targets mental models - it's the process of questioning the assumptions beneath the strategy\""
+    },
+    {
+      "id": "double-loop-learning--iceberg-model",
+      "source": "double-loop-learning",
+      "target": "iceberg-model",
+      "note": "\"Single-loop learning addresses events. Double-loop learning reaches the structures and mental models beneath\""
+    },
+    {
+      "id": "double-loop-learning--feedback-loops",
+      "source": "double-loop-learning",
+      "target": "feedback-loops",
+      "note": "\"Single-loop learning is a feedback loop that adjusts behaviour. Double-loop learning is a feedback loop that adjusts the rules\""
+    },
+    {
+      "id": "double-loop-learning--event-pattern-structure",
+      "source": "double-loop-learning",
+      "target": "event-pattern-structure",
+      "note": "\"Single-loop works at the event level. Double-loop reaches the structure and asks whether the structure itself needs changing\""
+    },
+    {
+      "id": "double-loop-learning--groupthink",
+      "source": "double-loop-learning",
+      "target": "groupthink",
+      "note": "\"Groupthink prevents double-loop learning - if nobody questions the assumptions, they never get tested\""
+    },
+    {
       "id": "drift--feedback-loops",
       "source": "drift",
       "target": "feedback-loops",
@@ -1450,6 +1801,30 @@
       "note": "\"Drift during equilibrium periods is what makes the punctuation inevitable - slow, invisible erosion building until it breaks\""
     },
     {
+      "id": "drift--leading-vs-lagging-indicators",
+      "source": "drift",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Drift is invisible if you only track lagging indicators - the slow change doesn't show until the accumulated effect is dramatic\""
+    },
+    {
+      "id": "drift--feedback-starvation",
+      "source": "drift",
+      "target": "feedback-starvation",
+      "note": "\"Feedback starvation enables drift - without signals that something is changing, the slow decline goes unnoticed\""
+    },
+    {
+      "id": "drift--surrogate-measures",
+      "source": "drift",
+      "target": "surrogate-measures",
+      "note": "\"Surrogate displacement happens through drift - the measure replaces the goal so slowly that nobody sees the switch\""
+    },
+    {
+      "id": "drift--organisational-debt",
+      "source": "drift",
+      "target": "organisational-debt",
+      "note": "\"Organisational debt accumulates through drift - each shortcut is imperceptible, the total is dramatic\""
+    },
+    {
       "id": "drift--equilibrium",
       "source": "drift",
       "target": "equilibrium",
@@ -1478,6 +1853,24 @@
       "source": "dynamic-thinking",
       "target": "exponential-growth",
       "note": "\"Dynamic thinking is how you catch exponential growth early - by asking 'what does this look like in six months?' not 'what does it look like now?'\""
+    },
+    {
+      "id": "dynamic-thinking--leading-vs-lagging-indicators",
+      "source": "dynamic-thinking",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Leading indicators support dynamic thinking - they tell you about trajectory, not just current position\""
+    },
+    {
+      "id": "dynamic-thinking--signal-vs-noise",
+      "source": "dynamic-thinking",
+      "target": "signal-vs-noise",
+      "note": "\"Dynamic thinking helps separate signal from noise - trends over time reveal patterns that single points can't\""
+    },
+    {
+      "id": "dynamic-thinking--weak-signals",
+      "source": "dynamic-thinking",
+      "target": "weak-signals",
+      "note": "\"Weak signals show up as subtle changes in trajectory - dynamic thinking makes them easier to spot\""
     },
     {
       "id": "edge-of-chaos--self-organisation",
@@ -1618,6 +2011,18 @@
       "note": "\"Eroding goals is a system trap - the slow drift in standards is structural, not a failure of willpower\""
     },
     {
+      "id": "eroding-goals--surrogate-measures",
+      "source": "eroding-goals",
+      "target": "surrogate-measures",
+      "note": "\"The shift from the real goal to the surrogate is a form of goal erosion - so gradual nobody notices the substitution\""
+    },
+    {
+      "id": "eroding-goals--organisational-debt",
+      "source": "eroding-goals",
+      "target": "organisational-debt",
+      "note": "\"Organisational debt often involves eroding goals - accepting worse standards because fixing the structure feels too hard\""
+    },
+    {
       "id": "escalation--feedback-loops",
       "source": "escalation",
       "target": "feedback-loops",
@@ -1738,6 +2143,12 @@
       "note": "\"Linear thinking is why exponential growth always surprises people - we instinctively project in straight lines\""
     },
     {
+      "id": "exponential-growth--network-effects",
+      "source": "exponential-growth",
+      "target": "network-effects",
+      "note": "\"Network effects drive exponential growth in early stages - each new user increases value for all existing ones\""
+    },
+    {
       "id": "feedback-loops--stocks-and-flows",
       "source": "feedback-loops",
       "target": "stocks-and-flows",
@@ -1798,6 +2209,48 @@
       "note": "\"Power often works through feedback loops - those with resources gain more, reinforcing their position\""
     },
     {
+      "id": "feedback-loops--goodharts-law",
+      "source": "feedback-loops",
+      "target": "goodharts-law",
+      "note": "\"Goodhart's Law corrupts feedback loops - the signal guiding the system becomes the thing the system games\""
+    },
+    {
+      "id": "feedback-loops--leading-vs-lagging-indicators",
+      "source": "feedback-loops",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Leading indicators create faster feedback loops, letting the system adjust before lagging indicators confirm the damage\""
+    },
+    {
+      "id": "feedback-loops--signal-vs-noise",
+      "source": "feedback-loops",
+      "target": "signal-vs-noise",
+      "note": "\"A feedback loop is only useful if it carries signal - responding to noise makes the system oscillate without improving\""
+    },
+    {
+      "id": "feedback-loops--feedback-starvation",
+      "source": "feedback-loops",
+      "target": "feedback-starvation",
+      "note": "\"Feedback starvation is what happens when feedback loops are broken - the system loses its ability to self-correct\""
+    },
+    {
+      "id": "feedback-loops--observer-effect",
+      "source": "feedback-loops",
+      "target": "observer-effect",
+      "note": "\"Observation creates a new feedback loop in the system - the system senses it's being watched and adjusts accordingly\""
+    },
+    {
+      "id": "feedback-loops--perverse-incentives",
+      "source": "feedback-loops",
+      "target": "perverse-incentives",
+      "note": "\"Perverse incentives create reinforcing feedback loops that amplify the problem the incentive was supposed to solve\""
+    },
+    {
+      "id": "feedback-loops--learning-organisation",
+      "source": "feedback-loops",
+      "target": "learning-organisation",
+      "note": "\"Learning organisations are built on feedback loops that translate experience into structural adaptation\""
+    },
+    {
       "id": "feedback-loops--leverage-points",
       "source": "feedback-loops",
       "target": "leverage-points",
@@ -1808,6 +2261,18 @@
       "source": "feedback-loops",
       "target": "policy-resistance",
       "note": "\"Multiple balancing feedback loops pulling toward different goals is what creates policy resistance\""
+    },
+    {
+      "id": "feedback-starvation--system-blindness",
+      "source": "feedback-starvation",
+      "target": "system-blindness",
+      "note": "\"Feedback starvation produces system blindness - without information, the system can't see its own dysfunction\""
+    },
+    {
+      "id": "feedback-starvation--groupthink",
+      "source": "feedback-starvation",
+      "target": "groupthink",
+      "note": "\"Groupthink creates feedback starvation by suppressing the dissent that would provide corrective information\""
     },
     {
       "id": "fixes-that-fail--shifting-the-burden",
@@ -1882,6 +2347,72 @@
       "note": "\"Solutionism drives fixes that fail by demanding a solution before the problem is properly understood\""
     },
     {
+      "id": "fixes-that-fail--organisational-debt",
+      "source": "fixes-that-fail",
+      "target": "organisational-debt",
+      "note": "\"Every quick fix that avoids a structural solution adds to the stock of organisational debt\""
+    },
+    {
+      "id": "goodharts-law--proxy-measures",
+      "source": "goodharts-law",
+      "target": "proxy-measures",
+      "note": "\"Goodhart's Law is what happens when a proxy measure becomes a target - people optimise the proxy, not the thing it represents\""
+    },
+    {
+      "id": "goodharts-law--perverse-incentives",
+      "source": "goodharts-law",
+      "target": "perverse-incentives",
+      "note": "\"Goodhart's Law is the mechanism behind most perverse incentives - the measure drives behaviour away from the intended goal\""
+    },
+    {
+      "id": "goodharts-law--system-traps",
+      "source": "goodharts-law",
+      "target": "system-traps",
+      "note": "\"Goodhart's Law creates a system trap - the better you get at hitting the measure, the further you drift from the goal\""
+    },
+    {
+      "id": "goodharts-law--unintended-consequences",
+      "source": "goodharts-law",
+      "target": "unintended-consequences",
+      "note": "\"The unintended consequence of targeting a measure is that the measure stops measuring what it used to\""
+    },
+    {
+      "id": "goodharts-law--observer-effect",
+      "source": "goodharts-law",
+      "target": "observer-effect",
+      "note": "\"The observer effect is the behavioural mechanism behind Goodhart's Law - people change behaviour when they know it's measured\""
+    },
+    {
+      "id": "goodharts-law--surrogate-measures",
+      "source": "goodharts-law",
+      "target": "surrogate-measures",
+      "note": "\"Surrogate measures are Goodhart's Law fully realised - the measure has displaced the goal entirely\""
+    },
+    {
+      "id": "groupthink--multiple-perspectives",
+      "source": "groupthink",
+      "target": "multiple-perspectives",
+      "note": "\"Groupthink is the collapse of multiple perspectives into one - the group converges prematurely on a single view\""
+    },
+    {
+      "id": "feedback-loops--groupthink",
+      "source": "groupthink",
+      "target": "feedback-loops",
+      "note": "\"Groupthink creates a reinforcing loop - agreement breeds more agreement, suppressing the dissent that would break the cycle\""
+    },
+    {
+      "id": "groupthink--system-blindness",
+      "source": "groupthink",
+      "target": "system-blindness",
+      "note": "\"Groupthink is a form of system blindness - the group can't see its own dysfunction because the dysfunction feels like unity\""
+    },
+    {
+      "id": "groupthink--mental-models",
+      "source": "groupthink",
+      "target": "mental-models",
+      "note": "\"Groupthink locks in a shared mental model and prevents it from being updated, even when evidence contradicts it\""
+    },
+    {
       "id": "growth-and-underinvestment--limits-to-growth",
       "source": "growth-and-underinvestment",
       "target": "limits-to-growth",
@@ -1928,6 +2459,30 @@
       "source": "iceberg-model",
       "target": "feedback-loops",
       "note": "\"Feedback loops live in the structure layer of the iceberg - invisible from the event level but driving everything\""
+    },
+    {
+      "id": "institutional-inertia--path-dependence",
+      "source": "institutional-inertia",
+      "target": "path-dependence",
+      "note": "\"Institutional inertia is path dependence at the organisational level - accumulated decisions constrain future movement\""
+    },
+    {
+      "id": "institutional-inertia--lock-in",
+      "source": "institutional-inertia",
+      "target": "lock-in",
+      "note": "\"Lock-in is inertia's endgame - the cost of changing becomes so high that the institution is stuck even when the current path is failing\""
+    },
+    {
+      "id": "institutional-inertia--organisational-debt",
+      "source": "institutional-inertia",
+      "target": "organisational-debt",
+      "note": "\"Organisational debt feeds inertia - the more accumulated shortcuts, the harder it is to change direction\""
+    },
+    {
+      "id": "institutional-inertia--policy-resistance",
+      "source": "institutional-inertia",
+      "target": "policy-resistance",
+      "note": "\"Institutional inertia is a major source of policy resistance - the structure absorbs change efforts and reasserts itself\""
     },
     {
       "id": "feedback-loops--interconnections",
@@ -1990,6 +2545,12 @@
       "note": "\"Sub-optimisation ignores interconnections - improving parts without considering what flows between them\""
     },
     {
+      "id": "interconnections--silos",
+      "source": "interconnections",
+      "target": "silos",
+      "note": "\"Silos form when interconnections between parts weaken - information and understanding stop flowing across boundaries\""
+    },
+    {
       "id": "intervention-side-effects--unintended-consequences",
       "source": "intervention-side-effects",
       "target": "unintended-consequences",
@@ -2032,6 +2593,12 @@
       "note": "\"Safe-to-fail experiments contain intervention side effects by keeping the scale small and the commitment reversible\""
     },
     {
+      "id": "intervention-side-effects--observer-effect",
+      "source": "intervention-side-effects",
+      "target": "observer-effect",
+      "note": "\"Measurement is itself an intervention - the observer effect is its unavoidable side effect\""
+    },
+    {
       "id": "irreducibility--sensitivity-to-initial-conditions",
       "source": "irreducibility",
       "target": "sensitivity-to-initial-conditions",
@@ -2060,6 +2627,24 @@
       "source": "irreducibility",
       "target": "safe-to-fail-experiments",
       "note": "\"Safe-to-fail experiments respect irreducibility - if the only way to know is to try, make the trying safe and small\""
+    },
+    {
+      "id": "leading-vs-lagging-indicators--stocks-and-flows",
+      "source": "leading-vs-lagging-indicators",
+      "target": "stocks-and-flows",
+      "note": "\"Lagging indicators often measure stocks (accumulated results). Leading indicators often measure flows (current activity)\""
+    },
+    {
+      "id": "learning-organisation--mental-models",
+      "source": "learning-organisation",
+      "target": "mental-models",
+      "note": "\"Senge identified mental models as one of the five disciplines - surfacing and testing assumptions is core to organisational learning\""
+    },
+    {
+      "id": "learning-organisation--system-blindness",
+      "source": "learning-organisation",
+      "target": "system-blindness",
+      "note": "\"Learning organisations overcome system blindness by developing the habit of looking at structures, not just events\""
     },
     {
       "id": "leverage-points--stocks-and-flows",
@@ -2182,6 +2767,12 @@
       "note": "\"Solutionism is linear thinking applied to problem-solving - one problem, one cause, one fix\""
     },
     {
+      "id": "linear-thinking--theory-of-change",
+      "source": "linear-thinking",
+      "target": "theory-of-change",
+      "note": "\"Most theories of change are dangerously linear - real change doesn't follow a straight chain from activity to impact\""
+    },
+    {
       "id": "local-vs-global-optimisation--sub-optimisation",
       "source": "local-vs-global-optimisation",
       "target": "sub-optimisation",
@@ -2242,6 +2833,12 @@
       "note": "\"Lock-in during stable periods explains why change accumulates as pressure rather than gradual adjustment\""
     },
     {
+      "id": "lock-in--network-effects",
+      "source": "lock-in",
+      "target": "network-effects",
+      "note": "\"Network effects create lock-in at the market level - switching away means losing access to the network's value\""
+    },
+    {
       "id": "map-is-not-the-territory--mental-models",
       "source": "map-is-not-the-territory",
       "target": "mental-models",
@@ -2272,6 +2869,12 @@
       "note": "\"Each perspective is a map. Multiple maps together get closer to the territory than any single one\""
     },
     {
+      "id": "map-is-not-the-territory--proxy-measures",
+      "source": "map-is-not-the-territory",
+      "target": "proxy-measures",
+      "note": "\"A proxy measure is a map of the thing you care about - useful but never the thing itself\""
+    },
+    {
       "id": "mental-models--system-blindness",
       "source": "mental-models",
       "target": "system-blindness",
@@ -2294,6 +2897,12 @@
       "source": "mental-models",
       "target": "multiple-perspectives",
       "note": "\"Each perspective carries its own mental models - its own assumptions about what's important and why\""
+    },
+    {
+      "id": "mental-models--sensemaking",
+      "source": "mental-models",
+      "target": "sensemaking",
+      "note": "\"Sensemaking builds and updates mental models - the process by which our map of reality gets revised\""
     },
     {
       "id": "modularity--resilience",
@@ -2320,6 +2929,12 @@
       "note": "\"Modularity helps manage complexity by containing it within units - each module can be complex internally while being simple externally\""
     },
     {
+      "id": "modularity--silos",
+      "source": "modularity",
+      "target": "silos",
+      "note": "\"Silos are modularity without integration - independent parts that have lost the coordination the whole requires\""
+    },
+    {
       "id": "multiple-perspectives--wicked-problems",
       "source": "multiple-perspectives",
       "target": "wicked-problems",
@@ -2330,6 +2945,12 @@
       "source": "multiple-perspectives",
       "target": "systems-mapping",
       "note": "\"Systems mapping with multiple perspectives produces richer, more accurate maps than any single viewpoint\""
+    },
+    {
+      "id": "multiple-perspectives--sensemaking",
+      "source": "multiple-perspectives",
+      "target": "sensemaking",
+      "note": "\"Sensemaking benefits from multiple perspectives because each viewpoint reveals different aspects of an ambiguous situation\""
     },
     {
       "id": "nested-systems--panarchy",
@@ -2348,6 +2969,24 @@
       "source": "nested-systems",
       "target": "sub-optimisation",
       "note": "\"Sub-optimisation in nested systems means one level optimising at the expense of the levels above or below\""
+    },
+    {
+      "id": "feedback-loops--network-effects",
+      "source": "network-effects",
+      "target": "feedback-loops",
+      "note": "\"Network effects are a reinforcing feedback loop - more users make the system more valuable, which attracts more users\""
+    },
+    {
+      "id": "network-effects--success-to-the-successful",
+      "source": "network-effects",
+      "target": "success-to-the-successful",
+      "note": "\"Network effects are success-to-the-successful at the platform level - the biggest network gets more users, which makes it bigger\""
+    },
+    {
+      "id": "network-effects--tipping-points",
+      "source": "network-effects",
+      "target": "tipping-points",
+      "note": "\"Network effects have a tipping point - once the network is large enough, growth becomes self-sustaining\""
     },
     {
       "id": "feedback-loops--nonlinearity",
@@ -2404,6 +3043,18 @@
       "note": "\"Nudges often meet less resistance than mandates because they don't restrict freedom - they redirect attention\""
     },
     {
+      "id": "observer-effect--proxy-measures",
+      "source": "observer-effect",
+      "target": "proxy-measures",
+      "note": "\"The observer effect means that measuring a proxy doesn't just simplify reality - it changes reality\""
+    },
+    {
+      "id": "organisational-debt--stocks-and-flows",
+      "source": "organisational-debt",
+      "target": "stocks-and-flows",
+      "note": "\"Organisational debt is a stock that accumulates when the inflow of shortcuts exceeds the outflow of structural fixes\""
+    },
+    {
       "id": "buffers--oscillation",
       "source": "oscillation",
       "target": "buffers",
@@ -2414,6 +3065,30 @@
       "source": "oscillation",
       "target": "stocks-and-flows",
       "note": "\"Oscillation is visible in stocks - the level swings above and below where it needs to be\""
+    },
+    {
+      "id": "outcome-mapping--theory-of-change",
+      "source": "outcome-mapping",
+      "target": "theory-of-change",
+      "note": "\"Outcome mapping operationalises the theory of change by focusing on what changes in the people the programme influences\""
+    },
+    {
+      "id": "feedback-loops--outcome-mapping",
+      "source": "outcome-mapping",
+      "target": "feedback-loops",
+      "note": "\"Outcome mapping builds feedback into change work - tracking behavioural shifts gives you earlier signals than waiting for final outcomes\""
+    },
+    {
+      "id": "outcome-mapping--second-order-effects",
+      "source": "outcome-mapping",
+      "target": "second-order-effects",
+      "note": "\"Outcome mapping tracks the first-order effects (behaviour change) that produce second-order effects (system change)\""
+    },
+    {
+      "id": "outcome-mapping--safe-to-fail-experiments",
+      "source": "outcome-mapping",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Outcome mapping pairs well with safe-to-fail experiments - track what changes, amplify what works, dampen what doesn't\""
     },
     {
       "id": "delays--overshoot-and-collapse",
@@ -2488,6 +3163,18 @@
       "note": "\"Sensitivity to initial conditions is why paths diverge so dramatically from nearly identical starting points\""
     },
     {
+      "id": "perverse-incentives--unintended-consequences",
+      "source": "perverse-incentives",
+      "target": "unintended-consequences",
+      "note": "\"Perverse incentives are a specific type of unintended consequence - the incentive drives behaviour opposite to the intent\""
+    },
+    {
+      "id": "perverse-incentives--system-traps",
+      "source": "perverse-incentives",
+      "target": "system-traps",
+      "note": "\"Perverse incentives are a system trap - the structure reliably produces the wrong behaviour regardless of who's in the system\""
+    },
+    {
       "id": "leverage-points--policy-resistance",
       "source": "policy-resistance",
       "target": "leverage-points",
@@ -2522,6 +3209,30 @@
       "source": "power-in-systems",
       "target": "success-to-the-successful",
       "note": "\"Success to the successful is power made structural - winners get more resources, which makes them win more\""
+    },
+    {
+      "id": "leading-vs-lagging-indicators--proxy-measures",
+      "source": "proxy-measures",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Proxy measures can serve as leading indicators - early, measurable signals of something harder to track\""
+    },
+    {
+      "id": "proxy-measures--reductionism",
+      "source": "proxy-measures",
+      "target": "reductionism",
+      "note": "\"Proxy measures are reductionism applied to measurement - simplifying a complex reality into a single number\""
+    },
+    {
+      "id": "mental-models--proxy-measures",
+      "source": "proxy-measures",
+      "target": "mental-models",
+      "note": "\"The choice of proxy reveals a mental model - what you measure is a statement about what you believe matters\""
+    },
+    {
+      "id": "proxy-measures--surrogate-measures",
+      "source": "proxy-measures",
+      "target": "surrogate-measures",
+      "note": "\"Surrogate measures are proxies that have replaced the original goal - the stand-in became the purpose\""
     },
     {
       "id": "punctuated-equilibrium--regime-shifts",
@@ -2564,6 +3275,12 @@
       "source": "regime-shifts",
       "target": "resilience",
       "note": "\"Regime shifts happen when resilience is exhausted - the system can no longer absorb disturbance and flips\""
+    },
+    {
+      "id": "regime-shifts--weak-signals",
+      "source": "regime-shifts",
+      "target": "weak-signals",
+      "note": "\"Regime shifts are preceded by weak signals - declining resilience, slower recovery, and increasing variability\""
     },
     {
       "id": "constraints--requisite-variety",
@@ -2656,6 +3373,12 @@
       "note": "\"Second-order effects are a major source of genuine uncertainty - the consequences of consequences resist prediction\""
     },
     {
+      "id": "sensemaking--wicked-problems",
+      "source": "sensemaking",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems demand sensemaking because they resist the standard problem-solving sequence of define, analyse, solve\""
+    },
+    {
       "id": "sensitivity-to-initial-conditions--uncertainty-vs-risk",
       "source": "sensitivity-to-initial-conditions",
       "target": "uncertainty-vs-risk",
@@ -2704,6 +3427,36 @@
       "note": "\"Shifting the burden is a system trap - the reliance on the easy fix is structural, not a character flaw\""
     },
     {
+      "id": "leading-vs-lagging-indicators--signal-vs-noise",
+      "source": "signal-vs-noise",
+      "target": "leading-vs-lagging-indicators",
+      "note": "\"Leading indicators are noisier than lagging ones - the trade-off between timeliness and signal clarity\""
+    },
+    {
+      "id": "signal-vs-noise--weak-signals",
+      "source": "signal-vs-noise",
+      "target": "weak-signals",
+      "note": "\"Weak signals are real signal buried in noise - the challenge is detecting them before they become obvious\""
+    },
+    {
+      "id": "nonlinearity--signal-vs-noise",
+      "source": "signal-vs-noise",
+      "target": "nonlinearity",
+      "note": "\"In nonlinear systems, distinguishing signal from noise is harder because small causes can produce large effects\""
+    },
+    {
+      "id": "silos--sub-optimisation",
+      "source": "silos",
+      "target": "sub-optimisation",
+      "note": "\"Silos are the organisational structure that produces sub-optimisation - each silo optimises locally at the expense of the whole\""
+    },
+    {
+      "id": "feedback-loops--silos",
+      "source": "silos",
+      "target": "feedback-loops",
+      "note": "\"Silos break feedback loops between parts of the system - each part stops sensing what's happening in the others\""
+    },
+    {
       "id": "solutionism--wicked-problems",
       "source": "solutionism",
       "target": "wicked-problems",
@@ -2746,6 +3499,12 @@
       "note": "\"A small initial advantage can produce a massively disproportionate outcome over time\""
     },
     {
+      "id": "mental-models--surrogate-measures",
+      "source": "surrogate-measures",
+      "target": "mental-models",
+      "note": "\"Surrogate measures reshape mental models - people start believing the surrogate IS the goal, not a stand-in for it\""
+    },
+    {
       "id": "system-blindness--system-traps",
       "source": "system-blindness",
       "target": "system-traps",
@@ -2776,6 +3535,30 @@
       "note": "\"Adding an enabling constraint is often the escape route from a system trap\""
     },
     {
+      "id": "systems-mapping--theory-of-change",
+      "source": "systems-mapping",
+      "target": "theory-of-change",
+      "note": "\"A good theory of change is a systems map - showing feedback, delays, and multiple pathways, not just a logic chain\""
+    },
+    {
+      "id": "mental-models--theory-of-change",
+      "source": "theory-of-change",
+      "target": "mental-models",
+      "note": "\"A theory of change makes your mental model of how change works explicit and testable\""
+    },
+    {
+      "id": "theory-of-change--wicked-problems",
+      "source": "theory-of-change",
+      "target": "wicked-problems",
+      "note": "\"Theories of change for wicked problems need to be adaptive, not fixed - the pathway changes as the context does\""
+    },
+    {
+      "id": "second-order-effects--theory-of-change",
+      "source": "theory-of-change",
+      "target": "second-order-effects",
+      "note": "\"A good theory of change traces second-order effects - what happens after the first outcome, not just the outcome itself\""
+    },
+    {
       "id": "feedback-loops--tipping-points",
       "source": "tipping-points",
       "target": "feedback-loops",
@@ -2792,6 +3575,12 @@
       "source": "tipping-points",
       "target": "delays",
       "note": "\"Delays can hide how close a system is to its tipping point until it's too late to pull back\""
+    },
+    {
+      "id": "tipping-points--weak-signals",
+      "source": "tipping-points",
+      "target": "weak-signals",
+      "note": "\"Weak signals often precede tipping points - early tremors that announce a shift before it becomes irreversible\""
     },
     {
       "id": "feedback-loops--tragedy-of-the-commons",
@@ -2866,6 +3655,12 @@
       "note": "\"Every attempt to address a wicked problem produces unintended consequences that reshape the problem itself\""
     },
     {
+      "id": "sensemaking--weak-signals",
+      "source": "weak-signals",
+      "target": "sensemaking",
+      "note": "\"Detecting weak signals is a sensemaking practice - it requires attention to ambiguity rather than certainty\""
+    },
+    {
       "id": "complex-adaptive-systems--wicked-problems",
       "source": "wicked-problems",
       "target": "complex-adaptive-systems",
@@ -2873,6 +3668,6 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T19:43:48.384Z"
+    "generatedAt": "2026-03-31T20:11:39.016Z"
   }
 }

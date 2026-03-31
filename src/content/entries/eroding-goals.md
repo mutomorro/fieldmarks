@@ -24,6 +24,10 @@ related:
     note: "Rule beating can mask eroding goals - the metrics look fine while the reality deteriorates"
   - slug: "system-traps"
     note: "Eroding goals is a system trap - the slow drift in standards is structural, not a failure of willpower"
+  - slug: "surrogate-measures"
+    note: "The shift from the real goal to the surrogate is a form of goal erosion - so gradual nobody notices the substitution"
+  - slug: "organisational-debt"
+    note: "Organisational debt often involves eroding goals - accepting worse standards because fixing the structure feels too hard"
 draft: false
 ---
 

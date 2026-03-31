@@ -20,6 +20,10 @@ related:
     note: "System blindness keeps people pushing on low-leverage points - blaming individuals instead of changing structures"
   - slug: "event-pattern-structure"
     note: "Event-pattern-structure is the antidote to system blindness - a discipline for moving from blame to structural understanding"
+  - slug: "feedback-starvation"
+    note: "Feedback starvation produces system blindness - without information, the system can't see its own dysfunction"
+  - slug: "learning-organisation"
+    note: "Learning organisations overcome system blindness by developing the habit of looking at structures, not just events"
 draft: false
 ---
 

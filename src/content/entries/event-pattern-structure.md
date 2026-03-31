@@ -18,6 +18,8 @@ related:
     note: "System traps only become visible at the structure level - at the event level they look like isolated misfortunes"
   - slug: "feedback-loops"
     note: "Feedback loops are what you find when you move from pattern to structure - the loops are what produce the recurring pattern"
+  - slug: "double-loop-learning"
+    note: "Single-loop learning works at the event level. Double-loop reaches the structure and questions whether the structure needs changing"
 draft: false
 ---
 

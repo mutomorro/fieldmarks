@@ -18,6 +18,12 @@ related:
     note: "Stocks and flows are the language of dynamic thinking - what's accumulating, what's draining, and how fast"
   - slug: "exponential-growth"
     note: "Dynamic thinking is how you catch exponential growth early - by asking 'what does this look like in six months?' not 'what does it look like now?'"
+  - slug: "leading-vs-lagging-indicators"
+    note: "Leading indicators support dynamic thinking - they tell you about trajectory, not just current position"
+  - slug: "signal-vs-noise"
+    note: "Dynamic thinking helps separate signal from noise - trends over time reveal patterns that single points can't"
+  - slug: "weak-signals"
+    note: "Weak signals show up as subtle changes in trajectory - dynamic thinking makes them easier to spot"
 draft: false
 ---
 

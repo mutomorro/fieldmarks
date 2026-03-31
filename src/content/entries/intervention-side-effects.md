@@ -26,6 +26,8 @@ related:
     note: "Solutionism ignores intervention side effects because admitting them would mean the solution isn't clean"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail experiments contain intervention side effects by keeping the scale small and the commitment reversible"
+  - slug: "observer-effect"
+    note: "Measurement is itself an intervention - the observer effect is its unavoidable side effect"
 draft: false
 ---
 

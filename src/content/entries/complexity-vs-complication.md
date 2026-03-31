@@ -40,6 +40,12 @@ related:
     note: "Robustness suits complicated environments where threats are known. Resilience suits complex ones where surprises are guaranteed"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail is the right approach for complex problems - where you can't predict the outcome, you make the trying safe"
+  - slug: "observer-effect"
+    note: "The observer effect is a hallmark of complex systems - the system responds to being studied, unlike a machine"
+  - slug: "sensemaking"
+    note: "Sensemaking is most critical in complex situations where the relationship between cause and effect is unclear"
+  - slug: "outcome-mapping"
+    note: "Outcome mapping was designed for complex change - where you can influence behaviour but can't control final outcomes"
 draft: false
 ---
 

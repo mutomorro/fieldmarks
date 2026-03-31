@@ -30,6 +30,8 @@ related:
     note: "Linear thinking is why exponential growth always surprises people - we instinctively project in straight lines"
   - slug: "dynamic-thinking"
     note: "Dynamic thinking catches exponential growth early - by asking what this looks like in six months, not just today"
+  - slug: "network-effects"
+    note: "Network effects drive exponential growth in early stages - each new user increases value for all existing ones"
 draft: false
 ---
 

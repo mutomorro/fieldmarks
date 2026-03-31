@@ -36,6 +36,10 @@ related:
     note: "Every attempt to address a wicked problem produces unintended consequences that reshape the problem itself"
   - slug: "stakeholder-mapping"
     note: "Unintended consequences often land on stakeholders who weren't mapped - the people nobody thought to include"
+  - slug: "goodharts-law"
+    note: "Making a measure a target produces unintended consequences - people optimise the number, not the underlying reality"
+  - slug: "perverse-incentives"
+    note: "Perverse incentives are a specific form of unintended consequence - the reward drives the opposite of the intended behaviour"
 draft: false
 ---
 

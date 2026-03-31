@@ -20,6 +20,10 @@ related:
     note: "Stock and flow diagrams are a key systems mapping technique - tracking what accumulates and what moves through the system"
   - slug: "dynamic-thinking"
     note: "Stocks and flows are the language of dynamic thinking - what's accumulating, what's draining, and how fast"
+  - slug: "leading-vs-lagging-indicators"
+    note: "Lagging indicators often measure stocks (accumulated results). Leading indicators often measure flows (current activity)"
+  - slug: "organisational-debt"
+    note: "Organisational debt is a stock - it accumulates when shortcuts flow in faster than structural fixes flow out"
 draft: false
 ---
 

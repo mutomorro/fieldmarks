@@ -26,6 +26,8 @@ related:
     note: "Cynefin's complicated domain involves manageable risk. Its complex and chaotic domains involve genuine uncertainty"
   - slug: "safe-to-fail-experiments"
     note: "Safe-to-fail experiments are the primary intervention strategy for Cynefin's complex domain - probe, sense, respond"
+  - slug: "sensemaking"
+    note: "Cynefin is fundamentally a sensemaking framework - its first job is helping you understand what kind of situation you're in"
 originatedBy: "Dave Snowden"
 draft: false
 ---

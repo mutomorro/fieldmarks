@@ -26,6 +26,8 @@ related:
     note: "Transformability is most relevant in the release and reorganisation phases, when the old system has broken and new possibilities exist"
   - slug: "punctuated-equilibrium"
     note: "The adaptive cycle is the internal mechanism behind punctuated equilibrium - what happens during both stability and disruption"
+  - slug: "institutional-inertia"
+    note: "Inertia builds during the conservation phase - the system becomes rigid and resistant as it matures"
 originatedBy: "C.S. Holling"
 draft: false
 ---

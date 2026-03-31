@@ -24,6 +24,8 @@ related:
     note: "Sensitivity to initial conditions is why paths diverge so dramatically from nearly identical starting points"
   - slug: "adaptive-cycle"
     note: "The conservation phase creates path dependence - accumulated structure constrains future options"
+  - slug: "institutional-inertia"
+    note: "Institutional inertia is path dependence at the organisational level - accumulated decisions constrain future movement"
 draft: false
 ---
 
