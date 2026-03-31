@@ -18,6 +18,20 @@ related:
     note: "Interconnections are what make systems nonlinear - a change in one place ripples unpredictably through the web"
   - slug: "delays"
     note: "Many interconnections include delays, so the effect of a change travels slowly through the system"
+  - slug: "intervention-side-effects"
+    note: "Side effects travel along interconnections - the more connected the system, the wider the ripple"
+  - slug: "wicked-problems"
+    note: "Wicked problems are wicked because they're deeply interconnected - you can't pull one thread without moving everything"
+  - slug: "self-organisation"
+    note: "Self-organisation requires interconnection - isolated agents can't produce collective order"
+  - slug: "causal-loop-diagrams"
+    note: "CLDs make interconnections visible and traceable - showing not just that things connect, but how"
+  - slug: "systems-mapping"
+    note: "Systems mapping is the broader practice of making interconnections visible across a whole system"
+  - slug: "reductionism"
+    note: "Reductionism discards interconnections when it separates parts - and the interconnections are often where the behaviour lives"
+  - slug: "modularity"
+    note: "Modularity manages interconnections by keeping modules loosely connected - preventing cascading failure"
 draft: false
 ---
 

@@ -24,6 +24,10 @@ related:
     note: "Eroding Goals is a close relative - both archetypes choose the easier path that weakens the system over time"
   - slug: "tragedy-of-the-commons"
     note: "Both archetypes involve structural incentives that make the individually rational choice collectively harmful"
+  - slug: "policy-resistance"
+    note: "Resistance to the real solution is what makes shifting the burden so tempting"
+  - slug: "system-traps"
+    note: "Shifting the burden is a system trap - the reliance on the easy fix is structural, not a character flaw"
 originatedBy: "Peter Senge"
 draft: false
 ---

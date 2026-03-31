@@ -16,6 +16,10 @@ related:
     note: "Drift can slowly shift which attractor a system is closest to, until it tips into a new one"
   - slug: "interconnections"
     note: "Attractors emerge from the web of interconnections - change the relationships and the attractor changes"
+  - slug: "self-organisation"
+    note: "Self-organising systems often settle into attractor states - stable patterns that emerge from agent interactions"
+  - slug: "regime-shifts"
+    note: "A regime shift is a move from one attractor to another - the system finds a new stable state with different dynamics"
 draft: false
 ---
 

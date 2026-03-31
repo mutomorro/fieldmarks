@@ -34,6 +34,18 @@ related:
     note: "Each escalation step is a fix that addresses the immediate threat while making the overall situation worse"
   - slug: "rule-beating"
     note: "Rules designed to fix problems are beaten when people comply technically while violating the intent"
+  - slug: "policy-resistance"
+    note: "Fixes that fail often trigger policy resistance - the system absorbs the fix and reasserts the original pattern"
+  - slug: "system-traps"
+    note: "Fixes that fail is one of the most common system traps - recognisable and escapable once named"
+  - slug: "catalytic-mechanisms"
+    note: "Where fixes push against the system, catalytic mechanisms reshape it so the right behaviour is the easy behaviour"
+  - slug: "iceberg-model"
+    note: "Most fixes that fail address the tip of the iceberg - the event - without touching the structure beneath"
+  - slug: "event-pattern-structure"
+    note: "Most fixes that fail address events without reaching the structure that keeps producing them"
+  - slug: "solutionism"
+    note: "Solutionism drives fixes that fail by demanding a solution before the problem is properly understood"
 originatedBy: Peter Senge
 draft: false
 ---

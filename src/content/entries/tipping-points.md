@@ -24,6 +24,14 @@ related:
     note: "Tipping points mark the boundary between attractors - cross one and the system falls toward a different stable state"
   - slug: "equilibrium"
     note: "A tipping point is the moment equilibrium breaks and the system shifts to a new balance"
+  - slug: "edge-of-chaos"
+    note: "Tipping points are most likely at the edge of chaos - where the system is poised between states, ready to shift"
+  - slug: "panarchy"
+    note: "Panarchy explains how small-scale tipping points cascade upward and trigger transitions at larger scales"
+  - slug: "regime-shifts"
+    note: "Tipping points are the trigger mechanism for regime shifts - the moment when gradual pressure tips the system into a new state"
+  - slug: "punctuated-equilibrium"
+    note: "Tipping points are the punctuation in punctuated equilibrium - the sudden breaks between long stable periods"
 draft: false
 ---
 

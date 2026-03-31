@@ -16,6 +16,14 @@ related:
     note: "Emergent behaviour can only be seen when the boundary is drawn wide enough to include the interacting parts"
   - slug: "feedback-loops"
     note: "Drawing a boundary too narrowly can cut a feedback loop in half, making the behaviour inside the boundary look random"
+  - slug: "constraints"
+    note: "Constraints and boundaries both define what's inside and outside - what the system can and can't do"
+  - slug: "wicked-problems"
+    note: "Wicked problems resist boundary-drawing - every definition of the problem leaves out something that matters"
+  - slug: "mental-models"
+    note: "Mental models determine where we draw boundaries - shaping what counts as 'the problem' and what stays invisible"
+  - slug: "systems-mapping"
+    note: "Every systems map begins with a boundary decision - what's inside the map and what's left out"
 draft: false
 ---
 

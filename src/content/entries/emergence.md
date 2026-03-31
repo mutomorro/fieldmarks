@@ -18,6 +18,20 @@ related:
     note: "Emergent behaviour is inherently nonlinear - the whole responds in ways the parts don't predict"
   - slug: "tipping-points"
     note: "Emergent behaviour often appears suddenly at a tipping point - the system reorganises all at once"
+  - slug: "complexity-vs-complication"
+    note: "Emergence is the defining feature that separates complex from merely complicated systems"
+  - slug: "cynefin-framework"
+    note: "In Cynefin's complex domain, outcomes emerge rather than being planned - emergence is the operating principle"
+  - slug: "complex-adaptive-systems"
+    note: "Emergence is the defining property of complex adaptive systems - the whole does things the parts cannot"
+  - slug: "self-organisation"
+    note: "Self-organisation is emergence at the structural level - the system builds its own order from within"
+  - slug: "co-evolution"
+    note: "Co-evolution produces emergent outcomes that neither system would have created alone"
+  - slug: "irreducibility"
+    note: "Emergent behaviour is often irreducible - you can't predict it from the parts, you have to watch it happen"
+  - slug: "reductionism"
+    note: "Emergence is what reductionism misses - behaviour that exists only in the interaction, not in the parts"
 draft: false
 ---
 

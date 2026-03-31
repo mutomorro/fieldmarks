@@ -18,6 +18,8 @@ related:
     note: "The curve traces a stock that grows quickly when inflows dominate, then plateaus as outflows catch up"
   - slug: "limits-to-growth"
     note: "Limits to Growth is the structural explanation for why S-curves flatten - a constraint activates as growth continues"
+  - slug: "adaptive-cycle"
+    note: "The growth phase of the adaptive cycle follows an S-curve - rapid early growth that slows as the system matures"
 draft: false
 ---
 

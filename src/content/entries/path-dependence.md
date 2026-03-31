@@ -20,6 +20,10 @@ related:
     note: "Early advantages become path-dependent as the reinforcing loop entrenches the winner's position"
   - slug: "lock-in"
     note: "Lock-in is path dependence at its most extreme - not just constrained by history but trapped by it"
+  - slug: "sensitivity-to-initial-conditions"
+    note: "Sensitivity to initial conditions is why paths diverge so dramatically from nearly identical starting points"
+  - slug: "adaptive-cycle"
+    note: "The conservation phase creates path dependence - accumulated structure constrains future options"
 draft: false
 ---
 

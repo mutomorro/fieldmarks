@@ -1,13 +1,58 @@
 {
   "nodes": [
     {
+      "id": "accidental-adversaries",
+      "title": "Accidental Adversaries",
+      "oneLiner": "Two parties who should be collaborating but whose actions inadvertently undermine each other",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"collaboration\", \"conflict\", \"partnerships\", \"trust\"]",
+      "connectionCount": 4
+    },
+    {
+      "id": "adaptive-capacity",
+      "title": "Adaptive Capacity",
+      "oneLiner": "The ability to adjust to changing conditions - the resource that matters most when you can't predict what's coming",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"adaptation\", \"resilience\", \"change\", \"capacity\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "adaptive-cycle",
+      "title": "Adaptive Cycle",
+      "oneLiner": "The recurring pattern of growth, conservation, release, and reorganisation that all living systems move through",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"change\", \"cycles\", \"evolution\", \"renewal\"]",
+      "connectionCount": 8
+    },
+    {
+      "id": "antifragility",
+      "title": "Antifragility",
+      "oneLiner": "Systems that don't just survive shocks but get stronger from them - beyond robust, beyond resilient",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"resilience\", \"adaptation\", \"growth\", \"stress\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "attractors",
+      "title": "Attractors",
+      "oneLiner": "The states a system naturally gravitates toward - change the attractor and the system reorganises itself",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"stability\", \"change\", \"structure\", \"patterns\"]",
+      "connectionCount": 7
+    },
+    {
       "id": "boundaries",
       "title": "Boundaries",
       "oneLiner": "Where you draw the line around a system changes everything you see inside it",
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"framing\", \"perspective\", \"scope\", \"design\"]",
-      "connectionCount": 8
+      "connectionCount": 15
     },
     {
       "id": "buffers",
@@ -16,7 +61,70 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"resilience\", \"stability\", \"efficiency\", \"risk\"]",
+      "connectionCount": 15
+    },
+    {
+      "id": "catalytic-mechanisms",
+      "title": "Catalytic Mechanisms",
+      "oneLiner": "Small structural changes that reliably produce the right behaviour without constant enforcement",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"design\", \"incentives\", \"structure\", \"change\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "causal-loop-diagrams",
+      "title": "Causal Loop Diagrams",
+      "oneLiner": "A visual tool for mapping the reinforcing and balancing feedback that drives a system's behaviour",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"tools\", \"mapping\", \"feedback\", \"visualisation\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "co-evolution",
+      "title": "Co-evolution",
+      "oneLiner": "When two or more systems evolve in response to each other, neither standing still",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"adaptation\", \"change\", \"competition\", \"evolution\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "complex-adaptive-systems",
+      "title": "Complex Adaptive Systems",
+      "oneLiner": "Systems made of many agents that learn, adapt, and produce behaviour nobody designed",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"adaptation\", \"emergence\", \"agents\"]",
+      "connectionCount": 11
+    },
+    {
+      "id": "complexity-vs-complication",
+      "title": "Complexity vs Complication",
+      "oneLiner": "A jet engine is complicated - predictable if you understand it. Raising a child is complex - fundamentally unpredictable",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"planning\", \"diagnosis\", \"decision-making\"]",
+      "connectionCount": 18
+    },
+    {
+      "id": "constraints",
+      "title": "Constraints",
+      "oneLiner": "Limitations that shape behaviour - sometimes adding one creates better outcomes than removing one",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"design\", \"structure\", \"creativity\", \"intervention\"]",
       "connectionCount": 10
+    },
+    {
+      "id": "cynefin-framework",
+      "title": "Cynefin Framework",
+      "oneLiner": "A sense-making model that matches your response to the kind of situation you're in",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"decision-making\", \"sense-making\", \"complexity\", \"strategy\"]",
+      "connectionCount": 9
     },
     {
       "id": "delays",
@@ -25,7 +133,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"timing\", \"decision-making\", \"planning\", \"patience\"]",
-      "connectionCount": 12
+      "connectionCount": 20
     },
     {
       "id": "drift",
@@ -34,7 +142,25 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"gradual-change\", \"standards\", \"complacency\", \"awareness\"]",
-      "connectionCount": 6
+      "connectionCount": 9
+    },
+    {
+      "id": "dynamic-thinking",
+      "title": "Dynamic Thinking",
+      "oneLiner": "Thinking in terms of change over time rather than frozen snapshots - how does this play out?",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"time\", \"change\", \"planning\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "edge-of-chaos",
+      "title": "Edge of Chaos",
+      "oneLiner": "The zone between rigid order and total disorder where systems are most creative and adaptive",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"adaptation\", \"creativity\", \"balance\"]",
+      "connectionCount": 7
     },
     {
       "id": "emergence",
@@ -43,6 +169,15 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"complexity\", \"self-organisation\", \"culture\", \"design\"]",
+      "connectionCount": 14
+    },
+    {
+      "id": "equilibrium",
+      "title": "Equilibrium",
+      "oneLiner": "A state where opposing forces balance - stable until something shifts the balance",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"balance\", \"stability\", \"change\", \"forces\"]",
       "connectionCount": 7
     },
     {
@@ -52,7 +187,7 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"standards\", \"performance\", \"complacency\", \"gradual-change\"]",
-      "connectionCount": 5
+      "connectionCount": 8
     },
     {
       "id": "escalation",
@@ -61,6 +196,15 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"competition\", \"conflict\", \"cycles\", \"strategy\"]",
+      "connectionCount": 9
+    },
+    {
+      "id": "event-pattern-structure",
+      "title": "Event-Pattern-Structure",
+      "oneLiner": "Moving from 'what happened?' to 'what keeps happening?' to 'what's causing the pattern?'",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"diagnosis\", \"thinking\", \"patterns\", \"structure\"]",
       "connectionCount": 5
     },
     {
@@ -70,7 +214,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"growth\", \"planning\", \"risk\", \"scaling\", \"forecasting\"]",
-      "connectionCount": 8
+      "connectionCount": 12
     },
     {
       "id": "feedback-loops",
@@ -84,7 +228,7 @@
         "growth",
         "stability"
       ],
-      "connectionCount": 21
+      "connectionCount": 45
     },
     {
       "id": "fixes-that-fail",
@@ -98,7 +242,25 @@
         "problem-solving",
         "short-termism"
       ],
-      "connectionCount": 9
+      "connectionCount": 17
+    },
+    {
+      "id": "growth-and-underinvestment",
+      "title": "Growth and Underinvestment",
+      "oneLiner": "Growth creates demand, but investment in capacity doesn't keep up - so performance drops and justifies not investing",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"growth\", \"investment\", \"capacity\", \"self-fulfilling\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "iceberg-model",
+      "title": "Iceberg Model",
+      "oneLiner": "Events are the tip - below the waterline sit the patterns, structures, and mental models that create them",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"diagnosis\", \"thinking\", \"structure\", \"patterns\"]",
+      "connectionCount": 7
     },
     {
       "id": "interconnections",
@@ -107,7 +269,34 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"relationships\", \"structure\", \"networks\", \"dependencies\"]",
-      "connectionCount": 6
+      "connectionCount": 15
+    },
+    {
+      "id": "intervention-side-effects",
+      "title": "Intervention Side Effects",
+      "oneLiner": "Every action in a complex system produces effects beyond the one you intended",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"intervention\", \"unintended-consequences\", \"complexity\", \"planning\"]",
+      "connectionCount": 10
+    },
+    {
+      "id": "irreducibility",
+      "title": "Irreducibility",
+      "oneLiner": "Some systems can only be understood by running them - there's no shortcut to the answer",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"prediction\", \"simulation\", \"limits\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "leverage-points",
+      "title": "Leverage Points",
+      "oneLiner": "The places in a system where a small change can shift everything",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"intervention\", \"strategy\", \"change\", \"design\"]",
+      "connectionCount": 17
     },
     {
       "id": "limits-to-growth",
@@ -116,7 +305,52 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"growth\", \"constraints\", \"strategy\", \"planning\"]",
-      "connectionCount": 6
+      "connectionCount": 9
+    },
+    {
+      "id": "linear-thinking",
+      "title": "Linear Thinking",
+      "oneLiner": "Assuming that cause and effect are proportional, direct, and one-directional - the default that fails in complex systems",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"bias\", \"complexity\", \"planning\"]",
+      "connectionCount": 9
+    },
+    {
+      "id": "lock-in",
+      "title": "Lock-in",
+      "oneLiner": "When path dependence becomes a trap - the cost of switching is so high that inferior solutions persist",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"switching-costs\", \"technology\", \"inertia\", \"decisions\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "map-is-not-the-territory",
+      "title": "Map is Not the Territory",
+      "oneLiner": "Every model is a simplification - useful but never the whole truth",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"models\", \"epistemology\", \"humility\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "mental-models",
+      "title": "Mental Models",
+      "oneLiner": "The invisible assumptions and stories we carry about how the world works",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"assumptions\", \"perception\", \"change\"]",
+      "connectionCount": 11
+    },
+    {
+      "id": "modularity",
+      "title": "Modularity",
+      "oneLiner": "Systems made of loosely connected parts that can fail independently without bringing down the whole",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"design\", \"resilience\", \"structure\", \"architecture\"]",
+      "connectionCount": 4
     },
     {
       "id": "nonlinearity",
@@ -125,7 +359,16 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"prediction\", \"cause-and-effect\", \"planning\", \"surprise\"]",
-      "connectionCount": 10
+      "connectionCount": 16
+    },
+    {
+      "id": "nudges",
+      "title": "Nudges",
+      "oneLiner": "Subtle changes to the choice environment that steer behaviour without restricting options",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"design\", \"behaviour\", \"decision-making\", \"intervention\"]",
+      "connectionCount": 6
     },
     {
       "id": "oscillation",
@@ -134,6 +377,24 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"cycles\", \"instability\", \"timing\", \"overcorrection\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "overshoot-and-collapse",
+      "title": "Overshoot and Collapse",
+      "oneLiner": "When a system blows past its sustainable limits before feedback kicks in, and the correction is catastrophic",
+      "theme": "system-behaviours",
+      "colour": "#d4735e",
+      "tags": "[\"limits\", \"growth\", \"catastrophe\", \"sustainability\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "panarchy",
+      "title": "Panarchy",
+      "oneLiner": "Adaptive cycles nested across scales - what happens at one level affects cycles above and below",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"change\", \"cycles\", \"scale\", \"complexity\"]",
       "connectionCount": 4
     },
     {
@@ -143,6 +404,87 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"history\", \"constraints\", \"decisions\", \"strategy\"]",
+      "connectionCount": 8
+    },
+    {
+      "id": "policy-resistance",
+      "title": "Policy Resistance",
+      "oneLiner": "When a system fights back against your attempt to change it",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"intervention\", \"change\", \"feedback\", \"unintended-consequences\"]",
+      "connectionCount": 12
+    },
+    {
+      "id": "punctuated-equilibrium",
+      "title": "Punctuated Equilibrium",
+      "oneLiner": "Long periods of stability interrupted by sudden, dramatic change - how most systems evolve in practice",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"change\", \"evolution\", \"stability\", \"patterns\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "reductionism",
+      "title": "Reductionism",
+      "oneLiner": "Breaking things into parts to understand them - powerful for machines, misleading for living systems",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"analysis\", \"complexity\", \"science\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "redundancy",
+      "title": "Redundancy",
+      "oneLiner": "Having more than you strictly need - looks wasteful in stable times, looks essential in a crisis",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"resilience\", \"design\", \"efficiency\", \"risk\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "regime-shifts",
+      "title": "Regime Shifts",
+      "oneLiner": "When a system flips from one stable state to another - often suddenly, usually hard to reverse",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"change\", \"tipping-points\", \"stability\", \"transformation\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "requisite-variety",
+      "title": "Requisite Variety",
+      "oneLiner": "To stay in control of a system, you need at least as many responses as the system has ways of changing",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"complexity\", \"control\", \"adaptation\", \"design\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "resilience",
+      "title": "Resilience",
+      "oneLiner": "The ability to absorb disturbance and still maintain essential function - not bouncing back, but holding together",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"resilience\", \"adaptation\", \"stability\", \"design\"]",
+      "connectionCount": 12
+    },
+    {
+      "id": "robustness-vs-resilience",
+      "title": "Robustness vs Resilience",
+      "oneLiner": "Robustness resists change like a fortress. Resilience absorbs and adapts like a reed. Different strategies for different worlds",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"resilience\", \"design\", \"strategy\", \"adaptation\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "rule-beating",
+      "title": "Rule Beating",
+      "oneLiner": "People find ways to comply with the letter of a rule while violating its spirit - and the system gets what it measures, not what it wants",
+      "theme": "systems-archetypes",
+      "colour": "#3aaa9e",
+      "tags": "[\"incentives\", \"measurement\", \"rules\", \"behaviour\"]",
       "connectionCount": 5
     },
     {
@@ -152,6 +494,42 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"growth\", \"limits\", \"timing\", \"strategy\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "safe-to-fail-experiments",
+      "title": "Safe-to-Fail Experiments",
+      "oneLiner": "Small probes designed to test how a complex system responds - if they fail, the damage is contained",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"intervention\", \"complexity\", \"experimentation\", \"learning\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "second-order-effects",
+      "title": "Second-Order Effects",
+      "oneLiner": "The consequences of the consequences - what happens after the first thing happens",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"thinking\", \"planning\", \"consequences\", \"foresight\"]",
+      "connectionCount": 9
+    },
+    {
+      "id": "self-organisation",
+      "title": "Self-Organisation",
+      "oneLiner": "Order that arises from interactions, not instructions - nobody planned it but it works",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"emergence\", \"complexity\", \"structure\", \"adaptation\"]",
+      "connectionCount": 7
+    },
+    {
+      "id": "sensitivity-to-initial-conditions",
+      "title": "Sensitivity to Initial Conditions",
+      "oneLiner": "Tiny differences at the start can produce vastly different outcomes - and you can't always tell which ones matter",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"prediction\", \"chaos\", \"uncertainty\"]",
       "connectionCount": 6
     },
     {
@@ -161,7 +539,16 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"dependency\", \"short-termism\", \"capacity\", \"habits\"]",
-      "connectionCount": 8
+      "connectionCount": 10
+    },
+    {
+      "id": "solutionism",
+      "title": "Solutionism",
+      "oneLiner": "The assumption that every problem has a clean solution - when complex systems often need navigation, not fixing",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"complexity\", \"problem-solving\", \"design\"]",
+      "connectionCount": 5
     },
     {
       "id": "stocks-and-flows",
@@ -170,7 +557,7 @@
       "theme": "core-building-blocks",
       "colour": "#9B51E0",
       "tags": "[\"accumulation\", \"measurement\", \"resources\", \"planning\"]",
-      "connectionCount": 9
+      "connectionCount": 16
     },
     {
       "id": "success-to-the-successful",
@@ -179,7 +566,34 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"inequality\", \"resources\", \"competition\", \"structure\"]",
-      "connectionCount": 4
+      "connectionCount": 5
+    },
+    {
+      "id": "system-blindness",
+      "title": "System Blindness",
+      "oneLiner": "The inability to see systemic causes - defaulting to blaming individuals when the structure is the problem",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"thinking\", \"blame\", \"structure\", \"diagnosis\"]",
+      "connectionCount": 6
+    },
+    {
+      "id": "system-traps",
+      "title": "System Traps",
+      "oneLiner": "Predictable structural failures that show up across every kind of system",
+      "theme": "leverage-and-intervention",
+      "colour": "#d4a830",
+      "tags": "[\"patterns\", \"failure-modes\", \"diagnosis\", \"structure\"]",
+      "connectionCount": 10
+    },
+    {
+      "id": "systems-mapping",
+      "title": "Systems Mapping",
+      "oneLiner": "The practice of making a system visible - its parts, flows, boundaries, and dynamics",
+      "theme": "mental-models",
+      "colour": "#a06cc0",
+      "tags": "[\"tools\", \"mapping\", \"visualisation\", \"diagnosis\"]",
+      "connectionCount": 6
     },
     {
       "id": "tipping-points",
@@ -188,7 +602,7 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"thresholds\", \"change\", \"irreversibility\", \"surprise\"]",
-      "connectionCount": 8
+      "connectionCount": 15
     },
     {
       "id": "tragedy-of-the-commons",
@@ -197,7 +611,25 @@
       "theme": "systems-archetypes",
       "colour": "#3aaa9e",
       "tags": "[\"shared-resources\", \"cooperation\", \"incentives\", \"sustainability\"]",
-      "connectionCount": 6
+      "connectionCount": 7
+    },
+    {
+      "id": "transformability",
+      "title": "Transformability",
+      "oneLiner": "The capacity to create a fundamentally new system when the existing one is no longer viable",
+      "theme": "resilience-and-change",
+      "colour": "#5a6cc0",
+      "tags": "[\"change\", \"transformation\", \"adaptation\", \"design\"]",
+      "connectionCount": 5
+    },
+    {
+      "id": "uncertainty-vs-risk",
+      "title": "Uncertainty vs Risk",
+      "oneLiner": "Risk is when you know the odds. Uncertainty is when you don't even know what could happen",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"decision-making\", \"planning\", \"risk\", \"uncertainty\"]",
+      "connectionCount": 8
     },
     {
       "id": "unintended-consequences",
@@ -206,10 +638,199 @@
       "theme": "system-behaviours",
       "colour": "#d4735e",
       "tags": "[\"intervention\", \"risk\", \"complexity\", \"planning\", \"policy\"]",
-      "connectionCount": 7
+      "connectionCount": 13
+    },
+    {
+      "id": "wicked-problems",
+      "title": "Wicked Problems",
+      "oneLiner": "Problems that resist definition, change shape when you try to solve them, and have no stopping rule",
+      "theme": "complexity-and-uncertainty",
+      "colour": "#4a9ad4",
+      "tags": "[\"complexity\", \"planning\", \"problem-solving\", \"design\"]",
+      "connectionCount": 8
     }
   ],
   "edges": [
+    {
+      "id": "accidental-adversaries--feedback-loops",
+      "source": "accidental-adversaries",
+      "target": "feedback-loops",
+      "note": "\"Each party's well-intentioned actions trigger a reinforcing loop that erodes the partnership\""
+    },
+    {
+      "id": "accidental-adversaries--boundaries",
+      "source": "accidental-adversaries",
+      "target": "boundaries",
+      "note": "\"Each party draws their boundary around their own goals, missing how their actions affect the other\""
+    },
+    {
+      "id": "accidental-adversaries--unintended-consequences",
+      "source": "accidental-adversaries",
+      "target": "unintended-consequences",
+      "note": "\"The adversarial dynamic is entirely unintended - both parties want the partnership to work\""
+    },
+    {
+      "id": "accidental-adversaries--escalation",
+      "source": "accidental-adversaries",
+      "target": "escalation",
+      "note": "\"Accidental Adversaries can tip into Escalation when each party starts retaliating against the other's unintended harm\""
+    },
+    {
+      "id": "adaptive-capacity--resilience",
+      "source": "adaptive-capacity",
+      "target": "resilience",
+      "note": "\"Adaptive capacity is what makes resilience possible - without the ability to adjust, a system can only break or resist\""
+    },
+    {
+      "id": "adaptive-capacity--requisite-variety",
+      "source": "adaptive-capacity",
+      "target": "requisite-variety",
+      "note": "\"Adaptive capacity is requisite variety in practice - the range of responses available when things change\""
+    },
+    {
+      "id": "adaptive-capacity--complex-adaptive-systems",
+      "source": "adaptive-capacity",
+      "target": "complex-adaptive-systems",
+      "note": "\"Adaptive capacity is the defining resource of complex adaptive systems - what allows them to evolve rather than collapse\""
+    },
+    {
+      "id": "adaptive-capacity--uncertainty-vs-risk",
+      "source": "adaptive-capacity",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Under genuine uncertainty, adaptive capacity matters more than prediction - you can't plan for what you can't foresee\""
+    },
+    {
+      "id": "adaptive-capacity--redundancy",
+      "source": "adaptive-capacity",
+      "target": "redundancy",
+      "note": "\"Redundancy is a key source of adaptive capacity - spare resources that can be redeployed when conditions change\""
+    },
+    {
+      "id": "adaptive-capacity--transformability",
+      "source": "adaptive-capacity",
+      "target": "transformability",
+      "note": "\"Transformability goes beyond adaptive capacity - not adjusting within the current system, but creating a fundamentally new one\""
+    },
+    {
+      "id": "adaptive-cycle--resilience",
+      "source": "adaptive-cycle",
+      "target": "resilience",
+      "note": "\"Each phase of the adaptive cycle has different resilience - highest in early growth, lowest in late conservation\""
+    },
+    {
+      "id": "adaptive-cycle--panarchy",
+      "source": "adaptive-cycle",
+      "target": "panarchy",
+      "note": "\"Panarchy is adaptive cycles nested across scales - the release phase at one level can trigger reorganisation at another\""
+    },
+    {
+      "id": "adaptive-cycle--edge-of-chaos",
+      "source": "adaptive-cycle",
+      "target": "edge-of-chaos",
+      "note": "\"The reorganisation phase of the adaptive cycle is the system at the edge of chaos - maximum potential, minimum structure\""
+    },
+    {
+      "id": "adaptive-cycle--s-curves",
+      "source": "adaptive-cycle",
+      "target": "s-curves",
+      "note": "\"The growth phase of the adaptive cycle follows an S-curve - rapid early growth that slows as the system matures\""
+    },
+    {
+      "id": "adaptive-cycle--path-dependence",
+      "source": "adaptive-cycle",
+      "target": "path-dependence",
+      "note": "\"The conservation phase creates path dependence - accumulated structure constrains future options\""
+    },
+    {
+      "id": "adaptive-cycle--regime-shifts",
+      "source": "adaptive-cycle",
+      "target": "regime-shifts",
+      "note": "\"Regime shifts often correspond to the release phase - when accumulated rigidity in the conservation phase finally breaks\""
+    },
+    {
+      "id": "adaptive-cycle--transformability",
+      "source": "adaptive-cycle",
+      "target": "transformability",
+      "note": "\"Transformability is most relevant in the release and reorganisation phases, when the old system has broken and new possibilities exist\""
+    },
+    {
+      "id": "adaptive-cycle--punctuated-equilibrium",
+      "source": "adaptive-cycle",
+      "target": "punctuated-equilibrium",
+      "note": "\"The adaptive cycle is the internal mechanism behind punctuated equilibrium - what happens during both stability and disruption\""
+    },
+    {
+      "id": "antifragility--resilience",
+      "source": "antifragility",
+      "target": "resilience",
+      "note": "\"Resilience absorbs shocks and persists. Antifragility goes further - the system improves because of the shock\""
+    },
+    {
+      "id": "antifragility--robustness-vs-resilience",
+      "source": "antifragility",
+      "target": "robustness-vs-resilience",
+      "note": "\"Antifragility extends the spectrum: fragile breaks under stress, robust resists it, resilient recovers from it, antifragile gains from it\""
+    },
+    {
+      "id": "antifragility--edge-of-chaos",
+      "source": "antifragility",
+      "target": "edge-of-chaos",
+      "note": "\"Antifragile systems thrive at the edge of chaos - enough disorder to trigger adaptation, not so much that it destroys\""
+    },
+    {
+      "id": "antifragility--complex-adaptive-systems",
+      "source": "antifragility",
+      "target": "complex-adaptive-systems",
+      "note": "\"Complex adaptive systems can be antifragile - the stress of environmental change drives learning and evolution\""
+    },
+    {
+      "id": "antifragility--feedback-loops",
+      "source": "antifragility",
+      "target": "feedback-loops",
+      "note": "\"Antifragility requires feedback loops that translate stress into improvement - without feedback, stress is just damage\""
+    },
+    {
+      "id": "antifragility--safe-to-fail-experiments",
+      "source": "antifragility",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments build antifragility - controlled stressors that make the system learn and grow stronger\""
+    },
+    {
+      "id": "attractors--feedback-loops",
+      "source": "attractors",
+      "target": "feedback-loops",
+      "note": "\"Balancing feedback loops create attractors by pulling the system back toward a particular state\""
+    },
+    {
+      "id": "attractors--tipping-points",
+      "source": "attractors",
+      "target": "tipping-points",
+      "note": "\"Tipping points mark the boundary between two attractors - once crossed, the system falls toward a different stable state\""
+    },
+    {
+      "id": "attractors--drift",
+      "source": "attractors",
+      "target": "drift",
+      "note": "\"Drift can slowly shift which attractor a system is closest to, until it tips into a new one\""
+    },
+    {
+      "id": "attractors--interconnections",
+      "source": "attractors",
+      "target": "interconnections",
+      "note": "\"Attractors emerge from the web of interconnections - change the relationships and the attractor changes\""
+    },
+    {
+      "id": "attractors--self-organisation",
+      "source": "attractors",
+      "target": "self-organisation",
+      "note": "\"Self-organising systems often settle into attractor states - stable patterns that emerge from agent interactions\""
+    },
+    {
+      "id": "attractors--regime-shifts",
+      "source": "attractors",
+      "target": "regime-shifts",
+      "note": "\"A regime shift is a move from one attractor to another - the system finds a new stable state with different dynamics\""
+    },
     {
       "id": "boundaries--interconnections",
       "source": "boundaries",
@@ -235,6 +856,30 @@
       "note": "\"Drawing a boundary too narrowly can cut a feedback loop in half, making the behaviour inside the boundary look random\""
     },
     {
+      "id": "boundaries--constraints",
+      "source": "boundaries",
+      "target": "constraints",
+      "note": "\"Constraints and boundaries both define what's inside and outside - what the system can and can't do\""
+    },
+    {
+      "id": "boundaries--wicked-problems",
+      "source": "boundaries",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems resist boundary-drawing - every definition of the problem leaves out something that matters\""
+    },
+    {
+      "id": "boundaries--mental-models",
+      "source": "boundaries",
+      "target": "mental-models",
+      "note": "\"Mental models determine where we draw boundaries - shaping what counts as 'the problem' and what stays invisible\""
+    },
+    {
+      "id": "boundaries--systems-mapping",
+      "source": "boundaries",
+      "target": "systems-mapping",
+      "note": "\"Every systems map begins with a boundary decision - what's inside the map and what's left out\""
+    },
+    {
       "id": "buffers--stocks-and-flows",
       "source": "buffers",
       "target": "stocks-and-flows",
@@ -257,6 +902,330 @@
       "source": "buffers",
       "target": "nonlinearity",
       "note": "\"Removing a buffer can push a system past a threshold it would otherwise have absorbed\""
+    },
+    {
+      "id": "buffers--constraints",
+      "source": "buffers",
+      "target": "constraints",
+      "note": "\"Buffers give you room to work within constraints - the slack that makes tight systems survivable\""
+    },
+    {
+      "id": "buffers--requisite-variety",
+      "source": "buffers",
+      "target": "requisite-variety",
+      "note": "\"Buffers provide variety in the time dimension - more options for when and how to respond\""
+    },
+    {
+      "id": "buffers--resilience",
+      "source": "buffers",
+      "target": "resilience",
+      "note": "\"Buffers are a key source of resilience - the slack that absorbs shocks before they reach critical system functions\""
+    },
+    {
+      "id": "buffers--redundancy",
+      "source": "buffers",
+      "target": "redundancy",
+      "note": "\"Buffers are a form of redundancy in stocks - excess capacity that smooths out volatility and absorbs shocks\""
+    },
+    {
+      "id": "catalytic-mechanisms--leverage-points",
+      "source": "catalytic-mechanisms",
+      "target": "leverage-points",
+      "note": "\"Catalytic mechanisms are a form of high-leverage intervention - small structural changes with outsized effects\""
+    },
+    {
+      "id": "catalytic-mechanisms--feedback-loops",
+      "source": "catalytic-mechanisms",
+      "target": "feedback-loops",
+      "note": "\"The best catalytic mechanisms work by creating new feedback loops that make the desired behaviour self-reinforcing\""
+    },
+    {
+      "id": "catalytic-mechanisms--policy-resistance",
+      "source": "catalytic-mechanisms",
+      "target": "policy-resistance",
+      "note": "\"Catalytic mechanisms sidestep policy resistance by aligning the system's interests rather than overriding them\""
+    },
+    {
+      "id": "catalytic-mechanisms--system-traps",
+      "source": "catalytic-mechanisms",
+      "target": "system-traps",
+      "note": "\"Well-designed catalytic mechanisms can break system traps by changing the structural incentives that create them\""
+    },
+    {
+      "id": "catalytic-mechanisms--fixes-that-fail",
+      "source": "catalytic-mechanisms",
+      "target": "fixes-that-fail",
+      "note": "\"Where fixes that fail push against the system, catalytic mechanisms reshape the system so the right behaviour is the easy behaviour\""
+    },
+    {
+      "id": "catalytic-mechanisms--nudges",
+      "source": "catalytic-mechanisms",
+      "target": "nudges",
+      "note": "\"Nudges preserve freedom of choice; catalytic mechanisms often work by making the right choice the only practical one\""
+    },
+    {
+      "id": "catalytic-mechanisms--constraints",
+      "source": "catalytic-mechanisms",
+      "target": "constraints",
+      "note": "\"Many catalytic mechanisms work as enabling constraints - limiting options in ways that improve outcomes\""
+    },
+    {
+      "id": "causal-loop-diagrams--feedback-loops",
+      "source": "causal-loop-diagrams",
+      "target": "feedback-loops",
+      "note": "\"Causal loop diagrams exist to make feedback loops visible - they're the notation system for the concept\""
+    },
+    {
+      "id": "causal-loop-diagrams--systems-mapping",
+      "source": "causal-loop-diagrams",
+      "target": "systems-mapping",
+      "note": "\"Causal loop diagrams are one of the most common tools in the broader practice of systems mapping\""
+    },
+    {
+      "id": "causal-loop-diagrams--interconnections",
+      "source": "causal-loop-diagrams",
+      "target": "interconnections",
+      "note": "\"CLDs make interconnections visible and traceable - showing not just that things are connected, but how\""
+    },
+    {
+      "id": "causal-loop-diagrams--mental-models",
+      "source": "causal-loop-diagrams",
+      "target": "mental-models",
+      "note": "\"Drawing a CLD surfaces mental models - it forces you to state your assumptions about what causes what\""
+    },
+    {
+      "id": "causal-loop-diagrams--iceberg-model",
+      "source": "causal-loop-diagrams",
+      "target": "iceberg-model",
+      "note": "\"CLDs help you see below the event layer of the iceberg, revealing the feedback structures that produce patterns\""
+    },
+    {
+      "id": "co-evolution--complex-adaptive-systems",
+      "source": "co-evolution",
+      "target": "complex-adaptive-systems",
+      "note": "\"Co-evolution is what happens when complex adaptive systems interact - each one's adaptation changes the other's environment\""
+    },
+    {
+      "id": "co-evolution--feedback-loops",
+      "source": "co-evolution",
+      "target": "feedback-loops",
+      "note": "\"Co-evolution is driven by feedback loops between systems - each change triggers a response that triggers another change\""
+    },
+    {
+      "id": "co-evolution--escalation",
+      "source": "co-evolution",
+      "target": "escalation",
+      "note": "\"Escalation is co-evolution's destructive form - two parties adapting to each other in ways that ratchet up intensity\""
+    },
+    {
+      "id": "co-evolution--emergence",
+      "source": "co-evolution",
+      "target": "emergence",
+      "note": "\"Co-evolution produces emergent outcomes that neither system would have produced alone\""
+    },
+    {
+      "id": "co-evolution--self-organisation",
+      "source": "co-evolution",
+      "target": "self-organisation",
+      "note": "\"Co-evolving systems self-organise in response to each other, creating patterns neither designed\""
+    },
+    {
+      "id": "complex-adaptive-systems--emergence",
+      "source": "complex-adaptive-systems",
+      "target": "emergence",
+      "note": "\"Emergence is the defining property of complex adaptive systems - behaviour arises from interaction, not instruction\""
+    },
+    {
+      "id": "complex-adaptive-systems--self-organisation",
+      "source": "complex-adaptive-systems",
+      "target": "self-organisation",
+      "note": "\"Complex adaptive systems self-organise - order appears without anyone designing it\""
+    },
+    {
+      "id": "complex-adaptive-systems--complexity-vs-complication",
+      "source": "complex-adaptive-systems",
+      "target": "complexity-vs-complication",
+      "note": "\"Complex adaptive systems are the archetype of what makes complexity different from complication\""
+    },
+    {
+      "id": "complex-adaptive-systems--feedback-loops",
+      "source": "complex-adaptive-systems",
+      "target": "feedback-loops",
+      "note": "\"Agents in a CAS learn through feedback loops - adjusting their behaviour based on what happens\""
+    },
+    {
+      "id": "complex-adaptive-systems--nonlinearity",
+      "source": "complex-adaptive-systems",
+      "target": "nonlinearity",
+      "note": "\"CAS are inherently nonlinear - small changes in agent behaviour can produce system-wide shifts\""
+    },
+    {
+      "id": "complex-adaptive-systems--edge-of-chaos",
+      "source": "complex-adaptive-systems",
+      "target": "edge-of-chaos",
+      "note": "\"Complex adaptive systems operate most effectively at the edge of chaos - the zone between rigidity and dissolution\""
+    },
+    {
+      "id": "complexity-vs-complication--emergence",
+      "source": "complexity-vs-complication",
+      "target": "emergence",
+      "note": "\"Emergence is what makes complex systems complex - behaviour arises that can't be predicted from the parts\""
+    },
+    {
+      "id": "complexity-vs-complication--feedback-loops",
+      "source": "complexity-vs-complication",
+      "target": "feedback-loops",
+      "note": "\"Complicated systems may have feedback loops, but complex ones have feedback loops that interact, adapt, and surprise\""
+    },
+    {
+      "id": "complexity-vs-complication--nonlinearity",
+      "source": "complexity-vs-complication",
+      "target": "nonlinearity",
+      "note": "\"Complication can be linear - more parts, more steps. Complexity is inherently nonlinear\""
+    },
+    {
+      "id": "complexity-vs-complication--leverage-points",
+      "source": "complexity-vs-complication",
+      "target": "leverage-points",
+      "note": "\"In complicated systems, the right lever is findable. In complex ones, leverage points shift and hide\""
+    },
+    {
+      "id": "complexity-vs-complication--delays",
+      "source": "complexity-vs-complication",
+      "target": "delays",
+      "note": "\"Complicated systems have predictable delays. Complex ones have delays that interact with other delays in unpredictable ways\""
+    },
+    {
+      "id": "complexity-vs-complication--cynefin-framework",
+      "source": "complexity-vs-complication",
+      "target": "cynefin-framework",
+      "note": "\"Cynefin builds on this distinction, adding chaotic and confused domains to the simple-complicated-complex map\""
+    },
+    {
+      "id": "complexity-vs-complication--wicked-problems",
+      "source": "complexity-vs-complication",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems are what happens when complex systems generate challenges that resist every tame-problem approach\""
+    },
+    {
+      "id": "complexity-vs-complication--uncertainty-vs-risk",
+      "source": "complexity-vs-complication",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Complicated systems generate quantifiable risk. Complex ones generate genuine uncertainty\""
+    },
+    {
+      "id": "complexity-vs-complication--sensitivity-to-initial-conditions",
+      "source": "complexity-vs-complication",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Sensitivity to initial conditions is one of the key markers of complexity - complicated systems are usually robust to small starting differences\""
+    },
+    {
+      "id": "complexity-vs-complication--irreducibility",
+      "source": "complexity-vs-complication",
+      "target": "irreducibility",
+      "note": "\"Irreducibility is the deepest distinction - complicated systems can be shortcut, complex ones often can't\""
+    },
+    {
+      "id": "complexity-vs-complication--mental-models",
+      "source": "complexity-vs-complication",
+      "target": "mental-models",
+      "note": "\"The mental model that everything is a machine is what makes people treat complex problems as merely complicated\""
+    },
+    {
+      "id": "complexity-vs-complication--reductionism",
+      "source": "complexity-vs-complication",
+      "target": "reductionism",
+      "note": "\"Reductionism works for complicated systems and fails for complex ones - the interactions that define complexity disappear when you take things apart\""
+    },
+    {
+      "id": "complexity-vs-complication--solutionism",
+      "source": "complexity-vs-complication",
+      "target": "solutionism",
+      "note": "\"Solutionism is what happens when someone applies the complicated mindset to complex problems - assuming a clean answer exists\""
+    },
+    {
+      "id": "complexity-vs-complication--robustness-vs-resilience",
+      "source": "complexity-vs-complication",
+      "target": "robustness-vs-resilience",
+      "note": "\"Robustness suits complicated environments where threats are known. Resilience suits complex ones where surprises are guaranteed\""
+    },
+    {
+      "id": "complexity-vs-complication--safe-to-fail-experiments",
+      "source": "complexity-vs-complication",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail is the right approach for complex problems - where you can't predict the outcome, you make the trying safe\""
+    },
+    {
+      "id": "constraints--limits-to-growth",
+      "source": "constraints",
+      "target": "limits-to-growth",
+      "note": "\"Constraints are what limits to growth hits - every growing system eventually meets one\""
+    },
+    {
+      "id": "constraints--leverage-points",
+      "source": "constraints",
+      "target": "leverage-points",
+      "note": "\"Adding or removing a constraint can be a high-leverage intervention - it reshapes what the system can do\""
+    },
+    {
+      "id": "constraints--edge-of-chaos",
+      "source": "constraints",
+      "target": "edge-of-chaos",
+      "note": "\"The right constraints hold a system at the edge of chaos - enough structure to function, enough freedom to adapt\""
+    },
+    {
+      "id": "constraints--robustness-vs-resilience",
+      "source": "constraints",
+      "target": "robustness-vs-resilience",
+      "note": "\"Robustness works by adding constraints that prevent change. Resilience works by maintaining flexibility to respond to it\""
+    },
+    {
+      "id": "cynefin-framework--emergence",
+      "source": "cynefin-framework",
+      "target": "emergence",
+      "note": "\"In Cynefin's complex domain, outcomes emerge from interactions rather than being designed\""
+    },
+    {
+      "id": "cynefin-framework--feedback-loops",
+      "source": "cynefin-framework",
+      "target": "feedback-loops",
+      "note": "\"Each Cynefin domain requires different feedback strategies - tight loops in complex, analytical loops in complicated\""
+    },
+    {
+      "id": "cynefin-framework--leverage-points",
+      "source": "cynefin-framework",
+      "target": "leverage-points",
+      "note": "\"Cynefin helps you find leverage by first identifying what kind of system you're dealing with\""
+    },
+    {
+      "id": "cynefin-framework--policy-resistance",
+      "source": "cynefin-framework",
+      "target": "policy-resistance",
+      "note": "\"Policy resistance often signals you've misidentified the domain - treating a complex problem with a complicated approach\""
+    },
+    {
+      "id": "cynefin-framework--wicked-problems",
+      "source": "cynefin-framework",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems are the signature challenge of Cynefin's complex domain - requiring probes, not plans\""
+    },
+    {
+      "id": "complex-adaptive-systems--cynefin-framework",
+      "source": "cynefin-framework",
+      "target": "complex-adaptive-systems",
+      "note": "\"Cynefin's complex domain describes the territory where complex adaptive systems operate\""
+    },
+    {
+      "id": "cynefin-framework--uncertainty-vs-risk",
+      "source": "cynefin-framework",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Cynefin's complicated domain involves manageable risk. Its complex and chaotic domains involve genuine uncertainty\""
+    },
+    {
+      "id": "cynefin-framework--safe-to-fail-experiments",
+      "source": "cynefin-framework",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments are the primary intervention strategy for Cynefin's complex domain - probe, sense, respond\""
     },
     {
       "id": "delays--feedback-loops",
@@ -289,6 +1258,36 @@
       "note": "\"Delays make drift invisible - by the time you notice the standard has slipped, the new normal is already set\""
     },
     {
+      "id": "delays--intervention-side-effects",
+      "source": "delays",
+      "target": "intervention-side-effects",
+      "note": "\"Delays hide intervention side effects - the damage doesn't show up until long after the change\""
+    },
+    {
+      "id": "delays--second-order-effects",
+      "source": "delays",
+      "target": "second-order-effects",
+      "note": "\"Second-order effects are often hidden by delays - the first consequence is visible, the next ones take time\""
+    },
+    {
+      "id": "delays--sensitivity-to-initial-conditions",
+      "source": "delays",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Delays hide the moment when initial conditions mattered - by the time you see the divergence, the cause is long gone\""
+    },
+    {
+      "id": "delays--uncertainty-vs-risk",
+      "source": "delays",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Delays compound uncertainty - the longer the gap between action and outcome, the more unknowns accumulate\""
+    },
+    {
+      "id": "delays--dynamic-thinking",
+      "source": "delays",
+      "target": "dynamic-thinking",
+      "note": "\"Dynamic thinking makes delays visible by asking 'when does this show up?' not just 'what happens?'\""
+    },
+    {
       "id": "drift--feedback-loops",
       "source": "drift",
       "target": "feedback-loops",
@@ -317,6 +1316,60 @@
       "source": "drift",
       "target": "eroding-goals",
       "note": "\"Eroding Goals is the archetype version of drift applied to standards and targets\""
+    },
+    {
+      "id": "drift--punctuated-equilibrium",
+      "source": "drift",
+      "target": "punctuated-equilibrium",
+      "note": "\"Drift during equilibrium periods is what makes the punctuation inevitable - slow, invisible erosion building until it breaks\""
+    },
+    {
+      "id": "drift--equilibrium",
+      "source": "drift",
+      "target": "equilibrium",
+      "note": "\"Drift can slowly shift what the system treats as its equilibrium, disguising the change\""
+    },
+    {
+      "id": "dynamic-thinking--linear-thinking",
+      "source": "dynamic-thinking",
+      "target": "linear-thinking",
+      "note": "\"Dynamic thinking is the antidote to linear thinking - replacing the straight-line projection with a sense of how systems behave over time\""
+    },
+    {
+      "id": "dynamic-thinking--feedback-loops",
+      "source": "dynamic-thinking",
+      "target": "feedback-loops",
+      "note": "\"Dynamic thinking follows feedback loops through time - seeing how today's effect becomes tomorrow's cause\""
+    },
+    {
+      "id": "dynamic-thinking--stocks-and-flows",
+      "source": "dynamic-thinking",
+      "target": "stocks-and-flows",
+      "note": "\"Stocks and flows are the language of dynamic thinking - what's accumulating, what's draining, and how fast\""
+    },
+    {
+      "id": "dynamic-thinking--exponential-growth",
+      "source": "dynamic-thinking",
+      "target": "exponential-growth",
+      "note": "\"Dynamic thinking is how you catch exponential growth early - by asking 'what does this look like in six months?' not 'what does it look like now?'\""
+    },
+    {
+      "id": "edge-of-chaos--self-organisation",
+      "source": "edge-of-chaos",
+      "target": "self-organisation",
+      "note": "\"Self-organisation happens most richly at the edge of chaos - too much order freezes it, too much chaos dissolves it\""
+    },
+    {
+      "id": "edge-of-chaos--equilibrium",
+      "source": "edge-of-chaos",
+      "target": "equilibrium",
+      "note": "\"The edge of chaos is far from equilibrium - that's what makes it creative but also fragile\""
+    },
+    {
+      "id": "edge-of-chaos--tipping-points",
+      "source": "edge-of-chaos",
+      "target": "tipping-points",
+      "note": "\"The edge of chaos is where tipping points live - the system is poised between states, ready to shift\""
     },
     {
       "id": "emergence--feedback-loops",
@@ -349,6 +1402,54 @@
       "note": "\"Emergent behaviour often appears suddenly at a tipping point - the system reorganises all at once\""
     },
     {
+      "id": "emergence--self-organisation",
+      "source": "emergence",
+      "target": "self-organisation",
+      "note": "\"Self-organisation is emergence at the structural level - the system builds its own order from within\""
+    },
+    {
+      "id": "emergence--irreducibility",
+      "source": "emergence",
+      "target": "irreducibility",
+      "note": "\"Emergent behaviour is often irreducible - you can't predict it from the parts, you have to watch it happen\""
+    },
+    {
+      "id": "emergence--reductionism",
+      "source": "emergence",
+      "target": "reductionism",
+      "note": "\"Emergence is what reductionism misses - behaviour that exists only in the interaction, not in the parts\""
+    },
+    {
+      "id": "equilibrium--feedback-loops",
+      "source": "equilibrium",
+      "target": "feedback-loops",
+      "note": "\"Balancing feedback loops are the mechanism that maintains equilibrium - they correct deviations and restore balance\""
+    },
+    {
+      "id": "attractors--equilibrium",
+      "source": "equilibrium",
+      "target": "attractors",
+      "note": "\"An equilibrium is a type of attractor - the state the system is pulled toward by its balancing loops\""
+    },
+    {
+      "id": "equilibrium--oscillation",
+      "source": "equilibrium",
+      "target": "oscillation",
+      "note": "\"Oscillation happens around an equilibrium when the corrections overshoot\""
+    },
+    {
+      "id": "equilibrium--tipping-points",
+      "source": "equilibrium",
+      "target": "tipping-points",
+      "note": "\"A tipping point is the moment equilibrium breaks - the system shifts to a new balance point\""
+    },
+    {
+      "id": "equilibrium--stocks-and-flows",
+      "source": "equilibrium",
+      "target": "stocks-and-flows",
+      "note": "\"Equilibrium occurs when inflows and outflows are equal - the stock stays constant even though the flows are active\""
+    },
+    {
       "id": "eroding-goals--feedback-loops",
       "source": "eroding-goals",
       "target": "feedback-loops",
@@ -373,6 +1474,24 @@
       "note": "\"Lowering standards looks like a fix but it erodes the system's long-term capability\""
     },
     {
+      "id": "eroding-goals--growth-and-underinvestment",
+      "source": "eroding-goals",
+      "target": "growth-and-underinvestment",
+      "note": "\"Falling performance gets normalised, lowering the standard that would have justified investment\""
+    },
+    {
+      "id": "eroding-goals--rule-beating",
+      "source": "eroding-goals",
+      "target": "rule-beating",
+      "note": "\"Rule beating can mask eroding goals - the metrics look fine while the reality deteriorates\""
+    },
+    {
+      "id": "eroding-goals--system-traps",
+      "source": "eroding-goals",
+      "target": "system-traps",
+      "note": "\"Eroding goals is a system trap - the slow drift in standards is structural, not a failure of willpower\""
+    },
+    {
       "id": "escalation--feedback-loops",
       "source": "escalation",
       "target": "feedback-loops",
@@ -395,6 +1514,48 @@
       "source": "escalation",
       "target": "nonlinearity",
       "note": "\"Escalation is nonlinear - small provocations can trigger disproportionate responses that spiral\""
+    },
+    {
+      "id": "escalation--system-traps",
+      "source": "escalation",
+      "target": "system-traps",
+      "note": "\"Escalation is one of the named system traps - its structure makes it predictable and its exit routes identifiable\""
+    },
+    {
+      "id": "escalation--policy-resistance",
+      "source": "escalation",
+      "target": "policy-resistance",
+      "note": "\"Each side's escalation is a form of policy resistance against the other's moves\""
+    },
+    {
+      "id": "event-pattern-structure--iceberg-model",
+      "source": "event-pattern-structure",
+      "target": "iceberg-model",
+      "note": "\"Event-Pattern-Structure is the iceberg model in action - the practice of diving below the visible event\""
+    },
+    {
+      "id": "event-pattern-structure--system-blindness",
+      "source": "event-pattern-structure",
+      "target": "system-blindness",
+      "note": "\"System blindness is being stuck at the event level - never reaching the pattern or structure beneath\""
+    },
+    {
+      "id": "event-pattern-structure--fixes-that-fail",
+      "source": "event-pattern-structure",
+      "target": "fixes-that-fail",
+      "note": "\"Most fixes that fail address events without reaching the structure that produces them\""
+    },
+    {
+      "id": "event-pattern-structure--system-traps",
+      "source": "event-pattern-structure",
+      "target": "system-traps",
+      "note": "\"System traps only become visible at the structure level - at the event level they look like isolated misfortunes\""
+    },
+    {
+      "id": "event-pattern-structure--feedback-loops",
+      "source": "event-pattern-structure",
+      "target": "feedback-loops",
+      "note": "\"Feedback loops are what you find when you move from pattern to structure - the loops are what produce the recurring pattern\""
     },
     {
       "id": "exponential-growth--feedback-loops",
@@ -433,6 +1594,24 @@
       "note": "\"Exponential growth and Success to the Successful share the same engine - a reinforcing loop that compounds advantage\""
     },
     {
+      "id": "exponential-growth--overshoot-and-collapse",
+      "source": "exponential-growth",
+      "target": "overshoot-and-collapse",
+      "note": "\"Unchecked exponential growth drives overshoot - the system blows past its limits before feedback arrives\""
+    },
+    {
+      "id": "exponential-growth--second-order-effects",
+      "source": "exponential-growth",
+      "target": "second-order-effects",
+      "note": "\"Exponential growth is a second-order effect in action - each cycle's output feeds the next cycle's input\""
+    },
+    {
+      "id": "exponential-growth--linear-thinking",
+      "source": "exponential-growth",
+      "target": "linear-thinking",
+      "note": "\"Linear thinking is why exponential growth always surprises people - we instinctively project in straight lines\""
+    },
+    {
       "id": "feedback-loops--stocks-and-flows",
       "source": "feedback-loops",
       "target": "stocks-and-flows",
@@ -449,6 +1628,54 @@
       "source": "feedback-loops",
       "target": "success-to-the-successful",
       "note": "\"This archetype is a reinforcing loop that compounds advantage - success generates resources that generate more success\""
+    },
+    {
+      "id": "feedback-loops--nudges",
+      "source": "feedback-loops",
+      "target": "nudges",
+      "note": "\"Many nudges work by making feedback visible that the system was previously hiding\""
+    },
+    {
+      "id": "feedback-loops--requisite-variety",
+      "source": "feedback-loops",
+      "target": "requisite-variety",
+      "note": "\"A feedback loop can only correct effectively if the system has enough variety of responses to match what it's sensing\""
+    },
+    {
+      "id": "feedback-loops--self-organisation",
+      "source": "feedback-loops",
+      "target": "self-organisation",
+      "note": "\"Self-organisation arises through feedback loops between agents - each response shapes the next interaction\""
+    },
+    {
+      "id": "feedback-loops--mental-models",
+      "source": "feedback-loops",
+      "target": "mental-models",
+      "note": "\"Mental models filter which feedback we notice and which we ignore - reinforcing what we already believe\""
+    },
+    {
+      "id": "feedback-loops--linear-thinking",
+      "source": "feedback-loops",
+      "target": "linear-thinking",
+      "note": "\"Linear thinking treats feedback loops as straight lines - ignoring the circular causality that drives system behaviour\""
+    },
+    {
+      "id": "feedback-loops--resilience",
+      "source": "feedback-loops",
+      "target": "resilience",
+      "note": "\"Resilient systems have feedback loops that detect disturbance early and trigger adaptation before damage compounds\""
+    },
+    {
+      "id": "feedback-loops--leverage-points",
+      "source": "feedback-loops",
+      "target": "leverage-points",
+      "note": "\"Changing a feedback loop's structure is one of the highest-leverage interventions in a system\""
+    },
+    {
+      "id": "feedback-loops--policy-resistance",
+      "source": "feedback-loops",
+      "target": "policy-resistance",
+      "note": "\"Multiple balancing feedback loops pulling toward different goals is what creates policy resistance\""
     },
     {
       "id": "fixes-that-fail--shifting-the-burden",
@@ -493,6 +1720,84 @@
       "note": "\"Pushing harder on growth when the constraint is the problem is a fix that fails\""
     },
     {
+      "id": "fixes-that-fail--rule-beating",
+      "source": "fixes-that-fail",
+      "target": "rule-beating",
+      "note": "\"Rules designed to fix problems are beaten when people comply technically while violating the intent\""
+    },
+    {
+      "id": "fixes-that-fail--policy-resistance",
+      "source": "fixes-that-fail",
+      "target": "policy-resistance",
+      "note": "\"Fixes that fail often trigger policy resistance - the system absorbs the fix and reasserts the original pattern\""
+    },
+    {
+      "id": "fixes-that-fail--system-traps",
+      "source": "fixes-that-fail",
+      "target": "system-traps",
+      "note": "\"Fixes that fail is one of the most common system traps - recognisable and escapable once named\""
+    },
+    {
+      "id": "fixes-that-fail--iceberg-model",
+      "source": "fixes-that-fail",
+      "target": "iceberg-model",
+      "note": "\"Most fixes that fail address the tip of the iceberg - the event - without touching the structure beneath\""
+    },
+    {
+      "id": "fixes-that-fail--solutionism",
+      "source": "fixes-that-fail",
+      "target": "solutionism",
+      "note": "\"Solutionism drives fixes that fail by demanding a solution before the problem is properly understood\""
+    },
+    {
+      "id": "growth-and-underinvestment--limits-to-growth",
+      "source": "growth-and-underinvestment",
+      "target": "limits-to-growth",
+      "note": "\"Growth and Underinvestment is what happens when the constraint in Limits to Growth is capacity that could have been built but wasn't\""
+    },
+    {
+      "id": "feedback-loops--growth-and-underinvestment",
+      "source": "growth-and-underinvestment",
+      "target": "feedback-loops",
+      "note": "\"A vicious balancing loop: poor performance reduces demand, which seems to justify the lack of investment\""
+    },
+    {
+      "id": "delays--growth-and-underinvestment",
+      "source": "growth-and-underinvestment",
+      "target": "delays",
+      "note": "\"Investment in capacity takes time to pay off - the delay makes it easy to argue the investment isn't working\""
+    },
+    {
+      "id": "growth-and-underinvestment--stocks-and-flows",
+      "source": "growth-and-underinvestment",
+      "target": "stocks-and-flows",
+      "note": "\"Capacity is a stock that depletes when investment (inflow) doesn't keep pace with demand (outflow)\""
+    },
+    {
+      "id": "iceberg-model--mental-models",
+      "source": "iceberg-model",
+      "target": "mental-models",
+      "note": "\"Mental models sit at the deepest level of the iceberg - the beliefs that shape the structures that produce the events\""
+    },
+    {
+      "id": "iceberg-model--system-blindness",
+      "source": "iceberg-model",
+      "target": "system-blindness",
+      "note": "\"System blindness is being stuck at the tip of the iceberg - seeing events without seeing what's underneath\""
+    },
+    {
+      "id": "iceberg-model--leverage-points",
+      "source": "iceberg-model",
+      "target": "leverage-points",
+      "note": "\"The iceberg shows why higher leverage points are harder to see - they're below the waterline\""
+    },
+    {
+      "id": "feedback-loops--iceberg-model",
+      "source": "iceberg-model",
+      "target": "feedback-loops",
+      "note": "\"Feedback loops live in the structure layer of the iceberg - invisible from the event level but driving everything\""
+    },
+    {
       "id": "feedback-loops--interconnections",
       "source": "interconnections",
       "target": "feedback-loops",
@@ -511,6 +1816,168 @@
       "note": "\"Many interconnections include delays, so the effect of a change travels slowly through the system\""
     },
     {
+      "id": "interconnections--intervention-side-effects",
+      "source": "interconnections",
+      "target": "intervention-side-effects",
+      "note": "\"Side effects travel along interconnections - the more connected the system, the wider the ripple\""
+    },
+    {
+      "id": "interconnections--wicked-problems",
+      "source": "interconnections",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems are wicked because they're deeply interconnected - you can't pull one thread without moving everything\""
+    },
+    {
+      "id": "interconnections--self-organisation",
+      "source": "interconnections",
+      "target": "self-organisation",
+      "note": "\"Self-organisation requires interconnection - isolated agents can't produce collective order\""
+    },
+    {
+      "id": "interconnections--systems-mapping",
+      "source": "interconnections",
+      "target": "systems-mapping",
+      "note": "\"Systems mapping is the broader practice of making interconnections visible across a whole system\""
+    },
+    {
+      "id": "interconnections--reductionism",
+      "source": "interconnections",
+      "target": "reductionism",
+      "note": "\"Reductionism discards interconnections when it separates parts - and the interconnections are often where the behaviour lives\""
+    },
+    {
+      "id": "interconnections--modularity",
+      "source": "interconnections",
+      "target": "modularity",
+      "note": "\"Modularity manages interconnections by keeping modules loosely connected - preventing cascading failure\""
+    },
+    {
+      "id": "intervention-side-effects--unintended-consequences",
+      "source": "intervention-side-effects",
+      "target": "unintended-consequences",
+      "note": "\"Intervention side effects are a specific case of unintended consequences - the ones caused by deliberate action\""
+    },
+    {
+      "id": "intervention-side-effects--policy-resistance",
+      "source": "intervention-side-effects",
+      "target": "policy-resistance",
+      "note": "\"Side effects are often the mechanism through which policy resistance operates\""
+    },
+    {
+      "id": "intervention-side-effects--leverage-points",
+      "source": "intervention-side-effects",
+      "target": "leverage-points",
+      "note": "\"High-leverage interventions can produce powerful side effects, good and bad - leverage amplifies everything\""
+    },
+    {
+      "id": "intervention-side-effects--nudges",
+      "source": "intervention-side-effects",
+      "target": "nudges",
+      "note": "\"Nudges have side effects too - changing one default can shift behaviour in adjacent areas\""
+    },
+    {
+      "id": "constraints--intervention-side-effects",
+      "source": "intervention-side-effects",
+      "target": "constraints",
+      "note": "\"Every constraint creates side effects - the behaviour it prevents has to go somewhere\""
+    },
+    {
+      "id": "intervention-side-effects--solutionism",
+      "source": "intervention-side-effects",
+      "target": "solutionism",
+      "note": "\"Solutionism ignores intervention side effects because admitting them would mean the solution isn't clean\""
+    },
+    {
+      "id": "intervention-side-effects--safe-to-fail-experiments",
+      "source": "intervention-side-effects",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments contain intervention side effects by keeping the scale small and the commitment reversible\""
+    },
+    {
+      "id": "irreducibility--sensitivity-to-initial-conditions",
+      "source": "irreducibility",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Sensitivity makes systems irreducible - if tiny details cascade, you can't simplify without losing the outcome\""
+    },
+    {
+      "id": "irreducibility--wicked-problems",
+      "source": "irreducibility",
+      "target": "wicked-problems",
+      "note": "\"Wicked problems are partly wicked because they're irreducible - you can't model your way to a solution\""
+    },
+    {
+      "id": "irreducibility--uncertainty-vs-risk",
+      "source": "irreducibility",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Irreducibility is a deep source of uncertainty - if you can't shortcut the calculation, you can't know the outcome in advance\""
+    },
+    {
+      "id": "irreducibility--map-is-not-the-territory",
+      "source": "irreducibility",
+      "target": "map-is-not-the-territory",
+      "note": "\"Irreducible systems can't be fully mapped by definition - the only complete model is the system itself running in real time\""
+    },
+    {
+      "id": "irreducibility--safe-to-fail-experiments",
+      "source": "irreducibility",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments respect irreducibility - if the only way to know is to try, make the trying safe and small\""
+    },
+    {
+      "id": "leverage-points--stocks-and-flows",
+      "source": "leverage-points",
+      "target": "stocks-and-flows",
+      "note": "\"Flows are low-leverage - easy to see but slow to shift. The rules governing flows are where the real leverage lives\""
+    },
+    {
+      "id": "boundaries--leverage-points",
+      "source": "leverage-points",
+      "target": "boundaries",
+      "note": "\"Redefining what's inside the system is a high-leverage move that changes everything downstream\""
+    },
+    {
+      "id": "fixes-that-fail--leverage-points",
+      "source": "leverage-points",
+      "target": "fixes-that-fail",
+      "note": "\"Most failed fixes target low-leverage points - adjusting numbers instead of changing structures\""
+    },
+    {
+      "id": "interconnections--leverage-points",
+      "source": "leverage-points",
+      "target": "interconnections",
+      "note": "\"The pattern of interconnections determines where leverage exists in a system\""
+    },
+    {
+      "id": "leverage-points--second-order-effects",
+      "source": "leverage-points",
+      "target": "second-order-effects",
+      "note": "\"Choosing the right leverage point requires second-order thinking - what happens after the first shift?\""
+    },
+    {
+      "id": "leverage-points--nudges",
+      "source": "leverage-points",
+      "target": "nudges",
+      "note": "\"Nudges target a specific leverage point - the choice architecture that shapes individual decisions\""
+    },
+    {
+      "id": "leverage-points--requisite-variety",
+      "source": "leverage-points",
+      "target": "requisite-variety",
+      "note": "\"Increasing your range of possible responses is itself a leverage point\""
+    },
+    {
+      "id": "leverage-points--mental-models",
+      "source": "leverage-points",
+      "target": "mental-models",
+      "note": "\"Changing mental models is one of the highest leverage points in any system - near the top of Meadows' hierarchy\""
+    },
+    {
+      "id": "leverage-points--system-blindness",
+      "source": "leverage-points",
+      "target": "system-blindness",
+      "note": "\"System blindness keeps people pushing on low-leverage points - blaming individuals instead of redesigning structures\""
+    },
+    {
       "id": "limits-to-growth--s-curves",
       "source": "limits-to-growth",
       "target": "s-curves",
@@ -527,6 +1994,132 @@
       "source": "limits-to-growth",
       "target": "buffers",
       "note": "\"Limits often show up as buffer depletion - a resource runs low before it runs out\""
+    },
+    {
+      "id": "limits-to-growth--overshoot-and-collapse",
+      "source": "limits-to-growth",
+      "target": "overshoot-and-collapse",
+      "note": "\"If limits aren't addressed and growth continues unchecked, Limits to Growth becomes Overshoot and Collapse\""
+    },
+    {
+      "id": "linear-thinking--nonlinearity",
+      "source": "linear-thinking",
+      "target": "nonlinearity",
+      "note": "\"Linear thinking is the failure to see nonlinearity - assuming the system responds proportionally when it doesn't\""
+    },
+    {
+      "id": "linear-thinking--second-order-effects",
+      "source": "linear-thinking",
+      "target": "second-order-effects",
+      "note": "\"Linear thinking stops at the first-order effect and misses everything that follows\""
+    },
+    {
+      "id": "linear-thinking--mental-models",
+      "source": "linear-thinking",
+      "target": "mental-models",
+      "note": "\"Linear thinking is the most common mental model - and the most dangerous one in complex systems\""
+    },
+    {
+      "id": "linear-thinking--reductionism",
+      "source": "linear-thinking",
+      "target": "reductionism",
+      "note": "\"Reductionism and linear thinking are natural partners - break it into parts, solve each one, assume they add up\""
+    },
+    {
+      "id": "linear-thinking--solutionism",
+      "source": "linear-thinking",
+      "target": "solutionism",
+      "note": "\"Solutionism is linear thinking applied to problem-solving - one problem, one cause, one fix\""
+    },
+    {
+      "id": "lock-in--path-dependence",
+      "source": "lock-in",
+      "target": "path-dependence",
+      "note": "\"Lock-in is path dependence at its most extreme - not just constrained by history, but trapped by it\""
+    },
+    {
+      "id": "feedback-loops--lock-in",
+      "source": "lock-in",
+      "target": "feedback-loops",
+      "note": "\"Reinforcing loops entrench lock-in - the more you use a system, the harder it becomes to leave\""
+    },
+    {
+      "id": "lock-in--stocks-and-flows",
+      "source": "lock-in",
+      "target": "stocks-and-flows",
+      "note": "\"Lock-in accumulates through stocks of investment, learning, and integration that are lost if you switch\""
+    },
+    {
+      "id": "lock-in--success-to-the-successful",
+      "source": "lock-in",
+      "target": "success-to-the-successful",
+      "note": "\"The dominant option attracts more users, more investment, more compatibility - widening the gap with alternatives\""
+    },
+    {
+      "id": "lock-in--punctuated-equilibrium",
+      "source": "lock-in",
+      "target": "punctuated-equilibrium",
+      "note": "\"Lock-in during stable periods explains why change accumulates as pressure rather than gradual adjustment\""
+    },
+    {
+      "id": "map-is-not-the-territory--mental-models",
+      "source": "map-is-not-the-territory",
+      "target": "mental-models",
+      "note": "\"Every mental model is a map - a simplification that helps you navigate but never captures the full territory\""
+    },
+    {
+      "id": "map-is-not-the-territory--systems-mapping",
+      "source": "map-is-not-the-territory",
+      "target": "systems-mapping",
+      "note": "\"Every systems map is a simplification - useful for seeing patterns, dangerous when mistaken for reality\""
+    },
+    {
+      "id": "complexity-vs-complication--map-is-not-the-territory",
+      "source": "map-is-not-the-territory",
+      "target": "complexity-vs-complication",
+      "note": "\"Maps work well for complicated territory and mislead for complex territory - where the landscape shifts as you walk it\""
+    },
+    {
+      "id": "map-is-not-the-territory--reductionism",
+      "source": "map-is-not-the-territory",
+      "target": "reductionism",
+      "note": "\"Reductionism creates maps by breaking things into parts - and the map always loses the interactions between parts\""
+    },
+    {
+      "id": "mental-models--system-blindness",
+      "source": "mental-models",
+      "target": "system-blindness",
+      "note": "\"System blindness is what happens when mental models can't see structure - defaulting to individual blame\""
+    },
+    {
+      "id": "mental-models--systems-mapping",
+      "source": "mental-models",
+      "target": "systems-mapping",
+      "note": "\"Systems mapping surfaces mental models by forcing people to draw what they think is happening\""
+    },
+    {
+      "id": "mental-models--transformability",
+      "source": "mental-models",
+      "target": "transformability",
+      "note": "\"Transformation requires changing mental models - the deepest, hardest, and highest-leverage kind of change\""
+    },
+    {
+      "id": "modularity--resilience",
+      "source": "modularity",
+      "target": "resilience",
+      "note": "\"Modularity is a key design principle for resilience - failure in one module doesn't cascade to the rest\""
+    },
+    {
+      "id": "modularity--redundancy",
+      "source": "modularity",
+      "target": "redundancy",
+      "note": "\"Modularity and redundancy work together - modular systems can have redundant components that back each other up\""
+    },
+    {
+      "id": "complexity-vs-complication--modularity",
+      "source": "modularity",
+      "target": "complexity-vs-complication",
+      "note": "\"Modularity helps manage complexity by containing it within units - each module can be complex internally while being simple externally\""
     },
     {
       "id": "feedback-loops--nonlinearity",
@@ -553,6 +2146,30 @@
       "note": "\"S-curves show nonlinearity in action - slow start, explosive middle, plateau at the end\""
     },
     {
+      "id": "nonlinearity--second-order-effects",
+      "source": "nonlinearity",
+      "target": "second-order-effects",
+      "note": "\"Second-order effects can be wildly disproportionate to the first-order cause - nonlinearity across time\""
+    },
+    {
+      "id": "nonlinearity--sensitivity-to-initial-conditions",
+      "source": "nonlinearity",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Sensitivity to initial conditions is nonlinearity in the time dimension - small early differences amplified into large later ones\""
+    },
+    {
+      "id": "nudges--second-order-effects",
+      "source": "nudges",
+      "target": "second-order-effects",
+      "note": "\"Nudges can produce second-order effects - changing one default can shift behaviour patterns well beyond the original choice\""
+    },
+    {
+      "id": "nudges--policy-resistance",
+      "source": "nudges",
+      "target": "policy-resistance",
+      "note": "\"Nudges often meet less resistance than mandates because they don't restrict freedom - they redirect attention\""
+    },
+    {
       "id": "buffers--oscillation",
       "source": "oscillation",
       "target": "buffers",
@@ -563,6 +2180,42 @@
       "source": "oscillation",
       "target": "stocks-and-flows",
       "note": "\"Oscillation is visible in stocks - the level swings above and below where it needs to be\""
+    },
+    {
+      "id": "delays--overshoot-and-collapse",
+      "source": "overshoot-and-collapse",
+      "target": "delays",
+      "note": "\"Delays are the reason overshoot happens - the signal to stop arrives after the damage is done\""
+    },
+    {
+      "id": "overshoot-and-collapse--tipping-points",
+      "source": "overshoot-and-collapse",
+      "target": "tipping-points",
+      "note": "\"Overshoot can push a system past a tipping point, making the collapse irreversible\""
+    },
+    {
+      "id": "overshoot-and-collapse--stocks-and-flows",
+      "source": "overshoot-and-collapse",
+      "target": "stocks-and-flows",
+      "note": "\"Overshoot drains a stock faster than it can replenish, until the stock collapses\""
+    },
+    {
+      "id": "panarchy--resilience",
+      "source": "panarchy",
+      "target": "resilience",
+      "note": "\"Panarchy explains how resilience operates across scales - a resilient higher level can absorb disruption at lower levels\""
+    },
+    {
+      "id": "panarchy--tipping-points",
+      "source": "panarchy",
+      "target": "tipping-points",
+      "note": "\"Panarchy explains how small-scale tipping points can cascade upward and trigger system-wide transitions\""
+    },
+    {
+      "id": "panarchy--regime-shifts",
+      "source": "panarchy",
+      "target": "regime-shifts",
+      "note": "\"Regime shifts in panarchy happen when a release phase at one scale triggers collapse at a higher scale\""
     },
     {
       "id": "feedback-loops--path-dependence",
@@ -595,6 +2248,120 @@
       "note": "\"Early advantages become path-dependent as the reinforcing loop entrenches the winner's position\""
     },
     {
+      "id": "path-dependence--sensitivity-to-initial-conditions",
+      "source": "path-dependence",
+      "target": "sensitivity-to-initial-conditions",
+      "note": "\"Sensitivity to initial conditions is why paths diverge so dramatically from nearly identical starting points\""
+    },
+    {
+      "id": "leverage-points--policy-resistance",
+      "source": "policy-resistance",
+      "target": "leverage-points",
+      "note": "\"Policy resistance is the sign you've hit a low-leverage point - the structure is stronger than your push\""
+    },
+    {
+      "id": "policy-resistance--unintended-consequences",
+      "source": "policy-resistance",
+      "target": "unintended-consequences",
+      "note": "\"The system's resistance often manifests as unintended consequences that cancel out the intended ones\""
+    },
+    {
+      "id": "policy-resistance--shifting-the-burden",
+      "source": "policy-resistance",
+      "target": "shifting-the-burden",
+      "note": "\"When resistance makes a real solution too hard, the temptation is to shift the burden to something easier\""
+    },
+    {
+      "id": "policy-resistance--requisite-variety",
+      "source": "policy-resistance",
+      "target": "requisite-variety",
+      "note": "\"Policy resistance often means the intervention lacks enough variety to handle the system's complexity\""
+    },
+    {
+      "id": "punctuated-equilibrium--regime-shifts",
+      "source": "punctuated-equilibrium",
+      "target": "regime-shifts",
+      "note": "\"Regime shifts are the punctuation in punctuated equilibrium - the sudden breaks between long stable periods\""
+    },
+    {
+      "id": "punctuated-equilibrium--tipping-points",
+      "source": "punctuated-equilibrium",
+      "target": "tipping-points",
+      "note": "\"Tipping points are the trigger mechanism for the punctuation - the moment when gradual pressure produces sudden change\""
+    },
+    {
+      "id": "redundancy--resilience",
+      "source": "redundancy",
+      "target": "resilience",
+      "note": "\"Redundancy is one of the primary building blocks of resilience - the spare capacity that absorbs shocks\""
+    },
+    {
+      "id": "redundancy--robustness-vs-resilience",
+      "source": "redundancy",
+      "target": "robustness-vs-resilience",
+      "note": "\"Redundancy serves both strategies - robust systems use it to prevent failure, resilient systems use it to recover from it\""
+    },
+    {
+      "id": "regime-shifts--tipping-points",
+      "source": "regime-shifts",
+      "target": "tipping-points",
+      "note": "\"Tipping points are the trigger for regime shifts - the moment when gradual change becomes a sudden flip\""
+    },
+    {
+      "id": "regime-shifts--resilience",
+      "source": "regime-shifts",
+      "target": "resilience",
+      "note": "\"Regime shifts happen when resilience is exhausted - the system can no longer absorb disturbance and flips\""
+    },
+    {
+      "id": "constraints--requisite-variety",
+      "source": "requisite-variety",
+      "target": "constraints",
+      "note": "\"Constraints reduce the variety a system needs to manage - they simplify the problem space\""
+    },
+    {
+      "id": "resilience--robustness-vs-resilience",
+      "source": "resilience",
+      "target": "robustness-vs-resilience",
+      "note": "\"Robustness resists change; resilience absorbs it. Different strategies for different situations\""
+    },
+    {
+      "id": "resilience--transformability",
+      "source": "resilience",
+      "target": "transformability",
+      "note": "\"Sometimes resilience means maintaining the current system. Transformability is knowing when to let it go and build something new\""
+    },
+    {
+      "id": "resilience--safe-to-fail-experiments",
+      "source": "resilience",
+      "target": "safe-to-fail-experiments",
+      "note": "\"Safe-to-fail experiments build resilience by helping systems learn without being damaged by the learning process\""
+    },
+    {
+      "id": "buffers--robustness-vs-resilience",
+      "source": "robustness-vs-resilience",
+      "target": "buffers",
+      "note": "\"Buffers serve both strategies - absorbing known shocks (robustness) and buying time to adapt to unknown ones (resilience)\""
+    },
+    {
+      "id": "feedback-loops--rule-beating",
+      "source": "rule-beating",
+      "target": "feedback-loops",
+      "note": "\"Rules create feedback loops that shape behaviour - but the behaviour shaped isn't always the behaviour intended\""
+    },
+    {
+      "id": "rule-beating--unintended-consequences",
+      "source": "rule-beating",
+      "target": "unintended-consequences",
+      "note": "\"Rule beating is the unintended consequence of well-intentioned rules that target the wrong thing\""
+    },
+    {
+      "id": "boundaries--rule-beating",
+      "source": "rule-beating",
+      "target": "boundaries",
+      "note": "\"Rules draw boundaries around what's measured and enforced - rule beating exploits what's outside those boundaries\""
+    },
+    {
       "id": "feedback-loops--s-curves",
       "source": "s-curves",
       "target": "feedback-loops",
@@ -605,6 +2372,30 @@
       "source": "s-curves",
       "target": "stocks-and-flows",
       "note": "\"The curve traces a stock that grows quickly when inflows dominate, then plateaus as outflows catch up\""
+    },
+    {
+      "id": "intervention-side-effects--second-order-effects",
+      "source": "second-order-effects",
+      "target": "intervention-side-effects",
+      "note": "\"Side effects are first-order ripples; second-order effects are what those ripples cause in turn\""
+    },
+    {
+      "id": "second-order-effects--unintended-consequences",
+      "source": "second-order-effects",
+      "target": "unintended-consequences",
+      "note": "\"Most unintended consequences are second- or third-order effects that weren't traced far enough forward\""
+    },
+    {
+      "id": "second-order-effects--uncertainty-vs-risk",
+      "source": "second-order-effects",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Second-order effects are a major source of genuine uncertainty - the consequences of consequences resist prediction\""
+    },
+    {
+      "id": "sensitivity-to-initial-conditions--uncertainty-vs-risk",
+      "source": "sensitivity-to-initial-conditions",
+      "target": "uncertainty-vs-risk",
+      "note": "\"Sensitive dependence is a major source of genuine uncertainty - if tiny unknowns matter, prediction becomes impossible\""
     },
     {
       "id": "feedback-loops--shifting-the-burden",
@@ -643,10 +2434,58 @@
       "note": "\"Both archetypes involve structural incentives that make the individually rational choice collectively harmful\""
     },
     {
+      "id": "shifting-the-burden--system-traps",
+      "source": "shifting-the-burden",
+      "target": "system-traps",
+      "note": "\"Shifting the burden is a system trap - the reliance on the easy fix is structural, not a character flaw\""
+    },
+    {
+      "id": "solutionism--wicked-problems",
+      "source": "solutionism",
+      "target": "wicked-problems",
+      "note": "\"Solutionism is the refusal to accept that wicked problems exist - treating every messy situation as a puzzle to be solved\""
+    },
+    {
+      "id": "stocks-and-flows--systems-mapping",
+      "source": "stocks-and-flows",
+      "target": "systems-mapping",
+      "note": "\"Stock and flow diagrams are a key systems mapping technique - tracking what accumulates and what moves through the system\""
+    },
+    {
       "id": "nonlinearity--success-to-the-successful",
       "source": "success-to-the-successful",
       "target": "nonlinearity",
       "note": "\"A small initial advantage can produce a massively disproportionate outcome over time\""
+    },
+    {
+      "id": "system-blindness--system-traps",
+      "source": "system-blindness",
+      "target": "system-traps",
+      "note": "\"System traps only become visible when you overcome system blindness - the pattern looks like bad luck until you see the structure\""
+    },
+    {
+      "id": "linear-thinking--system-blindness",
+      "source": "system-blindness",
+      "target": "linear-thinking",
+      "note": "\"Linear thinking feeds system blindness - if cause and effect are simple and direct, the cause must be a person\""
+    },
+    {
+      "id": "system-traps--tragedy-of-the-commons",
+      "source": "system-traps",
+      "target": "tragedy-of-the-commons",
+      "note": "\"The trap where rational individual behaviour destroys the shared resource everyone depends on\""
+    },
+    {
+      "id": "policy-resistance--system-traps",
+      "source": "system-traps",
+      "target": "policy-resistance",
+      "note": "\"Understanding system traps helps explain why policy resistance occurs - you're fighting a structural pattern\""
+    },
+    {
+      "id": "constraints--system-traps",
+      "source": "system-traps",
+      "target": "constraints",
+      "note": "\"Adding an enabling constraint is often the escape route from a system trap\""
     },
     {
       "id": "feedback-loops--tipping-points",
@@ -697,6 +2536,18 @@
       "note": "\"The commons has a carrying capacity - growth in use eventually hits the limit of what the resource can sustain\""
     },
     {
+      "id": "regime-shifts--transformability",
+      "source": "transformability",
+      "target": "regime-shifts",
+      "note": "\"Transformability is the deliberate version of a regime shift - choosing to build a new system rather than being forced into one\""
+    },
+    {
+      "id": "nonlinearity--uncertainty-vs-risk",
+      "source": "uncertainty-vs-risk",
+      "target": "nonlinearity",
+      "note": "\"Nonlinearity generates uncertainty because disproportionate effects can't be predicted from proportional models\""
+    },
+    {
       "id": "delays--unintended-consequences",
       "source": "unintended-consequences",
       "target": "delays",
@@ -719,9 +2570,21 @@
       "source": "unintended-consequences",
       "target": "nonlinearity",
       "note": "\"Nonlinearity means a small intervention can produce outsized, unexpected side effects\""
+    },
+    {
+      "id": "unintended-consequences--wicked-problems",
+      "source": "unintended-consequences",
+      "target": "wicked-problems",
+      "note": "\"Every attempt to address a wicked problem produces unintended consequences that reshape the problem itself\""
+    },
+    {
+      "id": "complex-adaptive-systems--wicked-problems",
+      "source": "wicked-problems",
+      "target": "complex-adaptive-systems",
+      "note": "\"Wicked problems arise from complex adaptive systems - the agents' responses to your solution become part of the problem\""
     }
   ],
   "meta": {
-    "generatedAt": "2026-03-31T14:17:52.278Z"
+    "generatedAt": "2026-03-31T19:35:34.410Z"
   }
 }

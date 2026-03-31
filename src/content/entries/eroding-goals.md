@@ -22,6 +22,8 @@ related:
     note: "Falling performance gets normalised, lowering the standard that would have justified investment"
   - slug: "rule-beating"
     note: "Rule beating can mask eroding goals - the metrics look fine while the reality deteriorates"
+  - slug: "system-traps"
+    note: "Eroding goals is a system trap - the slow drift in standards is structural, not a failure of willpower"
 draft: false
 ---
 

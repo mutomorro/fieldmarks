@@ -18,6 +18,18 @@ related:
     note: "Oscillation is the signature behaviour of delays in balancing loops - overcorrection, then overcorrection again"
   - slug: "drift"
     note: "Delays make drift invisible - by the time you notice the standard has slipped, the new normal is already set"
+  - slug: "intervention-side-effects"
+    note: "Delays hide intervention side effects - the damage doesn't show up until long after the change"
+  - slug: "second-order-effects"
+    note: "Second-order effects are often hidden by delays - the first consequence is visible, the next ones take time"
+  - slug: "complexity-vs-complication"
+    note: "Complicated systems have predictable delays. Complex ones have delays that interact with other delays unpredictably"
+  - slug: "sensitivity-to-initial-conditions"
+    note: "Delays hide the moment when initial conditions mattered - by the time you see the divergence, the cause is long gone"
+  - slug: "uncertainty-vs-risk"
+    note: "Delays compound uncertainty - the longer the gap between action and outcome, the more unknowns accumulate"
+  - slug: "dynamic-thinking"
+    note: "Dynamic thinking makes delays visible by asking 'when does this show up?' not just 'what happens?'"
 draft: false
 ---
 

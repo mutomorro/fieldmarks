@@ -18,6 +18,12 @@ related:
     note: "Escalation is nonlinear - small provocations can trigger disproportionate responses that spiral"
   - slug: "accidental-adversaries"
     note: "Accidental Adversaries can tip into Escalation when each party starts retaliating against the other's harm"
+  - slug: "system-traps"
+    note: "Escalation is one of the named system traps - its structure makes it predictable and its exit routes identifiable"
+  - slug: "policy-resistance"
+    note: "Each side's escalation is a form of policy resistance against the other's moves"
+  - slug: "co-evolution"
+    note: "Escalation is co-evolution's destructive form - two parties adapting to each other in ways that ratchet up intensity"
 draft: false
 ---
 

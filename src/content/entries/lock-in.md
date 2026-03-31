@@ -16,6 +16,8 @@ related:
     note: "Lock-in accumulates through stocks of investment, learning, and integration that are lost if you switch"
   - slug: "success-to-the-successful"
     note: "The dominant option attracts more users, more investment, more compatibility - widening the gap with alternatives"
+  - slug: "punctuated-equilibrium"
+    note: "Lock-in during stable periods explains why change accumulates as pressure rather than gradual adjustment"
 draft: false
 ---
 

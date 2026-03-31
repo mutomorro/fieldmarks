@@ -18,6 +18,8 @@ related:
     note: "A tipping point is the moment equilibrium breaks - the system shifts to a new balance point"
   - slug: "stocks-and-flows"
     note: "Equilibrium occurs when inflows and outflows are equal - the stock stays constant even though the flows are active"
+  - slug: "edge-of-chaos"
+    note: "The edge of chaos is far from equilibrium - that distance is what makes it creative but also fragile"
 draft: false
 ---
 

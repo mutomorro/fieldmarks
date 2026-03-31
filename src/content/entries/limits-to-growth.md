@@ -22,6 +22,8 @@ related:
     note: "Growth and Underinvestment is what happens when the constraint could have been addressed but wasn't"
   - slug: "overshoot-and-collapse"
     note: "If limits aren't addressed and growth continues unchecked, Limits to Growth becomes Overshoot and Collapse"
+  - slug: "constraints"
+    note: "The limit in limits to growth is a constraint - the question is whether you see it coming and design for it"
 originatedBy: "Peter Senge"
 draft: false
 ---

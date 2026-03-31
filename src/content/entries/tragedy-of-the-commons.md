@@ -18,6 +18,8 @@ related:
     note: "The commons can become an escalation where each party's use of the resource provokes others to use more before it's gone"
   - slug: "limits-to-growth"
     note: "The commons has a carrying capacity - growth in use eventually hits the limit of what the resource can sustain"
+  - slug: "system-traps"
+    note: "Tragedy of the commons is one of the best-known system traps - and one with well-understood escape routes"
 originatedBy: "Garrett Hardin"
 draft: false
 ---

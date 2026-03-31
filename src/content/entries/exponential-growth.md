@@ -24,6 +24,12 @@ related:
     note: "Exponential growth and Success to the Successful share the same engine - a reinforcing loop that compounds advantage"
   - slug: "overshoot-and-collapse"
     note: "Unchecked exponential growth drives overshoot - the system blows past its limits before feedback arrives"
+  - slug: "second-order-effects"
+    note: "Exponential growth is a second-order effect in action - each cycle's output feeds the next cycle's input"
+  - slug: "linear-thinking"
+    note: "Linear thinking is why exponential growth always surprises people - we instinctively project in straight lines"
+  - slug: "dynamic-thinking"
+    note: "Dynamic thinking catches exponential growth early - by asking what this looks like in six months, not just today"
 draft: false
 ---
 

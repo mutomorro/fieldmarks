@@ -20,6 +20,8 @@ related:
     note: "Drift often silently depletes buffers - reserves, goodwill, capacity - until there's nothing left when you need them"
   - slug: "eroding-goals"
     note: "Eroding Goals is the archetype version of drift applied to standards and targets"
+  - slug: "punctuated-equilibrium"
+    note: "Drift during equilibrium periods is what makes the punctuation inevitable - slow, invisible erosion building until it breaks"
   - slug: "equilibrium"
     note: "Drift can slowly shift what the system treats as its equilibrium, disguising the change"
 draft: false

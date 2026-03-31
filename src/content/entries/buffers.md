@@ -16,6 +16,14 @@ related:
     note: "Without buffers, feedback loops react to every fluctuation, making the system jittery and unstable"
   - slug: "nonlinearity"
     note: "Removing a buffer can push a system past a threshold it would otherwise have absorbed"
+  - slug: "constraints"
+    note: "Buffers give you room to work within constraints - the slack that makes tight systems survivable"
+  - slug: "requisite-variety"
+    note: "Buffers provide variety in the time dimension - more options for when and how to respond"
+  - slug: "resilience"
+    note: "Buffers are a key source of resilience - the slack that absorbs shocks before they reach critical system functions"
+  - slug: "redundancy"
+    note: "Buffers are a form of redundancy in stocks - excess capacity that smooths out volatility and absorbs shocks"
 draft: false
 ---
 

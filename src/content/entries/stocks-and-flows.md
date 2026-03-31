@@ -16,6 +16,10 @@ related:
     note: "Buffers are stocks that absorb variation, smoothing out uneven flows"
   - slug: "exponential-growth"
     note: "Exponential growth happens when a stock feeds back into its own inflow"
+  - slug: "systems-mapping"
+    note: "Stock and flow diagrams are a key systems mapping technique - tracking what accumulates and what moves through the system"
+  - slug: "dynamic-thinking"
+    note: "Stocks and flows are the language of dynamic thinking - what's accumulating, what's draining, and how fast"
 draft: false
 ---
 
