@@ -141,6 +141,13 @@ export default function ConnectionGraph() {
     merge.append('feMergeNode').attr('in', 'blur');
     merge.append('feMergeNode').attr('in', 'SourceGraphic');
 
+    // Invisible rect to capture pointer events across the full SVG
+    svg.append('rect')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all');
+
     const g = svg.append('g');
 
     // Zoom + pan
@@ -148,8 +155,6 @@ export default function ConnectionGraph() {
       .scaleExtent([0.2, 5])
       .on('zoom', (event) => g.attr('transform', event.transform));
     svg.call(zoom);
-    // Prevent scroll propagation
-    svg.on('wheel.zoom', function(event) { event.preventDefault(); }, { passive: false });
 
     // ── Edges ──
     const edgeGroup = g.append('g').attr('class', 'edges');

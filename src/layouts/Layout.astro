@@ -7,6 +7,15 @@ interface Props {
 
 const { title, description = 'A practical guide to systems thinking for people who work in organisations.', transparentNav = false } = Astro.props;
 const year = new Date().getFullYear();
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/themes', label: 'Themes' },
+  { href: '/concepts', label: 'Concepts' },
+  { href: '/collections', label: 'Collections' },
+  { href: '/connections', label: 'Connections' },
+  { href: '/about', label: 'About' },
+];
 ---
 
 <!doctype html>
@@ -50,11 +59,18 @@ const year = new Date().getFullYear();
         <span class="nav-byline text-[14px] font-light hidden sm:inline" style="color: var(--soft);">by <a href="https://mutomorro.com" target="_blank" rel="noopener" class="no-underline transition-colors duration-200" style="color: var(--soft);">Mutomorro</a></span>
       </div>
       <ul class="flex gap-8 list-none m-0 p-0">
-        <li><a href="/concepts" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Concepts</a></li>
-        <li><a href="/collections" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Collections</a></li>
-        <li><a href="/connections" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Connections</a></li>
-        <li><a href="/about" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">About</a></li>
-        <li><a href="/search" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Search</a></li>
+        {navLinks.map(({ href, label }) => {
+          const isActive = currentPath === href || currentPath === href + '/';
+          return (
+            <li>
+              <a
+                href={href}
+                class:list={["nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]", { "nav-active": isActive }]}
+                style="color: var(--soft);"
+              >{label}</a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
 
@@ -120,6 +136,12 @@ const year = new Date().getFullYear();
   @media (max-width: 768px) {
     nav { padding: 16px 24px !important; }
   }
+  .nav-active {
+    color: var(--deep) !important;
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 2px;
+  }
+
   nav.scrolled {
     background: rgba(255,255,255,0.92) !important;
     backdrop-filter: blur(12px);
@@ -137,6 +159,7 @@ const year = new Date().getFullYear();
   nav.nav-transparent .nav-byline a { color: rgba(255,255,255,0.4) !important; }
   nav.nav-transparent .nav-link { color: rgba(255,255,255,0.5) !important; }
   nav.nav-transparent .nav-link:hover { color: rgba(255,255,255,0.9) !important; }
+  nav.nav-transparent .nav-active { color: rgba(255,255,255,0.9) !important; border-bottom-color: rgba(255,255,255,0.5); }
   nav.nav-transparent.scrolled {
     background: rgba(17, 15, 24, 0.85) !important;
     backdrop-filter: blur(12px);
