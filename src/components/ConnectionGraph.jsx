@@ -52,6 +52,7 @@ export default function ConnectionGraph() {
   const [hoveredNode, setHoveredNode] = useState(null);
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
   const [legendOpen, setLegendOpen] = useState(true);
+  const [activeTheme, setActiveTheme] = useState(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
 
   // Fetch graph data
@@ -122,7 +123,7 @@ export default function ConnectionGraph() {
     // ── Theme cluster centres ──
     const uniqueThemes = [...new Set(nodes.map(n => n.theme))];
     const angleStep = (2 * Math.PI) / Math.max(uniqueThemes.length, 1);
-    const clusterRadius = Math.min(width, height) * 0.28;
+    const clusterRadius = Math.min(width, height) * 0.38;
     const themeCentres = {};
     uniqueThemes.forEach((slug, i) => {
       themeCentres[slug] = {
@@ -180,6 +181,21 @@ export default function ConnectionGraph() {
       .attr('fill-opacity', d => nodeOpacity(d))
       .attr('cursor', 'pointer')
       .attr('filter', d => d._depth === 2 ? 'url(#glow)' : null);
+
+    // ── Labels (hidden by default, shown when theme is active) ──
+    const labelSelection = nodeGroup.selectAll('text.label')
+      .data(nodes, d => d.id)
+      .join('text')
+      .attr('class', 'label')
+      .text(d => d.title)
+      .attr('font-family', "'Source Sans 3', system-ui, sans-serif")
+      .attr('font-size', '11px')
+      .attr('font-weight', 400)
+      .attr('fill', 'rgba(255,255,255,0.85)')
+      .attr('dx', d => nodeRadius(d) + 5)
+      .attr('dy', '0.35em')
+      .attr('pointer-events', 'none')
+      .attr('opacity', 0);
 
     // ── Interaction handlers ──
     nodeSelection
@@ -278,10 +294,10 @@ export default function ConnectionGraph() {
 
     // ── Simulation ──
     const simulation = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(edges).id(d => d.id).distance(80).strength(0.3))
-      .force('charge', d3.forceManyBody().strength(-100))
-      .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(d => nodeRadius(d) + 3))
+      .force('link', d3.forceLink(edges).id(d => d.id).distance(120).strength(0.2))
+      .force('charge', d3.forceManyBody().strength(-220))
+      .force('center', d3.forceCenter(width / 2, height / 2).strength(0.05))
+      .force('collision', d3.forceCollide().radius(d => nodeRadius(d) + 5))
       .force('cluster', forceCluster)
       .alphaDecay(0.02)
       .alphaMin(0.004) // never fully cools — keeps drift alive
@@ -301,6 +317,9 @@ export default function ConnectionGraph() {
       glowSelection
         .attr('cx', d => d.x)
         .attr('cy', d => d.y);
+      labelSelection
+        .attr('x', d => d.x)
+        .attr('y', d => d.y);
     }
 
     // ── Continuous drift animation ──
@@ -374,27 +393,39 @@ export default function ConnectionGraph() {
       .attr('stroke-opacity', term ? 0.01 : 0.05);
   }, [search, graphData]);
 
-  /* ── Theme flash highlight ── */
-  const flashTheme = useCallback((slug) => {
-    if (!svgRef.current) return;
+  /* ── Theme lock highlight ── */
+  const toggleTheme = useCallback((slug) => {
+    setActiveTheme(prev => prev === slug ? null : slug);
+  }, []);
+
+  // Apply active theme visuals
+  useEffect(() => {
+    if (!svgRef.current || !graphData) return;
     const svg = d3.select(svgRef.current);
+    const slug = activeTheme;
 
     svg.selectAll('circle.node')
-      .attr('fill-opacity', d => d.theme === slug ? 1 : 0.04);
+      .transition().duration(400)
+      .attr('fill-opacity', d => {
+        if (!slug) return d._depth === 0 ? 0.4 : d._depth === 1 ? 0.7 : 1.0;
+        return d.theme === slug ? 1 : 0.04;
+      });
     svg.selectAll('circle.glow')
-      .attr('fill-opacity', d => d.theme === slug ? 0.25 : 0.005);
+      .transition().duration(400)
+      .attr('fill-opacity', d => {
+        if (!slug) return d._depth === 2 ? 0.12 : d._depth === 1 ? 0.06 : 0.03;
+        return d.theme === slug ? 0.25 : 0.005;
+      });
     svg.selectAll('.edges line')
-      .attr('stroke-opacity', 0.01);
-
-    setTimeout(() => {
-      svg.selectAll('circle.node')
-        .attr('fill-opacity', d => d._depth === 0 ? 0.4 : d._depth === 1 ? 0.7 : 1.0);
-      svg.selectAll('circle.glow')
-        .attr('fill-opacity', d => d._depth === 2 ? 0.12 : d._depth === 1 ? 0.06 : 0.03);
-      svg.selectAll('.edges line')
-        .attr('stroke-opacity', 0.05);
-    }, 3000);
-  }, []);
+      .transition().duration(400)
+      .attr('stroke-opacity', slug ? 0.01 : 0.05);
+    svg.selectAll('text.label')
+      .transition().duration(400)
+      .attr('opacity', d => {
+        if (!slug) return 0;
+        return d.theme === slug ? 1 : 0;
+      });
+  }, [activeTheme, graphData]);
 
   const nodeCount = graphData?.nodes?.length || 0;
   const edgeCount = graphData?.edges?.length || 0;
@@ -490,12 +521,12 @@ export default function ConnectionGraph() {
             {orderedThemes.map(slug => (
               <button
                 key={slug}
-                onClick={() => flashTheme(slug)}
+                onClick={() => toggleTheme(slug)}
                 style={{
                   fontFamily: "'Source Sans 3', system-ui, sans-serif",
                   fontSize: '12px',
-                  fontWeight: 400,
-                  color: 'rgba(255,255,255,0.6)',
+                  fontWeight: activeTheme === slug ? 500 : 400,
+                  color: activeTheme === slug ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.6)',
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
