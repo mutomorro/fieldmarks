@@ -50,6 +50,20 @@ const entries = defineCollection({
   }),
 });
 
+// Curated collections - guided pathways through concept entries
+const collectionsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    order: z.number().describe('Display order on homepage (1-8)'),
+    entries: z.array(z.object({
+      slug: z.string(),
+      narrative: z.string(),
+    })),
+  }),
+});
+
 // Theme introductions - editorial essays for each cluster
 const themes = defineCollection({
   type: 'content',
@@ -61,4 +75,4 @@ const themes = defineCollection({
   }),
 });
 
-export const collections = { entries, themes };
+export const collections = { entries, themes, collections: collectionsCollection };

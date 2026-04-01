@@ -1,0 +1,220 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DotGrid from '../../components/DotGrid.jsx';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const collections = await getCollection('collections');
+  return collections.map((collection) => ({
+    params: { slug: collection.slug },
+    props: { collection },
+  }));
+}
+
+const { collection } = Astro.props;
+const { Content } = await collection.render();
+
+// Resolve entry slugs to full entry data
+const allEntries = await getCollection('entries');
+const entryMap = Object.fromEntries(allEntries.map(e => [e.slug, e]));
+
+// Resolve themes for entry cards
+const themes = await getCollection('themes');
+const themeMap = Object.fromEntries(themes.map(t => [t.slug, t]));
+---
+
+<Layout title={collection.data.title} description={collection.data.subtitle}>
+  <div class="max-w-content mx-auto px-6 md:px-12">
+
+    <!-- Breadcrumb -->
+    <div class="pt-24">
+      <div class="flex items-center gap-2 text-[14px] text-mt-mid/50 mb-8">
+        <a href="/" class="hover:text-mt-accent transition-colors">Home</a>
+        <span>/</span>
+        <a href="/collections" class="hover:text-mt-accent transition-colors">Collections</a>
+        <span>/</span>
+        <span class="text-mt-mid/80">{collection.data.title}</span>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="pt-8 pb-12 max-w-[800px]">
+      <p class="kicker mb-3" style="color: var(--accent);">Pathway</p>
+      <h1 style="color: var(--deep); font-size: clamp(44px, 5.5vw, 52px); font-weight: 400; line-height: 1.1; margin-bottom: 20px;">
+        {collection.data.title}
+      </h1>
+      <p class="text-[20px] leading-relaxed mb-8" style="color: var(--soft);">
+        {collection.data.subtitle}
+      </p>
+
+      <!-- Editorial introduction (rendered from markdown body) -->
+      <div class="prose prose-mt">
+        <Content />
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t mb-16" style="border-color: var(--border);"></div>
+
+    <!-- Pathway steps -->
+    {collection.data.entries.map((step, index) => {
+      const entry = entryMap[step.slug];
+      if (!entry) return null;
+      const theme = themeMap[entry.data.theme];
+
+      return (
+        <div class="step-row">
+
+          {/* Left: Step number + narrative */}
+          <div class="step-narrative">
+            <div class="step-number">
+              {String(index + 1).padStart(2, '0')}
+            </div>
+            <p class="text-[18px] leading-relaxed" style="color: var(--soft);">
+              {step.narrative}
+            </p>
+          </div>
+
+          {/* Right: Entry card */}
+          <a href={`/concept/${entry.slug}`} class="step-card">
+
+            {/* DotGrid illustration */}
+            <div class="step-card-illustration">
+              <DotGrid
+                seed={entry.data.dotGrid?.seed || 42}
+                variant={entry.data.dotGrid?.variant || 'default'}
+                width={380}
+                height={285}
+              />
+            </div>
+
+            {/* Card text */}
+            <div class="p-5">
+              {theme && (
+                <p class="text-[12px] font-medium uppercase tracking-wider mb-2"
+                   style={`color: ${theme.data.colour}`}>
+                  {theme.data.title}
+                </p>
+              )}
+              <h3 class="step-card-title">
+                {entry.data.title}
+              </h3>
+              <p class="text-[14px] leading-relaxed" style="color: var(--soft);">
+                {entry.data.oneLiner}
+              </p>
+            </div>
+          </a>
+
+        </div>
+      );
+    })}
+
+    <!-- End of pathway -->
+    <div class="pt-12 pb-16 max-w-[600px]" style="border-top: 1px solid var(--border);">
+      <h2 class="text-[24px] font-normal mb-4" style="color: var(--deep);">
+        Explore more
+      </h2>
+      <p class="text-[18px] leading-relaxed mb-6" style="color: var(--soft);">
+        These concepts connect to many others across the knowledge base.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/connections" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
+          See the full map →
+        </a>
+        <a href="/collections" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
+          Browse all collections →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  /* Prose styling for the editorial intro */
+  .prose-mt :global(p) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    color: #3D3D3D;
+  }
+
+  /* Step rows */
+  .step-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .step-row {
+      flex-direction: row;
+      gap: 4rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .step-narrative {
+    flex: 1;
+    min-width: 0;
+  }
+
+  @media (min-width: 768px) {
+    .step-narrative {
+      max-width: 55%;
+    }
+  }
+
+  .step-number {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    color: rgba(34, 28, 43, 0.12);
+    margin-bottom: 16px;
+  }
+
+  /* Entry card */
+  .step-card {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease;
+  }
+
+  @media (min-width: 768px) {
+    .step-card {
+      width: 45%;
+    }
+  }
+
+  .step-card:hover {
+    border-color: var(--border-hover);
+  }
+
+  .step-card-illustration {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--warm-bg);
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .step-card-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+
+  .step-card:hover .step-card-title {
+    color: var(--accent);
+  }
+</style>

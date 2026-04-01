@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allCollections = await getCollection('collections');
+const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout title="Collections" description="Guided pathways through systems thinking concepts, each framed around a recognisable situation.">
+  <section class="collections-page">
+    <div class="section-label">Pathways</div>
+    <h1 class="section-title">Common situations</h1>
+    <p class="section-intro">
+      Recognise a pattern? Each pathway guides you through the concepts
+      that explain what's happening - and what you can do about it.
+    </p>
+
+    <div class="collections-grid">
+      {sortedCollections.map((col) => (
+        <a href={`/collection/${col.slug}`} class="collection-card">
+          <h2 class="collection-title">{col.data.title}</h2>
+          <p class="collection-subtitle">{col.data.subtitle}</p>
+          <span class="collection-count">
+            {col.data.entries.length} concepts →
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .collections-page {
+    padding: 160px 48px 140px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: clamp(38px, 4.5vw, 60px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .section-intro {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--soft);
+    max-width: 540px;
+    margin-bottom: 80px;
+  }
+
+  .collections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+  }
+
+  .collection-card {
+    display: block;
+    padding: 36px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .collection-card:hover {
+    border-color: var(--border-hover);
+    background-color: var(--warm-bg);
+  }
+
+  .collection-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+
+  .collection-card:hover .collection-title {
+    color: var(--accent);
+  }
+
+  .collection-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--soft);
+    margin-bottom: 12px;
+  }
+
+  .collection-count {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .collections-page {
+      padding: 120px 24px 80px;
+    }
+    .collections-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

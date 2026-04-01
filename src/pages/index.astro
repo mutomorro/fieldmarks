@@ -5,10 +5,12 @@ import HeroGrid from '../components/HeroGrid.jsx';
 import DotGrid from '../components/DotGrid.jsx';
 import ThemeIcon from '../components/ThemeIcon.jsx';
 
-// Get all entries and themes
+// Get all entries, themes, and collections
 const allEntries = await getCollection('entries', ({ data }) => !data.draft);
 const allThemes = await getCollection('themes');
 const themes = allThemes.sort((a, b) => a.data.order - b.data.order);
+const allCollections = await getCollection('collections');
+const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.order);
 
 // Build a theme title lookup from slug
 const themeTitleBySlug: Record<string, string> = {};
@@ -63,6 +65,27 @@ for (const t of themes) {
           <div class="card-theme">{themeTitleBySlug[entry.data.theme] || entry.data.theme}</div>
           <div class="card-title">{entry.data.title}</div>
           <div class="card-oneliner">{entry.data.oneLiner}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ====== PATHWAYS ====== -->
+  <section class="pathways-section" id="pathways">
+    <div class="section-label">Pathways</div>
+    <h2 class="section-title">Common situations</h2>
+    <p class="section-intro">Recognise a pattern? Each pathway guides you through the concepts that explain what's happening - and what you can do about it.</p>
+
+    <div class="pathways-grid">
+      {sortedCollections.map((col) => (
+        <a href={`/collection/${col.slug}`} class="pathway-card">
+          <h3 class="pathway-title">{col.data.title}</h3>
+          <p class="pathway-subtitle">{col.data.subtitle}</p>
+          <span class="pathway-count">
+            {col.data.entries.length} concepts →
+          </span>
         </a>
       ))}
     </div>
@@ -293,6 +316,51 @@ for (const t of themes) {
     padding: 0 20px;
   }
 
+  /* ====== PATHWAYS ====== */
+  .pathways-section {
+    background: var(--white);
+  }
+  .pathways-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .pathway-card {
+    display: block;
+    padding: 36px;
+    border: 1px solid rgba(34, 28, 43, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+  }
+  .pathway-card:hover {
+    border-color: var(--accent);
+    background-color: var(--warm-bg);
+    transform: translateY(-3px);
+  }
+  .pathway-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  .pathway-card:hover .pathway-title {
+    color: var(--accent);
+  }
+  .pathway-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--soft);
+    margin-bottom: 12px;
+  }
+  .pathway-count {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
   /* ====== THEMES ====== */
   .themes-section {
     background: var(--white);
@@ -384,6 +452,7 @@ for (const t of themes) {
     .hero { padding: 100px 24px 60px; }
     section { padding: 80px 24px; }
     .concept-grid { grid-template-columns: 1fr; gap: 40px; }
+    .pathways-grid { grid-template-columns: 1fr; }
     .theme-grid { grid-template-columns: 1fr; }
   }
 </style>
