@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["diagnosis", "thinking", "patterns", "structure"]
 dotGrid:
   seed: 2638
-  variant: "default"
+  variant: "eventPatternStructure"
 related:
   - slug: "iceberg-model"
     note: "Event-Pattern-Structure is the iceberg model in action - the practice of diving below the visible event"

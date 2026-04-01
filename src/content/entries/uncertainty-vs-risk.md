@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["decision-making", "planning", "risk", "uncertainty"]
 dotGrid:
   seed: 4738
-  variant: "default"
+  variant: "uncertaintyRisk"
 related:
   - slug: "complexity-vs-complication"
     note: "Complicated systems generate risk (quantifiable). Complex systems generate uncertainty (not quantifiable)"

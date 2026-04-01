@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["resilience", "design", "efficiency", "risk"]
 dotGrid:
   seed: 3847
-  variant: "default"
+  variant: "redundancy"
 related:
   - slug: "resilience"
     note: "Redundancy is one of the primary building blocks of resilience - the spare capacity that absorbs shocks"

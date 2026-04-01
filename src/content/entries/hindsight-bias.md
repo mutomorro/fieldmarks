@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["bias", "prediction", "judgement", "cognition"]
 dotGrid:
   seed: 9174
-  variant: "default"
+  variant: "hindsightBias"
 related:
   - slug: "narrative-fallacy"
     note: "Hindsight bias feeds the narrative fallacy - once the ending is known, the story writes itself backward to make it seem inevitable"

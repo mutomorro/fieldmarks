@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["diagnosis", "thinking", "structure", "patterns"]
 dotGrid:
   seed: 6391
-  variant: "default"
+  variant: "icebergModel"
 related:
   - slug: "mental-models"
     note: "Mental models sit at the deepest level of the iceberg - the beliefs that shape the structures that produce the events"

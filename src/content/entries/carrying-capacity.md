@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["limits", "growth", "sustainability", "ecology"]
 dotGrid:
   seed: 4182
-  variant: "default"
+  variant: "carryingCapacity"
 related:
   - slug: "limits-to-growth"
     note: "Carrying capacity is the limit that limits-to-growth hits - the ceiling the system can't sustainably exceed"

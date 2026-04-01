@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["design", "structure", "creativity", "intervention"]
 dotGrid:
   seed: 5926
-  variant: "default"
+  variant: "constraints"
 related:
   - slug: "limits-to-growth"
     note: "Constraints are what limits to growth hits - every growing system eventually meets one"

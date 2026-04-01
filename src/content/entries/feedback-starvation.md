@@ -6,7 +6,7 @@ theme: "measurement-and-signals"
 tags: ["feedback", "information", "hierarchy", "failure"]
 dotGrid:
   seed: 8291
-  variant: "default"
+  variant: "feedbackStarvation"
 related:
   - slug: "feedback-loops"
     note: "Feedback starvation is what happens when feedback loops are broken - the system can't sense what's happening"

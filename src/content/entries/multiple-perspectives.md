@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["perspective", "complexity", "collaboration", "diagnosis"]
 dotGrid:
   seed: 6283
-  variant: "default"
+  variant: "multiplePerspectives"
 related:
   - slug: "boundary-critique"
     note: "Different perspectives draw different boundaries - each viewpoint defines the system differently"

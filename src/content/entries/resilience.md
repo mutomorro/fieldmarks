@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["resilience", "adaptation", "stability", "design"]
 dotGrid:
   seed: 4183
-  variant: "default"
+  variant: "resilience"
 related:
   - slug: "robustness-vs-resilience"
     note: "Robustness resists change; resilience absorbs it. Different strategies for different situations"

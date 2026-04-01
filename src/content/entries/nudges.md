@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["design", "behaviour", "decision-making", "intervention"]
 dotGrid:
   seed: 2158
-  variant: "default"
+  variant: "nudges"
 related:
   - slug: "catalytic-mechanisms"
     note: "Nudges and catalytic mechanisms both shape behaviour through structure, but nudges preserve choice while mechanisms can remove it"

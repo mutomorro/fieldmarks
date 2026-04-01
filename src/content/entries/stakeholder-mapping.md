@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["mapping", "power", "perspective", "planning"]
 dotGrid:
   seed: 8541
-  variant: "default"
+  variant: "stakeholderMapping"
 related:
   - slug: "boundary-critique"
     note: "Stakeholder mapping is boundary critique in practice - deciding who's inside the system and whose interests count"

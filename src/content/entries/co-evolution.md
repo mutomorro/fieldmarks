@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["adaptation", "change", "competition", "evolution"]
 dotGrid:
   seed: 8374
-  variant: "default"
+  variant: "coEvolution"
 related:
   - slug: "complex-adaptive-systems"
     note: "Co-evolution is what happens when complex adaptive systems interact - each one's adaptation changes the other's environment"

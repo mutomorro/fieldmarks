@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["complexity", "planning", "problem-solving", "design"]
 dotGrid:
   seed: 9453
-  variant: "default"
+  variant: "wickedProblems"
 related:
   - slug: "complexity-vs-complication"
     note: "Wicked problems live firmly in the complex domain - they can't be solved with complicated-domain tools"

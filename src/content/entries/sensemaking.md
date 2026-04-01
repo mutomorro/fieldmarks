@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["complexity", "decision-making", "diagnosis", "leadership"]
 dotGrid:
   seed: 3618
-  variant: "default"
+  variant: "sensemaking"
 related:
   - slug: "cynefin-framework"
     note: "Cynefin is a sensemaking framework - its first purpose is helping you understand what kind of situation you're in"

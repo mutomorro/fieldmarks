@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["change", "ecology", "recovery", "patterns"]
 dotGrid:
   seed: 8294
-  variant: "default"
+  variant: "succession"
 related:
   - slug: "adaptive-cycle"
     note: "Succession is the growth and reorganisation phases of the adaptive cycle - the predictable sequence after disturbance"

@@ -6,7 +6,7 @@ theme: "measurement-and-signals"
 tags: ["foresight", "change", "detection", "emergence"]
 dotGrid:
   seed: 2953
-  variant: "default"
+  variant: "weakSignals"
 related:
   - slug: "signal-vs-noise"
     note: "Weak signals are real signal buried in noise - the challenge is detecting them before they're obvious"

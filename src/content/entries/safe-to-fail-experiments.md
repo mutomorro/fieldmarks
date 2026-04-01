@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["intervention", "complexity", "experimentation", "learning"]
 dotGrid:
   seed: 3729
-  variant: "default"
+  variant: "safeToFail"
 related:
   - slug: "cynefin-framework"
     note: "Safe-to-fail experiments are the primary strategy in Cynefin's complex domain - probe, sense, respond"

@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["scale", "structure", "hierarchy", "boundaries"]
 dotGrid:
   seed: 4826
-  variant: "default"
+  variant: "nestedSystems"
 related:
   - slug: "panarchy"
     note: "Panarchy is nested systems in motion - each level going through its own adaptive cycle, affecting the others"

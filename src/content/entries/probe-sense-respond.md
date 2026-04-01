@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["complexity", "strategy", "experimentation", "practice"]
 dotGrid:
   seed: 3847
-  variant: "default"
+  variant: "probeSenseRespond"
 related:
   - slug: "cynefin-framework"
     note: "Probe-sense-respond is the prescribed approach for Cynefin's complex domain"

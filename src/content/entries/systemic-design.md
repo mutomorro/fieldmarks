@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["design", "intervention", "systems", "practice"]
 dotGrid:
   seed: 4592
-  variant: "default"
+  variant: "systemicDesign"
 related:
   - slug: "systems-mapping"
     note: "Systems mapping is a core tool of systemic design - making the system visible before designing the intervention"

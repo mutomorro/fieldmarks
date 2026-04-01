@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["decision-making", "groups", "bias", "failure"]
 dotGrid:
   seed: 7529
-  variant: "default"
+  variant: "groupthink"
 related:
   - slug: "multiple-perspectives"
     note: "Groupthink is the collapse of multiple perspectives into one - the group converges prematurely on a single view"

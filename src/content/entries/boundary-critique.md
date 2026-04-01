@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["boundaries", "power", "perspective", "critique"]
 dotGrid:
   seed: 4917
-  variant: "default"
+  variant: "boundaryCritique"
 related:
   - slug: "boundaries"
     note: "Boundary critique examines the choices made when drawing system boundaries - every boundary is a decision, not a fact"

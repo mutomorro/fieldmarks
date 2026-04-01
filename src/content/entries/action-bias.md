@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["bias", "decision-making", "intervention", "patience"]
 dotGrid:
   seed: 2749
-  variant: "default"
+  variant: "actionBias"
 related:
   - slug: "solutionism"
     note: "Action bias feeds solutionism - the urge to act prevents accepting that some situations need navigation, not fixing"

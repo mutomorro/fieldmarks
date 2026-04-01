@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["thinking", "planning", "consequences", "foresight"]
 dotGrid:
   seed: 3847
-  variant: "default"
+  variant: "secondOrderEffects"
 related:
   - slug: "intervention-side-effects"
     note: "Side effects are first-order ripples; second-order effects are what those ripples cause in turn"

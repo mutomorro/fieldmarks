@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["complexity", "planning", "diagnosis", "decision-making"]
 dotGrid:
   seed: 3194
-  variant: "default"
+  variant: "complexityComplication"
 related:
   - slug: "emergence"
     note: "Emergence is what makes complex systems complex - behaviour arises that can't be predicted from the parts"

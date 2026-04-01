@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["mapping", "participation", "collaboration", "practice"]
 dotGrid:
   seed: 7183
-  variant: "default"
+  variant: "participatoryMapping"
 related:
   - slug: "systems-mapping"
     note: "Participatory mapping is systems mapping done with the people inside the system - producing richer, more accurate maps"

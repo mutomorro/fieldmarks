@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["resilience", "diversity", "ecology", "design"]
 dotGrid:
   seed: 6428
-  variant: "default"
+  variant: "diversityStability"
 related:
   - slug: "resilience"
     note: "Diversity is one of the primary sources of resilience - more different parts means more ways to respond to disturbance"

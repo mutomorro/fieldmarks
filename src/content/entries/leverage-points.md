@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["intervention", "strategy", "change", "design"]
 dotGrid:
   seed: 4281
-  variant: "default"
+  variant: "leveragePoints"
 related:
   - slug: "feedback-loops"
     note: "Changing the gain or direction of a feedback loop is one of the most powerful leverage points"

@@ -6,7 +6,7 @@ theme: "measurement-and-signals"
 tags: ["measurement", "simplification", "gaming", "accuracy"]
 dotGrid:
   seed: 3862
-  variant: "default"
+  variant: "proxyMeasures"
 related:
   - slug: "goodharts-law"
     note: "Goodhart's Law is what happens when proxy measures become targets - people optimise the proxy, not the thing it represents"

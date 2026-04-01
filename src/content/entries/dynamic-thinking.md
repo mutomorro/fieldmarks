@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "time", "change", "planning"]
 dotGrid:
   seed: 6814
-  variant: "default"
+  variant: "dynamicThinking"
 related:
   - slug: "linear-thinking"
     note: "Dynamic thinking is the antidote to linear thinking - replacing the straight-line projection with a sense of how systems behave over time"

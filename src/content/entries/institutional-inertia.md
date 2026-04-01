@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["change", "organisations", "resistance", "structure"]
 dotGrid:
   seed: 4738
-  variant: "default"
+  variant: "institutionalInertia"
 related:
   - slug: "path-dependence"
     note: "Institutional inertia is path dependence at the organisational level - accumulated decisions constrain future movement"

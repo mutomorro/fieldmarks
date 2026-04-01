@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["analysis", "expertise", "planning", "practice"]
 dotGrid:
   seed: 9261
-  variant: "default"
+  variant: "senseAnalyseRespond"
 related:
   - slug: "cynefin-framework"
     note: "Sense-analyse-respond is the prescribed approach for Cynefin's complicated domain"

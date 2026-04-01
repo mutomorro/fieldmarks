@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["optimisation", "design", "trade-offs", "structure"]
 dotGrid:
   seed: 5173
-  variant: "default"
+  variant: "localGlobalOptimisation"
 related:
   - slug: "sub-optimisation"
     note: "Sub-optimisation is the pathology that results when local wins take priority over global performance"

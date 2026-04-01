@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["bias", "stories", "complexity", "explanation"]
 dotGrid:
   seed: 7183
-  variant: "default"
+  variant: "narrativeFallacy"
 related:
   - slug: "linear-thinking"
     note: "The narrative fallacy imposes linear causation on nonlinear events - turning a web of causes into a simple chain"

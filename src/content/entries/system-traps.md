@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["patterns", "failure-modes", "diagnosis", "structure"]
 dotGrid:
   seed: 8362
-  variant: "default"
+  variant: "systemTraps"
 related:
   - slug: "fixes-that-fail"
     note: "One of the most common system traps - the quick fix that makes the real problem worse"

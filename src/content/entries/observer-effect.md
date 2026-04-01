@@ -6,7 +6,7 @@ theme: "measurement-and-signals"
 tags: ["measurement", "behaviour", "observation", "bias"]
 dotGrid:
   seed: 4183
-  variant: "default"
+  variant: "observerEffect"
 related:
   - slug: "feedback-loops"
     note: "Observation creates a new feedback loop - the system senses it's being watched and adjusts its behaviour accordingly"

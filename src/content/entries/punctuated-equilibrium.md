@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["change", "evolution", "stability", "patterns"]
 dotGrid:
   seed: 4628
-  variant: "default"
+  variant: "punctuatedEquilibrium"
 related:
   - slug: "regime-shifts"
     note: "Regime shifts are the punctuation in punctuated equilibrium - the sudden breaks between long stable periods"

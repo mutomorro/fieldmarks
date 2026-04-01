@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["decision-making", "rationality", "pragmatism", "limits"]
 dotGrid:
   seed: 7361
-  variant: "default"
+  variant: "satisficing"
 related:
   - slug: "bounded-rationality"
     note: "Satisficing is the rational response to bounded rationality - optimal is unreachable, so good enough is the smart choice"

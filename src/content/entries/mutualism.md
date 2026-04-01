@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["relationships", "cooperation", "ecology", "design"]
 dotGrid:
   seed: 4726
-  variant: "default"
+  variant: "mutualism"
 related:
   - slug: "symbiosis"
     note: "Mutualism is the positive form of symbiosis - both parties are better off because of the relationship"

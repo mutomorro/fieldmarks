@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["change", "cycles", "scale", "complexity"]
 dotGrid:
   seed: 2916
-  variant: "default"
+  variant: "panarchy"
 related:
   - slug: "adaptive-cycle"
     note: "Panarchy is adaptive cycles at multiple scales - each level going through growth, conservation, release, and reorganisation"

@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["evaluation", "impact", "complexity", "change"]
 dotGrid:
   seed: 8647
-  variant: "default"
+  variant: "outcomeMapping"
 related:
   - slug: "theory-of-change"
     note: "Outcome mapping operationalises the theory of change by focusing on what changes in the people the programme influences"

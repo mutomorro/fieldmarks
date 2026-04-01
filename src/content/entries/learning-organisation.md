@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["learning", "organisations", "adaptation", "culture"]
 dotGrid:
   seed: 5294
-  variant: "default"
+  variant: "learningOrganisation"
 related:
   - slug: "double-loop-learning"
     note: "Double-loop learning is the mechanism that makes a learning organisation work - questioning assumptions, not just methods"

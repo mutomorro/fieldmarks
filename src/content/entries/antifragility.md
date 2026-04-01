@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["resilience", "adaptation", "growth", "stress"]
 dotGrid:
   seed: 5826
-  variant: "default"
+  variant: "antifragility"
 related:
   - slug: "resilience"
     note: "Resilience absorbs shocks and persists. Antifragility goes further - the system improves because of the shock"

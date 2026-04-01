@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["resilience", "design", "strategy", "adaptation"]
 dotGrid:
   seed: 7539
-  variant: "default"
+  variant: "robustnessResilience"
 related:
   - slug: "resilience"
     note: "Resilience absorbs disturbance and reorganises. Robustness prevents disturbance from getting through at all"

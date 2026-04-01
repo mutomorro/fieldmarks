@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["leadership", "organisations", "emergence", "adaptation"]
 dotGrid:
   seed: 2847
-  variant: "default"
+  variant: "distributedLeadership"
 related:
   - slug: "self-organisation"
     note: "Distributed leadership is self-organisation applied to how decisions get made and action gets taken"

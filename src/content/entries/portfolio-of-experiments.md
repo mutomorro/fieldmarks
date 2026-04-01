@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["experimentation", "strategy", "complexity", "learning"]
 dotGrid:
   seed: 3618
-  variant: "default"
+  variant: "portfolioExperiments"
 related:
   - slug: "safe-to-fail-experiments"
     note: "A portfolio of experiments is a collection of safe-to-fail probes - each one small, together they cover more ground"

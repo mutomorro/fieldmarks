@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["change", "governance", "long-term", "transitions"]
 dotGrid:
   seed: 8472
-  variant: "default"
+  variant: "transitionManagement"
 related:
   - slug: "adaptive-cycle"
     note: "Transition management works with the adaptive cycle - supporting the system's natural phases rather than fighting them"

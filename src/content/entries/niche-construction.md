@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["adaptation", "environment", "agency", "ecology"]
 dotGrid:
   seed: 3917
-  variant: "default"
+  variant: "nicheConstruction"
 related:
   - slug: "co-evolution"
     note: "Niche construction is one-directional co-evolution - the organism changes its environment, and the changed environment changes the selection pressures"

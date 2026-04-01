@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "blame", "structure", "diagnosis"]
 dotGrid:
   seed: 3716
-  variant: "default"
+  variant: "systemBlindness"
 related:
   - slug: "mental-models"
     note: "System blindness is often a mental model problem - the belief that outcomes are caused by individuals, not structures"

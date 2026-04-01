@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["ecology", "structure", "fragility", "design"]
 dotGrid:
   seed: 5841
-  variant: "default"
+  variant: "keystoneSpecies"
 related:
   - slug: "interconnections"
     note: "Keystone species matter because of their interconnections - they affect far more of the system than their size suggests"

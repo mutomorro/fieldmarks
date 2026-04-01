@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["relationships", "ecology", "interdependence", "design"]
 dotGrid:
   seed: 7293
-  variant: "default"
+  variant: "symbiosis"
 related:
   - slug: "co-evolution"
     note: "Symbiotic partners co-evolve - each adapts to the other, deepening the relationship over time"

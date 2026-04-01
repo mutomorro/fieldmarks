@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "bias", "complexity", "planning"]
 dotGrid:
   seed: 8542
-  variant: "default"
+  variant: "linearThinking"
 related:
   - slug: "nonlinearity"
     note: "Linear thinking is the failure to see nonlinearity - assuming the system responds proportionally when it doesn't"

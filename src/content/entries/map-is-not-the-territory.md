@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "models", "epistemology", "humility"]
 dotGrid:
   seed: 4293
-  variant: "default"
+  variant: "mapTerritory"
 related:
   - slug: "mental-models"
     note: "Every mental model is a map - a simplification that helps you navigate but never captures the full territory"

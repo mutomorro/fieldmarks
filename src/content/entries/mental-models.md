@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "assumptions", "perception", "change"]
 dotGrid:
   seed: 4827
-  variant: "default"
+  variant: "mentalModels"
 related:
   - slug: "system-blindness"
     note: "System blindness is what happens when mental models can't see structure - defaulting to individual blame"

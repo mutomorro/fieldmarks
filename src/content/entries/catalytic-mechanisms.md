@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["design", "incentives", "structure", "change"]
 dotGrid:
   seed: 7493
-  variant: "default"
+  variant: "catalyticMechanisms"
 related:
   - slug: "leverage-points"
     note: "Catalytic mechanisms are a form of high-leverage intervention - small structural changes with outsized effects"

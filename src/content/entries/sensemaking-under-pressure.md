@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["decision-making", "pressure", "expertise", "cognition"]
 dotGrid:
   seed: 3917
-  variant: "default"
+  variant: "sensemakingPressure"
 related:
   - slug: "sensemaking"
     note: "Sensemaking under pressure is the compressed, high-stakes version - pattern recognition replaces deliberate analysis"

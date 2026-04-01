@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["change", "transformation", "adaptation", "design"]
 dotGrid:
   seed: 5362
-  variant: "default"
+  variant: "transformability"
 related:
   - slug: "adaptive-capacity"
     note: "Transformability goes beyond adaptive capacity - not adjusting within the current system, but creating a new one"

@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["complexity", "prediction", "chaos", "uncertainty"]
 dotGrid:
   seed: 7162
-  variant: "default"
+  variant: "sensitivityInitialConditions"
 related:
   - slug: "nonlinearity"
     note: "Sensitivity to initial conditions is nonlinearity in the time dimension - small early differences amplified into large later ones"

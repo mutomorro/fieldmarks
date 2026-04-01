@@ -6,7 +6,7 @@ theme: "natural-metaphors"
 tags: ["relationships", "extraction", "ecology", "power"]
 dotGrid:
   seed: 9183
-  variant: "default"
+  variant: "parasitism"
 related:
   - slug: "symbiosis"
     note: "Parasitism is the extractive form of symbiosis - one party benefits, the other is weakened"

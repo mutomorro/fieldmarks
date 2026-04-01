@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["planning", "change", "impact", "strategy"]
 dotGrid:
   seed: 4295
-  variant: "default"
+  variant: "theoryOfChange"
 related:
   - slug: "linear-thinking"
     note: "Most theories of change are dangerously linear - if we do A, then B happens, then C. Real change isn't a chain"

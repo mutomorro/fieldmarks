@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["cognition", "complexity", "design", "thinking"]
 dotGrid:
   seed: 8362
-  variant: "default"
+  variant: "cognitiveLoad"
 related:
   - slug: "bounded-rationality"
     note: "Cognitive load is the mechanism behind bounded rationality - the bounds are set by how much the mind can process at once"

@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["leadership", "emergence", "facilitation", "complexity"]
 dotGrid:
   seed: 6193
-  variant: "default"
+  variant: "holdingSpace"
 related:
   - slug: "self-organisation"
     note: "Holding space creates conditions for self-organisation - order emerges when the container is right"

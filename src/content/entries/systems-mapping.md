@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["tools", "mapping", "visualisation", "diagnosis"]
 dotGrid:
   seed: 7429
-  variant: "default"
+  variant: "systemsMapping"
 related:
   - slug: "causal-loop-diagrams"
     note: "CLDs are one type of systems map - focused specifically on feedback loops and causal relationships"

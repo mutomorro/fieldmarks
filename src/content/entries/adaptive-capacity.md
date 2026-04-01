@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["adaptation", "resilience", "change", "capacity"]
 dotGrid:
   seed: 9274
-  variant: "default"
+  variant: "adaptiveCapacity"
 related:
   - slug: "resilience"
     note: "Adaptive capacity is what makes resilience possible - without the ability to adjust, a system can only break or resist"

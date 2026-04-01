@@ -6,7 +6,7 @@ theme: "measurement-and-signals"
 tags: ["measurement", "information", "decision-making", "statistics"]
 dotGrid:
   seed: 6147
-  variant: "default"
+  variant: "signalNoise"
 related:
   - slug: "feedback-loops"
     note: "A feedback loop is only useful if it carries signal - if it's mostly noise, the system responds to randomness"

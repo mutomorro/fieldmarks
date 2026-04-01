@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["scale", "growth", "design", "complexity"]
 dotGrid:
   seed: 8361
-  variant: "default"
+  variant: "scaleEffects"
 related:
   - slug: "nested-systems"
     note: "Nested systems mean that dynamics change at each scale - what works at one level may fail at the next"

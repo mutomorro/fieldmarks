@@ -6,7 +6,7 @@ theme: "human-dimensions"
 tags: ["bias", "reasoning", "beliefs", "cognition"]
 dotGrid:
   seed: 6482
-  variant: "default"
+  variant: "motivatedReasoning"
 related:
   - slug: "mental-models"
     note: "Motivated reasoning protects mental models from being updated - we seek evidence that confirms rather than challenges"

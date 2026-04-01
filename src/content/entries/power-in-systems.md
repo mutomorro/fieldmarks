@@ -6,7 +6,7 @@ theme: "boundaries-and-power"
 tags: ["power", "structure", "politics", "design"]
 dotGrid:
   seed: 3648
-  variant: "default"
+  variant: "powerInSystems"
 related:
   - slug: "boundary-critique"
     note: "Whoever draws the boundary holds power - they decide what counts as relevant and what's excluded"

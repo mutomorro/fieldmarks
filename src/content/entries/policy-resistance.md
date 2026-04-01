@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["intervention", "change", "feedback", "unintended-consequences"]
 dotGrid:
   seed: 5739
-  variant: "default"
+  variant: "policyResistance"
 related:
   - slug: "feedback-loops"
     note: "Policy resistance happens because multiple balancing loops pull the system back toward different actors' goals"

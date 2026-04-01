@@ -6,7 +6,7 @@ theme: "design-and-intervention"
 tags: ["intervention", "design", "simplicity", "learning"]
 dotGrid:
   seed: 2847
-  variant: "default"
+  variant: "minimumViableIntervention"
 related:
   - slug: "leverage-points"
     note: "A minimum viable intervention targets the leverage point - the place where small input produces disproportionate change"

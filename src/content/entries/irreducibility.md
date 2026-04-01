@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["complexity", "prediction", "simulation", "limits"]
 dotGrid:
   seed: 2956
-  variant: "default"
+  variant: "irreducibility"
 related:
   - slug: "complexity-vs-complication"
     note: "Irreducibility is what separates complex from complicated at the deepest level - complicated systems can be shortcut, complex ones often can't"

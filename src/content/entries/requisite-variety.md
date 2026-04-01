@@ -6,7 +6,7 @@ theme: "leverage-and-intervention"
 tags: ["complexity", "control", "adaptation", "design"]
 dotGrid:
   seed: 4617
-  variant: "default"
+  variant: "requisiteVariety"
 related:
   - slug: "feedback-loops"
     note: "Requisite variety determines whether a feedback loop can respond adequately - without enough variety, the loop can't correct effectively"
