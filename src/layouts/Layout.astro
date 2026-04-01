@@ -2,9 +2,10 @@
 interface Props {
   title: string;
   description?: string;
+  transparentNav?: boolean;
 }
 
-const { title, description = 'A practical guide to systems thinking for people who work in organisations.' } = Astro.props;
+const { title, description = 'A practical guide to systems thinking for people who work in organisations.', transparentNav = false } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -27,33 +28,33 @@ const year = new Date().getFullYear();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class:list={["min-h-screen flex flex-col", { "transparent-nav-page": transparentNav }]}>
 
     <!-- Navigation -->
-    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 py-5 transition-all duration-300" style="background: rgba(255,255,255,0);">
+    <nav id="main-nav" class:list={["fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 py-5 transition-all duration-300", { "nav-transparent": transparentNav }]} style="background: rgba(255,255,255,0);">
       <div class="flex items-center gap-2.5">
         <a href="/" class="flex items-center gap-2.5 no-underline">
-          <svg viewBox="0 0 26 26" fill="none" class="w-[26px] h-[26px]">
-            <rect x="1" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="10" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="19" y="1" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="1" y="10" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+          <svg viewBox="0 0 26 26" fill="none" class="w-[26px] h-[26px] nav-logo">
+            <rect x="1" y="1" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="10" y="1" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="19" y="1" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="1" y="10" width="5" height="5" fill="currentColor" opacity="0.5"/>
             <rect x="10" y="10" width="5" height="5" fill="#9B51E0"/>
-            <rect x="19" y="10" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="1" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="10" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
-            <rect x="19" y="19" width="5" height="5" fill="#221C2B" opacity="0.5"/>
+            <rect x="19" y="10" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="1" y="19" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="10" y="19" width="5" height="5" fill="currentColor" opacity="0.5"/>
+            <rect x="19" y="19" width="5" height="5" fill="currentColor" opacity="0.5"/>
           </svg>
-          <span class="text-[17px] font-normal tracking-[0.02em]" style="color: var(--deep);">Fieldmarks</span>
+          <span class="nav-title text-[17px] font-normal tracking-[0.02em]" style="color: var(--deep);">Fieldmarks</span>
         </a>
-        <span class="text-[14px] font-light hidden sm:inline" style="color: var(--soft);">by <a href="https://mutomorro.com" target="_blank" rel="noopener" class="no-underline transition-colors duration-200" style="color: var(--soft);">Mutomorro</a></span>
+        <span class="nav-byline text-[14px] font-light hidden sm:inline" style="color: var(--soft);">by <a href="https://mutomorro.com" target="_blank" rel="noopener" class="no-underline transition-colors duration-200" style="color: var(--soft);">Mutomorro</a></span>
       </div>
       <ul class="flex gap-8 list-none m-0 p-0">
-        <li><a href="/concepts" class="text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Concepts</a></li>
-        <li><a href="/collections" class="text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Collections</a></li>
-        <li><a href="/connections" class="text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Connections</a></li>
-        <li><a href="/about" class="text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">About</a></li>
-        <li><a href="/search" class="text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Search</a></li>
+        <li><a href="/concepts" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Concepts</a></li>
+        <li><a href="/collections" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Collections</a></li>
+        <li><a href="/connections" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Connections</a></li>
+        <li><a href="/about" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">About</a></li>
+        <li><a href="/search" class="nav-link text-[14px] font-normal no-underline transition-colors duration-200 hover:!text-[var(--deep)]" style="color: var(--soft);">Search</a></li>
       </ul>
     </nav>
 
@@ -125,6 +126,26 @@ const year = new Date().getFullYear();
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
+
+  /* Transparent nav for immersive pages (connections) */
+  nav.nav-transparent {
+    background: transparent !important;
+  }
+  nav.nav-transparent .nav-logo { color: rgba(255,255,255,0.5); }
+  nav.nav-transparent .nav-title { color: rgba(255,255,255,0.9) !important; }
+  nav.nav-transparent .nav-byline,
+  nav.nav-transparent .nav-byline a { color: rgba(255,255,255,0.4) !important; }
+  nav.nav-transparent .nav-link { color: rgba(255,255,255,0.5) !important; }
+  nav.nav-transparent .nav-link:hover { color: rgba(255,255,255,0.9) !important; }
+  nav.nav-transparent.scrolled {
+    background: rgba(17, 15, 24, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* Hide footer on transparent-nav (immersive) pages */
+  .transparent-nav-page .footer { display: none; }
 
   /* ====== FOOTER ====== */
   .footer {
