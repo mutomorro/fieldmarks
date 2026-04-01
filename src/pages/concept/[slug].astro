@@ -84,7 +84,6 @@ const theme = themes.find(t => t.slug === entry.data.theme);
       <div class="w-full md:w-[320px] lg:w-[380px] flex-shrink-0">
         <div class="w-full aspect-[4/3]">
           <DotGrid
-            client:load
             seed={entry.data.dotGrid?.seed || 42}
             variant={entry.data.dotGrid?.variant || 'default'}
           />
