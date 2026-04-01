@@ -6,7 +6,7 @@ theme: "complexity-and-uncertainty"
 tags: ["decision-making", "sense-making", "complexity", "strategy"]
 dotGrid:
   seed: 7826
-  variant: "subOptimisation"
+  variant: "cynefin"
 related:
   - slug: "complexity-vs-complication"
     note: "Cynefin builds directly on the distinction between complicated and complex - and adds more domains"

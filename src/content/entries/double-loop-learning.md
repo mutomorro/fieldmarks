@@ -6,7 +6,7 @@ theme: "organisational-systems"
 tags: ["learning", "assumptions", "adaptation", "thinking"]
 dotGrid:
   seed: 8147
-  variant: "feedbackLoop"
+  variant: "doubleLoopLearning"
 related:
   - slug: "learning-organisation"
     note: "Double-loop learning is the mechanism that makes a learning organisation genuinely adaptive"

@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["tools", "mapping", "feedback", "visualisation"]
 dotGrid:
   seed: 5184
-  variant: "feedbackLoop"
+  variant: "causalLoopDiagrams"
 related:
   - slug: "feedback-loops"
     note: "Causal loop diagrams exist to make feedback loops visible - they're the notation system for the concept"

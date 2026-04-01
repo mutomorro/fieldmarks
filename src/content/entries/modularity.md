@@ -6,7 +6,7 @@ theme: "resilience-and-change"
 tags: ["design", "resilience", "structure", "architecture"]
 dotGrid:
   seed: 6185
-  variant: "subOptimisation"
+  variant: "modularity"
 related:
   - slug: "resilience"
     note: "Modularity is a key design principle for resilience - failure in one module doesn't cascade to the rest"

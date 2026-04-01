@@ -210,6 +210,11 @@ function applyVariant(variant, ctx) {
     case 'actionBias': return variantActionBias(ctx);
     case 'narrativeFallacy': return variantNarrativeFallacy(ctx);
     case 'hindsightBias': return variantHindsightBias(ctx);
+    case 'cynefin': return variantCynefin(ctx);
+    case 'reductionism': return variantReductionism(ctx);
+    case 'causalLoopDiagrams': return variantCausalLoopDiagrams(ctx);
+    case 'modularity': return variantModularity(ctx);
+    case 'doubleLoopLearning': return variantDoubleLoopLearning(ctx);
     default: return variantDefault(ctx);
   }
 }
@@ -865,27 +870,49 @@ function variantBuffers(ctx) {
 function variantSCurves(ctx) {
   const { baseX, baseY, nx, ny, n } = ctx;
 
-  // Sigmoid function: maps nx to 0–1 with S-shape
-  const steepness = 10;
-  const midpoint = 0.45;
+  // S-curve boundary: maps nx to a vertical position (0=bottom, 1=top)
+  const steepness = 12;
+  const midpoint = 0.5;
   const sigmoid = 1 / (1 + Math.exp(-steepness * (nx - midpoint)));
 
-  // Marks rise from bottom to top following the S-curve
-  // "height" determines vertical position shift
-  const rise = sigmoid * 8;
-  const sizeGrowth = sigmoid * 2;
-  const opacityGrowth = sigmoid * 0.35;
+  // The curve line in normalised y-space (inverted: 0=top, 1=bottom)
+  const curveLine = 1 - sigmoid;
 
-  // Inflection zone: where the curve is steepest
-  const inflectionDist = Math.abs(nx - midpoint);
-  const atInflection = inflectionDist < 0.08;
+  // Distance from mark to the curve boundary
+  const belowCurve = ny > curveLine;
 
+  // Purple at inflection point (steepest part of curve)
+  const atInflection = Math.abs(nx - midpoint) < 0.06 && Math.abs(ny - curveLine) < 0.06;
+
+  if (atInflection) {
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 1.2,
+      opacity: 0.88,
+      colour: ACCENT,
+    };
+  }
+
+  if (belowCurve) {
+    // Below curve: established growth — full, strong
+    return {
+      x: baseX + n.dx * 0.4,
+      y: baseY + n.dy * 0.4,
+      size: MARK_BASE + 0.8,
+      opacity: 0.55 + n.o * 0.15,
+      colour: DEEP,
+    };
+  }
+
+  // Above curve: where growth hasn't reached — small, faint
+  const distAbove = (curveLine - ny) / Math.max(curveLine, 0.01);
   return {
-    x: baseX + n.dx * 1.2,
-    y: baseY - rise + n.dy * 1.2,
-    size: MARK_BASE + sizeGrowth + (n.s - 0.5) * 0.6,
-    opacity: clamp(0.2 + opacityGrowth + n.o * 0.2, 0.1, 0.85),
-    colour: atInflection ? ACCENT : DEEP,
+    x: baseX + n.dx * 1,
+    y: baseY + n.dy * 1,
+    size: Math.max(1, MARK_BASE * (1 - distAbove * 0.5)),
+    opacity: Math.max(0.05, 0.2 - distAbove * 0.15 + n.o * 0.05),
+    colour: DEEP,
   };
 }
 
@@ -1621,12 +1648,12 @@ function variantComplexityComplication(ctx) {
 function variantWickedProblems(ctx) {
   const { baseX, baseY, nx, ny, n } = ctx;
 
-  // 4 disturbance origins
+  // 4 disturbance origins spread across the full grid
   const origins = [
-    { x: 0.2, y: 0.3, fx: -1, fy: 0, scale: 1 },
-    { x: 0.7, y: 0.25, fx: 0, fy: -1, scale: 0.8 },
-    { x: 0.5, y: 0.7, fx: 1, fy: 0.5, scale: 1.1 },
-    { x: 0.85, y: 0.6, fx: -0.5, fy: 1, scale: 0.7 },
+    { x: 0.18, y: 0.25, fx: -1, fy: -0.5, scale: 1.2 },
+    { x: 0.75, y: 0.2, fx: 0.3, fy: -1, scale: 1.0 },
+    { x: 0.4, y: 0.7, fx: 1, fy: 0.5, scale: 1.1 },
+    { x: 0.85, y: 0.7, fx: -0.7, fy: 0.8, scale: 0.9 },
   ];
 
   let totalDx = 0, totalDy = 0, totalSize = 0;
@@ -1635,18 +1662,23 @@ function variantWickedProblems(ctx) {
   for (const o of origins) {
     const d = dist(nx, ny, o.x, o.y);
     if (d < 0.05) isPurple = true;
-    const influence = Math.max(0, 1 - d / 0.45);
-    const strength = influence * influence * 8 * o.scale;
+    // Much wider influence radius — covers whole grid
+    const influence = Math.max(0, 1 - d / 0.7);
+    const strength = influence * influence * 10 * o.scale;
     totalDx += o.fx * strength;
     totalDy += o.fy * strength;
-    totalSize += influence * 0.8;
+    totalSize += influence * 0.6;
   }
 
+  // Add baseline displacement so nowhere is undisturbed
+  totalDx += n.dx * 2;
+  totalDy += n.dy * 2;
+
   return {
-    x: baseX + totalDx + n.dx * 1.5,
-    y: baseY + totalDy + n.dy * 1.5,
-    size: MARK_BASE + totalSize + (n.s - 0.5) * 0.5,
-    opacity: clamp(0.25 + n.o * 0.3 + Math.min(totalSize, 1) * 0.2, 0.12, isPurple ? 0.9 : 0.8),
+    x: baseX + totalDx,
+    y: baseY + totalDy,
+    size: MARK_BASE + Math.min(totalSize, 2.5) + (n.s - 0.5) * 0.5,
+    opacity: clamp(0.25 + n.o * 0.25 + Math.min(totalSize, 1.5) * 0.15, 0.12, isPurple ? 0.9 : 0.75),
     colour: isPurple ? ACCENT : DEEP,
   };
 }
@@ -4027,6 +4059,300 @@ function variantHindsightBias(ctx) {
     y: baseY + n.dy * 1,
     size: MARK_BASE + (n.s - 0.5) * 0.4,
     opacity: 0.3 + n.o * 0.2,
+    colour: DEEP,
+  };
+}
+
+// --- Cynefin Framework ---
+// Four quadrants: Clear (ordered), Complicated (intricate), Complex (organic), Chaotic (scattered).
+function variantCynefin(ctx) {
+  const { baseX, baseY, nx, ny, n, c, r } = ctx;
+
+  const isLeft = nx < 0.48;
+  const isTop = ny < 0.48;
+
+  // Purple along quadrant borders
+  const onBorder = (Math.abs(nx - 0.48) < 0.025 || Math.abs(ny - 0.48) < 0.03);
+  if (onBorder) {
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 0.6,
+      opacity: 0.8,
+      colour: ACCENT,
+    };
+  }
+
+  if (isTop && isLeft) {
+    // Clear: perfectly regular, uniform
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 0.3,
+      opacity: 0.55 + n.o * 0.1,
+      colour: DEEP,
+    };
+  }
+
+  if (isTop && !isLeft) {
+    // Complicated: orderly but varied sizes (structured precision)
+    const pattern = ((c % 3) + (r % 2)) / 4;
+    return {
+      x: baseX + n.dx * 0.3,
+      y: baseY + n.dy * 0.3,
+      size: MARK_BASE + pattern * 2.5,
+      opacity: 0.4 + pattern * 0.25 + n.o * 0.08,
+      colour: DEEP,
+    };
+  }
+
+  if (!isTop && isLeft) {
+    // Complex: organic displacement, clustering, alive
+    const cluster = Math.sin(nx * 14 + n.extra * 10) * Math.cos(ny * 12 + n.s * 8);
+    return {
+      x: baseX + n.dx * 4 + cluster * 3,
+      y: baseY + n.dy * 3 + Math.sin(n.extra * 15) * 2,
+      size: MARK_BASE + n.s * 1.8,
+      opacity: clamp(0.25 + n.o * 0.35, 0.12, 0.7),
+      colour: DEEP,
+    };
+  }
+
+  // Chaotic: scattered wildly, no pattern
+  return {
+    x: baseX + n.dx * 8,
+    y: baseY + n.dy * 7,
+    size: MARK_BASE + (n.s - 0.3) * 3,
+    opacity: clamp(0.15 + n.o * 0.35, 0.06, 0.65),
+    colour: DEEP,
+  };
+}
+
+// --- Reductionism ---
+// Left: connected whole. Rightward: sliced into isolated fragments with gaps. Purple at cut lines.
+function variantReductionism(ctx) {
+  const { baseX, baseY, nx, ny, n, c } = ctx;
+
+  // Define cut positions (vertical slices that widen toward the right)
+  const cuts = [0.28, 0.48, 0.65, 0.8];
+  const cutWidth = 0.025;
+
+  // Check if mark is on a cut line (gap widens toward right)
+  for (let i = 0; i < cuts.length; i++) {
+    const cutX = cuts[i];
+    const gapWidth = cutWidth + i * 0.01;
+    if (Math.abs(nx - cutX) < gapWidth) {
+      // Purple at the cut lines
+      if (Math.abs(nx - cutX) < gapWidth * 0.4) {
+        return { x: baseX, y: baseY, size: 0, opacity: 0, colour: DEEP };
+      }
+      return {
+        x: baseX,
+        y: baseY,
+        size: MARK_BASE + 0.5,
+        opacity: 0.75,
+        colour: ACCENT,
+      };
+    }
+  }
+
+  // Left side: connected, regular whole
+  if (nx < cuts[0] - cutWidth) {
+    return {
+      x: baseX + n.dx * 0.3,
+      y: baseY + n.dy * 0.3,
+      size: MARK_BASE + 0.3,
+      opacity: 0.5 + n.o * 0.15,
+      colour: DEEP,
+    };
+  }
+
+  // Fragments: internally perfect but isolated
+  return {
+    x: baseX + n.dx * 0.2,
+    y: baseY + n.dy * 0.2,
+    size: MARK_BASE + 0.3,
+    opacity: 0.5 + n.o * 0.12,
+    colour: DEEP,
+  };
+}
+
+// --- Causal Loop Diagrams ---
+// 2-3 oval pathways traced through the grid. Marks on paths pulled into alignment. Purple at nodes.
+function variantCausalLoopDiagrams(ctx) {
+  const { baseX, baseY, nx, ny, n } = ctx;
+
+  // Define loop paths as ellipses
+  const loops = [
+    { cx: 0.35, cy: 0.35, rx: 0.2, ry: 0.18 },
+    { cx: 0.6, cy: 0.55, rx: 0.22, ry: 0.2 },
+    { cx: 0.45, cy: 0.65, rx: 0.15, ry: 0.12 },
+  ];
+
+  // Node positions where loops connect
+  const nodes = [
+    { x: 0.45, y: 0.35 },
+    { x: 0.5, y: 0.48 },
+    { x: 0.38, y: 0.55 },
+  ];
+
+  let minLoopDist = 1;
+  for (const loop of loops) {
+    // Distance from point to ellipse perimeter (approximate)
+    const dx = (nx - loop.cx) / loop.rx;
+    const dy = (ny - loop.cy) / loop.ry;
+    const ellipseDist = Math.abs(Math.sqrt(dx * dx + dy * dy) - 1) * Math.min(loop.rx, loop.ry);
+    if (ellipseDist < minLoopDist) minLoopDist = ellipseDist;
+  }
+
+  // Check if at a node
+  let atNode = false;
+  for (const node of nodes) {
+    if (dist(nx, ny, node.x, node.y) < 0.04) atNode = true;
+  }
+
+  if (atNode) {
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 1.5,
+      opacity: 0.9,
+      colour: ACCENT,
+    };
+  }
+
+  // On a loop path: pulled into alignment
+  const onPath = minLoopDist < 0.04;
+  const nearPath = minLoopDist < 0.08;
+  const pathPull = nearPath ? smoothstep(0.08, 0, minLoopDist) : 0;
+
+  return {
+    x: baseX + n.dx * (1.2 - pathPull * 1),
+    y: baseY + n.dy * (1.2 - pathPull * 1),
+    size: MARK_BASE + pathPull * 1 + (n.s - 0.5) * 0.3,
+    opacity: clamp(0.3 + n.o * 0.2 + pathPull * 0.3, 0.2, onPath ? 0.75 : 0.6),
+    colour: DEEP,
+  };
+}
+
+// --- Modularity ---
+// 4-5 clusters connected by thin bridges. One cluster failed. Purple on bridges.
+function variantModularity(ctx) {
+  const { baseX, baseY, nx, ny, n } = ctx;
+
+  // Define modules
+  const modules = [
+    { x: 0.15, y: 0.25, w: 0.18, h: 0.2, failed: false },
+    { x: 0.55, y: 0.2, w: 0.18, h: 0.2, failed: false },
+    { x: 0.8, y: 0.2, w: 0.14, h: 0.18, failed: true },
+    { x: 0.2, y: 0.65, w: 0.2, h: 0.2, failed: false },
+    { x: 0.6, y: 0.65, w: 0.18, h: 0.2, failed: false },
+  ];
+
+  // Bridges between adjacent modules
+  const bridges = [
+    { x0: 0.24, y0: 0.25, x1: 0.46, y1: 0.22 },
+    { x0: 0.64, y0: 0.22, x1: 0.73, y1: 0.22 },
+    { x0: 0.2, y0: 0.45, x1: 0.2, y1: 0.55 },
+    { x0: 0.55, y0: 0.4, x1: 0.55, y1: 0.55 },
+    { x0: 0.3, y0: 0.7, x1: 0.51, y1: 0.7 },
+  ];
+
+  // Check if on a bridge
+  let onBridge = false;
+  for (const b of bridges) {
+    const dx = b.x1 - b.x0, dy = b.y1 - b.y0;
+    const len2 = dx * dx + dy * dy;
+    const t = clamp(((nx - b.x0) * dx + (ny - b.y0) * dy) / len2, 0, 1);
+    const projX = b.x0 + t * dx, projY = b.y0 + t * dy;
+    if (dist(nx, ny, projX, projY) < 0.03) onBridge = true;
+  }
+
+  if (onBridge) {
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 0.5,
+      opacity: 0.8,
+      colour: ACCENT,
+    };
+  }
+
+  // Check if inside a module
+  for (const m of modules) {
+    if (Math.abs(nx - m.x) < m.w / 2 && Math.abs(ny - m.y) < m.h / 2) {
+      if (m.failed) {
+        // Failed module: faded, displaced, disrupted
+        return {
+          x: baseX + n.dx * 5,
+          y: baseY + n.dy * 4,
+          size: MARK_BASE + (n.s - 0.5) * 1.5,
+          opacity: clamp(0.08 + n.o * 0.1, 0.04, 0.2),
+          colour: DEEP,
+        };
+      }
+      // Healthy module: regular
+      return {
+        x: baseX + n.dx * 0.3,
+        y: baseY + n.dy * 0.3,
+        size: MARK_BASE + 0.3,
+        opacity: 0.5 + n.o * 0.15,
+        colour: DEEP,
+      };
+    }
+  }
+
+  // Between modules: empty/sparse
+  return {
+    x: baseX + n.dx * 1.5,
+    y: baseY + n.dy * 1.5,
+    size: MARK_BASE * 0.6,
+    opacity: 0.12 + n.o * 0.08,
+    colour: DEEP,
+  };
+}
+
+// --- Double-Loop Learning ---
+// Left: errors correct toward regular grid (first loop). Right: shifts to a new different pattern (second loop).
+function variantDoubleLoopLearning(ctx) {
+  const { baseX, baseY, nx, ny, n } = ctx;
+
+  // Transition point
+  const transition = 0.5;
+  const isPurple = Math.abs(nx - transition) < 0.04;
+
+  if (isPurple) {
+    return {
+      x: baseX,
+      y: baseY,
+      size: MARK_BASE + 1.2,
+      opacity: 0.88,
+      colour: ACCENT,
+    };
+  }
+
+  if (nx < transition) {
+    // First loop: errors correcting toward regular grid
+    const error = Math.pow(1 - nx / transition, 2);
+    return {
+      x: baseX + n.dx * error * 8,
+      y: baseY + n.dy * error * 6,
+      size: MARK_BASE + error * 1.2 + (n.s - 0.5) * error * 0.5,
+      opacity: clamp(0.3 + n.o * 0.2 + (1 - error) * 0.15, 0.15, 0.7),
+      colour: DEEP,
+    };
+  }
+
+  // Second loop: a fundamentally different pattern (diagonal alignment, different spacing)
+  const newPhase = (nx - transition) / (1 - transition);
+  const diagWave = Math.sin((nx + ny) * 12) * 4 * newPhase;
+  const newSpacing = Math.cos((nx - ny) * 8) * 2 * newPhase;
+
+  return {
+    x: baseX + diagWave + n.dx * 0.3,
+    y: baseY + newSpacing + n.dy * 0.3,
+    size: MARK_BASE + 0.5 + newPhase * 0.8,
+    opacity: clamp(0.35 + n.o * 0.2 + newPhase * 0.1, 0.2, 0.7),
     colour: DEEP,
   };
 }

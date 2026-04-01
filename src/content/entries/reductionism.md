@@ -6,7 +6,7 @@ theme: "mental-models"
 tags: ["thinking", "analysis", "complexity", "science"]
 dotGrid:
   seed: 9147
-  variant: "subOptimisation"
+  variant: "reductionism"
 related:
   - slug: "complexity-vs-complication"
     note: "Reductionism works for complicated systems (breakable into parts) and fails for complex ones (where the whole can't be reassembled from parts)"
