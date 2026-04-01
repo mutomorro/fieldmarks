@@ -19,7 +19,7 @@ export default {
         // Homepage v2 tokens
         'fm-deep': '#221C2B',
         'fm-mid': '#423B49',
-        'fm-soft': '#9A9399',
+        'fm-soft': '#6B6577',
         'fm-accent': '#9B51E0',
         'fm-warm-bg': '#FAF9F7',
 

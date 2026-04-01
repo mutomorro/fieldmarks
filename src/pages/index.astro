@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import HeroGrid from '../components/HeroGrid.jsx';
+import HeroGraph from '../components/HeroGraph.jsx';
 import DotGrid from '../components/DotGrid.jsx';
 import ThemeIcon from '../components/ThemeIcon.jsx';
 
@@ -12,10 +12,37 @@ const themes = allThemes.sort((a, b) => a.data.order - b.data.order);
 const allCollections = await getCollection('collections');
 const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.order);
 
-// Build a theme title lookup from slug
+// Separate core-building-blocks from other themes
+const coreTheme = themes.find(t => t.slug === 'core-building-blocks');
+const otherThemes = themes.filter(t => t.slug !== 'core-building-blocks');
+
+// Get core building blocks entries
+const coreEntries = allEntries
+  .filter(e => e.data.theme === 'core-building-blocks')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Build theme lookup
 const themeTitleBySlug: Record<string, string> = {};
 for (const t of themes) {
   themeTitleBySlug[t.slug] = t.data.title;
+}
+
+// Featured concepts: top 6 by connectionCount from graph-data.json
+import graphData from '../../public/graph-data.json';
+const topNodeIds = [...graphData.nodes]
+  .sort((a, b) => (b.connectionCount || 0) - (a.connectionCount || 0))
+  .slice(0, 6)
+  .map(n => n.id);
+
+const entryBySlug = Object.fromEntries(allEntries.map(e => [e.slug, e]));
+const featuredEntries = topNodeIds
+  .map(id => entryBySlug[id])
+  .filter(Boolean);
+
+// Get connectionCount lookup
+const connectionCountBySlug: Record<string, number> = {};
+for (const n of graphData.nodes) {
+  connectionCountBySlug[n.id] = n.connectionCount || 0;
 }
 ---
 
@@ -23,32 +50,116 @@ for (const t of themes) {
 
   <!-- ====== HERO ====== -->
   <section class="hero">
-    <div data-hero-grid class="hero-grid-wrapper">
-      <HeroGrid client:only="react" />
+    <div class="hero-graph-wrapper">
+      <HeroGraph client:only="react" />
     </div>
     <div class="hero-content">
       <h1>A field guide to<br />systems thinking</h1>
       <p>How things connect. Why they behave the way they do. And where to find the leverage for change.</p>
-      <a href="#discover" class="hero-cta">
-        Start exploring
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 transition-transform duration-300">
-          <path d="M8 3v10M4 9l4 4 4-4"/>
-        </svg>
-      </a>
+      <div class="hero-ctas">
+        <a href="#themes" class="hero-cta">
+          Start exploring
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
+            <path d="M8 3v10M4 9l4 4 4-4"/>
+          </svg>
+        </a>
+        <a href="/connections" class="hero-cta">
+          Explore the connections
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="scroll-hint"></div>
   </section>
 
   <hr class="section-divider" />
 
-  <!-- ====== DISCOVER ====== -->
-  <section class="discover" id="discover">
-    <div class="section-label">Explore</div>
-    <h2 class="section-title">Every system tells<br />a story</h2>
-    <p class="section-intro">Systems behave in patterns - and once you can name them, you start seeing them everywhere. Each concept here is a building block for understanding how things connect, why they resist change, and where to find the leverage.</p>
+  <!-- ====== THEMES ====== -->
+  <section class="themes-section" id="themes">
+    <div class="section-label">Browse by theme</div>
+    <h2 class="section-title">13 ways into<br />the territory</h2>
+    <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
 
-    <div class="concept-grid">
-      {allEntries.map((entry) => (
+    <div class="themes-grid">
+      <!-- Left column: Core Building Blocks (large) -->
+      <div class="core-card">
+        <div class="core-start-label">Start here</div>
+        <div class="core-icon">
+          <ThemeIcon slug="core-building-blocks" />
+        </div>
+        <h3 class="core-title">Core building blocks</h3>
+        <p class="core-desc">The foundations everything else builds on. Start here if you're new to systems thinking.</p>
+        <a href="/theme/core-building-blocks" class="core-cta">See all building blocks &rarr;</a>
+        <ul class="core-links">
+          {coreEntries.map(entry => (
+            <li>
+              <a href={`/concept/${entry.slug}`} class="core-link">
+                {entry.data.title}
+                <span class="core-arrow">&rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Right 3 columns: Other 12 themes -->
+      {otherThemes.map((theme) => (
+        <a href={`/theme/${theme.slug}`} class="theme-card">
+          <div class="theme-icon">
+            <ThemeIcon slug={theme.slug} />
+          </div>
+          <div class="theme-name">{theme.data.title}</div>
+          <div class="theme-desc">{theme.data.subtitle}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ====== PATHWAYS ====== -->
+  <section class="pathways-section" id="pathways">
+    <div class="section-label">Guided pathways</div>
+    <h2 class="section-title">Start from a situation<br />you recognise</h2>
+    <p class="section-intro">Each pathway walks you through a set of connected concepts, framed around something you might be noticing in your organisation right now.</p>
+
+    <div class="pathways-scroll-wrapper">
+      <div class="pathways-scroll" id="pathways-scroll">
+        {sortedCollections.map((col, i) => (
+          <a href={`/collection/${col.slug}`} class="pathway-card">
+            <div class="pathway-number">Pathway {i + 1}</div>
+            <div class="pathway-title">"{col.data.title}"</div>
+            <div class="pathway-count">
+              <span class="pathway-dot"></span>
+              {col.data.entries.length} concepts
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="pathways-fade"></div>
+    </div>
+
+    <div class="pathways-footer">
+      <div class="pathways-dots" id="pathways-dots">
+        {sortedCollections.map((_, i) => (
+          <span class:list={["dot", { active: i === 0 }]} data-index={i}></span>
+        ))}
+      </div>
+      <a href="/collections" class="see-all-link">See all collections &rarr;</a>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ====== FEATURED CONCEPTS ====== -->
+  <section class="featured-section" id="featured">
+    <div class="section-label">Explore</div>
+    <h2 class="section-title">Where the threads converge</h2>
+    <p class="section-intro">The concepts that connect to the most others - the ideas at the heart of the network.</p>
+
+    <div class="featured-grid">
+      {featuredEntries.map((entry) => (
         <a href={`/concept/${entry.slug}`} class="concept-card">
           <div class="card-illustration">
             {entry.data.dotGrid ? (
@@ -65,90 +176,35 @@ for (const t of themes) {
           <div class="card-theme">{themeTitleBySlug[entry.data.theme] || entry.data.theme}</div>
           <div class="card-title">{entry.data.title}</div>
           <div class="card-oneliner">{entry.data.oneLiner}</div>
+          <div class="card-connections">{connectionCountBySlug[entry.slug] || 0} connections</div>
         </a>
       ))}
     </div>
-  </section>
 
-  <hr class="section-divider" />
-
-  <!-- ====== PATHWAYS ====== -->
-  <section class="pathways-section" id="pathways">
-    <div class="section-label">Pathways</div>
-    <h2 class="section-title">Common situations</h2>
-    <p class="section-intro">Recognise a pattern? Each pathway guides you through the concepts that explain what's happening - and what you can do about it.</p>
-
-    <div class="pathways-grid">
-      {sortedCollections.map((col) => (
-        <a href={`/collection/${col.slug}`} class="pathway-card">
-          <h3 class="pathway-title">{col.data.title}</h3>
-          <p class="pathway-subtitle">{col.data.subtitle}</p>
-          <span class="pathway-count">
-            {col.data.entries.length} concepts →
-          </span>
-        </a>
-      ))}
+    <div class="see-all-wrapper">
+      <a href="/concepts" class="see-all-link">See all concepts &rarr;</a>
     </div>
-  </section>
-
-  <hr class="section-divider" />
-
-  <!-- ====== THEMES ====== -->
-  <section class="themes-section">
-    <div class="section-label">Browse by theme</div>
-    <h2 class="section-title">13 ways into<br />the territory</h2>
-    <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
-
-    <div class="theme-grid">
-      {themes.map((theme) => (
-        <a href={`/theme/${theme.slug}`} class="theme-card">
-          <div class="theme-icon">
-            <ThemeIcon slug={theme.slug} />
-          </div>
-          <div class="theme-name">{theme.data.title}</div>
-          <div class="theme-desc">{theme.data.subtitle}</div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <hr class="section-divider" />
-
-  <!-- ====== CONNECTIONS CTA ====== -->
-  <section class="connections-cta">
-    <div class="section-label connections-label">The map</div>
-    <h2 class="section-title connections-title">See how everything connects</h2>
-    <p class="section-intro connections-intro">The interactive graph shows how every concept relates to every other - because the links between ideas are where the real insight lives.</p>
-    <a href="/connections" class="cta-button">
-      Explore the connections
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M3 8h10M9 4l4 4-4 4"/>
-      </svg>
-    </a>
   </section>
 
 </Layout>
 
 <style>
-  /* ====== HERO GRID WRAPPER ====== */
-  .hero-grid-wrapper,
-  .hero-grid-wrapper > * {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   /* ====== HERO ====== */
   .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 65vh;
     background: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 140px 48px 100px;
+    padding: 140px 48px 80px;
     overflow: hidden;
+  }
+  .hero-graph-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
   }
   .hero-content {
     position: relative;
@@ -171,6 +227,11 @@ for (const t of themes) {
     max-width: 500px;
     margin-bottom: 52px;
   }
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
   .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -179,9 +240,7 @@ for (const t of themes) {
     font-weight: 400;
     color: var(--deep);
     text-decoration: none;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(34, 28, 43, 0.18);
+    border: 1px solid var(--border-hover);
     padding: 14px 28px;
     transition: all 0.2s ease;
   }
@@ -189,28 +248,16 @@ for (const t of themes) {
     border-color: var(--accent);
     color: var(--accent);
   }
-  .hero-cta:hover svg {
-    transform: translateY(4px);
+  .hero-cta:hover .cta-icon {
+    transform: translateX(3px);
+  }
+  .cta-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
   }
 
-  .scroll-hint {
-    position: absolute;
-    bottom: 48px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    width: 1px;
-    height: 48px;
-    background: linear-gradient(to bottom, var(--soft), transparent);
-    opacity: 0.25;
-    animation: pulse-down 2.5s ease-in-out infinite;
-  }
-  @keyframes pulse-down {
-    0%, 100% { opacity: 0.15; }
-    50% { opacity: 0.4; }
-  }
-
-  /* ====== SECTIONS ====== */
+  /* ====== SECTIONS (shared) ====== */
   section {
     padding: 140px 48px;
   }
@@ -247,26 +294,251 @@ for (const t of themes) {
     margin-bottom: 80px;
   }
 
-  /* ====== DISCOVER ====== */
-  .discover {
-    background-color: var(--white);
+  /* ====== THEMES GRID ====== */
+  .themes-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
   }
 
-  /* ====== CONCEPT CARDS ====== */
-  .concept-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 48px 36px;
+  /* Core Building Blocks - large left card */
+  .core-card {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    padding: 36px;
+    border: 1.5px solid var(--accent);
+    background: rgba(155, 81, 224, 0.04);
+    display: flex;
+    flex-direction: column;
   }
+  .core-start-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .core-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .core-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .core-desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--soft);
+    margin-bottom: 24px;
+  }
+  .core-cta {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 28px;
+    transition: opacity 0.2s;
+  }
+  .core-cta:hover {
+    opacity: 0.7;
+  }
+  .core-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: auto;
+  }
+  .core-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--deep);
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s;
+  }
+  .core-link:hover {
+    color: var(--accent);
+  }
+  .core-arrow {
+    font-size: 14px;
+    color: var(--soft);
+    transition: color 0.2s, transform 0.2s;
+  }
+  .core-link:hover .core-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+  }
+
+  /* Theme cards (right 3 columns) */
+  .theme-card {
+    padding: 28px;
+    background: var(--warm-bg);
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .theme-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
+  }
+  .theme-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+  }
+  .theme-name {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 6px;
+    line-height: 1.3;
+    transition: color 0.2s;
+  }
+  .theme-card:hover .theme-name {
+    color: var(--accent);
+  }
+  .theme-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--soft);
+  }
+
+  /* ====== PATHWAYS ====== */
+  .pathways-scroll-wrapper {
+    position: relative;
+  }
+  .pathways-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+  }
+  .pathways-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .pathways-fade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 8px;
+    width: 80px;
+    background: linear-gradient(to right, transparent, var(--white));
+    pointer-events: none;
+  }
+
+  .pathway-card {
+    flex: 0 0 260px;
+    scroll-snap-align: start;
+    padding: 28px;
+    border: 0.5px solid var(--border);
+    border-radius: 8px !important;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .pathway-card:hover {
+    border-color: var(--accent);
+  }
+  .pathway-number {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--soft);
+    letter-spacing: 0.04em;
+  }
+  .pathway-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--deep);
+    line-height: 1.4;
+  }
+  .pathway-count {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--soft);
+    margin-top: auto;
+  }
+  .pathway-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  .pathways-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .pathways-dots {
+    display: flex;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: var(--border);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  .dot.active {
+    background: var(--accent);
+  }
+
+  .see-all-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .see-all-link:hover {
+    opacity: 0.7;
+  }
+
+  /* ====== FEATURED CONCEPTS ====== */
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+
   .concept-card {
     text-decoration: none;
     color: inherit;
     display: flex;
     flex-direction: column;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(34, 28, 43, 0.1);
-    background-color: #FFFFFF;
+    border: 1px solid var(--border);
+    background-color: var(--white);
     padding: 0 0 20px 0;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
@@ -296,163 +568,105 @@ for (const t of themes) {
     margin: 0 20px 10px;
   }
   .card-title {
-    font-size: 31px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
     color: var(--deep);
-    margin-bottom: 10px;
-    letter-spacing: -0.005em;
-    transition: color 0.2s;
+    margin-bottom: 8px;
     padding: 0 20px;
+    transition: color 0.2s;
   }
   .concept-card:hover .card-title {
     color: var(--accent);
   }
   .card-oneliner {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.65;
     color: var(--soft);
     padding: 0 20px;
   }
-
-  /* ====== PATHWAYS ====== */
-  .pathways-section {
-    background: var(--white);
-  }
-  .pathways-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-  .pathway-card {
-    display: block;
-    padding: 36px;
-    border: 1px solid rgba(34, 28, 43, 0.1);
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  }
-  .pathway-card:hover {
-    border-color: var(--accent);
-    background-color: var(--warm-bg);
-    transform: translateY(-3px);
-  }
-  .pathway-title {
-    font-size: 24px;
+  .card-connections {
+    font-size: 12px;
     font-weight: 400;
-    color: var(--deep);
-    margin-bottom: 8px;
-    transition: color 0.2s;
-  }
-  .pathway-card:hover .pathway-title {
-    color: var(--accent);
-  }
-  .pathway-subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
     color: var(--soft);
-    margin-bottom: 12px;
-  }
-  .pathway-count {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
+    padding: 0 20px;
+    margin-top: 12px;
   }
 
-  /* ====== THEMES ====== */
-  .themes-section {
-    background: var(--white);
-  }
-  .theme-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .theme-card {
-    padding: 36px;
-    background: var(--warm-bg);
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid rgba(34, 28, 43, 0.1);
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-  .theme-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-    box-shadow: 0 4px 12px rgba(34, 28, 43, 0.06);
-  }
-  .theme-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 20px;
-  }
-  .theme-name {
-    font-size: 19px;
-    font-weight: 400;
-    color: var(--deep);
-    margin-bottom: 8px;
-    line-height: 1.3;
-    transition: color 0.2s;
-  }
-  .theme-card:hover .theme-name {
-    color: var(--accent);
-  }
-  .theme-desc {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--soft);
-  }
-
-  /* ====== CONNECTIONS CTA ====== */
-  .connections-cta {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .connections-label {
-    color: var(--accent);
-  }
-  .connections-title {
-    color: var(--deep);
-  }
-  .connections-intro {
-    color: var(--soft);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-  }
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--deep);
-    text-decoration: none;
-    background-color: transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(34, 28, 43, 0.18);
-    padding: 16px 36px;
-    transition: all 0.2s ease;
-  }
-  .cta-button:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-2px);
+  .see-all-wrapper {
+    margin-top: 48px;
+    text-align: right;
   }
 
   /* ====== RESPONSIVE ====== */
   @media (max-width: 768px) {
-    .hero { padding: 100px 24px 60px; }
+    .hero {
+      padding: 100px 24px 60px;
+      min-height: 60vh;
+    }
+    .hero-ctas {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-cta {
+      justify-content: center;
+    }
+
     section { padding: 80px 24px; }
-    .concept-grid { grid-template-columns: 1fr; gap: 40px; }
-    .pathways-grid { grid-template-columns: 1fr; }
-    .theme-grid { grid-template-columns: 1fr; }
+
+    /* Themes: core full-width on top, others 2-col */
+    .themes-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+    .core-card {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+
+    .featured-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .themes-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .core-card {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+    .featured-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 768px) {
+    /* fallback: won't apply, just a boundary guard */
   }
 </style>
+
+<script is:inline>
+  // Pathways scroll dot tracking
+  const scroll = document.getElementById('pathways-scroll');
+  const dots = document.querySelectorAll('#pathways-dots .dot');
+
+  if (scroll && dots.length) {
+    scroll.addEventListener('scroll', () => {
+      const cardWidth = 260 + 20; // card width + gap
+      const index = Math.round(scroll.scrollLeft / cardWidth);
+      dots.forEach((d, i) => d.classList.toggle('active', i === index));
+    });
+
+    dots.forEach((d, i) => {
+      d.addEventListener('click', () => {
+        const cardWidth = 260 + 20;
+        scroll.scrollTo({ left: i * cardWidth, behavior: 'smooth' });
+      });
+    });
+  }
+</script>

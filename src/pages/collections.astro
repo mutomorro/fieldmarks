@@ -7,14 +7,24 @@ const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.or
 ---
 
 <Layout title="Collections" description="Guided pathways through systems thinking concepts, each framed around a recognisable situation.">
-  <section class="collections-page">
-    <div class="section-label">Pathways</div>
-    <h1 class="section-title">Common situations</h1>
-    <p class="section-intro">
-      Recognise a pattern? Each pathway guides you through the concepts
-      that explain what's happening - and what you can do about it.
-    </p>
+  <div class="max-w-content mx-auto px-6 md:px-12">
 
+    <!-- Breadcrumb -->
+    <div class="pt-24">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span class="current">Collections</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="page-header">
+      <h1>Collections</h1>
+      <p class="page-subtitle">Guided pathways through systems thinking concepts, each framed around a recognisable situation.</p>
+    </div>
+
+    <!-- Collections grid -->
     <div class="collections-grid">
       {sortedCollections.map((col) => (
         <a href={`/collection/${col.slug}`} class="collection-card">
@@ -26,46 +36,55 @@ const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.or
         </a>
       ))}
     </div>
-  </section>
+
+  </div>
 </Layout>
 
 <style>
-  .collections-page {
-    padding: 160px 48px 140px;
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--soft);
+    margin-bottom: 48px;
   }
-
-  .section-label {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+  .breadcrumb a {
+    color: var(--soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .breadcrumb a:hover {
     color: var(--accent);
-    margin-bottom: 24px;
+  }
+  .breadcrumb .current {
+    color: var(--mid);
   }
 
-  .section-title {
-    font-size: clamp(38px, 4.5vw, 60px);
+  .page-header {
+    margin-bottom: 48px;
+    max-width: 680px;
+  }
+  .page-header h1 {
+    font-size: clamp(38px, 4.5vw, 52px);
     font-weight: 400;
     line-height: 1.12;
     color: var(--deep);
-    margin-bottom: 20px;
-    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
   }
-
-  .section-intro {
-    font-size: 19px;
+  .page-subtitle {
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.65;
     color: var(--soft);
-    max-width: 540px;
-    margin-bottom: 80px;
   }
 
   .collections-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    max-width: 1200px;
+    margin-bottom: 120px;
   }
 
   .collection-card {
@@ -109,9 +128,6 @@ const sortedCollections = allCollections.sort((a, b) => a.data.order - b.data.or
   }
 
   @media (max-width: 768px) {
-    .collections-page {
-      padding: 120px 24px 80px;
-    }
     .collections-grid {
       grid-template-columns: 1fr;
     }

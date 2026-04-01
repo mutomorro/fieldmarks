@@ -5,7 +5,7 @@
 :root {
   --deep: #221C2B;
   --mid: #423B49;
-  --soft: #9A9399;
+  --soft: #6B6577;
   --accent: #9B51E0;
   --warm-bg: #FAF9F7;
   --white: #FFFFFF;
@@ -17,7 +17,7 @@
   html {
     font-family: 'Source Sans 3', system-ui, sans-serif;
     font-weight: 400;
-    color: #4A4A4A;
+    color: var(--deep);
     background: var(--white);
     scroll-behavior: smooth;
   }
@@ -38,10 +38,10 @@
 
   /* Kicker text */
   .kicker {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
   }
 
   /* Pull quote - the thought to hold onto */

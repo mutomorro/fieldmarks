@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About" description="A field guide to systems thinking - what Fieldmarks is, why it exists, and who made it.">
+  <div class="about-page max-w-prose mx-auto px-6 md:px-12">
+
+    <h1>About Fieldmarks</h1>
+
+    <section>
+      <p>Fieldmarks is a field guide to systems thinking - a free, open collection of the concepts, patterns, and ideas that help explain how things connect, why they behave the way they do, and where to find the leverage for change.</p>
+
+      <p>It's built for anyone who works with organisations, teams, or complex challenges. Whether you're a leader trying to understand why the same problems keep returning, a practitioner looking for a sharper way to frame what you're seeing, or someone who just stumbled across the phrase "systems thinking" and wants to know what it means - this is for you.</p>
+    </section>
+
+    <section>
+      <h2>Why systems thinking matters</h2>
+
+      <p class="standalone">Everywhere you look, systems are at work.</p>
+
+      <p>The team that keeps reorganising but never gets faster. The policy that solved one problem and created three more. The market that nobody predicted. The project that looked fine on paper and fell apart in practice. These aren't random events or bad luck - they're systems behaving the way systems behave.</p>
+
+      <p>Systems thinking is a way of seeing the patterns underneath. It doesn't give you a formula or a checklist. It gives you a different set of questions - better questions - about why things are happening and where you might be able to shift them.</p>
+
+      <p>In organisations, it changes how you think about strategy, culture, change, and why good intentions so often produce unintended results. More broadly, it changes how you understand the world - from economics to ecology, from public health to politics. The same patterns show up everywhere, once you know what to look for.</p>
+
+      <p>This isn't abstract theory. It's some of the most practical thinking available to anyone trying to make something work better.</p>
+    </section>
+
+    <section>
+      <h2>Why Fieldmarks exists</h2>
+
+      <p>Most systems thinking resources fall into one of two camps. Academic texts that are thorough but hard to apply. Blog posts that are accessible but shallow. There's a gap in between - something that's rigorous enough to trust, practical enough to use, and written in language that doesn't make you feel like you need a PhD to follow it.</p>
+
+      <p>Fieldmarks is an attempt to fill that gap. Every concept is written to be understood on first reading, with real-world examples and practical guidance alongside the theory. No jargon for the sake of it. No gatekeeping.</p>
+    </section>
+
+    <section>
+      <h2>The connections are the point</h2>
+
+      <p>The most important thing about Fieldmarks isn't any single concept - it's how the concepts relate to each other.</p>
+
+      <p>Feedback loops connect to delays. Delays connect to unintended consequences. Unintended consequences connect to mental models. Pull on any thread and you find yourself somewhere unexpected. That's how systems work, and it's how this site works too.</p>
+
+      <p>Every entry links to the concepts around it. The <a href="/collections">pathways</a> walk you through connected ideas in a meaningful order. And the <a href="/connections">connections graph</a> shows the whole picture - every concept and every relationship, all at once.</p>
+
+      <p>The ideas aren't a list. They're a network. And the relationships between them are where the real insight lives.</p>
+    </section>
+
+    <section>
+      <h2>Who made this</h2>
+
+      <p>Fieldmarks is a <a href="https://mutomorro.com" target="_blank" rel="noopener">Mutomorro</a> project, created by James Freeman-Gray.</p>
+
+      <p>Mutomorro is an organisational consulting practice that works with leaders navigating complexity, change, and the messy reality of how organisations work. Systems thinking is foundational to that work - it shapes how we see organisations, how we design interventions, and how we help leaders make sense of what's happening around them.</p>
+
+      <p>Fieldmarks grew out of a belief that these ideas shouldn't be locked behind expensive training courses or dense textbooks. They're too useful for that. If you lead a team, run a project, or care about making things work better - you deserve access to this thinking.</p>
+    </section>
+
+    <section>
+      <h2>Free and open</h2>
+
+      <p>Fieldmarks is free. No paywall, no sign-up, no newsletter gate. Just the ideas, openly available to anyone who wants them.</p>
+
+      <p class="final">If it helps you see something differently, that's the whole point.</p>
+    </section>
+
+  </div>
+</Layout>
+
+<style>
+  .about-page {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    .about-page {
+      padding-top: 80px;
+      padding-bottom: 48px;
+    }
+  }
+
+  h1 {
+    font-size: clamp(38px, 5vw, 52px);
+    font-weight: 400;
+    color: var(--deep);
+    line-height: 1.1;
+    margin-bottom: 48px;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--deep);
+    margin-bottom: 1.25rem;
+  }
+
+  p.standalone {
+    margin-top: 0.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  p.final {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--deep);
+    text-decoration: underline;
+    text-decoration-color: var(--border-hover);
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+  }
+
+  a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+</style>
