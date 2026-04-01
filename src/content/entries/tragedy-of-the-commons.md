@@ -6,7 +6,7 @@ theme: "systems-archetypes"
 tags: ["shared-resources", "cooperation", "incentives", "sustainability"]
 dotGrid:
   seed: 1847
-  variant: "default"
+  variant: "tragedyCommons"
 related:
   - slug: "feedback-loops"
     note: "Each user's reinforcing loop (more use = more benefit) overwhelms the balancing loop of the shared resource"

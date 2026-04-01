@@ -6,7 +6,7 @@ theme: "systems-archetypes"
 tags: ["growth", "investment", "capacity", "self-fulfilling"]
 dotGrid:
   seed: 7248
-  variant: "default"
+  variant: "growthUnderinvestment"
 related:
   - slug: "limits-to-growth"
     note: "Growth and Underinvestment is what happens when the constraint in Limits to Growth is capacity that could have been built but wasn't"

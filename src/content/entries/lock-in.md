@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["switching-costs", "technology", "inertia", "decisions"]
 dotGrid:
   seed: 3189
-  variant: "default"
+  variant: "lockIn"
 related:
   - slug: "path-dependence"
     note: "Lock-in is path dependence at its most extreme - not just constrained by history, but trapped by it"

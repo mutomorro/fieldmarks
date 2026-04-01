@@ -6,7 +6,7 @@ theme: "core-building-blocks"
 tags: ["accumulation", "measurement", "resources", "planning"]
 dotGrid:
   seed: 7312
-  variant: "default"
+  variant: "stocksAndFlows"
 related:
   - slug: "feedback-loops"
     note: "Feedback loops work by adjusting flows, which change stocks over time"

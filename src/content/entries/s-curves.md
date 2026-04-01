@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["growth", "limits", "timing", "strategy"]
 dotGrid:
   seed: 2395
-  variant: "default"
+  variant: "sCurves"
 related:
   - slug: "exponential-growth"
     note: "Exponential growth is the first half of the S-curve - before limits kick in"

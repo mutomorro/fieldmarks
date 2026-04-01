@@ -6,7 +6,7 @@ theme: "systems-archetypes"
 tags: ["incentives", "measurement", "rules", "behaviour"]
 dotGrid:
   seed: 9173
-  variant: "default"
+  variant: "ruleBeating"
 related:
   - slug: "feedback-loops"
     note: "Rules create feedback loops that shape behaviour - but the behaviour shaped isn't always the behaviour intended"

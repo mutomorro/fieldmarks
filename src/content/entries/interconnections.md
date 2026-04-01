@@ -6,7 +6,7 @@ theme: "core-building-blocks"
 tags: ["relationships", "structure", "networks", "dependencies"]
 dotGrid:
   seed: 5629
-  variant: "default"
+  variant: "interconnections"
 related:
   - slug: "feedback-loops"
     note: "Feedback loops are interconnections that circle back on themselves, creating self-reinforcing or self-correcting behaviour"

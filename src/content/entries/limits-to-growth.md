@@ -6,7 +6,7 @@ theme: "systems-archetypes"
 tags: ["growth", "constraints", "strategy", "planning"]
 dotGrid:
   seed: 3417
-  variant: "default"
+  variant: "limitsToGrowth"
 related:
   - slug: "s-curves"
     note: "Limits to Growth is the structural explanation for why S-curves flatten"

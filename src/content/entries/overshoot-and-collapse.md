@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["limits", "growth", "catastrophe", "sustainability"]
 dotGrid:
   seed: 4762
-  variant: "default"
+  variant: "overshootCollapse"
 related:
   - slug: "exponential-growth"
     note: "Exponential growth is what drives the overshoot - the system grows faster than its feedback can track"

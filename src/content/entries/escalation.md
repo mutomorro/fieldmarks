@@ -6,7 +6,7 @@ theme: "systems-archetypes"
 tags: ["competition", "conflict", "cycles", "strategy"]
 dotGrid:
   seed: 5782
-  variant: "default"
+  variant: "escalation"
 related:
   - slug: "feedback-loops"
     note: "Escalation is two reinforcing loops locked together - each party's action feeds the other's response"

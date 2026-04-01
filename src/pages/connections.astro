@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import ConnectionGraph from '../components/ConnectionGraph.jsx';
+
+// Load graph data at build time
+import graphData from '../../public/graph-data.json';
+
+// Load themes for the legend
+const allThemes = await getCollection('themes');
+const themes = allThemes
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(t => ({ slug: t.slug, title: t.data.title, colour: t.data.colour }));
+---
+
+<Layout title="Connections" description="See how every systems thinking concept connects to every other.">
+  <div class="connections-page">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-row">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span class="current">Connections</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="page-header">
+      <h1>Connections</h1>
+      <p class="page-subtitle">The links between ideas are where the real insight lives. Hover to explore, click to read, drag to rearrange.</p>
+    </div>
+
+    <!-- Graph -->
+    <div class="graph-container">
+      <ConnectionGraph
+        client:load
+        graphData={graphData}
+        themes={themes}
+      />
+    </div>
+
+    <!-- Reading guide -->
+    <div class="reading-guide">
+      <h2>Reading the map</h2>
+      <div class="guide-grid">
+        <div class="guide-item">
+          <div class="guide-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="4" y="4" width="8" height="8" fill="#9B51E0" opacity="0.7"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Square marks</strong> are concepts. Size shows how many connections each has.
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <line x1="2" y1="8" x2="14" y2="8" stroke="#221C2B" stroke-width="1" opacity="0.3"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Lines</strong> show relationships. Hover a concept to see its neighbourhood light up.
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="5" width="5" height="5" fill="#5a6cc0" opacity="0.7"/>
+              <rect x="9" y="5" width="5" height="5" fill="#d4a830" opacity="0.7"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Colours</strong> are themes. Concepts naturally cluster by theme but many bridge across.
+          </div>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="4" y="4" width="8" height="8" fill="#9B51E0" opacity="0.4"/>
+              <rect x="5" y="5" width="6" height="6" fill="#9B51E0" opacity="0.7"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Breathing</strong> &mdash; the gentle pulse means the graph is alive. It pauses when you hover.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .connections-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  .breadcrumb-row {
+    padding-top: 100px;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--soft);
+    margin-bottom: 48px;
+  }
+  .breadcrumb a {
+    color: var(--soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+  .breadcrumb .current {
+    color: var(--mid);
+  }
+
+  .page-header {
+    margin-bottom: 48px;
+    max-width: 680px;
+  }
+  .page-header h1 {
+    font-size: clamp(38px, 4.5vw, 52px);
+    font-weight: 400;
+    line-height: 1.12;
+    color: var(--deep);
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+  }
+  .page-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--soft);
+  }
+
+  .graph-container {
+    margin-bottom: 80px;
+  }
+
+  /* Reading guide */
+  .reading-guide {
+    border-top: 1px solid var(--border);
+    padding: 60px 0 120px;
+  }
+  .reading-guide h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 32px;
+  }
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .guide-item {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--soft);
+  }
+  .guide-item strong {
+    color: var(--mid);
+    font-weight: 500;
+  }
+  .guide-icon {
+    flex-shrink: 0;
+    width: 20px;
+    padding-top: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .connections-page {
+      padding: 0 24px;
+    }
+    .breadcrumb-row {
+      padding-top: 80px;
+    }
+    .guide-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

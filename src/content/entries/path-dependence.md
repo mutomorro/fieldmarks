@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["history", "constraints", "decisions", "strategy"]
 dotGrid:
   seed: 7823
-  variant: "default"
+  variant: "pathDependence"
 related:
   - slug: "feedback-loops"
     note: "Reinforcing feedback loops create path dependence by amplifying early choices until they become entrenched"

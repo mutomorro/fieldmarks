@@ -6,7 +6,7 @@ theme: "core-building-blocks"
 tags: ["prediction", "cause-and-effect", "planning", "surprise"]
 dotGrid:
   seed: 8471
-  variant: "default"
+  variant: "nonlinearity"
 related:
   - slug: "feedback-loops"
     note: "Reinforcing feedback loops are the engine of nonlinearity, turning small changes into large ones"

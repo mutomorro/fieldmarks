@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["stability", "change", "structure", "patterns"]
 dotGrid:
   seed: 5937
-  variant: "default"
+  variant: "attractors"
 related:
   - slug: "feedback-loops"
     note: "Balancing feedback loops create attractors by pulling the system back toward a particular state"

@@ -6,7 +6,7 @@ theme: "system-behaviours"
 tags: ["balance", "stability", "change", "forces"]
 dotGrid:
   seed: 8416
-  variant: "default"
+  variant: "equilibrium"
 related:
   - slug: "feedback-loops"
     note: "Balancing feedback loops are the mechanism that maintains equilibrium - they correct deviations and restore balance"

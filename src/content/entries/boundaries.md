@@ -6,7 +6,7 @@ theme: "core-building-blocks"
 tags: ["framing", "perspective", "scope", "design"]
 dotGrid:
   seed: 4185
-  variant: "default"
+  variant: "boundaries"
 related:
   - slug: "interconnections"
     note: "Boundaries cut across interconnections - every boundary hides some relationships and reveals others"

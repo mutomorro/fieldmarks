@@ -6,7 +6,7 @@ theme: "core-building-blocks"
 tags: ["resilience", "stability", "efficiency", "risk"]
 dotGrid:
   seed: 3956
-  variant: "default"
+  variant: "buffers"
 related:
   - slug: "stocks-and-flows"
     note: "Buffers are stocks - they accumulate reserves that smooth out uneven flows"
