@@ -1,5 +1,5 @@
 ---
-title: "We keep solving this"
+title: "Why the same issues keep recurring"
 subtitle: "When the same pattern keeps showing up despite good work and good intentions."
 order: 1
 entries:

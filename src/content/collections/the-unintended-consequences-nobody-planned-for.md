@@ -1,5 +1,5 @@
 ---
-title: "The ripples go further than expected"
+title: "The unintended consequences nobody planned for"
 subtitle: "When an action produces effects nobody planned for - sometimes bigger than the original move."
 order: 2
 entries:
