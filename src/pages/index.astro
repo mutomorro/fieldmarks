@@ -53,22 +53,24 @@ for (const n of graphData.nodes) {
     <div class="hero-graph-wrapper">
       <HeroGraph client:only="react" />
     </div>
-    <div class="hero-content">
-      <h1>A field guide to<br />systems thinking</h1>
-      <p>How things connect. Why they behave the way they do. And where to find the leverage for change.</p>
-      <div class="hero-ctas">
-        <a href="#themes" class="hero-cta">
-          Start exploring
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
-            <path d="M8 3v10M4 9l4 4 4-4"/>
-          </svg>
-        </a>
-        <a href="/connections" class="hero-cta">
-          Explore the connections
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
-            <path d="M3 8h10M9 4l4 4-4 4"/>
-          </svg>
-        </a>
+    <div class="hero-inner w-full max-w-content mx-auto px-6 md:px-12">
+      <div class="hero-content">
+        <h1>A field guide to<br />systems thinking</h1>
+        <p>How things connect. Why they behave the way they do. And where to find the leverage for change.</p>
+        <div class="hero-ctas">
+          <a href="#themes" class="hero-cta">
+            Start exploring
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
+              <path d="M8 3v10M4 9l4 4 4-4"/>
+            </svg>
+          </a>
+          <a href="/connections" class="hero-cta">
+            Explore the connections
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -77,6 +79,7 @@ for (const n of graphData.nodes) {
 
   <!-- ====== THEMES ====== -->
   <section class="themes-section" id="themes">
+    <div class="max-w-content mx-auto px-6 md:px-12">
     <div class="section-label">Browse by theme</div>
     <h2 class="section-title">13 ways into<br />the territory</h2>
     <p class="section-intro">Systems thinking is a connected discipline. These themes are starting points, not boundaries - most concepts touch several.</p>
@@ -114,12 +117,14 @@ for (const n of graphData.nodes) {
         </a>
       ))}
     </div>
+    </div>
   </section>
 
   <hr class="section-divider" />
 
   <!-- ====== PATHWAYS ====== -->
   <section class="pathways-section" id="pathways">
+    <div class="max-w-content mx-auto px-6 md:px-12">
     <div class="section-label">Guided pathways</div>
     <h2 class="section-title">Start from a situation<br />you recognise</h2>
     <p class="section-intro">Each pathway walks you through a set of connected concepts, framed around something you might be noticing in your organisation right now.</p>
@@ -148,12 +153,14 @@ for (const n of graphData.nodes) {
       </div>
       <a href="/collections" class="see-all-link">See all collections &rarr;</a>
     </div>
+    </div>
   </section>
 
   <hr class="section-divider" />
 
   <!-- ====== FEATURED CONCEPTS ====== -->
   <section class="featured-section" id="featured">
+    <div class="max-w-content mx-auto px-6 md:px-12">
     <div class="section-label">Explore</div>
     <h2 class="section-title">Where the threads converge</h2>
     <p class="section-intro">The concepts that connect to the most others - the ideas at the heart of the network.</p>
@@ -184,6 +191,7 @@ for (const n of graphData.nodes) {
     <div class="see-all-wrapper">
       <a href="/concepts" class="see-all-link">See all concepts &rarr;</a>
     </div>
+    </div>
   </section>
 
 </Layout>
@@ -197,8 +205,12 @@ for (const n of graphData.nodes) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 140px 48px 80px;
+    padding: 140px 0 80px;
     overflow: hidden;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
   }
   .hero-graph-wrapper {
     position: absolute;
@@ -207,8 +219,6 @@ for (const n of graphData.nodes) {
     height: 100%;
   }
   .hero-content {
-    position: relative;
-    z-index: 1;
     max-width: 680px;
   }
   .hero h1 {
@@ -259,12 +269,13 @@ for (const n of graphData.nodes) {
 
   /* ====== SECTIONS (shared) ====== */
   section {
-    padding: 140px 48px;
+    padding: 140px 0;
   }
 
   .section-divider {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
+    padding: 0 48px;
     border: none;
     border-top: 1px solid var(--border);
   }
@@ -602,7 +613,7 @@ for (const n of graphData.nodes) {
   /* ====== RESPONSIVE ====== */
   @media (max-width: 768px) {
     .hero {
-      padding: 100px 24px 60px;
+      padding: 100px 0 60px;
       min-height: 60vh;
     }
     .hero-ctas {
@@ -613,7 +624,7 @@ for (const n of graphData.nodes) {
       justify-content: center;
     }
 
-    section { padding: 80px 24px; }
+    section { padding: 80px 0; }
 
     /* Themes: core full-width on top, others 2-col */
     .themes-grid {
