@@ -32,7 +32,7 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
     <!-- Header -->
     <div class="page-header">
       <h1>Concepts</h1>
-      <p class="page-subtitle">Explore all concepts in the field guide. Filter by theme or browse everything.</p>
+      <p class="page-subtitle">The full collection. Filter by theme or browse and see what catches your eye.</p>
     </div>
 
     <!-- Theme filter -->
@@ -48,11 +48,6 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
         </button>
       ))}
     </div>
-
-    <!-- Entry count -->
-    <p class="entry-count" id="entry-count">
-      {entries.length} concept{entries.length !== 1 ? 's' : ''}
-    </p>
 
     <!-- Entry grid -->
     <div class="entry-grid" id="entry-grid">
@@ -153,16 +148,6 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
     color: var(--white);
   }
 
-  /* ====== ENTRY COUNT ====== */
-  .entry-count {
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--soft);
-    margin-bottom: 32px;
-  }
-
   /* ====== ENTRY GRID ====== */
   .entry-grid {
     display: grid;
@@ -245,25 +230,17 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
 <script is:inline>
   const filterBar = document.getElementById('filter-bar');
   const cards = document.querySelectorAll('.concept-card[data-theme]');
-  const countEl = document.getElementById('entry-count');
 
   filterBar.addEventListener('click', (e) => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
 
-    // Update active state
     filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
     const theme = btn.dataset.theme;
-    let visible = 0;
-
     cards.forEach(card => {
-      const show = theme === 'all' || card.dataset.theme === theme;
-      card.hidden = !show;
-      if (show) visible++;
+      card.hidden = theme !== 'all' && card.dataset.theme !== theme;
     });
-
-    countEl.textContent = `${visible} concept${visible !== 1 ? 's' : ''}`;
   });
 </script>
