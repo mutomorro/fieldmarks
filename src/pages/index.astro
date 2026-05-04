@@ -64,7 +64,7 @@ for (const n of graphData.nodes) {
               <path d="M8 3v10M4 9l4 4 4-4"/>
             </svg>
           </a>
-          <a href="/connections" class="hero-cta">
+          <a href="/connections/" class="hero-cta">
             Explore the connections
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="cta-icon">
               <path d="M3 8h10M9 4l4 4-4 4"/>
@@ -93,11 +93,11 @@ for (const n of graphData.nodes) {
         </div>
         <h3 class="core-title">Core building blocks</h3>
         <p class="core-desc">The foundations everything else builds on. Start here if you're new to systems thinking.</p>
-        <a href="/theme/core-building-blocks" class="core-cta">See all building blocks &rarr;</a>
+        <a href="/theme/core-building-blocks/" class="core-cta">See all building blocks &rarr;</a>
         <ul class="core-links">
           {coreEntries.map(entry => (
             <li>
-              <a href={`/concept/${entry.slug}`} class="core-link">
+              <a href={`/concept/${entry.slug}/`} class="core-link">
                 {entry.data.title}
                 <span class="core-arrow">&rarr;</span>
               </a>
@@ -108,7 +108,7 @@ for (const n of graphData.nodes) {
 
       <!-- Right 3 columns: Other 12 themes -->
       {otherThemes.map((theme) => (
-        <a href={`/theme/${theme.slug}`} class="theme-card">
+        <a href={`/theme/${theme.slug}/`} class="theme-card">
           <div class="theme-icon">
             <ThemeIcon slug={theme.slug} />
           </div>
@@ -132,7 +132,7 @@ for (const n of graphData.nodes) {
     <div class="pathways-scroll-wrapper">
       <div class="pathways-scroll" id="pathways-scroll">
         {sortedCollections.map((col, i) => (
-          <a href={`/collection/${col.slug}`} class="pathway-card">
+          <a href={`/collection/${col.slug}/`} class="pathway-card">
             <div class="pathway-number">Pathway {i + 1}</div>
             <h2 class="pathway-title">"{col.data.title}"</h2>
             <div class="pathway-subtitle">{col.data.subtitle}</div>
@@ -152,7 +152,7 @@ for (const n of graphData.nodes) {
           <span class:list={["dot", { active: i === 0 }]} data-index={i}></span>
         ))}
       </div>
-      <a href="/collections" class="see-all-link">See all collections &rarr;</a>
+      <a href="/collections/" class="see-all-link">See all collections &rarr;</a>
     </div>
     </div>
   </section>
@@ -168,7 +168,7 @@ for (const n of graphData.nodes) {
 
     <div class="featured-grid">
       {featuredEntries.map((entry) => (
-        <a href={`/concept/${entry.slug}`} class="concept-card">
+        <a href={`/concept/${entry.slug}/`} class="concept-card">
           <div class="card-illustration">
             {entry.data.dotGrid ? (
               <DotGrid
@@ -190,7 +190,7 @@ for (const n of graphData.nodes) {
     </div>
 
     <div class="see-all-wrapper">
-      <a href="/concepts" class="see-all-link">See all concepts &rarr;</a>
+      <a href="/concepts/" class="see-all-link">See all concepts &rarr;</a>
     </div>
     </div>
   </section>

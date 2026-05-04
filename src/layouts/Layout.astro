@@ -1,21 +1,108 @@
 ---
+interface Breadcrumb {
+  name: string;
+  url: string;
+}
+
+interface ArticleSchema {
+  headline: string;
+  description: string;
+  author?: string;
+}
+
 interface Props {
   title: string;
   description?: string;
   transparentNav?: boolean;
+  pageType?: 'website' | 'article';
+  ogImage?: string;
+  breadcrumbs?: Breadcrumb[];
+  articleSchema?: ArticleSchema;
 }
 
-const { title, description = 'A practical guide to systems thinking for people who work in organisations.', transparentNav = false } = Astro.props;
+const {
+  title,
+  description = 'A practical guide to systems thinking for people who work in organisations.',
+  transparentNav = false,
+  pageType = 'website',
+  ogImage = '/icon-192.png',
+  breadcrumbs,
+  articleSchema,
+} = Astro.props;
+
 const year = new Date().getFullYear();
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
-  { href: '/themes', label: 'Themes' },
-  { href: '/concepts', label: 'Concepts' },
-  { href: '/collections', label: 'Collections' },
-  { href: '/connections', label: 'Connections' },
-  { href: '/about', label: 'About' },
+  { href: '/themes/', label: 'Themes' },
+  { href: '/concepts/', label: 'Concepts' },
+  { href: '/collections/', label: 'Collections' },
+  { href: '/connections/', label: 'Connections' },
+  { href: '/about/', label: 'About' },
 ];
+
+// Build canonical URL with trailing slash
+const siteOrigin = Astro.site ? Astro.site.origin : 'https://fieldmarks.org';
+const pathWithSlash = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
+const canonicalUrl = `${siteOrigin}${pathWithSlash}`;
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteOrigin}${ogImage}`;
+
+const fullTitle = `${title} - Fieldmarks`;
+const isHome = currentPath === '/' || currentPath === '';
+
+// JSON-LD blocks
+const jsonLdBlocks: object[] = [];
+
+if (isHome) {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Fieldmarks',
+    url: `${siteOrigin}/`,
+    description: 'A field guide to systems thinking.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mutomorro',
+      url: 'https://mutomorro.com',
+    },
+  });
+}
+
+if (breadcrumbs && breadcrumbs.length > 0) {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: b.url.startsWith('http') ? b.url : `${siteOrigin}${b.url.endsWith('/') || b.url === '/' ? b.url : b.url + '/'}`,
+    })),
+  });
+}
+
+if (articleSchema) {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: articleSchema.headline,
+    description: articleSchema.description,
+    url: canonicalUrl,
+    image: ogImageUrl,
+    ...(articleSchema.author && {
+      author: { '@type': 'Person', name: articleSchema.author },
+    }),
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mutomorro',
+      url: 'https://mutomorro.com',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalUrl,
+    },
+  });
+}
 ---
 
 <!doctype html>
@@ -24,7 +111,25 @@ const navLinks = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title} - Fieldmarks</title>
+    <title>{fullTitle}</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Fieldmarks" />
+    <meta property="og:type" content={pageType} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -36,6 +141,10 @@ const navLinks = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    {jsonLdBlocks.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
   </head>
   <body class:list={["min-h-screen flex flex-col", { "transparent-nav-page": transparentNav }]}>
 
@@ -84,17 +193,17 @@ const navLinks = [
       <div class="footer-columns">
         <div class="footer-col">
           <div class="footer-col-heading">Fieldmarks</div>
-          <a href="/concepts">Concepts</a>
-          <a href="/about">About</a>
-          <a href="/collections">Collections</a>
-          <a href="/connections">Connections</a>
+          <a href="/concepts/">Concepts</a>
+          <a href="/about/">About</a>
+          <a href="/collections/">Collections</a>
+          <a href="/connections/">Connections</a>
         </div>
         <div class="footer-col">
           <div class="footer-col-heading">Themes</div>
-          <a href="/theme/core-building-blocks">Core building blocks</a>
-          <a href="/theme/systems-archetypes">Systems archetypes</a>
-          <a href="/theme/complexity-and-uncertainty">Complexity and uncertainty</a>
-          <a href="/theme/resilience-and-change">Resilience and change</a>
+          <a href="/theme/core-building-blocks/">Core building blocks</a>
+          <a href="/theme/systems-archetypes/">Systems archetypes</a>
+          <a href="/theme/complexity-and-uncertainty/">Complexity and uncertainty</a>
+          <a href="/theme/resilience-and-change/">Resilience and change</a>
         </div>
         <div class="footer-col">
           <div class="footer-col-heading">Mutomorro</div>

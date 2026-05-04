@@ -1,8 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about/' },
+];
 ---
 
-<Layout title="About" description="A field guide to systems thinking - what Fieldmarks is, why it exists, and who made it.">
+<Layout
+  title="About"
+  description="A field guide to systems thinking - what Fieldmarks is, why it exists, and who made it."
+  breadcrumbs={breadcrumbs}
+>
   <div class="about-page max-w-prose mx-auto px-6 md:px-12">
 
     <h1>About Fieldmarks</h1>
@@ -42,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
 
       <p>Feedback loops connect to delays. Delays connect to unintended consequences. Unintended consequences connect to mental models. Pull on any thread and you find yourself somewhere unexpected. That's how systems work, and it's how this site works too.</p>
 
-      <p>Every entry links to the concepts around it. The <a href="/collections">pathways</a> walk you through connected ideas in a meaningful order. And the <a href="/connections">connections graph</a> shows the whole picture - every concept and every relationship, all at once.</p>
+      <p>Every entry links to the concepts around it. The <a href="/collections/">pathways</a> walk you through connected ideas in a meaningful order. And the <a href="/connections/">connections graph</a> shows the whole picture - every concept and every relationship, all at once.</p>
 
       <p>The ideas aren't a list. They're a network. And the relationships between them are where the real insight lives.</p>
     </section>

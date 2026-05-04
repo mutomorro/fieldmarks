@@ -21,9 +21,27 @@ const entryMap = Object.fromEntries(allEntries.map(e => [e.slug, e]));
 // Theme metadata
 const themes = await getCollection('themes');
 const theme = themes.find(t => t.slug === entry.data.theme);
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  ...(theme ? [{ name: theme.data.title, url: `/theme/${theme.slug}/` }] : []),
+  { name: entry.data.title, url: `/concept/${entry.slug}/` },
+];
+
+const articleSchema = {
+  headline: entry.data.title,
+  description: entry.data.oneLiner,
+  ...(entry.data.originatedBy && { author: entry.data.originatedBy }),
+};
 ---
 
-<Layout title={entry.data.title} description={entry.data.oneLiner}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.oneLiner}
+  pageType="article"
+  breadcrumbs={breadcrumbs}
+  articleSchema={articleSchema}
+>
   <div class="max-w-content mx-auto px-6 md:px-12">
 
     <!-- Breadcrumb -->
@@ -33,7 +51,7 @@ const theme = themes.find(t => t.slug === entry.data.theme);
         <span>/</span>
         {theme && (
           <>
-            <a href={`/theme/${theme.slug}`} class="hover:text-mt-accent transition-colors">
+            <a href={`/theme/${theme.slug}/`} class="hover:text-mt-accent transition-colors">
               {theme.data.title}
             </a>
             <span>/</span>
@@ -127,7 +145,7 @@ const theme = themes.find(t => t.slug === entry.data.theme);
             const relTheme = themes.find(t => t.slug === relatedEntry.data.theme);
             return (
               <a
-                href={`/concept/${rel.slug}`}
+                href={`/concept/${rel.slug}/`}
                 class="block p-3 border border-mt-deep/8 hover:border-mt-deep/20 transition-colors group"
               >
                 <div class="flex items-baseline gap-2 mb-0.5">

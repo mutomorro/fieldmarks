@@ -21,9 +21,26 @@ const entryMap = Object.fromEntries(allEntries.map(e => [e.slug, e]));
 // Resolve themes for entry cards
 const themes = await getCollection('themes');
 const themeMap = Object.fromEntries(themes.map(t => [t.slug, t]));
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Collections', url: '/collections/' },
+  { name: collection.data.title, url: `/collection/${collection.slug}/` },
+];
+
+const articleSchema = {
+  headline: collection.data.title,
+  description: collection.data.subtitle,
+};
 ---
 
-<Layout title={collection.data.title} description={collection.data.subtitle}>
+<Layout
+  title={collection.data.title}
+  description={collection.data.subtitle}
+  pageType="article"
+  breadcrumbs={breadcrumbs}
+  articleSchema={articleSchema}
+>
   <div class="max-w-content mx-auto px-6 md:px-12">
 
     <!-- Breadcrumb -->
@@ -31,7 +48,7 @@ const themeMap = Object.fromEntries(themes.map(t => [t.slug, t]));
       <div class="flex items-center gap-2 text-[14px] text-mt-mid/50 mb-8">
         <a href="/" class="hover:text-mt-accent transition-colors">Home</a>
         <span>/</span>
-        <a href="/collections" class="hover:text-mt-accent transition-colors">Collections</a>
+        <a href="/collections/" class="hover:text-mt-accent transition-colors">Collections</a>
         <span>/</span>
         <span class="text-mt-mid/80">{collection.data.title}</span>
       </div>
@@ -76,7 +93,7 @@ const themeMap = Object.fromEntries(themes.map(t => [t.slug, t]));
           </div>
 
           {/* Right: Entry card */}
-          <a href={`/concept/${entry.slug}`} class="step-card">
+          <a href={`/concept/${entry.slug}/`} class="step-card">
 
             {/* DotGrid illustration */}
             <div class="step-card-illustration">
@@ -118,10 +135,10 @@ const themeMap = Object.fromEntries(themes.map(t => [t.slug, t]));
         These concepts connect to many others across the knowledge base.
       </p>
       <div class="flex flex-wrap gap-4">
-        <a href="/connections" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
+        <a href="/connections/" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
           See the full map →
         </a>
-        <a href="/collections" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
+        <a href="/collections/" class="text-[14px] font-medium transition-colors hover:underline" style="color: var(--accent);">
           Browse all collections →
         </a>
       </div>

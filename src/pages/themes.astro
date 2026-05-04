@@ -35,9 +35,18 @@ const themeGroups = [
     slugs: ["leverage-and-intervention", "design-and-intervention", "measurement-and-signals"]
   }
 ];
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Themes', url: '/themes/' },
+];
 ---
 
-<Layout title="Themes" description="Browse themes in the Fieldmarks field guide to systems thinking.">
+<Layout
+  title="Themes"
+  description="Browse themes in the Fieldmarks field guide to systems thinking."
+  breadcrumbs={breadcrumbs}
+>
   <div class="max-w-content mx-auto px-6 md:px-12">
 
     <!-- Breadcrumb -->
@@ -63,11 +72,11 @@ const themeGroups = [
       </div>
       <h2 class="core-title">Core building blocks</h2>
       <p class="core-desc">The foundations everything else builds on. Start here if you're new to systems thinking.</p>
-      <a href="/theme/core-building-blocks" class="core-cta">See all building blocks &rarr;</a>
+      <a href="/theme/core-building-blocks/" class="core-cta">See all building blocks &rarr;</a>
       <ul class="core-links">
         {coreEntries.map(entry => (
           <li>
-            <a href={`/concept/${entry.slug}`} class="core-link">
+            <a href={`/concept/${entry.slug}/`} class="core-link">
               {entry.data.title}
               <span class="core-arrow">&rarr;</span>
             </a>
@@ -85,7 +94,7 @@ const themeGroups = [
             const theme = themeBySlug[slug];
             if (!theme) return null;
             return (
-              <a href={`/theme/${theme.slug}`} class="theme-card">
+              <a href={`/theme/${theme.slug}/`} class="theme-card">
                 <div class="theme-icon">
                   <ThemeIcon slug={theme.slug} />
                 </div>

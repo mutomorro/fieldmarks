@@ -218,7 +218,7 @@ export default function ConnectionGraph() {
       })
       .on('click', (event, d) => {
         event.stopPropagation();
-        window.location.href = `/concept/${d.id}`;
+        window.location.href = `/concept/${d.id}/`;
       })
       .call(d3.drag()
         .on('start', (event, d) => {

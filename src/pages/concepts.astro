@@ -15,9 +15,18 @@ for (const t of themes) {
 
 // Sort entries alphabetically
 const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Concepts', url: '/concepts/' },
+];
 ---
 
-<Layout title="Concepts" description="Browse all systems thinking concepts, filterable by theme.">
+<Layout
+  title="Concepts"
+  description="Browse all systems thinking concepts, filterable by theme."
+  breadcrumbs={breadcrumbs}
+>
   <div class="max-w-content mx-auto px-6 md:px-12">
 
     <!-- Breadcrumb -->
@@ -52,7 +61,7 @@ const entries = allEntries.sort((a, b) => a.data.title.localeCompare(b.data.titl
     <!-- Entry grid -->
     <div class="entry-grid" id="entry-grid">
       {entries.map((entry) => (
-        <a href={`/concept/${entry.slug}`} class="concept-card" data-theme={entry.data.theme}>
+        <a href={`/concept/${entry.slug}/`} class="concept-card" data-theme={entry.data.theme}>
           <div class="card-illustration">
             {entry.data.dotGrid ? (
               <DotGrid
