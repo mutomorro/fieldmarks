@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_astro/
 
 Sitemap: https://fieldmarks.org/sitemap-index.xml
