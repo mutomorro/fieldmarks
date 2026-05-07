@@ -1,0 +1,5 @@
+/sitemap.xml  /sitemap-index.xml  301
+
+# PostHog analytics proxy (ad-blocker bypass)
+/ingest/static/*  https://eu-assets.i.posthog.com/static/:splat  200
+/ingest/*         https://eu.i.posthog.com/:splat  200
